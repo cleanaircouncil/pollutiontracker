@@ -1,5 +1,6 @@
 name: fetch-data
 on: 
+  push:
   schedule:
     - cron: "30 11 * * *"
 
