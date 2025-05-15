@@ -1,12 +1,10 @@
 import Airtable from "airtable";
 import fs from "fs";
-
-const AIRTABLE_BASE_ID = "appfvu7sPuEmPaoBn";
-const AIRTABLE_TOKEN = "patHAZ5Il0KGV0bfk.4fb8e86a41fe5af65ea25345c3a3950dd7b7dd4b85d96b03b50ab37a68b38ea9";
+import "dotenv/config";
 
 const base = new Airtable({
-  apiKey: AIRTABLE_TOKEN
-}).base(AIRTABLE_BASE_ID)
+  apiKey: process.env.AIRTABLE_TOKEN
+}).base(process.env.AIRTABLE_BASE_ID)
 
 
 const data = {
