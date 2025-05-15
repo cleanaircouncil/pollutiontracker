@@ -1,34 +1,51 @@
+async function initData() {
+  const response = await fetch("/data/data.json");
+  data = await response.json();
+  return data;
+}
 
-const Airtable = require("airtable");
-const BASE_ID = "appfvu7sPuEmPaoBn";
-const TOKEN = "patH3spnoUNgDQFLV.c016d614feed7b609af380c732191170d5a70f24163fecf45f59ac77e74690ec";
+function initMap() {
+  const map = new maplibregl.Map({
+    container: 'map', // container id
+    style: 'https://api.maptiler.com/maps/streets-v2/style.json?key=v64Bpd9Og2E4Zm916XUB', // style URL
+    center: [-75.165222, 39.952583],
+    zoom: 9 // starting zoom
+  });
 
+  return map;
+}
 
-
-function init() {
-  const base = new Airtable({
-    apiKey: TOKEN
-  }).base(BASE_ID)
-  
-  const table = document.getElementById("records");
-  base('Permits')
-    .select()
-    .eachPage( (records, fetchNextPage) => {
-      records.forEach( record => {
-        // const row = html`${ 
-        //   Object.values(record.fields)
-        //     .map( value, html`<td>${ value }</td>`)}
-        // `
-
-        table.innerHTML += JSON.stringify( record.fields );
-      })
-
-      fetchNextPage();
-    })
+function initMarkers(map, data) {
+  data.permits?.forEach( permit => {
+    const marker = new maplibregl.Marker();
+    marker.setLngLat( [permit.longitude, permit.latitude] );
+    marker.addTo(map);
+  })
 }
 
 
+function renderPermit( permit ) {
+  return html`
+    <div class="permit">
+      <h2>${ permit.company_name }</h2>
+      <h3>${ permit.address }</h3>
+      <em>${ permit.latitude}, ${ permit.longitude }</em>
+    </div>
+  `
+}
+
+
+async function init() {
+  const map = initMap(); 
+
+  const data = await initData();
+
+  const permits = data.permits?.map( renderPermit );
+  const display = document.getElementById("display");
+  render( permits, display );
+
+  initMarkers(map, data);
+}
+
 
 document.addEventListener("DOMContentLoaded", init);
-
-// https://airtable.com/appfvu7sPuEmPaoBn/tblPSkTDlDXgxvDf0/viw1BGFYPPHVoudgl?blocks=hide

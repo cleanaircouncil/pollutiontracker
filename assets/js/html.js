@@ -27,3 +27,11 @@ function html(strings, ...values) {
     return result;
   }, "");
 }
+
+function render( htmlString, domNode ) {
+  const fragment = new DocumentFragment();
+  const template = document.createElement("template");
+  template.innerHTML = htmlString;
+  fragment.append( template.content.cloneNode(true) );
+  domNode.append(fragment);
+}

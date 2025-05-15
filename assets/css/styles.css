@@ -1,0 +1,23 @@
+body {
+  inset: 0px;
+  padding: 0px;
+}
+
+#records {
+  position: absolute;
+  border: 1px solid blue;
+  inset: 0px;
+  display: grid;
+  grid-template-rows: 200px 1fr;
+  grid-template-areas: 
+    "top"
+    "map"
+}
+
+#map {
+  margin: 0px;
+  border: 1px solid red;
+  grid-area: map;
+  width: 100%;
+  height: 100%;
+}

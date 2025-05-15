@@ -1,0 +1,12 @@
+{
+  "permits": [
+    {
+      "company_name": "Test",
+      "permit_status": "Pending",
+      "latitude": 39.952583,
+      "longitude": -75.165222,
+      "address": "300 Market St.",
+      "case_status": "New Deficiency Letter"
+    }
+  ]
+}

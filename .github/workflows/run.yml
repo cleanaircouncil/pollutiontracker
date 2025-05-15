@@ -1,0 +1,15 @@
+name: fetch-data
+on: 
+  schedule:
+    - cron: "30 11 * * *"
+
+jobs:
+  refresh-permits:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout repo content
+        uses: actions/checkout@v2
+      - name: setup node
+        run: npm ci --omit=dev
+      - name: run fetch
+        run: npm run fetch
