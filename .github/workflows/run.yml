@@ -13,4 +13,7 @@ jobs:
       - name: setup node
         run: npm ci --omit=dev
       - name: run fetch
+        env:
+          AIRTABLE_BASE_ID: ${{ secrets.AIRTABLE_BASE_ID }}
+          AIRTABLE_TOKEN: ${{ secrets.AIRTABLE_TOKEN }}
         run: npm run fetch

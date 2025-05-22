@@ -21,3 +21,24 @@ body {
   width: 100%;
   height: 100%;
 }
+
+
+:where(.context-app) {
+  h1 {
+    color: red;
+  }
+
+  section {
+    border: 1px solid red;
+  }
+}
+
+:where(.context-text) {
+  h1 {
+    color: black;
+  }
+
+  section {
+    border: none;
+  }
+}
