@@ -12,8 +12,10 @@ jobs:
         uses: actions/checkout@v2
       - name: setup node
         run: npm ci --omit=dev
+      - name: create env file
+        run: |
+          touch .env
+          echo AIRTABLE_BASE_ID=${{ secrets.AIRTABLE_BASE_ID }} >> .env
+          echo AIRTABLE_TOKEN=${{ secrets.AIRTABLE_TOKEN }} >> .env
       - name: run fetch
-        env:
-          AIRTABLE_BASE_ID: ${{ secrets.AIRTABLE_BASE_ID }}
-          AIRTABLE_TOKEN: ${{ secrets.AIRTABLE_TOKEN }}
         run: npm run fetch
