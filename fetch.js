@@ -38,7 +38,7 @@ base('Permits')
       console.error(error);
     }  
 
-    fs.writeFileSync("./data/data.json", JSON.stringify( data, null, 2 ));
+    fs.writeFileSync("./site/data/data.json", JSON.stringify( data, null, 2 ));
   })
 
 
