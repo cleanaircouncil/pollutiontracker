@@ -1,5 +1,5 @@
-export function html(strings, ...values) {
-  return strings.reduce( (result, string, i) => {
+export default function html(strings, ...values) {
+  const htmlString = strings.reduce( (result, string, i) => {
     const value = values[i];
     
     result += string;
@@ -26,20 +26,17 @@ export function html(strings, ...values) {
 
     return result;
   }, "");
-}
 
-export function render( htmlString, domNode ) {
-  const fragment = new DocumentFragment();
-  const template = document.createElement("template");
-  template.innerHTML = html`${ htmlString }`;
-  fragment.append( template.content.cloneNode(true) );
-  domNode.append(fragment);
+  return htmlString;
 }
 
 const template = document.createElement("template");
 
-export function dom(strings, ...values) {
-  const htmlString = html(strings, ...values);  
+export function renderHTML( htmlString ) {
   template.innerHTML = htmlString;
   return template.content.cloneNode(true);
+}
+
+export function slugify(string) {
+  return string.toLowerCase().trim().replace(/\s+/g, "-")
 }

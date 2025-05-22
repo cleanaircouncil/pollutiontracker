@@ -1,6 +1,6 @@
-import { html, render } from "./html.js";
-import Permit, {client as permitClient} from "./permit.js";
-import Map, {client as mapClient } from "./map.js";
+import Permit from "./permit.js";
+import Map from "./map.js";
+import { renderHTML } from "./html.js";
 
 async function initData() {
   const response = await fetch("data/data.json");
@@ -34,12 +34,12 @@ async function init() {
   const data = await initData();
 
   const permits = data.permits?.map( permit => Permit({permit}) );
-  console.log( permits );
+
   
   const display = document.getElementById("display");
   // render( permits, display );
 
-  display.append( ...permits );
+  display.append( ...permits.map(renderHTML) );
 
   initMarkers(map, data);
 }

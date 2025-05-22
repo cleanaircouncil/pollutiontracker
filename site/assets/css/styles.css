@@ -9,7 +9,7 @@ body {
   border: 1px solid blue;
   inset: 0px;
   display: grid;
-  grid-template-rows: 200px 1fr;
+  grid-template-rows: 50px 1fr;
   grid-template-columns: 25% 1fr;
   grid-template-areas: 
     "top top"
@@ -21,13 +21,14 @@ body {
   grid-area: display;
   width: 100%;
   height: 100%;
-  padding-bottom: 200px;
   overflow: scroll;
+  padding: 10px;
+  padding-bottom: 200px;
 }
 
 #map {
   margin: 0px;
-  border: 1px solid red;
+
   grid-area: map;
   width: 100%;
   height: 100%;

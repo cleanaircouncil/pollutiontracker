@@ -1,16 +1,18 @@
-<html>
+<html data-theme="light">
   <head>
     <script src="./assets/js/airtable.browser.js"></script>
     <script src='https://unpkg.com/maplibre-gl@latest/dist/maplibre-gl.js'></script>
     <link href='https://unpkg.com/maplibre-gl@latest/dist/maplibre-gl.css' rel='stylesheet' />
+    <script src="//unpkg.com/alpinejs" defer></script>
 
-    <script src="./assets/js/index.js" type="module"></script>
-    <link rel="stylesheet" href="./assets/css/styles.css"/>
+    <script type="module" src="./assets/js/index.js"></script>
+    <link rel="stylesheet" href="./assets/css/bulma.min.css"/>
+    <link rel="stylesheet" href="./assets/css/styles.css" />
 
   </head>
-  <body>
+  <body >
     <main id="records">
-      <div id="display"></div>
+      <aside class="block" id="display"></aside>
       <figure id="map"></figure>
     </main>
   </body>
