@@ -1,4 +1,4 @@
-function html(strings, ...values) {
+export function html(strings, ...values) {
   return strings.reduce( (result, string, i) => {
     const value = values[i];
     
@@ -28,10 +28,18 @@ function html(strings, ...values) {
   }, "");
 }
 
-function render( htmlString, domNode ) {
+export function render( htmlString, domNode ) {
   const fragment = new DocumentFragment();
   const template = document.createElement("template");
-  template.innerHTML = htmlString;
+  template.innerHTML = html`${ htmlString }`;
   fragment.append( template.content.cloneNode(true) );
   domNode.append(fragment);
+}
+
+const template = document.createElement("template");
+
+export function dom(strings, ...values) {
+  const htmlString = html(strings, ...values);  
+  template.innerHTML = htmlString;
+  return template.content.cloneNode(true);
 }

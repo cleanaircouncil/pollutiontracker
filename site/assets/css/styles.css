@@ -1,6 +1,7 @@
 body {
   inset: 0px;
   padding: 0px;
+  overflow: hidden;
 }
 
 #records {
@@ -9,9 +10,19 @@ body {
   inset: 0px;
   display: grid;
   grid-template-rows: 200px 1fr;
+  grid-template-columns: 25% 1fr;
   grid-template-areas: 
-    "top"
-    "map"
+    "top top"
+    "display map"
+}
+
+#display {
+  /* display: flex; */
+  grid-area: display;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 200px;
+  overflow: scroll;
 }
 
 #map {

@@ -1,12 +1,63 @@
 {
   "permits": [
     {
-      "company_name": "Test",
-      "permit_status": "Pending",
+      "company_name": "Entegris",
+      "notes": "EPA https://echo.epa.gov/detailed-facility-report?fid=110000336093&ej_type=sup&ej_compare=US\n\nDEP https://www.ahs.dep.pa.gov/eFACTSWeb/searchResults_singleSite.aspx?SiteID=442702 ",
+      "latitude": 39.838946,
+      "longitude": -75.370833,
+      "address": "800 W Front St., Chester, PA 19013",
+      "description": "Chemical manufacturer\n",
+      "clean_air_notes": "Comments\nAir https://cleanaircouncil.salsalabs.org/entegris"
+    },
+    {
+      "company_name": "PBF Logistics ",
+      "notes": "EPA https://echo.epa.gov/detailed-facility-report?fid=110000337065&ej_type=sup&ej_compare=US \n\nDEP https://www.ahs.dep.pa.gov/eFACTSWeb/searchResults_singleSite.aspx?SiteID=452928 \n",
+      "latitude": 39.910168,
+      "longitude": -75.216721,
+      "address": "6850 Essington Avenue, Philadelphia, PA 19153\n",
+      "description": "Gasoline, diesel and residual fuel contained in 19 storage tanks, some built as early as 1938.\n",
+      "clean_air_notes": "Comments\nAir https://cleanaircouncil.salsalabs.org/swphillyair\nWater https://cleanaircouncil.salsalabs.org/pbfwater "
+    },
+    {
+      "company_name": "Marcus Hook Terminal ",
+      "notes": "EPA https://echo.epa.gov/detailed-facility-report?fid=110032885723\n\nDEP https://www.ahs.dep.pa.gov/eFACTSWeb/searchResults_singleSite.aspx?SiteID=270459 \n",
+      "latitude": 39.812442,
+      "longitude": -75.413694,
+      "address": "100 Green St. Marcus Hook, PA 19061",
+      "description": "Natural Gas Liquids (NGL) Export Terminal, Former Oil Refinery                                                                              \n         ",
+      "clean_air_notes": "Comments\nEthane https://cleanaircouncil.salsalabs.org/marcushookexpansion\nTitle V renewal https://cleanaircouncil.salsalabs.org/marcushookmeeting \nhttps://cleanaircouncil.salsalabs.org/marcushookhearing \nRCRA https://cleanaircouncil.salsalabs.org/marcushookwaste \nhttps://cleanaircouncil.salsalabs.org/marcushookhazwaste \nNPDES https://cleanaircouncil.salsalabs.org/marcushookterminal \nDemolition https://cleanaircouncil.salsalabs.org/mhdemo \nNPDES for Ethane tanks https://cleanaircouncil.salsalabs.org/terminalcontamination \nSludge Pit http://cleanaircouncil.salsalabs.org/marcushookacidsludge \nNPDES (2021) https://cleanaircouncil.salsalabs.org/marcushooknpdes \nNPDES (2023) https://cleanaircouncil.salsalabs.org/marcushookterminalnpdes/index.html "
+    },
+    {
+      "company_name": "BP Point Breeze",
+      "notes": "DEP (warehouse) https://www.ahs.dep.pa.gov/eFACTSWeb/searchResults_singleSite.aspx?SiteID=864517\nhttps://www.ahs.dep.pa.gov/eFACTSWeb/searchResults_singleSite.aspx?SiteID=859132\nhttps://www.ahs.dep.pa.gov/eFACTSWeb/searchResults_singleSite.aspx?SiteID=859106\n\nDEP (former tank farm) https://www.ahs.dep.pa.gov/eFACTSWeb/searchResults_singleSite.aspx?SiteID=586424",
+      "latitude": 39.913679,
+      "longitude": -75.214482,
+      "address": "6310 Passyunk Ave, Philadelphia, PA 19153\n",
+      "description": "Warehouse, former fossil fuel tank farm\n",
+      "clean_air_notes": "Comments\nChapter 105 https://cleanaircouncil.salsalabs.org/swphilly \nChapter 105 (2022) https://cleanaircouncil.salsalabs.org/warehouse/index.html \nChapter 102 (2023) https://cleanaircouncil.salsalabs.org/bppointbreezechapter102/index.html \n"
+    },
+    {
+      "company_name": "Congoleum",
+      "notes": "EPA https://echo.epa.gov/detailed-facility-report?fid=110000584699&ej_type=sup&ej_compare=US\n\nDEP https://www.ahs.dep.pa.gov/eFACTSWeb/searchResults_singleSite.aspx?SiteID=238211 \n",
+      "latitude": 39.827374,
+      "longitude": -75.414101,
+      "address": "4401 Ridge Rd. Trainer, PA 19061",
+      "description": "Flooring Manufacturer",
+      "clean_air_notes": "Comments\nAir https://cleanaircouncil.salsalabs.org/congoleumcarcinogens"
+    },
+    {
+      "company_name": "3060 S 61st St.",
       "latitude": 39.952583,
-      "longitude": -75.165222,
-      "address": "300 Market St.",
-      "case_status": "New Deficiency Letter"
+      "longitude": -75.165222
+    },
+    {
+      "company_name": "Adelphia Compressor Station\n",
+      "notes": "EPA https://echo.epa.gov/detailed-facility-report?fid=110071515654 \n\nDEP https://www.ahs.dep.pa.gov/eFACTSWeb/searchResults_singleSite.aspx?SiteID=829836 ",
+      "latitude": 39.8156776,
+      "longitude": -75.4398559,
+      "address": "1111 W Ridge Rd, Linwood, PA 19061\n",
+      "description": "Compresses pipeline gas for distribution\n",
+      "clean_air_notes": "Comments\nPlan Approval https://cleanaircouncil.salsalabs.org/adelphiamarcushook\nAir https://cleanaircouncil.salsalabs.org/adelphiacompressor\n"
     }
   ]
 }

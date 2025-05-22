@@ -1,6 +1,10 @@
+import { html, render } from "./html.js";
+import Permit, {client as permitClient} from "./permit.js";
+import Map, {client as mapClient } from "./map.js";
+
 async function initData() {
   const response = await fetch("data/data.json");
-  data = await response.json();
+  const data = await response.json();
   return data;
 }
 
@@ -24,25 +28,18 @@ function initMarkers(map, data) {
 }
 
 
-function renderPermit( permit ) {
-  return html`
-    <div class="permit">
-      <h2>${ permit.company_name }</h2>
-      <h3>${ permit.address }</h3>
-      <em>${ permit.latitude}, ${ permit.longitude }</em>
-    </div>
-  `
-}
-
-
 async function init() {
   const map = initMap(); 
 
   const data = await initData();
 
-  const permits = data.permits?.map( renderPermit );
+  const permits = data.permits?.map( permit => Permit({permit}) );
+  console.log( permits );
+  
   const display = document.getElementById("display");
-  render( permits, display );
+  // render( permits, display );
+
+  display.append( ...permits );
 
   initMarkers(map, data);
 }
