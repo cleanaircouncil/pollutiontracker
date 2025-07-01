@@ -4,13 +4,17 @@ export default function html(strings, ...values) {
     
     result += string;
 
-    if( Array.isArray(value) ) {
+    if( value == null )
+    {
+      result += "";
+    } else if( Array.isArray(value) ) {
       result += value.join("");
     } else if (typeof value === "string") {
       result += value;
     } else if (typeof value === "number") {
       result += String(value);
     } else if (typeof value === "object") {
+      
       result += Object.keys(value).map( key => {
         const val = value[key];
         if (val === true ) {

@@ -9,12 +9,25 @@ body {
   border: 1px solid blue;
   inset: 0px;
   display: grid;
-  grid-template-rows: 50px 1fr;
+  grid-template-rows: 1fr;
   grid-template-columns: 25% 1fr;
   grid-template-areas: 
-    "top top"
-    "display map"
+    "display map";
+
+  pointer-events: none;
+  z-index: 10;
 }
+
+@media screen and (max-width:400px) {
+  #records {
+    grid-template-rows: 1fr 50vh;
+    grid-template-columns: 25% 1fr;
+    grid-template-areas:
+      "blank blank"
+      "display display";
+  }
+}
+
 
 #display {
   /* display: flex; */
@@ -24,33 +37,24 @@ body {
   overflow: scroll;
   padding: 10px;
   padding-bottom: 200px;
+  pointer-events: all;
 }
 
 #map {
   margin: 0px;
-
-  grid-area: map;
+  inset: 0px;
+  position: absolute;
   width: 100%;
   height: 100%;
 }
 
-
-:where(.context-app) {
-  h1 {
-    color: red;
-  }
-
-  section {
-    border: 1px solid red;
-  }
-}
-
-:where(.context-text) {
-  h1 {
-    color: black;
-  }
-
-  section {
-    border: none;
-  }
+#viewer {
+  margin: 0px;
+  inset: 0px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 5;
+  background: rgba(0,0,0,.5);
+  display: none;
 }
