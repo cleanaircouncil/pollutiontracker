@@ -94,14 +94,14 @@ async function init() {
   const map = await initMap(); 
   const data = await initData();
 
-  // const facilities = data.facilities?.map( facility => Facility({facility}) );
+  const facilities = data.facilities?.map( facility => Facility({facility}) );
 
-  // const display = document.getElementById("display");
+  const display = document.getElementById("results");
 
-  // display.append( ...facilities.map(renderHTML) );
+  display.append( ...facilities.map(renderHTML) );
 
-  // await initMarkers(map, data);
-  // initInteractivity(map, data);
+  await initMarkers(map, data);
+  initInteractivity(map, data);
 }
 
 

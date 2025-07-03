@@ -11,6 +11,7 @@
       rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/fontawesome/css/fontawesome.min.css" />
     <link rel="stylesheet" href="./assets/css/fontawesome/css/solid.min.css" />
+    <link rel="stylesheet" href="./assets/css/layouts.css" />
     <link rel="stylesheet" href="./assets/css/styles.css" />
 
     <script type="module" src="./assets/js/app.js"></script>
@@ -23,7 +24,7 @@
       <h1>Permit Tracker</h1>
 
       <form id="search">
-        <input class="input" placeholder="Enter Zip Code" />
+        <input class="input" placeholder="Filter by name, permit status, or zip code" />
         <button class="button"><i class="fa fa-filter"></i></button>
       </form>
     </header>
@@ -36,59 +37,9 @@
 
     <figure id="map"></figure>
 
-    <main id="records">
+    <main id="content">
       <aside id="results">
-        <div id="company" class="facility-card">
-          <header class="facility-card--heading">
-            <h3><a class="js-facility-link" href="#company">Company</a></h3>
-            <p>Company description</p>
-            <p><i class="fa fa-location-dot"></i> Company address</p>
-          </header>
-          
-          <div class="facility-card--permits">
-            <h4 class="is-targeted">Current Permits and Compliance</h4>
 
-            <div class="grid">
-              <figure class="permit permit__water">
-                <header>
-                  <strong><i class="fa fa-water"></i>  Water</strong> <small>(<abbr title="Clean Water Act">CWA</abbr>)</small>
-                </header>
-                
-                <div class="is-targeted">
-                  <strong>No Violation Detected</strong>
-                  <em>as of 12/21/2021</em>
-                </div>
-              </figure>
-            </div>
-
-            <div class="is-targeted">
-              <a href="${facility.epa_link}">More info at ECHO</a>
-            </div>
-          </div>
-          
-          <div class="text is-targeted">
-            <h4>Heading goes here</h4>
-            <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
-            dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
-            book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially
-            unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more
-            recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-            </p>
-
-            <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
-            dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
-            book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially
-            unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more
-            recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-            </p>
-          </div>
-        </div>
-        
-        <div class="facility-card"></div>
-        <div class="facility-card"></div>
-        <div class="facility-card"></div>
       </aside>
 
       <section id="viewer">
