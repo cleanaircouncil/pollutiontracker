@@ -10,7 +10,8 @@ function initMap() {
     container: 'map', // container id
     style: 'https://api.maptiler.com/maps/streets-v2/style.json?key=v64Bpd9Og2E4Zm916XUB', // style URL
     center: [-75.165222, 39.952583],
-    zoom: 9 // starting zoom
+    zoom: 9, // starting zoom
+    attributionControl: false
   });
 
   return map;

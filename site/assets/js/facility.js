@@ -1,32 +1,35 @@
+
 import html, { slugify } from "./html.js";
 
 export default function Facility({ facility }) {
   return html`
-    <div id="${ slugify(facility.company_name) }" class="card facility js-facility" data-id="${ facility.id }">
-      <div class="card-content">
+    <div id="${ slugify(facility.company_name) }" class="card facility-card js-facility" data-id="${ facility.id }">
+      <header>
+        ${ facility.status }
         <p class="title is-4"><a class="js-facility-link" href="#${slugify(facility.company_name)}">${ facility.company_name }</a></p>
         <p class="subtitle is-6">${ facility.description }</p>
+        <p>${ facility.address }</p>
+      </header>
 
-        <div class="content">
-          <strong>${ facility.address }</strong><br/>
+      <div>
+        <h4>Current Permits and Compliance</h4>
+        ${ facility.permits && html`
+          <div class="grid">
+            ${ facility.permits.map( permit => Permit({ permit }))}
+          </div>  
+          <div>
+            <a href="${facility.epa_link}">More info at ECHO</a>
+          </div>
+        `}
+      </div>
 
-          ${ facility.status }
+      <div>
+        ${ facility.attachments && html`
+          <div>
+            ${ facility.attachments.map( group => AttachmentGroup({ group }))}
+          </div>
+        `}
 
-          ${ facility.permits && html`
-            <div class="grid">
-              ${ facility.permits.map( permit => Permit({ permit }))}
-            </div>  
-            <div>
-              <a href="${facility.epa_link}">More info at ECHO</a>
-            </div>
-          `}
-
-          ${ facility.attachments && html`
-            <div>
-              ${ facility.attachments.map( group => AttachmentGroup({ group }))}
-            </div>
-          `}
-        </div>
       </div>
     </div>
   `
@@ -34,10 +37,19 @@ export default function Facility({ facility }) {
 
 
 export function Permit({ permit }) {
+  const icons = {
+    "Air": "fa-fan",
+    "Water": "fa-water",
+    "Waste": "fa-arrows-spin"
+  }
+
+  const icon = icons[permit.type];
+  console.log( permit.type, icon );
+
   return html`
     <figure class="cell box">
       <header>
-        <strong>${ permit.type }</strong> (${permit.statute})
+        <strong><i class="fa ${icon}"></i> ${ permit.type }</strong> (${permit.statute})
       </header>
 
       <strong>${ permit.status_text }</strong>
