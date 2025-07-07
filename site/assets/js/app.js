@@ -12,7 +12,7 @@ async function initData() {
 async function initMap() {
   const map = new maplibregl.Map({
     container: 'map', // container id
-    style: 'https://api.maptiler.com/maps/streets-v2/style.json?key=v64Bpd9Og2E4Zm916XUB', // style URL
+    style: 'https://api.maptiler.com/maps/0197e64b-47f4-71b6-9770-751526b1f31b/style.json?key=v64Bpd9Og2E4Zm916XUB', // style URL
     center: [-75.165222, 39.952583],
     attributionControl: false,
     zoom: 9 // starting zoom
