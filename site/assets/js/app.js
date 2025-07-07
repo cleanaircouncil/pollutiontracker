@@ -26,8 +26,10 @@ async function initMap() {
 }
 
 async function initMarkers(map, data) {
-  const image = await map.loadImage('https://maplibre.org/maplibre-gl-js/docs/assets/custom_marker.png');
-  map.addImage('custom-marker', image.data);
+  const marker = await map.loadImage('assets/img/marker-dot.png');
+  const currentMarker = await map.loadImage('assets/img/marker-current.png');
+  map.addImage('custom-marker', marker.data);
+  map.addImage('custom-marker-current', currentMarker.data);
 
   map.addSource("facilities", {
     type: 'geojson',
@@ -36,7 +38,8 @@ async function initMarkers(map, data) {
       features: data.facilities?.map( facility => ({
         type: 'Feature',
         properties: {
-          id: facility.id
+          id: facility.id,
+          name: facility.company_name
         },
         geometry: {
           type: 'Point',
@@ -44,14 +47,56 @@ async function initMarkers(map, data) {
         }
       }))
     }
-  })
+  });
+
+  map.addSource("labels", {
+    type: 'geojson',
+    data: {
+      type: 'FeatureCollection',
+      features: data.facilities?.map( facility => ({
+        type: 'Feature',
+        properties: {
+          id: facility.id,
+          name: facility.company_name
+        },
+        geometry: {
+          type: 'Point',
+          coordinates: [facility.longitude, facility.latitude]
+        }
+      }))
+    }
+  });
+
+
+  map.addSource("current", {
+    type: 'geojson',
+    data: {
+      type: 'FeatureCollection',
+      features: []
+    }
+  });
 
   map.addLayer({
     id: 'symbols',
     type: 'symbol',
     source: 'facilities',
     layout: {
-      'icon-image': 'custom-marker'
+      'icon-image': "custom-marker",
+      // "text-field": ['get', 'name'],
+      // 'text-variable-anchor-offset': ['left', [1, 0], 'right', [-2, 0]],
+      // 'text-justify': 'auto',
+    }
+  })
+
+  map.addLayer({
+    id: 'current',
+    type: 'symbol',
+    source: 'current',
+    layout: {
+      'icon-image': "custom-marker-current",
+      "text-field": ['get', 'name'],
+      'text-variable-anchor-offset': ['left', [1, 0], 'right', [-2, 0]],
+      'text-justify': 'auto',
     }
   })
 
@@ -81,7 +126,26 @@ function initInteractivity(map, data) {
   })
 }
 
+
+function updateCurrentFacility(map, facility) {
+  map.getSource("current").setData({
+    type: 'FeatureCollection',
+    features: [{
+      type: 'Feature',
+      properties: {
+        id: facility.id,
+        name: facility.company_name
+      },
+      geometry: {
+        type: 'Point',
+        coordinates: [facility.longitude, facility.latitude]
+      }
+    }]
+  });
+}
+
 function focusOnFacility(map, facility) {
+  updateCurrentFacility(map, facility);
   map.flyTo({
     center: [facility.longitude, facility.latitude],
     zoom: 14

@@ -3,16 +3,15 @@ import html, { slugify } from "./html.js";
 
 export default function Facility({ facility }) {
   const id = slugify(facility.company_name);
-  console.log( facility.attachments )
   return html`
-    <div id="${id}" class="facility-card stack js-facility" data-id="${ facility.id }">
+    <article id="${id}" class="facility-card stack js-facility" data-id="${ facility.id }">
       <header class="facility-card__heading">
         <h3><a class="js-facility-link" href="#${id}">${ facility.company_name }</a></h3>
         <p class="text-detail"><strong>${ facility.description }</strong></p>
         <p class="text-detail"><i class="fa fa-location-dot color-gray-dark"></i> ${ facility.address }</p>
       </header>
       
-      <div class="facility-card__permits stack-tight">
+      <section class="facility-card__permits stack-tight">
         <h4 class="is-targeted">Current Permits and Compliance</h4>
 
       ${ facility.permits && html`
@@ -25,14 +24,13 @@ export default function Facility({ facility }) {
           </a>
         </div>
       `}
-
-
-      </div>
+      </section>
       
-      <div class="text is-targeted">
+      <section class="text is-targeted">
         ${ facility.attachments?.map( group => AttachmentGroup({ group })) }
-      </div>
-    </div>
+      </section>
+
+    </article>
   `
 }
 
