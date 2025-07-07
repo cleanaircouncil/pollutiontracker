@@ -3,7 +3,10 @@ const epaCall = ( id ) => `https://echodata.epa.gov/echo/dfr_rest_services.get_d
 const kinds = {
   CAA: "Air",
   CWA: "Water",
-  RCRA: "Waste"
+  RCRA: "Waste",
+  EPCRA: "Chemical",
+  CERCLA: "Hazardous",
+  TSCA: "Toxins"
 }
 
 export const EchoStatus = {
@@ -17,6 +20,8 @@ export const EchoStatus = {
 const getStatus = (status) => {
   if( ["Terminated Permit"].includes(status) )
     return EchoStatus.TERMINATED;
+  else if( ["High Priority Violation", "Violation w/in 1 Year", "Violation Identified"].includes(status) )
+    return EchoStatus.VIOLATION;
   else
     return EchoStatus.VALID;
 }

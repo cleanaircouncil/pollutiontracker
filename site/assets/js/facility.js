@@ -3,18 +3,25 @@ import html, { slugify } from "./html.js";
 
 export default function Facility({ facility }) {
   const id = slugify(facility.company_name);
+  const imgUrl = facility.image?.[0]?.url || undefined
   return html`
-    <article id="${id}" class="facility-card stack js-facility" data-id="${ facility.id }">
-      <header class="facility-card__heading">
-        <h3><a class="js-facility-link" href="#${id}">${ facility.company_name }</a></h3>
-        <p class="text-detail"><strong>${ facility.description }</strong></p>
-        <p class="text-detail"><i class="fa fa-location-dot color-gray-dark"></i> ${ facility.address }</p>
+    <article id="${id}" class="facility-card stack js-facility" data-id="${ facility.id }" data-zip="${ facility.zip }" data-name="${facility.company_name}">
+      <header class="facility-card__heading stack-tight">
+        
+        ${ imgUrl && html`
+          <img class="is-targeted" src="${imgUrl}"/>
+        `}
+
+        <div>
+          <h3><a class="js-facility-link" href="#${id}">${ facility.company_name }</a></h3>
+          <p class="text-detail"><strong>${ facility.description }</strong></p>
+          <p class="text-detail"><i class="fa fa-location-dot color-gray-dark"></i> ${ facility.address }</p>
+        </div>
       </header>
       
+      ${ facility.permits && html`
       <section class="facility-card__permits stack-tight">
         <h4 class="is-targeted">Current Permits and Compliance</h4>
-
-      ${ facility.permits && html`
         <div class="grid-three gap-tight">
           ${ facility.permits.map( permit => Permit({ permit }))}
         </div>  
@@ -23,38 +30,62 @@ export default function Facility({ facility }) {
             More info at ECHO <i class="fa-solid fa-arrow-up-right-from-square"></i>
           </a>
         </div>
-      `}
       </section>
+      `}
       
+      ${ facility.attachments.length > 0 && html`
       <section class="text is-targeted">
         ${ facility.attachments?.map( group => AttachmentGroup({ group })) }
       </section>
-
+      `}
     </article>
   `
 }
 
-
 export function Permit({ permit }) {
-  const icons = {
-    "Air": "fa-fan",
-    "Water": "fa-water",
-    "Waste": "fa-arrows-spin"
+
+  const info = {
+    CAA: {
+      short: "Air",
+      long: "Clean Air Act",
+      icon: "fa-fan",
+    },
+    CWA: {
+      short: "Water",
+      long: "Clean Water Act",
+      icon: "fa-water"
+    },
+    RCRA: {
+      short: "Waste",
+      long: "Resource Conservation and Recovery Act",
+      icon: "fa-arrows-spin",
+    },
+    EPCRA: {
+      short: "Chemical",
+      long: "Emergency Planning and Community Right-to-Know Act",
+      icon: "fa-vial",
+    },
+    CERCLA: {
+      short: "Hazardous",
+      long: "Comprehensive Environmental Response, Compensation, and Liability Act (Superfund)",
+      icon: "fa-triangle-exclamation",
+    },
+    TSCA: {
+      short: "Toxins",
+      long: "Toxic Substances Control Act",
+      icon: "fa-skull-crossbones",
+    }
   }
 
-  const abbr = {
-    "CAA": "Clean Air Act",
-    "CWA": "Clean Water Act",
-    "RCRA": "Recovery Waste C Act",
-  }
-
-  const icon = icons[permit.type];
+  const detail = info[permit.statute];
 
   return html`
-    <figure class="permit permit--${permit.type.toLowerCase()} permit--${permit.status}">
-      <header class="text-detail">
-        <strong><i class="fa ${icon}"></i> ${permit.type}</strong>
-        (<abbr title="${abbr[permit.statue]}">${permit.statute}</abbr>)
+    <figure class="permit permit--${detail.short.toLowerCase()} permit--${permit.status}">
+      <header>
+        <small>
+        <strong><i class="fa ${detail.icon}"></i> ${detail.short}</strong>
+        (<abbr title="${detail.long}">${permit.statute}</abbr>)
+        </small>
       </header>
       
       <div class="is-targeted">
@@ -80,9 +111,9 @@ export function AttachmentGroup({ group }) {
 
 export function AttachmentThumbnail({ url, filename, thumbnail }) {
   return html`
-    <li><a href="${url}">
+    <li><small><a href="${url}">
       ${ filename }
-    </a></li>`
+    </a></small></li>`
 }
 
 //<img src="${thumbnail.url}" width="${thumbnail.width}" height="${thumbnail.height}"></img>

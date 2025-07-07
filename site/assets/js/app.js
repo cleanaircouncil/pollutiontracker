@@ -1,6 +1,4 @@
 import Facility from "./facility.js";
-import Viewer from "./viewer.js";
-import Map from "./map.js";
 import { renderHTML, slugify } from "./html.js";
 
 async function initData() {
@@ -144,11 +142,28 @@ function updateCurrentFacility(map, facility) {
   window.location.hash = `#${slugify(facility.company_name)}`
 }
 
+
+
 function focusOnFacility(map, facility) {
   updateCurrentFacility(map, facility);
   map.flyTo({
     center: [facility.longitude, facility.latitude],
     zoom: 14
+  })
+}
+
+
+function initSearch() {
+  const input = document.getElementById("query");
+  input.addEventListener("input", () => {
+    const cards = document.querySelectorAll(".js-facility");
+    const query = input.value.trim();
+    cards.forEach( card => {
+      const zipMatch = card.dataset.zip.includes( query );
+      const nameMatch = card.dataset.name.toLowerCase().includes( query.toLowerCase() );
+      const match = zipMatch || nameMatch
+      card.classList.toggle("is-hidden", !match);
+    })
   })
 }
 
@@ -166,6 +181,7 @@ async function init() {
 
   await initMarkers(map, data);
   initInteractivity(map, data);
+  initSearch();
 }
 
 

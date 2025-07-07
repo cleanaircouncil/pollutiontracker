@@ -431,3 +431,7 @@ strong.text-detail, .text-detail strong {
 .color-gray-dark {
   color: var(--color-gray-dark)
 }
+
+.is-hidden {
+  display: none;
+}
