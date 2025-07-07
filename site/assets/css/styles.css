@@ -281,6 +281,7 @@ body {
   flex: 0 0 auto;
   padding: .5rem;
   overflow: hidden;
+  scroll-margin-top: 2rem;
 }
 
 .facility-card:target {
@@ -440,4 +441,8 @@ strong.text-detail, .text-detail strong {
 
 .color-gray-dark {
   color: var(--color-gray-dark)
+}
+
+.is-hidden {
+  display: none;
 }
