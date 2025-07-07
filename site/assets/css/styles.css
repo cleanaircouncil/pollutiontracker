@@ -270,6 +270,7 @@ body {
   flex: 0 0 auto;
   padding: .5rem;
   overflow: hidden;
+  scroll-margin-top: 2rem;
 }
 
 .facility-card:target {
