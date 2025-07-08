@@ -2,7 +2,9 @@
   <head>
     <script src='https://unpkg.com/maplibre-gl@latest/dist/maplibre-gl.js'></script>
     <link href='https://unpkg.com/maplibre-gl@latest/dist/maplibre-gl.css' rel='stylesheet' />
-    <script src="//unpkg.com/alpinejs" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/markdown-it@14.1.0/+esm"></script>
+  
+    <!-- <script src="//unpkg.com/alpinejs" defer></script> -->
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,8 +25,8 @@
       <h1>Permit Tracker</h1>
 
       <form id="search">
-        <input id="query" name="query" class="input" placeholder="Filter by name, permit status, or zip code" />
-        <button class="button"><i class="fa fa-filter"></i></button>
+        <input id="query" name="query" class="input" placeholder="Filter by name, permit status, or zip code" autocorrect="off" spellcheck="false"/>
+        <!-- <button class="button"><i class="fa fa-filter"></i></button> -->
       </form>
     </header>
 
@@ -41,20 +43,13 @@
 
       </aside>
 
-      <section id="viewer">
-        <header>
-          <strong>DEP - ERMS (Clean Water CW) - DT PERMITS-REGISTRATION-APPROVALS FB PAG-03 GENERAL PERMIT (NSA3) Year 2024 Permit-Project
-          PAG030310....pdf</strong>
-          <a>link to download</a>
-          <a>link to close</a>
-        </header>
-        <iframe src=""></iframe>
-      </section>
-
       <div id="map-holder">
-      <figure id="map"></figure>
-    </div>
+        <figure id="map"></figure>
+      </div>
     </main>
+
+    <div id="viewer-holder">
+    </div>
 
   </body>
 </html>

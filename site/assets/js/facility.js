@@ -1,9 +1,11 @@
 
 import html, { slugify } from "./html.js";
+// import { Marked } from "./vendor/marked.umd.js";
 
 export default function Facility({ facility }) {
   const id = slugify(facility.company_name);
   const imgUrl = facility.image?.[0]?.url || undefined
+  // const md = window.markdownit;
   return html`
     <article id="${id}" class="facility-card stack js-facility" data-id="${ facility.id }" data-zip="${ facility.zip }" data-name="${facility.company_name}">
       <header class="facility-card__heading stack-tight">
@@ -31,6 +33,15 @@ export default function Facility({ facility }) {
           </a>
         </div>
       </section>
+      `}
+
+      ${ facility.notes && html`
+        <section class="facility-card__notes stack-tight is-targeted">
+          <h4>Facility Notes</h4>
+          <div class="text">
+            ${ facility.notes }
+          </div>
+        </section>
       `}
       
       ${ facility.attachments.length > 0 && html`
@@ -111,7 +122,7 @@ export function AttachmentGroup({ group }) {
 
 export function AttachmentThumbnail({ url, filename, thumbnail }) {
   return html`
-    <li><small><a href="${url}">
+    <li><small><a class="js-attachment-link" data-url="${url}" data-name="${filename}">
       ${ filename }
     </a></small></li>`
 }

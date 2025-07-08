@@ -1,5 +1,6 @@
 import Facility from "./facility.js";
 import { renderHTML, slugify } from "./html.js";
+import Viewer from "./viewer.js";
 
 async function initData() {
   const response = await fetch("data/data.json");
@@ -154,6 +155,16 @@ function focusOnFacility(map, facility) {
 
 
 function initSearch() {
+
+  const params = (new URL(document.location)).searchParams;
+  for( const [key, value] of params.entries() ){
+    const inputs = document.querySelectorAll(`input[name="${key}"]`);
+    for( const input of inputs ){
+      input.value = value;
+    }
+  }
+
+
   const input = document.getElementById("query");
   input.addEventListener("input", () => {
     const cards = document.querySelectorAll(".js-facility");
@@ -169,6 +180,23 @@ function initSearch() {
 
 
 
+function initClicks() {
+  document.addEventListener("click", (event) => {
+    console.log( event );
+    if( event.target.matches(".js-attachment-viewer-close") ) {
+      event.target.closest("#viewer").remove();
+    } else if ( event.target.matches(".js-attachment-link")) {
+      event.preventDefault();
+      const holder = document.getElementById("viewer-holder");
+      const { url, name } = event.target.dataset;
+      const viewer = Viewer({ url, name });
+      console.log( renderHTML(viewer) );
+      holder.append( renderHTML(viewer) );
+    }
+  })
+}
+
+
 async function init() {
   const map = await initMap(); 
   const data = await initData();
@@ -182,6 +210,8 @@ async function init() {
   await initMarkers(map, data);
   initInteractivity(map, data);
   initSearch();
+
+  initClicks();
 }
 
 
