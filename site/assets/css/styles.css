@@ -172,7 +172,7 @@ body {
 
 #search {
   display: grid;
-  grid-template-columns: 1fr 2rem;
+  grid-template-columns: 1fr;
   gap: 1rem;
   position: relative;
   margin-bottom: -1.5rem;
