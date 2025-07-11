@@ -1,11 +1,10 @@
 
 import html, { slugify } from "./html.js";
-// import { Marked } from "./vendor/marked.umd.js";
 
 export default function Facility({ facility }) {
   const id = slugify(facility.company_name);
   const imgUrl = facility.image?.[0]?.url || undefined
-  // const md = window.markdownit;
+
   return html`
     <article id="${id}" class="facility-card stack js-facility" data-id="${ facility.id }" data-zip="${ facility.zip }" data-name="${facility.company_name}">
       <header class="facility-card__heading stack-tight">
@@ -15,13 +14,14 @@ export default function Facility({ facility }) {
         `}
 
         <div>
+          ${ facility.permit_status && html`<span class="permit-status">${ facility.permit_status }</span>` }
           <h3><a class="js-facility-link" href="#${id}">${ facility.company_name }</a></h3>
           <p class="text-detail"><strong>${ facility.description }</strong></p>
           <p class="text-detail"><i class="fa fa-location-dot color-gray-dark"></i> ${ facility.address }</p>
         </div>
       </header>
       
-      ${ facility.permits && html`
+      ${ facility.permits?.length > 0 && html`
       <section class="facility-card__permits stack-tight">
         <h4 class="is-targeted">Current Permits and Compliance</h4>
         <div class="grid-three gap-tight">
@@ -33,6 +33,28 @@ export default function Facility({ facility }) {
           </a>
         </div>
       </section>
+      `}
+
+
+      ${ facility.dep_link && html`
+        <section class="facility-card__notes stack-tight is-targeted">
+          <h4>DEP Info</h4>
+          <div class="text">
+            <strong>X</strong> violations since <strong>date</strong>.
+          <a class="text-detail" target="_blank" href="${facility.dep_link}">
+            More info at DEP <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </a>
+          </div>
+        </section>
+      `}
+
+      ${ facility.clean_air_notes && html`
+        <section class="facility-card__notes stack-tight is-targeted">
+          <h4>Clean Air Action Alerts</h4>
+          <div class="text">
+            ${ facility.clean_air_notes }
+          </div>
+        </section>
       `}
 
       ${ facility.notes && html`
@@ -113,18 +135,19 @@ export function AttachmentGroup({ group }) {
       <header>
         <h4>${ group.heading }</h4>
       </header>
-      <ul>
-      ${ group.attachments.map( attachment => AttachmentThumbnail({url: attachment.url, filename: attachment.filename, thumbnail: attachment.thumbnails.small })) }
-      </ul>
+      <div class="grid">
+      ${ group.attachments.map( attachment => AttachmentThumbnail({url: attachment.url, filename: attachment.filename, thumbnail: attachment.thumbnails.large })) }
+      </div>
     </div>
   `
 }
 
 export function AttachmentThumbnail({ url, filename, thumbnail }) {
   return html`
-    <li><small><a class="js-attachment-link" data-url="${url}" data-name="${filename}">
-      ${ filename }
-    </a></small></li>`
+    <a class="js-attachment-link" data-url="${url}" data-name="${filename}">
+      <img src="${thumbnail.url}"/>
+    </a>
+    `
 }
 
 //<img src="${thumbnail.url}" width="${thumbnail.width}" height="${thumbnail.height}"></img>

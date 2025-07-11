@@ -14,7 +14,7 @@ async function initMap() {
     style: 'https://api.maptiler.com/maps/0197e64b-47f4-71b6-9770-751526b1f31b/style.json?key=v64Bpd9Og2E4Zm916XUB', // style URL
     center: [-75.165222, 39.952583],
     attributionControl: false,
-    zoom: 9 // starting zoom
+    zoom: 10 // starting zoom
   });
 
   return new Promise(res => {
@@ -196,6 +196,17 @@ function initClicks() {
   })
 }
 
+function initRouter( data ) {
+  window.addEventListener("hashchange", event => {
+    const hash = new URL( event.newURL ).hash.replace("#", "");
+    const facility = data.facilities?.find( facility => slugify( facility.company_name ) == hash );
+    const facilityComponent = Facility({ facility });
+    const facilityContainer = document.getElementById("facility");
+    
+    facilityContainer.replaceChildren( renderHTML( facilityComponent ) );
+  })
+}
+
 
 async function init() {
   const map = await initMap(); 
@@ -203,7 +214,7 @@ async function init() {
 
   const facilities = data.facilities?.map( facility => Facility({facility}) );
 
-  const display = document.getElementById("results");
+  const display = document.getElementById("list");
 
   display.append( ...facilities.map(renderHTML) );
 
@@ -212,6 +223,7 @@ async function init() {
   initSearch();
 
   initClicks();
+  initRouter( data );
 }
 
 
