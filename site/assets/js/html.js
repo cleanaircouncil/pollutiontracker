@@ -34,9 +34,8 @@ export default function html(strings, ...values) {
   return htmlString;
 }
 
-const template = document.createElement("template");
-
 export function renderHTML( htmlString ) {
+  const template = document.createElement("template");
   template.innerHTML = htmlString;
   return template.content.cloneNode(true);
 }

@@ -7,29 +7,33 @@
 ** STACKS 
 */
 
-.stack > * + * {
+.stack > *:not(template:first-child, h1, h2, h3, h4) + * {
   margin-top: 1rem;
 }
 
-.stack-tight > * + *{
+:is(.stack-tight) > *:not(template:first-child, h1, h2, h3, h4) + *{
   margin-top: .5rem;
 }
 
-.stack-loose > * + *{
+.stack-loose > *:not(template:first-child, h1, h2, h3, h4) + *{
   margin-top: 2rem;
 }
 
-.stack > * + .stack-push {
+.stack > *:not(template:first-child, h1, h2, h3, h4) + .stack-push {
   margin-top: 2rem;
 }
 
-.stack-tight > * + .stack-push {
+.stack-tight > *:not(template:first-child, h1, h2, h3, h4) + .stack-push {
   margin-top: 1rem;
 }
 
-.stack-loose > * + .stack-push {
+.stack-loose > *:not(template:first-child, h1, h2, h3, h4) + .stack-push {
   margin-top: 4rem;
 }
+
+/* :is(.stack, .stack-tight, .stack-loose) > :is(h1, h2, h3, h4) + * {
+  margin-top: .25rem;
+} */
 
 /* 
 ** GRIDS 

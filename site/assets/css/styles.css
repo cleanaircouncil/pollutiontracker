@@ -1,6 +1,7 @@
 :root {
   --color-accent: rgb(43, 101, 180);
-  --color-black: #222222;
+  --color-highlight: rgb(77, 142, 234);
+  --color-black: rgb(20, 29, 41);;
   --color-white: #FFFFFF;
   
   --color-yellow-light: #FFFDC4;
@@ -11,6 +12,15 @@
   
   --color-purple-light: #E9BFFB;
   --color-purple-dark: #6E1287;
+
+  --color-orange-light: #fbdcbf;
+  --color-orange-dark: #874312;
+
+  --color-green-light: #effbbf;
+  --color-green-dark: #6c8712;
+
+  --color-pink-light: #fbbfe4;
+  --color-pink-dark: #87124c;
 
   --color-gray-light: #DEDEDE;
   --color-gray-dark: #ACACAC;
@@ -145,15 +155,14 @@ body {
   height: 100%;
 
   font-family: var(--font-default);
-
-  background: var(--color-white);
+/* var(--color-white); */
   color: var(--color-black);
 
   display: grid;
   grid-template-rows: min-content 1fr min-content;
   grid-template-areas:
     "search"
-    "content"
+    "main"
     "nav"
 }
 
@@ -162,23 +171,30 @@ body {
   color: var(--color-white);
 
   grid-area: search;
-  z-index: 10;
-
   
   padding: .5rem;
+  padding-bottom: 1.5rem;
   position: relative;
   overflow: visible;
+  line-height: 1.2;
 }
 
-#search {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 1rem;
+#header hgroup {
+  margin-block: .5rem;
+}
+
+#header h1, h2, h3 {
+  font-weight: 900;
+}
+
+.form-controls {
+  display: flex;
+  gap: .5rem;
   position: relative;
-  margin-bottom: -1.5rem;
+  padding-inline: .5rem;
 }
 
-#search > * {
+.form-controls > * {
   box-shadow: var(--box-shadow);
 }
 
@@ -196,6 +212,8 @@ body {
 
 .nav-button {
   text-align: center;
+  cursor: pointer;
+  transition: color .2s ease-in-out, background-color .2s ease-in-out;
 }
 
 .nav-button i {
@@ -205,41 +223,26 @@ body {
   margin: .25rem;
   width: 8rem;
   margin: .25rem auto;
+  border-radius: var(--radius);
+  transition: color .2s ease-in-out, background-color .2s ease-in-out;
 }
 
 .nav-button.active i {
   background: var(--color-accent);
-  border-radius: var(--radius);
-}
-
-
-
-
-#content {
-  grid-area: content;
-  z-index: 1;
-  display: grid;
-  grid-template-rows: 1fr min-content;
-  grid-template-areas:
-    "main"
-    "results";
-
-  pointer-events: none;
-}
-
-
-
-
-#map-holder {
-  grid-area: main;
-  border-radius: 2rem;
-  overflow: hidden;
-  box-sizing: border-box;
-  margin: .5rem;
+  
   
 }
 
+.nav-button:hover i {
+  background: var(--color-highlight);
+  color: var(--color-white);
+}
+
+
+
+
 #map {
+  grid-area: main;
   width: 100%;
   height: 100%;
   pointer-events: all;
@@ -251,7 +254,7 @@ body {
   width: 100%;
   height: 100%;
   position: absolute;
-  z-index: 20;
+  z-index: 100;
   background: rgba(0,0,0,.8);
   /* display: none; */
   color: var(--color-white);
@@ -282,21 +285,56 @@ body {
   border-radius: 1rem;
 }
 
+
+#results-holder {
+  overflow: hidden;
+  height: calc(100% + 1.5rem);
+  margin-top: -1.5rem;
+  grid-area: main;
+  z-index: 1;
+}
+
+
 #results {
   grid-area: results;
-  padding-top: 2rem;
-  background-color: var(--color-white);
+  overflow: hidden;
+
+  height: 100%;
+  width: 200%;
+
+  display: grid;
+  grid-template-columns: 50% 50%;
+  translate: 0% 0%;
+  transition: translate .4s ease-in-out;
+}
+
+#results:has(:target) {
+  translate: -50% 0%;
 }
 
 
 #list {
-  display: flex;
-  gap: 1rem;
   pointer-events: all;
-  padding: .5rem;
-  
+  overflow: hidden;
+}
+
+
+.layout-controls-content {
+  gap: 60vh;
+  display: grid;
+  grid-template-rows: min-content 1fr;
+  grid-template-areas:
+    "controls"
+    "content";
+}
+
+#facilities {
   scroll-behavior: smooth;
   overflow: scroll;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  gap: 1rem;
 }
 
 
@@ -306,20 +344,29 @@ body {
   background: var(--color-white);
   border: 1px solid var(--color-white);
   min-width: 350px;
-  /* border-radius: var(--radius); */
-  /* box-shadow: var(--box-shadow); */
   flex: 0 0 auto;
   padding: .5rem;
   overflow: hidden;
   scroll-margin-top: 2rem;
+  cursor: pointer;
+  position: relative;
+  border-radius: 1rem;
 }
 
 .facility-card:target {
   border-color: var(--color-accent);
 }
 
-.facility-card:target .is-targeted {
-  display: inherit;
+.facility-card:hover {
+  background: #EEEEEE;
+  
+}
+
+.facility-card__link::after {
+  content:'';
+  display: block;
+  position: absolute;
+  inset: 0px;
 }
 
 .facility-card__heading {
@@ -330,9 +377,19 @@ body {
   text-align: right;
 }
 
+.facility-detail__holder {
+  background: var(--color-white);
+}
 
-.is-targeted {
-  display: none;
+.facility-detail {
+  overflow: scroll;
+  max-height: 100%;
+  pointer-events: all;
+  padding-inline: .5rem;
+}
+
+.facility-detail__hero {
+  object-fit: cover;
 }
 
 .permit {
@@ -359,6 +416,21 @@ body {
   color: var(--color-purple-dark);
 }
 
+.permit--hazardous {
+  background: var(--color-orange-light);
+  color: var(--color-orange-dark);
+}
+
+.permit--chemical {
+  background: var(--color-green-light);
+  color: var(--color-green-dark);
+}
+
+.permit--toxins {
+  background: var(--color-pink-light);
+  color: var(--color-pink-dark);
+}
+
 .permit--terminated {
   background: var(--color-gray-light);
   color: var(--color-gray-dark);
@@ -369,7 +441,7 @@ body {
   color: var(--color-white);
 }
 
-.facility-card:target .permit {
+.facility-detail .permit {
   border-radius: .5rem;
 }
 
@@ -378,40 +450,55 @@ input.input {
   border: none; 
   padding: .5rem 1rem;
   border-radius: 2rem;
+  height: 2.5rem;
 }
 
-button.button {
+button.button, a.button {
+  display: flex;
+  align-items: center;
   background: var(--color-white);
   color: var(--color-accent);
   border: none;
-  padding: .5rem;
-  aspect-ratio: 1;
+  padding: .5rem 1rem;
   border-radius: 2rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+  font-size: .75rem;
+  line-height: 1rem;
+  gap: .25rem;
+  height: 2.5rem;
+  transition: color .2s ease-in-out, background-color .2s ease-in-out;
+}
+
+.button .fa {
+  font-size: 1rem;
+}
+
+.button:hover {
+  background: var(--color-highlight);
+  color: var(--color-white);
 }
 
 
 
 @media screen and (min-width:900px) {
   #app {
-    grid-template-columns: max(450px, 10vw) 1fr;
+    grid-template-columns: min(40vw, 450px) 1fr;
     grid-template-rows: min-content 1fr;
     grid-template-areas:
       "search nav"
-      "content content";
+      "results main";
   }
 
-  #content {
-    grid-template-rows: unset;
-    grid-template-columns: max(450px, 10vw) 1fr;
-    /* grid-template-columns: 900px 1fr; */
-    grid-template-areas:
-      "results main";
-    overflow: hidden;
-  }
 
   #results-holder {
     overflow: hidden;
-    height: 100%;
+    height: calc(100% + 1rem);
+    margin-top: -1.5rem;
+    grid-area: results;
+    border-radius: 1rem;
   }
 
   #results {
@@ -428,22 +515,38 @@ button.button {
     translate: -50% 0%;
   }
 
+  .layout-controls-content {
+    gap: 1rem;
+    display: grid;
+    grid-template-rows: min-content 1fr;
+    grid-template-areas:
+      "controls"
+      "content"; 
+  }
+
   #list {
     flex-direction: column;
-    padding-bottom: 200px;
     width: 100%;
     height: 100%;
     overflow: scroll;
+    position: relative;
   }
-  
+
+  #facilities {
+    flex-direction: column;
+    padding-bottom: 200px;
+    padding-inline: .5rem;
+  }
+
   #facility {
     width: 100%;
     height: 100%;
     pointer-events: all;
   }
 
-  #facility .is-targeted {
-    display: initial;
+  .facility-detail__hero {
+    margin-top: -2rem;
+    margin-bottom: 1rem;
   }
 
   #nav {
@@ -451,7 +554,7 @@ button.button {
     color: var(--color-white);    
     display: flex;
     align-items: center;
-    gap: 3rem;
+    gap: min(2vw, 3rem);
     padding-left: 1rem;
   }
 
@@ -461,7 +564,10 @@ button.button {
     display: flex;
     gap: .5rem;
     line-height: 1.5rem;
+    white-space: nowrap;
+    border-radius: 2rem;
   }
+
 
   .nav-button i {
     display: inline-block;
@@ -471,17 +577,42 @@ button.button {
     width: auto;
   }
 
+  .nav-button:hover i {
+    background: unset;
+    color: unset;
+  }
+
   .nav-button.active {
     background: var(--color-accent);
-    border-radius: 2rem;
+  }
+
+  .nav-button:hover, .nav-button.active:hover {
+    background: var(--color-highlight);
+    color: var(--color-white);
   }
 }
 
 /*** TEXT ***/
 
+.text > * + * {
+  margin-top: .5rem;
+}
+
+.text p {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  word-break: break-word;
+}
+
+
 .text a {
   color: var(--color-accent);
+  transition: color .2s ease-in-out;
   cursor: pointer;
+}
+
+.text a:hover {
+  color: var(--color-highlight);
 }
 
 .text ul {
@@ -500,6 +631,10 @@ h3 a {
 .text-detail {
   font-size: .75rem;
   font-weight: 300;
+}
+
+.text-delicate {
+  font-weight: 100;
 }
 
 strong.text-detail, .text-detail strong {
@@ -524,4 +659,92 @@ strong.text-detail, .text-detail strong {
   font-weight: bold;
   padding: .25rem;
   font-size: .75rem;
+}
+
+
+.facility-card__attachment {
+  cursor: pointer;
+}
+
+
+
+
+
+.map-marker {
+  width: 24px;
+  height: 24px;
+  background: url("../img/marker-dot.png") center center no-repeat;
+  background-size: contain;
+  cursor: pointer;
+}
+
+.map-marker--alert {
+  width: 32px;
+  height: 32px;
+  background-image: url("../img/marker-dot-alert.png");
+  z-index: 1;
+}
+
+.map-marker--current {
+  background-image: url("../img/marker-current.png");
+  width: 32px;
+  height: 40px;
+  z-index: 1;
+}
+
+
+.map-marker--alert.map-marker--current {
+  background-image: url("../img/marker-current-alert.png");
+}
+
+.map-marker__label {
+  font-family: var(--font-default);
+  line-height: 1;
+  font-weight: 900;
+  display: none;
+  position: absolute;
+  width: max-content;
+  max-width: 200px;
+  text-wrap: pretty;
+  z-index: 5;
+  text-align: center;
+
+  left: 50%;
+  top: -1rem;
+  translate: -50% -100%;
+  padding: .5rem;
+  background: var(--color-white);
+  box-shadow: var(--box-shadow);
+  border-radius: .25rem;
+}
+
+.map-marker__label::after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  rotate: 45deg;
+  translate: -50% 50%;
+  background: var(--color-white);
+  left: 50%;
+  bottom: 0px;
+
+}
+
+.map-marker:hover .map-marker__label {
+  display: block;
+}
+
+.map-marker--current .map-marker__label {
+  display: block;
+}
+
+.map-marker--alert .map-marker__label {
+  background: var(--color-danger);
+  color: var(--color-white);
+}
+
+.map-marker--alert .map-marker__label::after {
+  background: var(--color-danger);
 }

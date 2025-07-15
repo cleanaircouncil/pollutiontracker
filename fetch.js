@@ -1,7 +1,9 @@
 import Airtable from "airtable";
 import fs from "fs";
 import "dotenv/config";
-import fetchEPADataForUrl from "./echo.js";
+import fetchEPADataForUrl, { EchoStatus } from "./echo.js";
+import { slugify } from "./site/assets/js/html.js";
+import { marked } from "marked";
 
 const base = new Airtable({
   apiKey: process.env.AIRTABLE_TOKEN
@@ -45,22 +47,33 @@ async function resolveAttachments(facility) {
 async function recordToFacility(record) {
   const facility = {}
   facility.id = record.id;
+  
 
   Object.entries( record.fields ).forEach( ([key, value]) => {
     const newKey = key.toLowerCase().trim().replace(/\s+/g, "_");
     facility[newKey] = value;
   })
 
+  
   console.log( `🏭 ${facility.company_name.trim()}`);
+
+  facility.slug = slugify(facility.company_name);
 
   if( facility.epa_link ) {
     console.log(`  🔗 Getting permit data from EPA...`);
     const permits = await fetchEPADataForUrl(facility.epa_link);
     facility.permits = permits; 
   }
+
+  if( facility.clean_air_notes ) {
+    facility.clean_air_notes = marked.parse(facility.clean_air_notes);
+    console.log(`  ✏️ Rendering Clean Air to HTML...`);
+  }
   
   facility.attachments = await resolveAttachments(facility);
   facility.zip = facility.address.split(' ').at(-1).trim();
+  facility.alert = facility.permits?.length > 0 && facility.permits.some( permit => permit.status == EchoStatus.VIOLATION );
+  
 
   return facility;
 }
