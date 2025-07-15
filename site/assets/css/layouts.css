@@ -7,29 +7,33 @@
 ** STACKS 
 */
 
-.stack > * + * {
+.stack > *:not(template:first-child, h1, h2, h3, h4) + * {
   margin-top: 1rem;
 }
 
-.stack-tight > * + *{
+:is(.stack-tight) > *:not(template:first-child, h1, h2, h3, h4) + *{
   margin-top: .5rem;
 }
 
-.stack-loose > * + *{
+.stack-loose > *:not(template:first-child, h1, h2, h3, h4) + *{
   margin-top: 2rem;
 }
 
-.stack > * + .stack-push {
+.stack > *:not(template:first-child, h1, h2, h3, h4) + .stack-push {
   margin-top: 2rem;
 }
 
-.stack-tight > * + .stack-push {
+.stack-tight > *:not(template:first-child, h1, h2, h3, h4) + .stack-push {
   margin-top: 1rem;
 }
 
-.stack-loose > * + .stack-push {
+.stack-loose > *:not(template:first-child, h1, h2, h3, h4) + .stack-push {
   margin-top: 4rem;
 }
+
+/* :is(.stack, .stack-tight, .stack-loose) > :is(h1, h2, h3, h4) + * {
+  margin-top: .25rem;
+} */
 
 /* 
 ** GRIDS 
@@ -173,68 +177,6 @@
   justify-content: space-between;
 }
 
-.layout-toolbar {
-  display: grid;
-  grid-template-rows: 4rem 1fr 4rem;
-  grid-template-areas: 
-    "statusbar"
-    "main"
-    "toolbar";
-  width: 100%;
-  height: 100%;
-}
-
-@media screen and (min-width: 500px) {
-  .layout-toolbar {
-    grid-template-columns: 4rem 1fr;
-    grid-template-rows: min-content 1fr min-content;
-    grid-template-areas: "statusbar statusbar"
-    "toolbar main"
-  }
-}
-
-
-
-.in-statusbar {
-  grid-area: statusbar;
-}
-
-.in-toolbar {
-  grid-area: toolbar;
-}
-
-.in-main {
-  grid-area: main;
-  overflow: hidden;
-  padding-bottom: 1rem;
-  padding-right: 1rem;
-}
-
-.in-footer {
-  grid-area: footer;
-  overflow: hidden;
-}
-
-.layout-app {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr;
-  grid-template-areas: "app";
-  /* border: 1px solid red; */
-}
-
-.layout-bottom-toolbar {
-  display: grid; 
-  grid-template-rows: 1fr max-content; 
-  gap: var(--gap);
-}
-
-
-
-.in-app {
-  grid-area: app;
-  overflow: hidden;
-}
 
 
 .align-left {
