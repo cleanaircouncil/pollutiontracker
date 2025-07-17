@@ -8,10 +8,12 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/fontawesome/css/fontawesome.min.css" />
     <link rel="stylesheet" href="./assets/css/fontawesome/css/solid.min.css" />
     <link rel="stylesheet" href="./assets/css/layouts.css" />
+    <link rel="stylesheet" href="./assets/css/reset.css" />
     <link rel="stylesheet" href="./assets/css/styles.css" />
 
     <script type="module" src="./assets/js/app.js"></script>
@@ -22,7 +24,7 @@
 
     <header id="header">
       <hgroup>
-        <p class="text-delicate">Clean Air Council</p>
+        <a href="https://cleanair.org"><img class="logo" src="./assets/img/cac-logo.png" alt="Clean Air Council Logo"/></a>
         <h1>Pollution Tracker</h1>
       </hgroup>
     </header>
@@ -34,173 +36,171 @@
     </nav>
 
 
+    <aside id="results-holder">
+      <div id="results">
+
+        <div id="list" class="layout-controls-content" x-data="facilities">
+          <div class="form-controls" id="search">
+            <input id="query" name="query" class="input" autocorrect="off" spellcheck="false" 
+              placeholder="Filter by name, permit status, or zip code" 
+              x-model="search" 
+              @input="$dispatch('search', { value: search })"
+              />
+          </div>
+
+          <div id="facilities">
+            <template x-for="facility in facilities">
+            <article class="facility-card stack" :id="facility.slug">
+              <div>
+                <template x-if="facility.permit_status">
+                  <span class="permit-status" x-text="facility.permit_status"></span>
+                </template>
+
+                <h3><a class="facility-card__link" :href="`#${facility.slug}`" x-text="facility.company_name"></a></h3>
+                <p class="text-detail"><strong x-text="facility.description"></strong></p>
+                <p class="text-detail">
+                  <i class="fa fa-location-dot color-gray-dark"></i> <span x-text="facility.address"></span>
+                </p>
+              </div>
+              
+
+              <template x-if="facility.permits?.length > 0">
+                <footer class="grid-three gap-tight">
+                  <template x-for="permit in facility.permits">
+                    <figure class="permit" :class="$store.permits.classes(permit)">
+                      <header>
+                        <small>
+                          <strong><i class="fa" :class="$store.permits.icon(permit)"></i> <span
+                              x-text="$store.permits.short(permit)"></span></strong>
+                          (<abbr :title="$store.permits.long(permit)" x-text="permit.statute"></abbr>)
+                        </small>
+                      </header>
+                    </figure>
+                  </template>
+                </footer>
+              </template>
 
 
-      <aside id="results-holder">
-        <div id="results">
+            </article>
+            </template>
+          </div>
+        </div>
 
-          <div id="list" class="layout-controls-content" x-data="facilities">
-            <div class="form-controls" id="search">
-              <input id="query" name="query" class="input" autocorrect="off" spellcheck="false" 
-                placeholder="Filter by name, permit status, or zip code" 
-                x-model="search" 
-                @input="$dispatch('search', { value: search })"
-                />
-            </div>
+        
+        <div id="detail" class="layout-controls-content">
+          <div class="form-controls">
+            <a class="button" href="#"><i class="fa fa-chevron-left"></i> Back To Results</a>
+          </div>
 
-            <div id="facilities">
-              <template x-for="facility in facilities">
-              <article class="facility-card stack" :id="facility.slug">
-                <div>
-                  <template x-if="facility.permit_status">
-                    <span class="permit-status" x-text="facility.permit_status"></span>
+          <div class="facility-detail__holder">
+            <template x-if="detail?.image">
+              <img class="facility-detail__hero" :src="detail.image[0].url" :alt="detail.company_name" />
+            </template>
+
+            <template x-if="detail">
+              <article class="facility-detail stack-loose"> 
+                <header class="stack-tight">
+                  <template x-if="detail.permit_status">
+                    <span class="permit-status" x-text="detail.permit_status"></span>
                   </template>
 
-                  <h3><a class="facility-card__link" :href="`#${facility.slug}`" x-text="facility.company_name"></a></h3>
-                  <p class="text-detail"><strong x-text="facility.description"></strong></p>
-                  <p class="text-detail">
-                    <i class="fa fa-location-dot color-gray-dark"></i> <span x-text="facility.address"></span>
-                  </p>
-                </div>
+                  <div>
+                    <h2 x-text="detail.company_name"></h2>
+                    <p class="text-detail"><strong x-text="detail.description"></strong></p>
+                    <p class="text-detail"><i class="fa fa-location-dot color-gray-dark"></i> <span x-text="detail.address"></span>
+                    </p>
+                  </div>
+                </header>
+
                 
-
-                <template x-if="facility.permits?.length > 0">
-                  <footer class="grid-three gap-tight">
-                    <template x-for="permit in facility.permits">
-                      <figure class="permit" :class="$store.permits.classes(permit)">
-                        <header>
-                          <small>
-                            <strong><i class="fa" :class="$store.permits.icon(permit)"></i> <span
-                                x-text="$store.permits.short(permit)"></span></strong>
-                            (<abbr :title="$store.permits.long(permit)" x-text="permit.statute"></abbr>)
-                          </small>
-                        </header>
-                      </figure>
-                    </template>
-                  </footer>
-                </template>
-
-
-              </article>
-              </template>
-            </div>
-          </div>
-
-          
-          <div id="detail" class="layout-controls-content">
-            <div class="form-controls">
-              <a class="button" href="#"><i class="fa fa-chevron-left"></i> Back To Results</a>
-            </div>
-
-            <div class="facility-detail__holder">
-              <template x-if="detail?.image">
-                <img class="facility-detail__hero" :src="detail.image[0].url" :alt="detail.company_name" />
-              </template>
-
-              <template x-if="detail">
-                <article class="facility-detail stack-loose"> 
-                  <header class="stack-tight">
-                    <template x-if="detail.permit_status">
-                      <span class="permit-status" x-text="detail.permit_status"></span>
-                    </template>
-
-                    <div>
-                      <h2 x-text="detail.company_name"></h2>
-                      <p class="text-detail"><strong x-text="detail.description"></strong></p>
-                      <p class="text-detail"><i class="fa fa-location-dot color-gray-dark"></i> <span x-text="detail.address"></span>
-                      </p>
+                <section class="facility-card__permits stack-tight">
+                  <h3>Current Permits and Compliance</h3>
+                
+                  <template x-if="detail.permits">
+                    <div class="grid-three gap-tight">
+                      <template x-for="permit in detail.permits">
+                        <figure class="permit" :class="$store.permits.classes(permit)">
+                          <header>
+                            <small>
+                              <strong><i class="fa" :class="$store.permits.icon(permit)"></i> <span
+                                  x-text="$store.permits.short(permit)"></span></strong>
+                              (<abbr :title="$store.permits.long(permit)" x-text="permit.statute"></abbr>)
+                            </small>
+                          </header>
+                
+                          <strong x-text="permit.status_text"></strong><br />
+                          <template x-if="permit.last_inspection">
+                            <em>as of <span x-text="permit.last_inspection"></span></em>
+                          </template>
+                
+                        </figure>
+                      </template>
                     </div>
-                  </header>
+                    <div class="text facility-card__echo-link">
+                      <a class="text-detail" target="_blank" :href="detail.epa_link">
+                        More info at ECHO <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                      </a>
+                    </div>
+                  </template>
 
-                  
-                  <section class="facility-card__permits stack-tight">
-                    <h3>Current Permits and Compliance</h3>
-                  
-                    <template x-if="detail.permits">
-                      <div class="grid-three gap-tight">
-                        <template x-for="permit in detail.permits">
-                          <figure class="permit" :class="$store.permits.classes(permit)">
-                            <header>
-                              <small>
-                                <strong><i class="fa" :class="$store.permits.icon(permit)"></i> <span
-                                    x-text="$store.permits.short(permit)"></span></strong>
-                                (<abbr :title="$store.permits.long(permit)" x-text="permit.statute"></abbr>)
-                              </small>
-                            </header>
-                  
-                            <strong x-text="permit.status_text"></strong><br />
-                            <template x-if="permit.last_inspection">
-                              <em>as of <span x-text="permit.last_inspection"></span></em>
-                            </template>
-                  
-                          </figure>
-                        </template>
+                  <template x-if="detail.dep_link">
+                    <div class="text">
+                      <div class="text-detail">
+                        <strong>X</strong> violations since <strong>date</strong>.
                       </div>
+                      
                       <div class="text facility-card__echo-link">
-                        <a class="text-detail" target="_blank" :href="detail.epa_link">
-                          More info at ECHO <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        <a class="text-detail" target="_blank" :href="detail.dep_link">
+                          More info at DEP <i class="fa-solid fa-arrow-up-right-from-square"></i>
                         </a>
                       </div>
-                    </template>
-
-                    <template x-if="detail.dep_link">
-                      <div class="text">
-                        <div class="text-detail">
-                          <strong>X</strong> violations since <strong>date</strong>.
-                        </div>
-                        
-                        <div class="text facility-card__echo-link">
-                          <a class="text-detail" target="_blank" :href="detail.dep_link">
-                            More info at DEP <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                          </a>
-                        </div>
-                      </div>
-                    </template>
-                  </section>
-                
+                    </div>
+                  </template>
+                </section>
+              
 
 
 
-                <template x-if="detail.clean_air_notes">
-                  <section class="facility-card__notes stack-tight">
-                    <h3>Clean Air Action Alerts</h3>
-                    <div class="text" x-html="detail.clean_air_notes"></div>
-                  </section>
-                </template>
-
-                <template x-if="detail.notes">
-                  <section class="facility-card__notes stack-tight">
-                    <h3>Facility Notes</h3>
-                    <div class="text" x-html="detail.notes"></div>
-                  </section>
-                </template>
-
-
-                  <section class="text">
-                    <template x-for="group in detail.attachments">
-                      <div class="text">
-                        <header>
-                          <h3 x-text="group.heading"></h3>
-                        </header>
-
-                        <div class="grid">
-                          <template x-for="attachment in group.attachments">
-                            <a class="facility-card__attachment" @click="$dispatch('lightbox', { attachment: attachment })">
-                              <img :src="attachment.thumbnails.large.url" /> 
-                            </a>
-                          </template>
-                        </div>
-                      </div>
-                    </template>
-                  </section>
-
-                </article>
+              <template x-if="detail.clean_air_notes">
+                <section class="facility-card__notes stack-tight">
+                  <h3>Clean Air Action Alerts</h3>
+                  <div class="text" x-html="detail.clean_air_notes"></div>
+                </section>
               </template>
-            </div>
-          </div>
 
+              <template x-if="detail.notes">
+                <section class="facility-card__notes stack-tight">
+                  <h3>Facility Notes</h3>
+                  <div class="text" x-html="detail.notes"></div>
+                </section>
+              </template>
+
+
+                <section class="text">
+                  <template x-for="group in detail.attachments">
+                    <div class="text">
+                      <header>
+                        <h3 x-text="group.heading"></h3>
+                      </header>
+
+                      <div class="grid">
+                        <template x-for="attachment in group.attachments">
+                          <a class="facility-card__attachment" @click="$dispatch('lightbox', { attachment: attachment })">
+                            <img :src="attachment.thumbnails.large.url" /> 
+                          </a>
+                        </template>
+                      </div>
+                    </div>
+                  </template>
+                </section>
+
+              </article>
+            </template>
+          </div>
         </div>
-      </aside>
+
+      </div>
+    </aside>
 
     <figure id="map"></figure>
 

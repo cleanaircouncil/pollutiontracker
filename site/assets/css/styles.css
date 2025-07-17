@@ -2,7 +2,7 @@
   --color-accent: rgb(43, 101, 180);
   --color-highlight: rgb(77, 142, 234);
   --color-black: rgb(20, 29, 41);;
-  --color-white: #FFFFFF;
+  --color-white: rgb(252, 253, 255);
   
   --color-yellow-light: #FFFDC4;
   --color-yellow-dark: #8A8227;
@@ -28,112 +28,15 @@
   --color-danger: #B31C09;
 
   --font-default: "Merriweather Sans", sans-serif;
+  --font-default: "Montserrat", sans-serif;
 
   font-optical-sizing: auto;
   
   --radius: 1rem;
-  --box-shadow: 0px 0px 10px rgba(43, 101, 180, .5);
+  --box-shadow: 0px 0px 10px rgba(49, 72, 105, 0.5);
+
+  --ease-out-elastic: cubic-bezier(0.34, 1.56, 0.64, 1);
 }
-
-
-/* 1. Use a more-intuitive box-sizing model */
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-/* 2. Remove default margin */
-*:not(dialog) {
-  margin: 0;
-}
-
-body {
-  /* 3. Add accessible line-height */
-  line-height: 1.5;
-  /* 4. Improve text rendering */
-  -webkit-font-smoothing: antialiased;
-}
-
-/* 5. Improve media defaults */
-img,
-picture,
-video,
-canvas,
-svg {
-  display: block;
-  max-width: 100%;
-}
-
-/* 6. Inherit fonts for form controls */
-input,
-button,
-textarea,
-select,
-input[type="date"],
-input[type="time"] {
-  font: inherit;
-  line-height: normal;
-  ;
-}
-
-input::-webkit-datetime-edit {
-  display: block;
-  padding: 0;
-}
-
-input,
-textarea,
-select,
-input[type="date"],
-input[type="time"] {
-  appearance: none;
-  -webkit-appearance: none;
-  background-color: transparent;
-  border-radius: 0px;
-  margin: 0;
-  width: 100%;
-  font-family: inherit;
-  font-size: inherit;
-  cursor: inherit;
-  line-height: inherit;
-}
-
-/* 7. Avoid text overflows */
-p,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  overflow-wrap: break-word;
-}
-
-/* 8. Improve line wrapping */
-p {
-  text-wrap: pretty;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  text-wrap: balance;
-}
-
-/*
-  9. Create a root stacking context
-*/
-#root,
-#__next {
-  isolation: isolate;
-}
-
-
-
 
 
 
@@ -155,7 +58,7 @@ body {
   height: 100%;
 
   font-family: var(--font-default);
-/* var(--color-white); */
+  background: var(--color-white);
   color: var(--color-black);
 
   display: grid;
@@ -167,7 +70,7 @@ body {
 }
 
 #header {
-  background: var(--color-accent);
+  background: var(--color-black);
   color: var(--color-white);
 
   grid-area: search;
@@ -185,6 +88,10 @@ body {
 
 #header h1, h2, h3 {
   font-weight: 900;
+}
+
+#header .logo {
+  width: 10rem;
 }
 
 .form-controls {
@@ -558,6 +465,17 @@ button.button, a.button {
     padding-left: 1rem;
   }
 
+  #map::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    width: 1rem;
+    background: linear-gradient(90deg, var(--color-black), transparent);
+    opacity: .1;
+  }
 
   .nav-button {
     padding: .25rem 1rem;
@@ -629,8 +547,8 @@ h3 a {
 }
 
 .text-detail {
-  font-size: .75rem;
-  font-weight: 300;
+  font-size: .8rem;
+  font-weight: 500;
 }
 
 .text-delicate {
@@ -689,7 +607,12 @@ strong.text-detail, .text-detail strong {
   background-image: url("../img/marker-current.png");
   width: 32px;
   height: 40px;
+  margin-top: -8px;
   z-index: 1;
+}
+
+.map-marker:hover {
+  z-index: 2;
 }
 
 
