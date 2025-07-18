@@ -6,6 +6,7 @@
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./server/serve.js",
     "build": "node fetch.js",
     "fetch": "node fetch.js",
     "echo": "node echo.js"
@@ -22,7 +23,7 @@
   },
   "devDependencies": {
     "airtable": "^0.12.2",
-    "browsersync": "^0.0.1-security",
+    "browser-sync": "^3.0.4",
     "dependency-tree": "^11.2.0",
     "esbuild": "^0.25.6",
     "html-prettify": "^1.0.7",

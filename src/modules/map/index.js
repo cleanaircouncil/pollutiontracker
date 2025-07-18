@@ -1,3 +1,5 @@
+import html from "../../utils/html.js";
+
 export default function Map() {
   return html`
     <figure id="map"></figure>
@@ -10,10 +12,3 @@ export const head = html`
   <link href='https://unpkg.com/maplibre-gl@latest/dist/maplibre-gl.css' rel='stylesheet' />
 `
 
-export const styles = css`{
-
-}`
-
-export function client(init){
-
-}

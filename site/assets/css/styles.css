@@ -456,15 +456,6 @@ button.button, a.button {
     margin-bottom: 1rem;
   }
 
-  #nav {
-    background: var(--color-black);
-    color: var(--color-white);    
-    display: flex;
-    align-items: center;
-    gap: min(2vw, 3rem);
-    padding-left: 1rem;
-  }
-
   #map::after {
     content: "";
     display: block;
@@ -475,6 +466,16 @@ button.button, a.button {
     width: 1rem;
     background: linear-gradient(90deg, var(--color-black), transparent);
     opacity: .1;
+  }
+
+
+  #nav {
+    background: var(--color-black);
+    color: var(--color-white);
+    display: flex;
+    align-items: center;
+    gap: min(2vw, 3rem);
+    padding-left: 1rem;
   }
 
   .nav-button {

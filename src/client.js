@@ -1,5 +1,5 @@
-import search from "./modules/search.js";
+import * as app from "./modules/app/client.js";
 
 document.addEventListener("DOMContentLoaded", () => {
-  search.client()
+  app.init()
 })

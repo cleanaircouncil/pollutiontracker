@@ -1,12 +1,4 @@
-import Search from "./search.js"
-// import Nav from "./nav.js"
-import html, { css } from "../utils/html.js"
-
-// import Search from "./search.js";
-// import FacilityCard from "./facility-card.js";
-// import Map from "./map.js";
-
-
+import html from "../../utils/html.js"
 
 export const head = html`
   <title>Pollution Tracker: Clean Air Council</title>
@@ -19,13 +11,6 @@ export const head = html`
   <link rel="stylesheet" href="./assets/css/fontawesome/css/solid.min.css" />
 `
 
-export const styles = css`
-  .app {
-    background: red;
-  }
-`
-
-
 
 export default async function App() {
   return html`
@@ -37,18 +22,12 @@ export default async function App() {
         </hgroup>
       </header>
 
-      
-
-
-
       <aside id="results-holder">
         <div id="results">
-          <div id="list" class="layout-controls-content" x-data="facilities">
+          <div id="list" class="layout-controls-content">
 
           </div>
       </aside>
-
-      
     </main>
   `
 }

@@ -17,7 +17,7 @@ export default function html(strings, ...values) {
         const val = value[key];
         if (val === true ) {
           return key;
-        } else if ( typeof val === "function" ) {
+       //  } else if ( typeof val === "function" ) {
           //set up a listener when this is added?
           //addEventListener(key, val);
         } else if( val ) {
