@@ -1,0 +1,22 @@
+[class*=switch] {
+  --gap: 1rem;
+  --threshold: 30rem;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: stretch;
+  gap: var(--gap);
+}
+
+[class*=switch]>* {
+  flex-grow: 1;
+  flex-basis: calc((var(--threshold) - 100%) * 999);
+}
+
+.switch-small {
+  --threshold: 10rem;
+}
+
+.switch-huge {
+  --threshold: 40rem;
+}

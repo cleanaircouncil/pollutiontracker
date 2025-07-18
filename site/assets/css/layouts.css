@@ -7,28 +7,28 @@
 ** STACKS 
 */
 
-.stack > *:not(template:first-child, h1, h2, h3, h4) + * {
-  margin-top: 1rem;
+.stack > * + * {
+  margin-top: var(--stack-gap, 1rem);
 }
 
-:is(.stack-tight) > *:not(template:first-child, h1, h2, h3, h4) + *{
-  margin-top: .5rem;
+:is(.stack-tight) > * + *{
+  --stack-gap: .5rem;
 }
 
-.stack-loose > *:not(template:first-child, h1, h2, h3, h4) + *{
-  margin-top: 2rem;
+.stack-loose > * + *{
+  --stack-gap: 2rem;
 }
 
-.stack > *:not(template:first-child, h1, h2, h3, h4) + .stack-push {
-  margin-top: 2rem;
+.stack > * + .stack-push {
+  --stack-gap: 2rem;
 }
 
-.stack-tight > *:not(template:first-child, h1, h2, h3, h4) + .stack-push {
-  margin-top: 1rem;
+.stack-tight > * + .stack-push {
+  --stack-gap: 1rem;
 }
 
-.stack-loose > *:not(template:first-child, h1, h2, h3, h4) + .stack-push {
-  margin-top: 4rem;
+.stack-loose > * + .stack-push {
+  --stack-gap: 4rem;
 }
 
 /* 

@@ -10,12 +10,22 @@
     "fetch": "node fetch.js",
     "echo": "node echo.js"
   },
+  "exports": {
+    "./modules/*": "./src/modules/*.js",
+    "./utils/*": "./src/utils/*.js"
+  },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "airtable": "^0.12.2",
     "dotenv": "^16.5.0",
-    "marked": "^16.0.0",
+    "marked": "^16.0.0"
+  },
+  "devDependencies": {
+    "airtable": "^0.12.2",
+    "browsersync": "^0.0.1-security",
+    "dependency-tree": "^11.2.0",
+    "esbuild": "^0.25.6",
+    "html-prettify": "^1.0.7",
     "node-html-parser": "^7.0.1"
   }
 }

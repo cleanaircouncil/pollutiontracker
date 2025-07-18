@@ -1,0 +1,15 @@
+:is(.stack, .stack-tight, .stack-loose) > * + * {
+  margin-block-start: var(--stack-gap, 1rem);
+}
+
+:is(.stack-tight) {
+  --stack-gap: .5rem;
+}
+
+:is(.stack-loose) {
+  --stack-gap: 2rem;
+}
+
+.stack-push {
+  margin-block-start: calc( 2 * var(--stack-gap) );
+}
