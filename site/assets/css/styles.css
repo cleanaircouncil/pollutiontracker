@@ -257,7 +257,7 @@ body {
   scroll-margin-top: 2rem;
   cursor: pointer;
   position: relative;
-  border-radius: 1rem;
+  border-radius: .5rem;
 }
 
 .facility-card:target {
@@ -269,12 +269,18 @@ body {
   
 }
 
+.facility-card[data-status="alert"] {
+  border: 2px solid var(--color-danger);
+}
+
+
 .facility-card__link::after {
   content:'';
   display: block;
   position: absolute;
   inset: 0px;
 }
+
 
 .facility-card__heading {
   text-wrap: pretty;
@@ -292,7 +298,7 @@ body {
   overflow: scroll;
   max-height: 100%;
   pointer-events: all;
-  padding-inline: .5rem;
+  padding: .5rem;
 }
 
 .facility-detail__hero {
@@ -575,8 +581,13 @@ strong.text-detail, .text-detail strong {
   color: var(--color-white);
   background: var(--color-accent);
   font-weight: bold;
-  padding: .25rem;
+  padding: .25rem .5rem;;
   font-size: .75rem;
+  border-radius: .25rem;
+}
+
+.permit-status--alert {
+  background: var(--color-danger);
 }
 
 
@@ -670,4 +681,24 @@ strong.text-detail, .text-detail strong {
 
 .map-marker--alert .map-marker__label::after {
   background: var(--color-danger);
+}
+
+
+.facility-card__attachments {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: .5rem;
+}
+
+.facility-card__attachment {
+  border-radius: .5rem;
+  border: 2px solid var(--color-gray-dark);
+  transition: translate .2s ease-in-out, border-color .2s ease-in-out !important;
+  overflow: hidden;
+  aspect-ratio: 1;
+}
+
+.facility-card__attachment:hover {
+  border-color: var(--color-accent);
+  translate: 0% -.25rem;
 }

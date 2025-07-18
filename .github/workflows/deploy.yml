@@ -5,7 +5,7 @@ on:
     branches:
       - main  # or the branch you want to deploy from
   schedule:
-    - cron: "30 11 * * *"
+    - cron: "0 */2 * * *"
 
 permissions:
   contents: read

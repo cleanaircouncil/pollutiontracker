@@ -5,6 +5,8 @@ import fetchEPADataForUrl, { EchoStatus } from "./echo.js";
 import { slugify } from "./site/assets/js/html.js";
 import { marked } from "marked";
 
+import dep from "./site/data/dep-data.json" with { type: 'json' };
+
 const base = new Airtable({
   apiKey: process.env.AIRTABLE_TOKEN
 }).base(process.env.AIRTABLE_BASE_ID)
@@ -26,7 +28,6 @@ async function resolveAttachments(facility) {
         return;
       }
 
-      // console.log( record.fields )
       const group = {
         heading: record.fields.Heading,
         attachments: record.fields.Attachments
@@ -34,15 +35,32 @@ async function resolveAttachments(facility) {
 
       console.log(` 📎 Resolved attachments ${group.heading} (${group.attachments.length})`);
 
-      // if( facility.id === "recvmdfxyMfIy3NZO" )
-      //   console.log( "second", record.fields )
-
       res(group);
     })
   }))
 
   return await Promise.all(resolvers);
 }
+
+
+function getDEPViolations( facility ) {
+  const info = dep.violations.find( violation => violation.id == facility.id );
+  if( !info || !info.violations)
+    return undefined;
+
+  const numYears = 10
+  const cutoffDate = `${ new Date().getFullYear() - numYears }-01-01`;
+  const recentViolations = info.violations.filter( violation => violation.date >= cutoffDate );
+  
+  if( !recentViolations.length > 0 )
+    return undefined;
+
+  return {
+    count: recentViolations.length,
+    since: recentViolations.at(-1).date
+  }
+}
+
 
 async function recordToFacility(record) {
   const facility = {}
@@ -69,10 +87,32 @@ async function recordToFacility(record) {
     facility.clean_air_notes = marked.parse(facility.clean_air_notes);
     console.log(`  ✏️ Rendering Clean Air to HTML...`);
   }
+
+    if( facility.notes ) {
+    facility.notes = marked.parse(facility.notes);
+    console.log(`  ✏️ Rendering Notes to HTML...`);
+  }
   
   facility.attachments = await resolveAttachments(facility);
   facility.zip = facility.address.split(' ').at(-1).trim();
   facility.alert = facility.permits?.length > 0 && facility.permits.some( permit => permit.status == EchoStatus.VIOLATION );
+  
+  if( facility.permits?.length > 0 ) {
+    const formatter = new Intl.NumberFormat("en-US", {
+      style: "currency",
+      currency: "USD",
+      maximumFractionDigits: 0
+    });
+
+    const totalPenalties = facility.permits.reduce( (sum, permit) => sum + permit.penalties, 0 );
+    facility.totalPenalties = formatter.format( totalPenalties );
+  }
+
+  const violations = getDEPViolations( facility );
+  if( violations ) {
+    console.log(`   ⛔️ Collating violation info...`);
+    facility.violations = violations;
+  }
   
 
   return facility;

@@ -50,18 +50,31 @@
 
           <div id="facilities">
             <template x-for="facility in facilities">
-            <article class="facility-card stack" :id="facility.slug">
-              <div>
-                <template x-if="facility.permit_status">
-                  <span class="permit-status" x-text="facility.permit_status"></span>
+            <article class="facility-card stack" :data-status="facility.alert ? 'alert' : ''" :id="facility.slug">
+              <header class="stack-tight">
+                <template x-if="facility.alert || facility.permit_status">
+                  <div>
+                    <template x-if="facility.alert">
+                      <span class="permit-status permit-status--alert"><i class="fa fa-triangle-exclamation"></i> Clean Air Action
+                        Alert</span>
+                    </template>
+                    
+                    <template x-if="facility.permit_status">
+                      <span class="permit-status" x-text="facility.permit_status"></span>
+                    </template>
+                  </div>
                 </template>
 
-                <h3><a class="facility-card__link" :href="`#${facility.slug}`" x-text="facility.company_name"></a></h3>
-                <p class="text-detail"><strong x-text="facility.description"></strong></p>
-                <p class="text-detail">
-                  <i class="fa fa-location-dot color-gray-dark"></i> <span x-text="facility.address"></span>
-                </p>
-              </div>
+                <div>
+                  <h3><a class="facility-card__link" :href="`#${facility.slug}`" x-text="facility.company_name"></a></h3>
+                  <p class="text-detail"><strong x-text="facility.description"></strong></p>
+                  <p class="text-detail">
+                    <i class="fa fa-location-dot color-gray-dark"></i> <span x-text="facility.address"></span>
+                  </p>
+                </div>
+              </header>
+
+
               
 
               <template x-if="facility.permits?.length > 0">
@@ -99,9 +112,19 @@
 
             <template x-if="detail">
               <article class="facility-detail stack-loose"> 
+
                 <header class="stack-tight">
-                  <template x-if="detail.permit_status">
-                    <span class="permit-status" x-text="detail.permit_status"></span>
+                  <template x-if="detail.alert || detail.permit_status">
+                    <div>
+                      <template x-if="detail.alert">
+                        <span class="permit-status permit-status--alert"><i class="fa fa-triangle-exclamation"></i> Clean Air Action
+                          Alert</span>
+                      </template>
+                  
+                      <template x-if="detail.permit_status">
+                        <span class="permit-status" x-text="detail.permit_status"></span>
+                      </template>
+                    </div>
                   </template>
 
                   <div>
@@ -116,46 +139,50 @@
                 <section class="facility-card__permits stack-tight">
                   <h3>Current Permits and Compliance</h3>
                 
-                  <template x-if="detail.permits">
-                    <div class="grid-three gap-tight">
-                      <template x-for="permit in detail.permits">
-                        <figure class="permit" :class="$store.permits.classes(permit)">
-                          <header>
-                            <small>
-                              <strong><i class="fa" :class="$store.permits.icon(permit)"></i> <span
-                                  x-text="$store.permits.short(permit)"></span></strong>
-                              (<abbr :title="$store.permits.long(permit)" x-text="permit.statute"></abbr>)
-                            </small>
-                          </header>
-                
-                          <strong x-text="permit.status_text"></strong><br />
-                          <template x-if="permit.last_inspection">
-                            <em>as of <span x-text="permit.last_inspection"></span></em>
-                          </template>
-                
-                        </figure>
-                      </template>
+                  <template x-if="detail.permits?.length > 0">
+                    <div class="stack">
+                      <div class="grid-three gap-tight">
+                        <template x-for="permit in detail.permits">
+                          <figure class="permit" :class="$store.permits.classes(permit)">
+                            <header>
+                              <small>
+                                <strong><i class="fa" :class="$store.permits.icon(permit)"></i> <span
+                                    x-text="$store.permits.short(permit)"></span></strong>
+                                (<abbr :title="$store.permits.long(permit)" x-text="permit.statute"></abbr>)
+                              </small>
+                            </header>
+                  
+                            <strong x-text="permit.status_text"></strong><br />
+                            <template x-if="permit.last_inspection">
+                              <em>as of <span x-text="permit.last_inspection"></span></em>
+                            </template>
+                  
+                          </figure>
+                        </template>
+                      </div>
+                      
                     </div>
-                    <div class="text facility-card__echo-link">
-                      <a class="text-detail" target="_blank" :href="detail.epa_link">
-                        More info at ECHO <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  </template>
+
+                  <ul>
+                    <li><i class="fa fa-landmark-flag"></i> <strong x-text="detail.totalPenalties"></strong> in federal penalties in the last 5
+                      years</li>
+                    <li><i class="fa fa-ban"></i> <strong x-text="detail.violations?.count"></strong> violations since <strong x-text="detail.violations?.since"></strong></li>
+                  </ul>
+
+
+                  <template x-if="detail.epa_link || detail.dep_link">
+                    <div class="text text-detail">
+                      Sources:
+                      <a target="_blank" :href="detail.epa_link">
+                        ECHO <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                      </a> and
+                      <a target="_blank" :href="detail.dep_link">
+                        DEP <i class="fa-solid fa-arrow-up-right-from-square"></i>
                       </a>
                     </div>
                   </template>
 
-                  <template x-if="detail.dep_link">
-                    <div class="text">
-                      <div class="text-detail">
-                        <strong>X</strong> violations since <strong>date</strong>.
-                      </div>
-                      
-                      <div class="text facility-card__echo-link">
-                        <a class="text-detail" target="_blank" :href="detail.dep_link">
-                          More info at DEP <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                        </a>
-                      </div>
-                    </div>
-                  </template>
                 </section>
               
 
@@ -183,7 +210,7 @@
                         <h3 x-text="group.heading"></h3>
                       </header>
 
-                      <div class="grid">
+                      <div class="facility-card__attachments">
                         <template x-for="attachment in group.attachments">
                           <a class="facility-card__attachment" @click="$dispatch('lightbox', { attachment: attachment })">
                             <img :src="attachment.thumbnails.large.url" /> 

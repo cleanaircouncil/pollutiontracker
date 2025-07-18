@@ -32,12 +32,14 @@ async function fetchEPADataForUrl(url) {
     const request = epaCall(id);
     const response = await fetch(request);
     const json = await response.json();
+    
     const permits = json?.Results?.EnforcementComplianceSummaries?.Summaries.map( summary => ({
       statute: summary.Statute,
       type: kinds[summary.Statute] || "",
       last_inspection: summary.LastInspection,
       status: getStatus( summary.CurrentStatus ),
-      status_text: summary.CurrentStatus,
+      status_text: summary.CurrentStatus || "In Compliance",
+      penalties: summary.TotalPenalties ? parseFloat(summary.TotalPenalties.replace(/[^\d]*/g, '')) : 0
     }))
 
     return permits || [];
