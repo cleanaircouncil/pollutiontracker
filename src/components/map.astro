@@ -1,0 +1,199 @@
+---
+
+---
+
+<figure id="map" class="map" data-map></figure>
+
+<style is:global>
+  .map {
+    grid-area: main;
+    width: 100%;
+    height: 100%;
+    pointer-events: all;
+  }
+
+  .map-marker {
+    width: 24px;
+    height: 24px;
+    background: url("./assets/img/marker-dot.png") center center no-repeat;
+    background-size: contain;
+    cursor: pointer;
+  }
+
+  .map-marker[data-alert] {
+    width: 32px;
+    height: 32px;
+    background-image: url("./assets/img/marker-dot-alert.png");
+    z-index: 1;
+  }
+
+  .map-marker[data-current] {
+    background-image: url("./assets/img/marker-current.png");
+    width: 32px;
+    height: 40px;
+    margin-top: -8px;
+    z-index: 1;
+  }
+
+  .map-marker:hover {
+    z-index: 2;
+  }
+
+  .map-marker[data-alert][data-current] {
+    background-image: url("./assets/img/marker-current-alert.png");
+  }
+
+  .map-marker__label {
+    font-family: var(--font-default);
+    line-height: 1;
+    font-weight: 900;
+    display: none;
+    position: absolute;
+    width: max-content;
+    max-width: 200px;
+    text-wrap: pretty;
+    z-index: 5;
+    text-align: center;
+
+    left: 50%;
+    top: -1rem;
+    translate: -50% -100%;
+    padding: 0.5rem;
+    background: var(--color-white);
+    box-shadow: var(--box-shadow);
+    border-radius: 0.25rem;
+  }
+
+  .map-marker__label::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    rotate: 45deg;
+    translate: -50% 50%;
+    background: var(--color-white);
+    left: 50%;
+    bottom: 0px;
+  }
+
+  .map-marker:hover .map-marker__label {
+    display: block;
+  }
+
+  .map-marker[data-current] .map-marker__label {
+    display: block;
+  }
+
+  .map-marker[data-alert] .map-marker__label {
+    background: var(--color-danger);
+    color: var(--color-white);
+  }
+
+  .map-marker[data-alert] .map-marker__label::after {
+    background: var(--color-danger);
+  }
+
+  @media screen and (min-width: 900px) {
+    .map::after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      bottom: 0px;
+      width: 1rem;
+      background: linear-gradient(90deg, var(--color-black), transparent);
+      opacity: 0.1;
+    }
+  }
+</style>
+
+<script is:inline src="https://unpkg.com/maplibre-gl@latest/dist/maplibre-gl.js"
+></script>
+<link
+  href="https://unpkg.com/maplibre-gl@latest/dist/maplibre-gl.css"
+  rel="stylesheet"
+/>
+
+<script>
+  const maplibregl = window["maplibregl"];
+  import data from "../data/data.json";
+  import { dispatch, listen } from "../helpers/events";
+
+  async function initMap() {
+    const map = new maplibregl.Map({
+      container: "map", // container id
+      style:
+        "https://api.maptiler.com/maps/0197e64b-47f4-71b6-9770-751526b1f31b/style.json?key=v64Bpd9Og2E4Zm916XUB", // style URL
+      center: [-75.165222, 39.952583],
+      attributionControl: false,
+      zoom: 10, // starting zoom
+    });
+
+    map.setMaxPitch(0);
+    map.setMinPitch(0);
+    map.touchPitch.disable();
+    map.dragRotate.disable();
+    map.touchZoomRotate.disableRotation();
+
+    return new Promise((res) => {
+      map.on("load", async () => {
+        res(map);
+      });
+    });
+  }
+
+  async function initMarkers(map, data) {
+    data.facilities.forEach((facility) => {
+      const el = document.createElement("div");
+      el.classList.add("map-marker");
+      el.toggleAttribute("data-alert", facility.alert);
+      el.toggleAttribute("data-facility-marker");
+      el.setAttribute("data-facility-slug", facility.slug);
+
+      const label = document.createElement("span");
+      label.classList.add("map-marker__label");
+      label.innerText = facility.company_name;
+
+      el.append(label);
+
+      el.addEventListener("click", () => {
+        dispatch("facilityfocus", { facility });
+      });
+
+      // add marker to map
+      new maplibregl.Marker({ element: el })
+        .setLngLat([facility.longitude, facility.latitude])
+        .addTo(map);
+    });
+  }
+
+  function focusOnFacility(map, facility) {
+    if (!facility) return;
+
+    setCurrentMarker(facility);
+
+    map.flyTo({
+      center: [facility.longitude, facility.latitude],
+      zoom: 14,
+    });
+  }
+
+  function setCurrentMarker(facility) {
+    const markers = document.querySelectorAll("[data-facility-marker");
+    markers.forEach((marker) => {
+      marker.toggleAttribute(
+        "data-current",
+        marker.matches(`[data-facility-slug="${facility.slug}"]`)
+      );
+    });
+
+    window.location.hash = `#${facility.slug}`;
+  }
+
+  const map = await initMap();
+  await initMarkers(map, data);
+
+  listen("facilityfocus", (e) => focusOnFacility(map, e.detail.facility));
+</script>

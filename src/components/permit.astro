@@ -1,0 +1,94 @@
+---
+import permitInfo from "../helpers/permits";
+const { permit = {}, style = "card" } = Astro.props;
+---
+
+<figure
+  class:list={["permit", permitInfo.classes(permit)]}
+  data-permit
+  data-type={permit.type.toLowerCase()}
+  data-status={permit.status}
+  data-style={style}
+>
+  <header>
+    <small>
+      <strong>
+        <i class:list={["fa", permitInfo.icon(permit)]}></i>
+        <span>{permitInfo.short(permit)}</span>
+      </strong>
+      (<abbr title={permitInfo.long(permit)}>{permit.statute}</abbr>)
+    </small>
+  </header>
+
+  {
+    style == "card" && (
+      <footer>
+        <strong>{permit.status_text}</strong>
+        <br/>
+        {permit.last_inspection && (
+          <em>
+            as of <span>{permit.last_inspection}</span>
+          </em>
+        )}
+      </footer>
+    )
+  }
+</figure>
+
+<style>
+  .permit {
+    font-size: 0.75rem;
+    background: var(--color-blue-light);
+    color: var(--color-blue-dark);
+    padding: 0.5rem;
+    margin: 0px;
+  }
+
+  .permit[data-style="pill"] {
+    border-radius: 1.5rem;
+  }
+
+  .permit[data-style="card"] {
+    border-radius: 0.5rem;
+  }
+
+  .permit[data-type="air"] {
+    background: var(--color-yellow-light);
+    color: var(--color-yellow-dark);
+  }
+
+  .permit[data-type="water"] {
+    background: var(--color-blue-light);
+    color: var(--color-blue-dark);
+  }
+
+  .permit[data-type="waste"] {
+    background: var(--color-purple-light);
+    color: var(--color-purple-dark);
+  }
+
+  .permit[data-type="hazardous"] {
+    background: var(--color-orange-light);
+    color: var(--color-orange-dark);
+  }
+
+  .permit[data-type="chemical"] {
+    background: var(--color-green-light);
+    color: var(--color-green-dark);
+  }
+
+  .permit[data-type="toxins"] {
+    background: var(--color-pink-light);
+    color: var(--color-pink-dark);
+  }
+
+  .permit[data-status="terminated"] {
+    background: var(--color-gray-light);
+    color: var(--color-gray-dark);
+  }
+
+  .permit[data-type="violation"] {
+    background: var(--color-danger);
+    color: var(--color-white);
+  }
+</style>

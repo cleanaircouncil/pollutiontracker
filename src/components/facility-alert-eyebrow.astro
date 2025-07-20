@@ -1,0 +1,20 @@
+---
+const { facility = {} } = Astro.props;
+const hasAlert = facility.alert || facility.permit_status;
+---
+
+{
+  hasAlert && (
+    <div>
+      {facility.alert && (
+        <span class="permit-status permit-status--alert">
+          <i class="fa fa-triangle-exclamation" /> Clean Air Action Alert
+        </span>
+      )}
+
+      {facility.permit_status && (
+        <span class="permit-status">{ facility.permit_status }</span>
+      )}
+    </div>
+  )
+}

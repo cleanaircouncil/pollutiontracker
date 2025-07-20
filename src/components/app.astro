@@ -1,0 +1,78 @@
+---
+import FacilityCard from "./facility-card.astro";
+import Nav from "./nav.astro";
+import Search from "./search.astro";
+import Map from "./map.astro";
+import Viewer from "./viewer.astro";
+import Header from "./header.astro";
+import FacilityDetail from "./facility-detail.astro";
+
+import data from "../data/data.json";
+---
+
+<main id="app" data-is="app">
+  <Header />
+  <Nav />
+
+  <aside id="results-holder">
+    <div id="results">
+      <div id="list" class="layout-controls-content">
+        <Search hooks="app-search" />
+
+        <div id="facilities">
+          {
+            data.facilities.map((facility) => (
+              <FacilityCard facility={facility} />
+            ))
+          }
+        </div>
+      </div>
+
+      <div id="detail" class="layout-controls-content">
+        <div class="form-controls">
+          <a class="button" href="#">
+            <i class="fa fa-chevron-left"></i> Back To Results
+          </a>
+        </div>
+
+        <FacilityDetail facility={data.facilities.at(1)} />
+      </div>
+    </div>
+  </aside>
+
+  <Map />
+  <Viewer />
+</main>
+
+<style>
+  #app {
+    position: absolute;
+    inset: 0px;
+    padding: 0px;
+
+    font-family: var(--font-default);
+    background: var(--color-white);
+    color: var(--color-black);
+
+    display: grid;
+  }
+
+  @media screen and (max-width: 900px) {
+    #app {
+      grid-template-rows: min-content 1fr min-content;
+      grid-template-areas:
+        "search"
+        "main"
+        "nav";
+    }
+  }
+
+  @media screen and (min-width: 900px) {
+    #app {
+      grid-template-columns: min(40vw, 450px) 1fr;
+      grid-template-areas:
+        "search nav"
+        "results main";
+    }
+  }
+</style>

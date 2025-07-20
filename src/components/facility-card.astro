@@ -1,0 +1,78 @@
+---
+import FacilityAlertEyebrow from "./facility-alert-eyebrow.astro";
+import Highlight from "./highlight.astro";
+import Permit from "./permit.astro";
+
+const { facility = {} } = Astro.props;
+---
+
+<article
+  id={facility.slug}
+  class="facility-card stack"
+  data-facility-card
+  data-name={facility.company_name}
+  data-address={facility.address}
+  data-status={facility.alert ? "alert" : ""}
+>
+  <header class="stack-tight">
+    <FacilityAlertEyebrow facility={facility} />
+
+    <hgroup>
+      <h3>
+        <a
+          href={`#${facility.slug}`}
+          class="facility-card__link"
+        >
+          <Highlight text={facility.company_name} />
+        </a>
+      </h3>
+
+      <p class="text-detail">
+        <strong>{facility.description}</strong>
+      </p>
+
+      <p class="text-detail">
+        <i class="fa fa-location-dot color-gray-dark"></i>
+        <Highlight text={facility.address} />
+      </p>
+    </hgroup>
+  </header>
+
+  {
+    facility.permits?.length > 0 && (
+      <footer class="grid-three">
+        {facility.permits.map((permit) => (
+          <Permit permit={permit} style="pill" />
+        ))}
+      </footer>
+    )
+  }
+</article>
+
+<script>
+  import { listen } from "../helpers/events";
+
+  function toggleFacilityCard(searchTerm) {
+    const query = searchTerm.trim().toLowerCase().split(/\s+/);
+
+    const cards = document.querySelectorAll("[data-facility-card]");
+    const highlights = document.querySelectorAll("[data-highlight]");
+
+    cards.forEach((card) => {
+      if (!(card instanceof HTMLElement)) return;
+
+      const termMatch = (term) =>
+        card.dataset.name.toLowerCase().includes(term) ||
+        card.dataset.address.toLowerCase().includes(term);
+
+      const match = !query.length || query.every(termMatch);
+      card.toggleAttribute("hidden", !match);
+    });
+
+    highlights.forEach((highlight) => {
+      highlight.setAttribute("data-highlight", query.at(0) || "" );
+    });
+  }
+
+  listen("search", (e) => toggleFacilityCard(e.detail.value));
+</script>
