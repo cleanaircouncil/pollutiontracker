@@ -1,11 +1,11 @@
 import Airtable from "airtable";
 import fs from "fs";
 import "dotenv/config";
-import fetchEPADataForUrl, { EchoStatus } from "./echo.js";
-import { slugify } from "./site/assets/js/html.js";
+import { slugify } from "../site/assets/js/html.js";
 import { marked } from "marked";
 
-import dep from "./site/data/dep-data.json" with { type: 'json' };
+import dep from "../src/data/dep-data.json" with { type: 'json' };
+import airtableAPI, { Bases, jsonify } from "./airtable.js";
 
 const base = new Airtable({
   apiKey: process.env.AIRTABLE_TOKEN
@@ -17,6 +17,14 @@ const data = {
 
   ]
 }
+
+
+export const EchoStatus = {
+  VALID: "Valid",
+  VIOLATION: "Violation",
+  TERMINATED: "Terminated"
+}
+
 
 
 async function resolveAttachments(facility) {
@@ -62,35 +70,43 @@ function getDEPViolations( facility ) {
 }
 
 
-async function recordToFacility(record) {
-  const facility = {}
-  facility.id = record.id;
-  
+async function getECHOData( ids ) {
+  const results = [];
+  for( const id of ids ) {
+    const data = await airtableAPI.get( `${Bases.ECHO}/${id}` )
+    const json = jsonify(data);
+    delete json.name;
+    delete json.facility;
 
-  Object.entries( record.fields ).forEach( ([key, value]) => {
-    const newKey = key.toLowerCase().trim().replace(/\s+/g, "_");
-    facility[newKey] = value;
-  })
+    results.push( json );
+  }
+  
+  return results;
+}
+
+async function recordToFacility(record) {
+  const facility = jsonify(record);
+  facility.id = record.id;
 
   
   console.log( `🏭 ${facility.company_name.trim()}`);
 
   facility.slug = slugify(facility.company_name);
 
-  if( facility.epa_link ) {
-    console.log(`  🔗 Getting permit data from EPA...`);
-    const permits = await fetchEPADataForUrl(facility.epa_link);
+  if( facility.echo_compliance ) {
+    console.log(`  🔗 Linking compliance data from EPA...`);
+    const permits = await getECHOData( facility.echo_compliance );
     facility.permits = permits; 
   }
 
   if( facility.clean_air_notes ) {
     facility.clean_air_notes = marked.parse(facility.clean_air_notes);
-    console.log(`  ✏️ Rendering Clean Air to HTML...`);
+    console.log(`  ✏️  Rendering Clean Air to HTML...`);
   }
 
     if( facility.notes ) {
     facility.notes = marked.parse(facility.notes);
-    console.log(`  ✏️ Rendering Notes to HTML...`);
+    console.log(`  ✏️  Rendering Notes to HTML...`);
   }
   
   facility.attachments = await resolveAttachments(facility);
@@ -110,10 +126,11 @@ async function recordToFacility(record) {
 
   const violations = getDEPViolations( facility );
   if( violations ) {
-    console.log(`   ⛔️ Collating violation info...`);
+    console.log(`   ☢️  Collating violation info...`);
     facility.violations = violations;
   }
   
+  delete facility['attachments_(old)'];
 
   return facility;
 }
@@ -129,9 +146,6 @@ base('Facilities')
       data.facilities.push( facility );
     }
 
-
-    // console.log( data );
-
     fetchNextPage();
   }, async function done(error) {
     if(error) {
@@ -141,7 +155,7 @@ base('Facilities')
     data.facilities.sort((a, b) => a.company_name.toLowerCase() < b.company_name.toLowerCase() ? -1 : 1 )
 
     console.log( "💾 Writing data.json...")
-    fs.writeFileSync("./site/data/data.json", JSON.stringify( data, null, 2 ));
+    fs.writeFileSync("./src/data/data.json", JSON.stringify( data, null, 2 ));
     console.log("✅ Done!")
   })
 

@@ -1,5 +1,5 @@
 ---
-import FacilityAlertEyebrow from "./facility-alert-eyebrow.astro";
+import Eyebrow from "./eyebrow.astro";
 import Highlight from "./highlight.astro";
 import Permit from "./permit.astro";
 
@@ -15,14 +15,11 @@ const { facility = {} } = Astro.props;
   data-status={facility.alert ? "alert" : ""}
 >
   <header class="stack-tight">
-    <FacilityAlertEyebrow facility={facility} />
+    <Eyebrow facility={facility} />
 
     <hgroup>
       <h3>
-        <a
-          href={`#${facility.slug}`}
-          class="facility-card__link"
-        >
+        <a href={`#${facility.slug}`} class="facility-card__link">
           <Highlight text={facility.company_name} />
         </a>
       </h3>
@@ -70,9 +67,76 @@ const { facility = {} } = Astro.props;
     });
 
     highlights.forEach((highlight) => {
-      highlight.setAttribute("data-highlight", query.at(0) || "" );
+      highlight.setAttribute("data-highlight", query.at(0) || "");
     });
   }
 
   listen("search", (e) => toggleFacilityCard(e.detail.value));
 </script>
+
+<style>
+  .facility-card {
+    background: var(--color-white);
+    border: 1px solid var(--color-white);
+    min-width: 350px;
+    flex: 0 0 auto;
+    padding: 0.5rem;
+    overflow: hidden;
+    scroll-margin-top: 2rem;
+    cursor: pointer;
+    position: relative;
+    border-radius: 0.5rem;
+  }
+
+  .facility-card:target {
+    border-color: var(--color-accent);
+  }
+
+  .facility-card:hover {
+    background: #eeeeee;
+  }
+
+  .facility-card[data-status="alert"] {
+    border: 2px solid var(--color-danger);
+  }
+
+  .facility-card__link::after {
+    content: "";
+    display: block;
+    position: absolute;
+    inset: 0px;
+  }
+
+  .facility-card__heading {
+    text-wrap: pretty;
+  }
+
+  .facility-card__echo-link {
+    text-align: right;
+  }
+
+  .facility-card__attachment {
+    cursor: pointer;
+  }
+
+  .facility-card__attachments {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0.5rem;
+  }
+
+  .facility-card__attachment {
+    border-radius: 0.5rem;
+    border: 2px solid var(--color-gray-dark);
+    transition:
+      translate 0.2s ease-in-out,
+      border-color 0.2s ease-in-out !important;
+    overflow: hidden;
+    aspect-ratio: 1;
+  }
+
+  .facility-card__attachment:hover {
+    border-color: var(--color-accent);
+    translate: 0% -0.25rem;
+  }
+</style>

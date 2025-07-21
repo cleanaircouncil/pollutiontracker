@@ -10,7 +10,7 @@ import FacilityDetail from "./facility-detail.astro";
 import data from "../data/data.json";
 ---
 
-<main id="app" data-is="app">
+<main id="app" class="app" data-app>
   <Header />
   <Nav />
 
@@ -35,7 +35,7 @@ import data from "../data/data.json";
           </a>
         </div>
 
-        <FacilityDetail facility={data.facilities.at(1)} />
+        <FacilityDetail facility={data.facilities.at(1)}/>
       </div>
     </div>
   </aside>
@@ -44,8 +44,8 @@ import data from "../data/data.json";
   <Viewer />
 </main>
 
-<style>
-  #app {
+<style is:global>
+  .app {
     position: absolute;
     inset: 0px;
     padding: 0px;
@@ -58,7 +58,7 @@ import data from "../data/data.json";
   }
 
   @media screen and (max-width: 900px) {
-    #app {
+    .app {
       grid-template-rows: min-content 1fr min-content;
       grid-template-areas:
         "search"
@@ -68,7 +68,7 @@ import data from "../data/data.json";
   }
 
   @media screen and (min-width: 900px) {
-    #app {
+    .app {
       grid-template-columns: min(40vw, 450px) 1fr;
       grid-template-areas:
         "search nav"

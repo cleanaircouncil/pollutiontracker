@@ -1,0 +1,15 @@
+:is(.gap, .gap-tight, .gap-loose, .gap-none) {
+  gap: var(--gap);
+}
+
+.gap-tight {
+  --gap: .5rem;
+}
+
+.gap-loose {
+  --gap: 2rem;
+}
+
+.gap-none {
+  --gap: 0rem;
+}

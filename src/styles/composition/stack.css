@@ -1,0 +1,15 @@
+:where(.stack, .stack-tight, .stack-loose) > :not(h1, h2, h3, h4) + * {
+  margin-block-start: var(--stack-margin, 1rem);
+}
+
+.stack-tight {
+  --stack-margin: .5rem;
+}
+
+.stack-loose {
+  --stack-margin: 2rem;
+}
+
+.stack-push {
+  margin-block-start: calc( 2 * var(--stack-margin) );
+}

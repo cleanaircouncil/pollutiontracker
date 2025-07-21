@@ -4,10 +4,10 @@ const { permit = {}, style = "card" } = Astro.props;
 ---
 
 <figure
-  class:list={["permit", permitInfo.classes(permit)]}
+  class="permit"
   data-permit
-  data-type={permit.type.toLowerCase()}
-  data-status={permit.status}
+  data-type={permitInfo.short(permit).toLowerCase()}
+  data-status={permit.status.toLowerCase()}
   data-style={style}
 >
   <header>
@@ -87,7 +87,7 @@ const { permit = {}, style = "card" } = Astro.props;
     color: var(--color-gray-dark);
   }
 
-  .permit[data-type="violation"] {
+  .permit[data-status="violation"] {
     background: var(--color-danger);
     color: var(--color-white);
   }
