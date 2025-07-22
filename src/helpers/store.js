@@ -3,6 +3,7 @@ import theData from "../data/data.json";
 
 
 export const currentFacilitySlug = atom("");
+export const search = atom("");
 export const attachment = map(null)
 
 export const data = theData;

@@ -1,5 +1,6 @@
 ---
 import Eyebrow from "./eyebrow.astro";
+import FacilityCompliance from "./facility-compliance.astro";
 import Permit from "./permit.astro";
 
 const { facility = {} } = Astro.props;
@@ -32,55 +33,7 @@ const { facility = {} } = Astro.props;
       </div>
     </header>
 
-    <section class="facility-card__permits stack">
-      <h3>Current Permits and Compliance</h3>
-
-      {
-        facility.echo_compliance && (
-          <div class="grid columns-three gap-tight">
-            {facility.echo_compliance.map((permit) => (
-              <Permit permit={permit} style="card" />
-            ))}
-          </div>
-        )
-      }
-
-      {
-        (facility.totalPenalties || facility.dep_violations) && (
-          <ul class="fa-ul" style="--fa-li-margin: 1.75em">
-            {facility.totalPenalties && (
-              <li>
-                <span class="fa-li">
-                  <i class="fa fa-landmark-flag" />
-                </span>
-                <strong>{facility.totalPenalties}</strong> in federal penalties
-                in the last 5 years
-              </li>
-            )}
-            {facility.dep_violations && (
-              <li>
-                <span class="fa-li">
-                  <i class="fa fa-ban" />
-                </span>
-                <strong>{facility.dep_violations?.violation_count}</strong>{" "}
-                violations since
-                <strong>{facility.dep_violations?.since}</strong>
-              </li>
-            )}
-          </ul>
-        )
-      }
-
-      <div class="text text-detail">
-        Sources:
-        <a target="_blank" href={facility.epa_link}>
-          ECHO <i class="fa-solid fa-arrow-up-right-from-square"></i>
-        </a> and
-        <a target="_blank" href={facility.dep_link}>
-          DEP <i class="fa-solid fa-arrow-up-right-from-square"></i>
-        </a>
-      </div>
-    </section>
+    <FacilityCompliance facility={ facility }/>
 
     {
       facility.clean_air_notes && (
@@ -99,15 +52,6 @@ const { facility = {} } = Astro.props;
         </section>
       )
     }
-
-    <a
-      href="google.pdf"
-      data-viewer-link
-      data-url={"google.pdf"}
-      data-filename={"Fake PDF Name"}
-    >
-      TEST
-    </a>
 
     {
       facility.attachments && (

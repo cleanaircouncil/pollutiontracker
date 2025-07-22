@@ -1,0 +1,83 @@
+---
+import Permit from "./permit.astro";
+
+const { facility = {} } = Astro.props;
+const hasComplianceData =
+  facility.echo_compliance ||
+  facility.totalPenalties ||
+  facility.dep_violations;
+
+const sources = [
+  {
+    link: "ECHO",
+    href: facility.epa_link,
+  },
+
+  {
+    link: "DEP",
+    href: facility.dep_link,
+  },
+].filter((sources) => sources.href);
+---
+
+{
+  hasComplianceData && (
+    <section class="facility-card__permits stack">
+      <h3>Current Permits and Compliance</h3>
+
+      {facility.echo_compliance && (
+        <div class="grid columns-three gap-tight">
+          {facility.echo_compliance.map((permit) => (
+            <Permit permit={permit} style="card" />
+          ))}
+        </div>
+      )}
+
+      {(facility.totalPenalties || facility.dep_violations) && (
+        <ul class="fa-ul" style="--fa-li-margin: 1.75em">
+          {facility.totalPenalties && (
+            <li>
+              <span class="fa-li">
+                <i class="fa fa-landmark-flag" />
+              </span>
+              <strong>{facility.totalPenalties}</strong> in federal penalties in
+              the last 5 years
+            </li>
+          )}
+          {facility.dep_violations && (
+            <li>
+              <span class="fa-li">
+                <i class="fa fa-ban" />
+              </span>
+              <strong>{facility.dep_violations?.violation_count}</strong>{" "}
+              violations since
+              <strong>{facility.dep_violations?.since}</strong>
+            </li>
+          )}
+        </ul>
+      )}
+
+      {sources.length && (
+        <div class="text text-detail">
+          Sources:
+          {sources
+            .map(({ link, href }) => (
+              <a target="_blank" href={href}>
+                {link}&nbsp;
+                <i class="fa-solid fa-arrow-up-right-from-square" />
+              </a>
+            ))
+            .reduce((stems, current, index, array) => {
+              const shouldInsert = array.length > 1 && index == 1;
+              
+              if( shouldInsert )
+                stems.push(" and ");
+
+              stems.push(current);
+              return stems;
+            }, [])}
+        </div>
+      )}
+    </section>
+  )
+}

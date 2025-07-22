@@ -1,15 +1,13 @@
 <section id="viewer" class="viewer | lightbox" data-viewer hidden>
   <header class="flex space-between">
-    <div>
-      <strong data-populate="filename"></strong>
-    </div>
+    <h2 class="viewer__title truncate-text" data-populate="filename"></h2>
 
     <div class="flex gap">
-      <a data-populate="url: @href, filename: @download">
+      <a class="viewer__button" data-populate="url: @href, filename: @download">
         <i class="fa fa-download"></i> Download PDF
       </a>
 
-      <button data-close-button>
+      <button class="viewer__button viewer__button--close" data-close-button>
         <i class="fa fa-close"></i>
       </button>
     </div>
@@ -33,6 +31,12 @@
     background: rgba(0, 0, 0, 0.8);
   }
 
+  .truncate-text {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
   .viewer[hidden] {
     display: none;
   }
@@ -48,16 +52,6 @@
       "viewer";
   }
 
-  .viewer a,
-  .viewer button {
-    color: inherit;
-    background: none;
-    border: none;
-    text-decoration: none;
-    line-height: 1.5rem;
-    cursor: pointer;
-  }
-
   .viewer iframe {
     grid-area: viewer;
     border: none;
@@ -65,6 +59,12 @@
     height: 100%;
     border-radius: 1rem;
     position: relative;
+  }
+
+  .viewer__title {
+    max-width: 50vw;
+    font-size: 1rem;
+    font-weight: 500;
   }
 
   .viewer__loading {
@@ -76,6 +76,30 @@
     font-size: 3rem;
     position: relative;
   }
+
+  .viewer__button {
+    color: inherit;
+    background: none;
+    border: none;
+    text-decoration: none;
+    line-height: 1.5rem;
+    cursor: pointer;
+    border-radius: 1.5rem;
+    padding: 0.5rem;
+    transition: background-color .2s ease-in-out;
+  }
+
+  .viewer__button:hover {
+    background-color: var(--color-accent);
+  }
+
+  .viewer__button--close {
+    padding: .5rem 1rem;
+  } 
+
+  .viewer__button--close:hover {
+    background-color: var(--color-danger);
+  }
 </style>
 
 <script>
@@ -85,7 +109,7 @@
   const viewerEl = document.querySelector("[data-viewer]");
 
   const buttonEl = viewerEl.querySelector("[data-close-button]");
-  const iframeEl = viewerEl.querySelector("[data-iframe]")
+  const iframeEl = viewerEl.querySelector("[data-iframe]");
 
   attachment.subscribe((value) => {
     if (value != null) {

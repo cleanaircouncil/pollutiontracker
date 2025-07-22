@@ -67,7 +67,7 @@ const { facility = {} } = Astro.props;
     });
 
     highlights.forEach((highlight) => {
-      highlight.setAttribute("data-highlight", query.at(0) || "");
+      highlight.setAttribute("data-highlight", searchTerm || "");
     });
   }
 

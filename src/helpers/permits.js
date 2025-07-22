@@ -7,7 +7,7 @@ const permitData = {
   CWA: {
     short: "Water",
     long: "Clean Water Act",
-    icon: "fa-water",
+    icon: "fa-droplet",
   },
   RCRA: {
     short: "Waste",

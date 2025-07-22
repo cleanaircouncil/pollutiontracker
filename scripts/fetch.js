@@ -75,7 +75,6 @@ async function recordToFacility(record) {
   console.log( `🏭 ${facility.company_name.trim()}`);
 
   facility.slug = slugify(facility.company_name);
-
   
   if( facility.attachments ) {
     console.log(`  📎 Hydrating attachments from Airtable...`);
@@ -120,7 +119,8 @@ async function recordToFacility(record) {
     });
 
     const totalPenalties = facility.echo_compliance.reduce( (sum, permit) => sum + permit.penalties, 0 );
-    facility.totalPenalties = formatter.format( totalPenalties );
+    if (totalPenalties > 0 )
+      facility.totalPenalties = formatter.format( totalPenalties );
   }
 
     delete facility.attachments_old;

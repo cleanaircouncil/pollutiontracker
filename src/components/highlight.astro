@@ -15,16 +15,21 @@ const { text = "" } = Astro.props;
 <script>
   const observer = new MutationObserver((records) => {
     for (const record of records) {
-      const highlight = record.target.dataset.highlight;
-      const text = record.target.dataset.text;
+      if (!(record.target instanceof HTMLElement)) continue;
+      
+      const target = record.target;
+      const highlight = target.dataset.highlight;
+      const terms = highlight.split(/\s+/).filter((x) => x);
+      const text = target.dataset.text;
+
       const newHTML = highlight
         ? text.replace(
-            new RegExp(`(${highlight})`, "gi"),
+            new RegExp(`(${terms.join("|")})`, "gi"),
             `<span data-highlighted>$1</span>`
           )
         : text;
 
-      record.target.innerHTML = newHTML;
+      target.innerHTML = newHTML;
     }
   });
 

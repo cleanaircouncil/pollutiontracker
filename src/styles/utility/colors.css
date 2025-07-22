@@ -33,6 +33,10 @@
   color: var(--color-gray-dark);
 }
 
+.bg-white {
+  background-color: var(--color-white);
+}
+
 
 
 .swatch-yellow {
