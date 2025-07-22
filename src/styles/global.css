@@ -1,3 +1,5 @@
+@import url(./fonts/montserrat/montserrat.css);
+
 :root {
   --color-accent: rgb(43, 101, 180);
   --color-highlight: rgb(77, 142, 234);
@@ -85,3 +87,18 @@ a.button {
   background: var(--color-highlight);
   color: var(--color-white);
 }
+
+
+
+
+.form-controls {
+  display: flex;
+  gap: .5rem;
+  position: relative;
+  padding-inline: .5rem;
+}
+
+.form-controls>* {
+  box-shadow: var(--box-shadow);
+}
+

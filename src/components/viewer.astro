@@ -1,15 +1,11 @@
----
-const { attachment = {} } = Astro.props;
----
-
 <section id="viewer" class="viewer | lightbox" data-viewer hidden>
-  <header class="layout-spread">
+  <header class="flex space-between">
     <div>
-      <strong>{attachment.filename}</strong>
+      <strong data-populate="filename"></strong>
     </div>
 
-    <div class="layout-row gap">
-      <a href={attachment.url} download={attachment.filename}>
+    <div class="flex gap">
+      <a data-populate="url: @href, filename: @download">
         <i class="fa fa-download"></i> Download PDF
       </a>
 
@@ -19,7 +15,11 @@ const { attachment = {} } = Astro.props;
     </div>
   </header>
 
-  <iframe src={attachment.url}>Loading...</iframe>
+  <div class="viewer__loading">
+    <i class="fa fa-circle-notch fa-spin" style="--fa-animation-duration: .75s"
+    ></i>
+  </div>
+  <iframe data-populate="url: @src"></iframe>
 </section>
 
 <style>
@@ -59,18 +59,47 @@ const { attachment = {} } = Astro.props;
   }
 
   .viewer iframe {
+    grid-area: viewer;
     border: none;
     width: 100%;
     height: 100%;
     border-radius: 1rem;
+    position: relative;
+  }
+
+  .viewer__loading {
+    grid-area: viewer;
+    background: rgba(0, 0, 0, 0.3);
+    place-content: center;
+    text-align: center;
+    border-radius: 1rem;
+    font-size: 3rem;
+    position: relative;
   }
 </style>
 
 <script>
-  import { dispatch } from "../helpers/events";
+  import { populateWithData } from "../helpers/populate";
+  import { attachment } from "../helpers/store";
 
+  const viewerEl = document.querySelector("[data-viewer]");
   const buttonEl = document.querySelector("[data-viewer] [data-close]");
-  buttonEl.addEventListener("click", () =>
-    dispatch("lightbox", { attachment: null })
-  );
+
+  attachment.subscribe((value) => {
+    if (value != null) {
+      populateWithData(viewerEl, value);
+    }
+
+    viewerEl.toggleAttribute("hidden", value == null);
+  });
+
+  buttonEl.addEventListener("click", () => attachment.set(null));
+
+  document.addEventListener("click", (e) => {
+    const viewerLinkEl = e.target.closest("[data-viewer-link]");
+    if (!viewerLinkEl) return;
+
+    e.preventDefault();
+    attachment.set(viewerLinkEl.dataset);
+  });
 </script>

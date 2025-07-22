@@ -10,7 +10,6 @@
       "clean_air_notes": "<p>Comments\n<a href=\"https://cleanaircouncil.salsalabs.org/bartramsgarden\">https://cleanaircouncil.salsalabs.org/bartramsgarden</a> \n<a href=\"https://cleanaircouncil.salsalabs.org/bartramsspill\">https://cleanaircouncil.salsalabs.org/bartramsspill</a> \n<a href=\"http://cleanaircouncil.salsalabs.org/bartramscleanup\">http://cleanaircouncil.salsalabs.org/bartramscleanup</a> </p>\n",
       "id": "recmDX5q1NqCE3Acw",
       "slug": "1646-s-51st-st.",
-      "attachments": [],
       "zip": "19143",
       "alert": false
     },
@@ -26,21 +25,24 @@
       "attachments": [
         {
           "heading": "Official Documents",
+          "facility": [
+            "recvmdfxyMfIy3NZO"
+          ],
           "attachments": [
             {
               "id": "attMzqP72qHcisOSJ",
-              "url": "https://v5.airtableusercontent.com/v3/u/43/43/1753120800000/HXoCuVHnJgHH57xVMZFGJQ/DVccu0qNaYVL1Qd5u3y3iN9BaFQU0pQCQKNJwt4GMvjUeAv3-DneiSGa5i9Hi9LCnvvlA3wmp6PnzIHxpENq_YsuZZBzk8Uh8eNxlApIcGJ_z2kZ95jM2xO0zsobJw7hc_aT5tJLE7kjkM8MgPEzLAmHR1Snmv3SezklYIaY70Q/qzefVsPp0QRbBP_icqrKF4iBrSYoDEPenP_4eIhHjCs",
+              "url": "https://v5.airtableusercontent.com/v3/u/43/43/1753171200000/b9oREr5E5zfnEAbjZdpGNA/PyE1Wu7NhGXFtYKUDutOVB-F3C16zmZAqFbDS2iJof8d-n_YTUOjmRMFPx81nBCeVETnaH1YQz_GG6HUnka5r8oA3VjMmr85g_tPll4YkoeBimc3q_T3E5KeNf7TdXydZrgTUqUubQPloSjI1iZu9BibCG6G8UCcfBHEIpFWJyc/v8f-aSbEXdXByJU5vx3Cagxm6HmSLxRSgXZOJRPWAus",
               "filename": "img07312023_00011.pdf",
               "size": 1168643,
               "type": "application/pdf",
               "thumbnails": {
                 "small": {
-                  "url": "https://v5.airtableusercontent.com/v3/u/43/43/1753120800000/mVW0KniksokjZw6yDzWvwg/J1Dmz583DmBAqRJiRSf2NZSY3YST96N-xPQCTxiWI3rkSeFWtsSYilO0CBlPkGInL9a8Sptt7nWU_Iz_lp1z0WqAnXeAIpkBrFWvnEDHUMcMzxYMDnQCNvXUm_c8zr4RI8hl726o7ZLXxtmyHpFV9w/lwiCa6RU8_zNmd0a1Q2WS9hfNnYqEApNkpJqIE0xeYY",
+                  "url": "https://v5.airtableusercontent.com/v3/u/43/43/1753171200000/yJjfOcytoJAUDbG-j7RK-w/zUtupNfBt6JBl6NYmgwxo50ShABrZG9iakit29QREO7lOFyjEFtObVpes9vz2SfElt2ze_mdD3vrbEPO9sqWJwMwfKRYxgw-iGjlyCcSKwpmM3PdC9rH2X88V-DK9iHWFPWhRXOFmtplwNyWzpdUNw/pzYBClwVvG2bu_OEjanXUJqFpuMqSU-JPoHvs64aZ60",
                   "width": 27,
                   "height": 36
                 },
                 "large": {
-                  "url": "https://v5.airtableusercontent.com/v3/u/43/43/1753120800000/JQtX0DYl9k5-CkfPlkkMYg/RBbEDU9Ve06j3yCArHPeFzar38PCDvyPeRQAEQVBYe3KtYSUEhpJfctCz-LYXw_QBhXI4uGrSAPR6NdACdtwJL7dNc4zsolW48FoCCdAhyaFGP2HFxwW2lzMzggs-Z7Bd3vPVH24-E__ayrwxwXGyg/RGqsqSbTbn0W8dWIu7htiC7EzeNRxFF64lVWD2qZX0c",
+                  "url": "https://v5.airtableusercontent.com/v3/u/43/43/1753171200000/MxgJ9JHeE7nZV_9-HI1ByQ/bFG5uiYKB1mvV60VrKdM4ZspJlWU224YI5uL8Sv6FODUIcuCrhuHI79NLIvBbWUwCaBbmgpkT4k4mG15EhUNo1eFXoi0Cf764V8DUxeCi0a0ZyGqvOiUXpzsERZ-p4Kkwwh8VMDS658G5Mjnc3FrOg/0k4OkoAq11vB3rY6VVCDTLlVNkHaPZheCyPAXbbIW5M",
                   "width": 512,
                   "height": 678
                 }
@@ -69,23 +71,23 @@
           "id": "attGip66aUxgBgYFZ",
           "width": 1308,
           "height": 811,
-          "url": "https://v5.airtableusercontent.com/v3/u/43/43/1753120800000/3kT6tgmMzuDq6_G98bDgtg/TX7j0gqa4sWWt59lExJnF2iTYjr--_1yAezzszbhVjziWl9hPwy6Ljo0z5zmMf2eMa-JY69NGyS50QzzzQy1aFV-RsY5BFaPAHh8CxuqaTYfM02Ggm_BzA_Lvd4zFUyfjfAi23qEUzfpXzvhcOf64wNzTQbbJkAXd_JiHqRwCttkt27cHQsN89ST4eJe_7mF/HTnSRvXuexigTlodZziRXF_PfYJiHUCA-FWdceGJdLk",
+          "url": "https://v5.airtableusercontent.com/v3/u/43/43/1753171200000/ntxPpyMusAsW9xwgnfUvog/Vv44jpBAtPk_nPHtej14xyIE_SNSVvK2hcURUgdhl3L3iBuUvFtKsfNaptypvljcMjiBDkXw-ST-SZTrs8gepSH7zX_fCG6X9PfT_BQCq9tX3YitRGPHhRpNOLqnx017i7PGHmZeiemN-DLlkSzvU7KotJwm0pB_hKfKP8ZDrKuihngcY3ulY-n-msllP0CD/tueegyEQZ0_kYhvJt2dlvA3OaTfnz4cdJrfTGPQr0To",
           "filename": "Screenshot 2025-07-07 at 16.59.58.png",
           "size": 1620929,
           "type": "image/png",
           "thumbnails": {
             "small": {
-              "url": "https://v5.airtableusercontent.com/v3/u/43/43/1753120800000/75PVuk1o4c-yQuWzPo7hqA/BEiYaLgF5l6mSiEEZvc07yba0rrhsLPoKAwJvUjeyhbqrgTm3iBwzJo8gAdxFOwzNIxsuiCfB2ibIDvT5Fx0mDUIjCK23gUhgTGOXtARjEDdDkzJrSrxAgoORmwv5BfG288QpoARZknni_0hrQ7OBw/cE5W7yw3AxxHbELK8w5MK7wVVKacJoxmtTJh1OOkJlw",
+              "url": "https://v5.airtableusercontent.com/v3/u/43/43/1753171200000/HOarqE3OKk9iU7nGAUXDsA/YuhVr079w-B8Q7dPzgB8YuQv9F57UTmMDdEaH5vV0SLkyDsCI7eUdIf1o_VYJ5M0XQE4wuD5Cs5KdAjz1103c8746Cd4yUA2P30Pz7uH8ZuEN8k-HQySs5U_Nsf05MHFRsD6ejsNJ3hNTHr3RSaQXw/oz0qXGb06d-cfV-6OlEPpzqNILxG44LGOm_SJ7ec1fo",
               "width": 58,
               "height": 36
             },
             "large": {
-              "url": "https://v5.airtableusercontent.com/v3/u/43/43/1753120800000/H5ttAPoNnwC07i6MvhPZ9w/IsL7VLHxG77vPjhJMfEztngtqNJijpmYfrJbllgUqb0T68dQ6KJWk-f8aSPzIZitWOUHa-dM0HihHTo59KUSCi0G-CIwzAiqrurzmyWeo9Co2_cv0LMexAiqQmG9SqOW9XtCl32Sd3H4M2YmbCjtzg/sv3H8Gy6zOahIrlrezCDzh7Ms-O--9WvpKxg9pz9uXg",
+              "url": "https://v5.airtableusercontent.com/v3/u/43/43/1753171200000/7qrBqRa8GpN3x9xkRTtx5A/_bxNx3-41ibZtNraOApoxEPpg5UgCyTKl3BXi-eP-t3MfgyiXMBd3jKmvLXHqUApSkAjQXYRfiPGESS4eXBEQarr0lj_bqkVMLJJTxkfUQCXwxl7xY756OuErF2cli4bp9LQ-jMNfUD8MKAhpbRtvQ/-WTJwNKqHPB4M0O13fV42afYgez4zs3MAuHD5LVHy-w",
               "width": 826,
               "height": 512
             },
             "full": {
-              "url": "https://v5.airtableusercontent.com/v3/u/43/43/1753120800000/_nSt90A7TR08oIxLQn10OQ/9hniiBBc6dVXeOcwuRCX1Awmm9VLwmdvD8aZ4ElE6OwcZpDEgoMMwdgJLRmHzX13Cl5eBxQ1COH8l73cQYzmccrCpYzho_2Sc7VMqsdVqVmZcDmdE_x14nNFljgGNc7zHSWY87GpZodTOJv5xWWQgA/SKefeHEKNWoPKkz5NgW-yVFMJtjSf2UIM3m-nqHACj8",
+              "url": "https://v5.airtableusercontent.com/v3/u/43/43/1753171200000/oUYeZ1vci1N0g6PMRz_27w/vZQhWFeHY3kyDXFJMzXMtjSs31JKX-ajE5316aCN7EgVyngpfAy1BK0RRCErZQDOetJ7UaKn-sRHMEampmWyEJjumWJLxloCOk4QJOna9AIeOEAY03SIQe1V7PiL6gnIY86r6uhYcvvTst7yRkyQKw/iAqUavcvyUUwdPt0R3_USUlM9AnJzgZBvixn_amxMRY",
               "width": 1308,
               "height": 811
             }
@@ -107,7 +109,6 @@
           "status_text": "No Violation Identified"
         }
       ],
-      "attachments": [],
       "zip": "19061",
       "alert": false,
       "totalPenalties": "$0"
@@ -135,7 +136,6 @@
           "status_text": "No Violation Identified"
         }
       ],
-      "attachments": [],
       "zip": "19145",
       "alert": false,
       "totalPenalties": "$0"
@@ -150,7 +150,6 @@
       "clean_air_notes": "<p>Comments\nChapter 105 <a href=\"https://cleanaircouncil.salsalabs.org/swphilly\">https://cleanaircouncil.salsalabs.org/swphilly</a> \nChapter 105 (2022) <a href=\"https://cleanaircouncil.salsalabs.org/warehouse/index.html\">https://cleanaircouncil.salsalabs.org/warehouse/index.html</a> \nChapter 102 (2023) <a href=\"https://cleanaircouncil.salsalabs.org/bppointbreezechapter102/index.html\">https://cleanaircouncil.salsalabs.org/bppointbreezechapter102/index.html</a> </p>\n",
       "id": "recVZs71KR4qGuI4P",
       "slug": "bp-point-breeze",
-      "attachments": [],
       "zip": "19153",
       "alert": false
     },
@@ -163,7 +162,6 @@
       "clean_air_notes": "<p>Comment\n<a href=\"https://cleanaircouncil.salsalabs.org/darbyredevelopment\">https://cleanaircouncil.salsalabs.org/darbyredevelopment</a></p>\n",
       "id": "rec6x4rnGczar9kxN",
       "slug": "brigaloon-inc.",
-      "attachments": [],
       "zip": "19079",
       "alert": false
     },
@@ -209,7 +207,6 @@
           "status_text": "No Violation Identified"
         }
       ],
-      "attachments": [],
       "zip": "19014",
       "alert": true,
       "totalPenalties": "$0"
@@ -225,7 +222,6 @@
       "epa_link": "https://www.epa.gov/hwcorrectiveactioncleanups/documents-reports-and-photographs-chemtrade-solutions-llc-formerly ",
       "id": "recAQy3dOMXuXhuIQ",
       "slug": "chemtrade-solutions-llc",
-      "attachments": [],
       "zip": "19703",
       "alert": false
     },
@@ -272,14 +268,9 @@
           "status_text": "No Violation Identified"
         }
       ],
-      "attachments": [],
       "zip": "19153",
       "alert": false,
-      "totalPenalties": "$1,000",
-      "violations": {
-        "count": 7,
-        "since": "2015-09-10"
-      }
+      "totalPenalties": "$1,000"
     },
     {
       "company_name": "Congoleum",
@@ -295,21 +286,24 @@
       "attachments": [
         {
           "heading": "Application Documents",
+          "facility": [
+            "recZoKwYeXSORFFIj"
+          ],
           "attachments": [
             {
               "id": "attbkqxAjYaO47mJ5",
-              "url": "https://v5.airtableusercontent.com/v3/u/43/43/1753120800000/UQuCSk8DMK-4l2OsH56uug/iR_n2J7eLml1syeHFjZu5nseELmrtcFvmrP3C0el1xioGYM0SONwuCBeQRn7hl9aq4jx2PGO4-wJZg6pNMeXxMGNifY_t3NJ-MtNmqsq8XEi2md2XExvRJ-AVz-jdW0V2jVnUrrHKNpKQHNTSQaUxPdMO9P3RvPE1Ggjt29xLjmEQIPzoJAySCx_tfZ9o55MrkQDkdjs4yGKoI4R0cPtqdNDMNwb-OaoMyz-XmdV6CoxGz1sSBP8GyoMmA640R3BTLwGtgjRMkvXSeTF0K4sJNhIFkhBz9vlifhUdjc4OR8/UNZhOE6RNDma-cLy7hFkvdv1Zj0AvX7OTiqb9b5g_aU",
+              "url": "https://v5.airtableusercontent.com/v3/u/43/43/1753171200000/QILJHWAbTpSIYadbYzqpgg/ziMnLxo9kHWPbwb07P2mSgktTnBDcfth9dJQv_WzWzr5dPLiKAsrojAvyDSZ0GHkJuMom7VL8cnaddZNv0CKfmVYgd43e74cxu7xQaQ8gM-Bv37R_GmO0o04skag2akNy4pdRc-pxh6oZr3VXz2cFQqY1dcJSlFE3oq4vztQfNblnv4Rtpozfp8omL1P9v8NedyFDeL8Xx11YEM5M6uoo-BZ9nFta35J7kUiU_lHB0jBGkPYMQCsuV4WnalFLYpGymbOGpO-YBxS02I3NhVKEEbWz6AYeuchG_q0MzZjIq8/QWLm1g6zJlgEJJ_FEigNPi_cR_Z_NiJNpBV16wkusR4",
               "filename": "DEP - ERMS (Clean Water CW) -  DT  PERMITS-REGISTRATION-APPROVALS FB  PAG-03 GENERAL PERMIT (NSA3) Year  2024 Permit-Project   PAG030310....pdf",
               "size": 230022,
               "type": "application/pdf",
               "thumbnails": {
                 "small": {
-                  "url": "https://v5.airtableusercontent.com/v3/u/43/43/1753120800000/Fkg_POZxdXG_1N2O7IDD6g/3BJta-sUv3DUVyeWb0x-gLxKOwqGNJMcnwVmAwS72OzKcxWKcuvF75ewIITva6yKdkiJOrqTVRthiT5an2xRAQG1cgPnYzvxPSlh1wK4SUrxHFOqKRN3DWMvS8VZp9EbK2sVDQ9A_5zEaik65NlU4g/sbiAa2eyZhWpNMd3ruXqkg7zwXyHjRl0NvhyvDa7JK4",
+                  "url": "https://v5.airtableusercontent.com/v3/u/43/43/1753171200000/Rj1T7Wfa3YmHJjPAB8D-Yg/bx_97xYt-dHjjWy2-WHCPv5dSW176K6WACkcODlaYQB5C4-9HVPxAxfLfpAKsTzdtCPM4Im08YPIs3xunagUMbQ5KmNKqhQNnYiS_fIaFo8_wLLdHXidMp7y8jRCnAxdNzm3bCuV-fnWgN-04MSTnQ/CyazYiyYLbHgbxOXLORQBtPh_BGTkB2ZBCiGLDHZF3c",
                   "width": 23,
                   "height": 36
                 },
                 "large": {
-                  "url": "https://v5.airtableusercontent.com/v3/u/43/43/1753120800000/6JZ_BR28kA9fxmMtXZXhuQ/3Y7G05XVbK_6I5E9QUtX5DidVBjKaZho7xe4zQx6IJ1cpRCuyXu7O_vaJrpBvf1CWnr9wsA574Cdj30FM9Wu5Ozja8C4zgQAUi7w17ldpqgr-0HKA4nZdmVnciPUNJnEtHEutFEBKFPZTl5FTWGsZg/ynZyFNSozpCyoGbkRme4FupeffNZlz-PjxAj5c-agXs",
+                  "url": "https://v5.airtableusercontent.com/v3/u/43/43/1753171200000/vradhzRI-uXaN6nkP1o_-w/9bh06r4OXhjzs3E5L1wpknmcCIm5jMt3H1i_JDh1NGUk9Ws3ke_vrb4N61b7Od_gosXWiPThhwUK7aQxr5OHC2KR_FwHrhx68aRciAMnbVKfYnyIwziJQCnocODrslXOBa4-_r7L-NXfhJzD1_3RdQ/EGTOCdjjh7ChST6CxxJF14u2dr7sIva1fRD3DC28hn0",
                   "width": 512,
                   "height": 791
                 }
@@ -317,18 +311,18 @@
             },
             {
               "id": "attMFJmVmcsWgmiAx",
-              "url": "https://v5.airtableusercontent.com/v3/u/43/43/1753120800000/W_5ur7rEOk0wXCOVfCUYaQ/K1bTqQ8pfFQhoQqUNBhwNJH9CEc_tYpBVoe2HlMK1bqqgoW_juHFGILHAPhvAQNPAQsfLBsxMl_6DmrICHBXLy_8Uy8Cb0mkEH6-Sxd6hpGQ51Ax6IuCigACsiGnKBKp58E1FgVJ3XkWS9yAnCtCAbogm1HSYhvPy9A0ITtaNXUyqC1watpy6qudvvcNNKS0wqNZ8sQooa12C4-A1ECYBfRFAVE05hOsCVLFFsfYOcSB7dgD036IdkkjPHQ1L1xIWOz6mH79O2BaI5c5ZKmYxqJHFvyZdro112p2nJDmivo/JRMp5iJYSz1oF1AKqpD9KE001tAbc117jtSCROQi8Qw",
+              "url": "https://v5.airtableusercontent.com/v3/u/43/43/1753171200000/QkYvU9OpAwpBAw0IJrf7KA/MLaBn3xn6UOLAZoXt2vDm8Jjvl_yuuQcBLCjaOLPYO3nF9iGTlP5GwDngzK7Is0r9nwTTiMFooc1xzJzDHJUxQ1wLDFFwCMvy9CiehAffgjHAt1f2VDLNHEvh_WZeqqJd_j2nDkx9WIS0M5dxtDcwW6BGPPTwdu8BtuU9JiJ5CucKEiZP96U-omZoZD0ZVESGsIFkaXafxaUjCFrjELqQlO9aEqSeTVKLfAwwMuYbdjFqMn6eNL8JezT40Z1EL7ALEI93tPC_yqq3NlPIahvkBEy3s8kJ92BSPzwCLimIu8/VZbx49qI0w6hdU6NnWa7oKs22_FwLpIk_KrizDha7Jk",
               "filename": "DEP - ERMS (Clean Water CW) -  DT  PERMITS-REGISTRATION-APPROVALS FB  PAG-03 GENERAL PERMIT (NSA3) Year  2024 Permit-Project   PAG030310(9).pdf",
               "size": 105393,
               "type": "application/pdf",
               "thumbnails": {
                 "small": {
-                  "url": "https://v5.airtableusercontent.com/v3/u/43/43/1753120800000/6CjNExgG9779_7bIMaBP3A/bhAuX_8fdcyQ5xRlDLKL08CFngaWF09JXB72mlwEWAD0q9UbdLLte1shavvGk9aPDZXlkRH92fdpNmC0RtWm200afY4wfeLy2dyV9lFr34FbYO8qafMlREB5ZIYBGicEEq71umgU7rGc2cb9-vy-9Q/r-YaiCNUo22nvb1tEEr_UwJbahctScML1sl41Vle5f4",
+                  "url": "https://v5.airtableusercontent.com/v3/u/43/43/1753171200000/Py4QLt0iz6AqPfPIEdU_kQ/FEVurZDmShQt88Oju4yQF0UAxd-XiDN85j5zfuna60yyeMHusuqbrhw_UzoNofRbHVlc4AbwYNGwMjQT0F8kKJoAmlucCfB8oUhquvl4m9gwLEInCPC8pd7B7-LbRuSUrm9a5gVciWujEVI1nj4TmA/uLlkD59SCZVEzsNmWFJfGGAC48_oAXxxHLWitXk78Q0",
                   "width": 28,
                   "height": 36
                 },
                 "large": {
-                  "url": "https://v5.airtableusercontent.com/v3/u/43/43/1753120800000/7jX0Q2IbviKW2kr0hFMfUw/iH2DEJS8uqJRmTAl7DWmhY25CnbLX9cA-6Z-p7AY0By3duIaLL6Plok6CD9F0vneYum1X3HEhBulxuXkyMpvETrVQMFFmbdElo3jgl6Y1d-w26zV48hol_winIV9N3rHGzkf6j8gikyvqS-OgIsZhw/rHWdhIEBweDqSVcPiutpKK0C4AldDeGm-vcXk8_9OdA",
+                  "url": "https://v5.airtableusercontent.com/v3/u/43/43/1753171200000/sgdII4sg3aXHnHbxo5Y6nQ/aHiYhUGNdG5hBWhKQUBE83WZmAMmqY8w3yvYK62027CILK6Zch9WE6QCdoNAQad7Fx6lR2XwSPU7tyiQRrYwbrngsgPXv09TTzsA-QExDCqxFDDkml-maMle5K3SkZmV8cfVtgBblaA1l-e_Y2CQuw/gZjNzspixdy5OsvZYyv6P1rnhD9CtMKIky3QB8XWi5c",
                   "width": 512,
                   "height": 663
                 }
@@ -372,11 +366,7 @@
       ],
       "zip": "19061",
       "alert": false,
-      "totalPenalties": "$0",
-      "violations": {
-        "count": 17,
-        "since": "2015-02-20"
-      }
+      "totalPenalties": "$0"
     },
     {
       "company_name": "Darby Creek Tank Farm",
@@ -420,7 +410,6 @@
           "status_text": "No Violation Identified"
         }
       ],
-      "attachments": [],
       "zip": "19023",
       "alert": false,
       "totalPenalties": "$0"
@@ -467,7 +456,6 @@
           "status_text": "No Violation Identified"
         }
       ],
-      "attachments": [],
       "zip": "19013",
       "alert": true,
       "totalPenalties": "$62,075"
@@ -483,7 +471,6 @@
       "epa_link": "https://cumulis.epa.gov/supercpad/cursites/csitinfo.cfm?id=0304250",
       "id": "recWWbEFuJfmhcVCn",
       "slug": "east-10th-st.-site",
-      "attachments": [],
       "zip": "19061",
       "alert": false
     },
@@ -498,7 +485,6 @@
       "epa_link": "https://www.epa.gov/ods-phaseout/methyl-bromide",
       "id": "recAjqXCKwNM4n8Bq",
       "slug": "ecolab-inc.",
-      "attachments": [],
       "zip": "19148",
       "alert": false
     },
@@ -525,7 +511,6 @@
           "status_text": "Unknown"
         }
       ],
-      "attachments": [],
       "zip": "19153",
       "alert": false,
       "totalPenalties": "$0"
@@ -581,7 +566,6 @@
           "status_text": "In Compliance"
         }
       ],
-      "attachments": [],
       "zip": "19022",
       "alert": true,
       "totalPenalties": "$8,028"
@@ -596,7 +580,6 @@
       "clean_air_notes": "<p>Comment\n<a href=\"https://cleanaircouncil.salsalabs.org/70thandElmwoodSouthwestPhilly\">https://cleanaircouncil.salsalabs.org/70thandElmwoodSouthwestPhilly</a></p>\n",
       "id": "recZE643Y0GIjp1au",
       "slug": "elmwood-park-plaza",
-      "attachments": [],
       "zip": "19142",
       "alert": false
     },
@@ -659,7 +642,6 @@
           "status_text": "In Compliance"
         }
       ],
-      "attachments": [],
       "zip": "19013",
       "alert": false,
       "totalPenalties": "$101,409"
@@ -688,7 +670,6 @@
           "status_text": "No Violation Identified"
         }
       ],
-      "attachments": [],
       "zip": "19145",
       "alert": false,
       "totalPenalties": "$0"
@@ -735,7 +716,6 @@
           "status_text": "No Violation Identified"
         }
       ],
-      "attachments": [],
       "zip": "19013",
       "alert": true,
       "totalPenalties": "$1,875"
@@ -750,7 +730,6 @@
       "clean_air_notes": "<p>Comments\nNPDES <a href=\"https://cleanaircouncil.salsalabs.org/300trees\">https://cleanaircouncil.salsalabs.org/300trees</a>\nArmy Corp <a href=\"https://cleanaircouncil.salsalabs.org/fdrparkarmycorp\">https://cleanaircouncil.salsalabs.org/fdrparkarmycorp</a>\nPattison Fields <a href=\"https://cleanaircouncil.salsalabs.org/fdr\">https://cleanaircouncil.salsalabs.org/fdr</a> </p>\n",
       "id": "recloHYyql5CxcsJq",
       "slug": "fdr-park-redevelopment",
-      "attachments": [],
       "zip": "19145",
       "alert": false
     },
@@ -796,7 +775,6 @@
           "status_text": "No Violation Identified"
         }
       ],
-      "attachments": [],
       "zip": "19153",
       "alert": false,
       "totalPenalties": "$0"
@@ -811,7 +789,6 @@
       "clean_air_notes": "<p>Comment <a href=\"https://cleanaircouncil.salsalabs.org/honeywell\">https://cleanaircouncil.salsalabs.org/honeywell</a> </p>\n",
       "id": "rece90tP4ufelWKaS",
       "slug": "honeywell",
-      "attachments": [],
       "zip": "19601",
       "alert": false
     },
@@ -866,7 +843,6 @@
           "status_text": "No Violation Identified"
         }
       ],
-      "attachments": [],
       "zip": "19013",
       "alert": false,
       "totalPenalties": "$13,200"
@@ -880,7 +856,6 @@
       "description": "Human crematory",
       "id": "reczurqG8YAfLuQkO",
       "slug": "lewis-m-hunt-irving-funeral-home",
-      "attachments": [],
       "zip": "19013",
       "alert": false
     },
@@ -927,14 +902,9 @@
           "status_text": "No Violation Identified"
         }
       ],
-      "attachments": [],
       "zip": "19061",
       "alert": false,
-      "totalPenalties": "$764,496",
-      "violations": {
-        "count": 134,
-        "since": "2015-02-09"
-      }
+      "totalPenalties": "$764,496"
     },
     {
       "company_name": "Monroe Refinery",
@@ -987,7 +957,6 @@
           "status_text": "No Violation Identified"
         }
       ],
-      "attachments": [],
       "zip": "19061",
       "alert": true,
       "totalPenalties": "$98,761"
@@ -1034,14 +1003,9 @@
           "status_text": "No Violation Identified"
         }
       ],
-      "attachments": [],
       "zip": "19153",
       "alert": false,
-      "totalPenalties": "$250,000",
-      "violations": {
-        "count": 48,
-        "since": "2015-03-12"
-      }
+      "totalPenalties": "$250,000"
     },
     {
       "company_name": "Philadelphia Gas Works (PGW) Passyunk Plant\n",
@@ -1085,7 +1049,6 @@
           "status_text": "No Violation Identified"
         }
       ],
-      "attachments": [],
       "zip": "19145",
       "alert": false,
       "totalPenalties": "$1,260"
@@ -1148,7 +1111,6 @@
           "status_text": "No Violation Identified"
         }
       ],
-      "attachments": [],
       "zip": "19134",
       "alert": false,
       "totalPenalties": "$220"
@@ -1177,7 +1139,6 @@
           "status_text": "No Violation Identified"
         }
       ],
-      "attachments": [],
       "zip": "19153",
       "alert": false,
       "totalPenalties": "$910"
@@ -1240,7 +1201,6 @@
           "status_text": "In Compliance"
         }
       ],
-      "attachments": [],
       "zip": "19013",
       "alert": false,
       "totalPenalties": "$4,639"
@@ -1255,7 +1215,6 @@
       "clean_air_notes": "<p>Comment\n<a href=\"https://cleanaircouncil.salsalabs.org/levee\">https://cleanaircouncil.salsalabs.org/levee</a></p>\n",
       "id": "recyiI70yKLxAqn5O",
       "slug": "proposed-eastwick-levee",
-      "attachments": [],
       "zip": "19153",
       "alert": false
     },
@@ -1269,7 +1228,6 @@
       "clean_air_notes": "<p>Testing out the <strong>Rich Text Editing</strong>.</p>\n<p>A header</p>\n",
       "id": "rech20U3eScwJSZK9",
       "slug": "resting-rainbow",
-      "attachments": [],
       "zip": "19153",
       "alert": false
     },
@@ -1315,7 +1273,6 @@
           "status_text": "No Violation Identified"
         }
       ],
-      "attachments": [],
       "zip": "19013",
       "alert": true,
       "totalPenalties": "$165,865"
@@ -1362,7 +1319,6 @@
           "status_text": "No Violation Identified"
         }
       ],
-      "attachments": [],
       "zip": "19248",
       "alert": true,
       "totalPenalties": "$702,626"
@@ -1377,7 +1333,6 @@
       "clean_air_notes": "<p>Comments\n<a href=\"https://cleanaircouncil.salsalabs.org/ridgerdwarehouse\">https://cleanaircouncil.salsalabs.org/ridgerdwarehouse</a> </p>\n",
       "id": "recg5aiqfVhzs5PIu",
       "slug": "ridge-road-warehouse",
-      "attachments": [],
       "zip": "19061",
       "alert": false
     },
@@ -1413,7 +1368,6 @@
           "status_text": "Terminated Permit"
         }
       ],
-      "attachments": [],
       "zip": "19129",
       "alert": false,
       "totalPenalties": "$0"
@@ -1450,14 +1404,9 @@
           "status_text": "No Violation Identified"
         }
       ],
-      "attachments": [],
       "zip": "19148",
       "alert": false,
-      "totalPenalties": "$0",
-      "violations": {
-        "count": 1,
-        "since": "2018-10-11"
-      }
+      "totalPenalties": "$0"
     },
     {
       "company_name": "Vicinity Energy Schuylkill Gen Station",
@@ -1483,7 +1432,6 @@
           "status_text": "Violation w/in 1 Year"
         }
       ],
-      "attachments": [],
       "zip": "19146",
       "alert": true,
       "totalPenalties": "$66,749"
@@ -1498,7 +1446,6 @@
       "clean_air_notes": "<p>Comment\n<a href=\"https://cleanaircouncil.salsalabs.org/yankeepoint\">https://cleanaircouncil.salsalabs.org/yankeepoint</a></p>\n",
       "id": "recXX4OvmwW1fOMCK",
       "slug": "yankee-point",
-      "attachments": [],
       "zip": "19153",
       "alert": false
     }

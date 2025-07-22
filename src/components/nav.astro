@@ -1,17 +1,17 @@
-<nav id="nav">
-  <a class="nav-button active"><i class="fa fa-location-dot"></i> Explore Permits</a>
+<nav class="nav" data-nav>
+  <a class="nav-button" data-active>
+    <i class="fa fa-location-dot"></i> Explore Permits
+  </a>
   <a class="nav-button"><i class="fa fa-certificate"></i> About The Tracker</a>
   <a class="nav-button"><i class="fa fa-hand"></i> Get Involved</a>
 </nav>
 
-<style is:global>
-  #nav {
+<style>
+  .nav {
+    display: flex;
     background: var(--color-black);
     color: var(--color-white);
-
-    grid-area: nav;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    height: 100%;
     padding: 0.5rem;
   }
 
@@ -21,71 +21,62 @@
     transition:
       color 0.2s ease-in-out,
       background-color 0.2s ease-in-out;
+    z-index: 0;
   }
 
   .nav-button i {
+    font-size: 1.5rem;
+    transition: inherit;
+  }
+
+  .nav-button i::after {
+    content: "";
     display: block;
-    font-size: 1.5rem;
-    padding: 0.25rem;
-    margin: 0.25rem;
-    width: 8rem;
-    margin: 0.25rem auto;
+    position: absolute;
+    inset: 0px;
     border-radius: var(--radius);
-    transition:
-      color 0.2s ease-in-out,
-      background-color 0.2s ease-in-out;
+    transition: inherit;
+    z-index: -1;
   }
 
-  .nav-button.active i {
+  .nav-button[data-active] i::after {
     background: var(--color-accent);
   }
 
-  .nav-button:hover i {
+  .nav-button:hover i::after {
     background: var(--color-highlight);
-    color: var(--color-white);
   }
 
-@media screen and (min-width:900px) {
+  @media screen and (max-width: 900px) {
+    .nav {
+      justify-content: space-around;
+    }
 
-  #nav {
-    background: var(--color-black);
-    color: var(--color-white);
-    display: flex;
-    align-items: center;
-    gap: min(2vw, 3rem);
-    padding-left: 1rem;
+    .nav-button i {
+      position: relative;
+      display: block;
+      padding: 0.25rem;
+      margin: 0.25rem;
+      width: 8rem;
+      margin: 0.25rem auto;
+    }
   }
 
-  .nav-button {
-    padding: 0.25rem 1rem;
-    display: flex;
-    gap: 0.5rem;
-    line-height: 1.5rem;
-    white-space: nowrap;
-    border-radius: 2rem;
-  }
+  @media screen and (min-width: 900px) {
+    .nav {
+      align-items: center;
+      gap: min(2vw, 3rem);
+      padding-inline-start: 1rem;
+    }
 
-  .nav-button i {
-    display: inline-block;
-    font-size: 1.5rem;
-    padding: unset;
-    margin: unset;
-    width: auto;
+    .nav-button {
+      position: relative;
+      padding: 0.25rem 1rem;
+      display: flex;
+      gap: 0.5rem;
+      line-height: 1.5rem;
+      white-space: nowrap;
+      border-radius: 2rem;
+    }
   }
-
-  .nav-button:hover i {
-    background: unset;
-    color: unset;
-  }
-
-  .nav-button.active {
-    background: var(--color-accent);
-  }
-
-  .nav-button:hover,
-  .nav-button.active:hover {
-    background: var(--color-highlight);
-    color: var(--color-white);
-  }
-}
 </style>

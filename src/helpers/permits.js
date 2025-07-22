@@ -32,8 +32,8 @@ const permitData = {
 };
 
 export default {
-  short: permit => permitData[permit.statute].short,
-  long: permit => permitData[permit.statute].long,
-  icon: permit => permitData[permit.statute].icon,
-  classes: permit =>`permit--${ permitData[permit.statute].short.toLowerCase() } permit--${ permit.status }`
+  short: permit => permitData[permit.statute]?.short,
+  long: permit => permitData[permit.statute]?.long,
+  icon: permit => permitData[permit.statute]?.icon,
+  classes: permit =>`permit--${ permitData[permit.statute]?.short.toLowerCase() } permit--${ permit.status }`
 }

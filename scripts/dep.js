@@ -1,21 +1,5 @@
 import parse from "node-html-parser";
-import Airtable from "airtable";
-import fs from "fs";
-import "dotenv/config";
-
-//- cron: "0 0 * * MON";
-
-
-const base = new Airtable({
-  apiKey: process.env.AIRTABLE_TOKEN
-}).base(process.env.AIRTABLE_BASE_ID)
-
-const data = {
-  violations: [
-
-  ]
-}
-
+import airtableAPI, { jsonify } from "./airtable";
 
 export default async function fetchDEPDataForURL(dep_link) {
   try {
@@ -25,10 +9,10 @@ export default async function fetchDEPDataForURL(dep_link) {
     const table = html.getElementById("ContentPlaceHolder2_gvSiteInpections");
     const rows = [...table.querySelectorAll("tr")];
     const inspections = rows.map( (row) => ({
-      id: row.childNodes[1].innerText.trim(),
-      date: row.childNodes[2].innerText.trim().replace(/(\d\d)\/(\d\d)\/(\d\d\d\d)/, "$3-$1-$2"),
-      type: row.childNodes[3].innerText.trim(),
-      results: row.childNodes[4].innerText.trim()
+      Name: row.childNodes[1].innerText.trim(),
+      Date: row.childNodes[2].innerText.trim().replace(/(\d\d)\/(\d\d)\/(\d\d\d\d)/, "$3-$1-$2"),
+      Type: row.childNodes[3].innerText.trim(),
+      Results: row.childNodes[4].innerText.trim()
     }) )
 
     const violations = inspections.filter( inspection => inspection.results.indexOf("View") >= 0 );
@@ -40,40 +24,46 @@ export default async function fetchDEPDataForURL(dep_link) {
   }
 }
 
-async function recordToViolations(record) {
-  const kvp = Object.entries( record.fields )
-  kvp.forEach( pair => pair[0] = pair[0].toLowerCase().trim().replace(/\s+/g, "_") );
-  const fields = Object.fromEntries(kvp);
 
-  if( !fields.dep_link ) 
-    return undefined;
+async function updateTable(record) {
+  const facility = jsonify(record);
+  
+  console.log( `🏭 ${facility.company_name.trim()}`);
 
-  console.log( `🏭 ${fields.company_name.trim()}`);
-  console.log(`  🔗 Getting permit data from DEP...`);
+  if( !facility.dep_link ) 
+    return;
 
-  return {
-    id: record.id,
-    dep_link: fields.dep_link,
-    violations: await fetchDEPDataForURL(fields.dep_link)
-  }
+  console.log(`  🔗 Getting facility data from DEP...`);
+  const depData = await fetchDEPDataForURL(facility.epa_link);
+  if( !depData?.length )
+    return;
+
+  const records = depData.map( fields => ({fields: {Facility:[record.id], ...fields}}) );
+
+  
+
+  console.log(`  ⬆️  Pushing ${records.length} record(s) to airtable...`);
+
+  await airtableAPI.patch( Bases.ECHO, {
+    performUpsert: {
+      fieldsToMergeOn: [ "Name" ]
+    },
+
+    records
+  })
+
+  await new Promise((res) => setTimeout(res, (Math.random() * 4000 + 1000)));
 }
 
-base('Facilities')
-  .select()
-  .eachPage( async function page (records, fetchNextPage) {
-    for( const record of records ) {
-      const violations = await recordToViolations(record);
-      if( violations )
-        data.violations.push( violations );
+
+
+export async function runScrape() {
+  const result = await airtableAPI.get( Bases.FACILITIES );
+  for( const record of result.records ) {
+    try {
+      await updateTable(record);
+    } catch(e) {
+      console.log( e );
     }
-
-    fetchNextPage();
-  }, async function done(error) {
-    if(error) {
-      console.error(error);
-    }  
-
-    console.log( "💾 Writing dep-data.json...")
-    fs.writeFileSync("./site/data/dep-data.json", JSON.stringify( data, null, 2 ));
-    console.log("✅ Done!")
-  })
+  }
+}

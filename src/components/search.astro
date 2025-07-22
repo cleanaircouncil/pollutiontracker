@@ -6,6 +6,7 @@
     autocorrect="off"
     spellcheck="false"
     placeholder="Filter by name, permit status, or zip code"
+    
     data-search-input
   />
 </div>
@@ -16,8 +17,10 @@
 
   const inputEl = document.querySelector("[data-search] [data-search-input]");
 
-  inputEl.addEventListener("input", () => {
-    updateSearchParam("query", inputEl.value);
-    dispatch("search", { value: inputEl.value });
-  });
+  if( (inputEl instanceof HTMLInputElement ) ) {
+    inputEl.addEventListener("input", () => {
+      updateSearchParam("query", inputEl.value);
+      dispatch("search", { value: inputEl.value });
+    });
+  }
 </script>

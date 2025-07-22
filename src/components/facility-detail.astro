@@ -10,7 +10,8 @@ const { facility = {} } = Astro.props;
     facility.image && (
       <img
         class="facility-detail__hero"
-        data-populate="company_name: @alt, image.url: @src"
+        src={facility.image[0].url}
+        alt={facility.company_name}
       />
     )
   }
@@ -22,21 +23,21 @@ const { facility = {} } = Astro.props;
       <div>
         <h2>{facility.company_name}</h2>
         <p class="text-detail">
-          <strong data-populate="description">{facility.description}</strong>
+          <strong>{facility.description}</strong>
         </p>
         <p class="text-detail">
           <i class="fa fa-location-dot color-gray-dark"></i>
-          <span data-populate="address">{facility.address}</span>
+          <span>{facility.address}</span>
         </p>
       </div>
     </header>
 
-    <section class="facility-card__permits stack-tight">
+    <section class="facility-card__permits stack">
       <h3>Current Permits and Compliance</h3>
 
       {
-        facility.permits?.length > 0 && (
-          <div class="grid-three">
+        facility.permits && (
+          <div class="grid columns-three gap-tight">
             {facility.permits.map((permit) => (
               <Permit permit={permit} style="card" />
             ))}
@@ -44,25 +45,37 @@ const { facility = {} } = Astro.props;
         )
       }
 
-      <ul>
-        <li>
-          <i class="fa fa-landmark-flag"></i>
-          <strong data-populate="totalPenalties"></strong> in federal penalties in
-          the last 5 years
-        </li>
-        <li>
-          <i class="fa fa-ban"></i>
-          <strong data-populate="violations.count"></strong> violations since
-          <strong data-populate="violations.since"></strong>
-        </li>
-      </ul>
+      {
+        (facility.totalPenalties || facility.violations) && (
+          <ul class="fa-ul" style="--fa-li-margin: 1.75em">
+            {facility.totalPenalties && (
+              <li>
+                <span class="fa-li">
+                  <i class="fa fa-landmark-flag" />
+                </span>
+                <strong>{facility.totalPenalties}</strong> in federal penalties
+                in the last 5 years
+              </li>
+            )}
+            {facility.violations && (
+              <li>
+                <span class="fa-li">
+                  <i class="fa fa-ban" />
+                </span>
+                <strong>{facility.violations?.count}</strong> violations since
+                <strong>{facility.violations?.since}</strong>
+              </li>
+            )}
+          </ul>
+        )
+      }
 
       <div class="text text-detail">
         Sources:
-        <a target="_blank" href={facility.epa_link} data-populate="epa_link">
+        <a target="_blank" href={facility.epa_link}>
           ECHO <i class="fa-solid fa-arrow-up-right-from-square"></i>
         </a> and
-        <a target="_blank" href={facility.dep_link} data-populate="dep_link">
+        <a target="_blank" href={facility.dep_link}>
           DEP <i class="fa-solid fa-arrow-up-right-from-square"></i>
         </a>
       </div>
@@ -72,7 +85,7 @@ const { facility = {} } = Astro.props;
       facility.clean_air_notes && (
         <section class="facility-card__notes stack-tight">
           <h3>Clean Air Action Alerts</h3>
-          <div class="text" data-populate="clean_air_notes" />
+          <div class="text" set:html={facility.clean_air_notes} />
         </section>
       )
     }
@@ -81,34 +94,51 @@ const { facility = {} } = Astro.props;
       facility.notes && (
         <section class="facility-card__notes stack-tight">
           <h3>Facility Notes</h3>
-          <div class="text" data-populate="notes" />
+          <div class="text" set:html={facility.notes} />
         </section>
       )
     }
 
-    <section class="text">
-      {
-        facility.attachments?.map((group) => (
-          <div class="text">
-            <header>
-              <h3>{group.heading}</h3>
-            </header>
+    <a
+      href="google.pdf"
+      data-viewer-link
+      data-url={"google.pdf"}
+      data-filename={"Fake PDF Name"}
+    >
+      TEST
+    </a>
 
-            <div class="facility-card__attachments">
-              {group.attachments.map((attachment) => (
-                <a class="facility-card__attachment">
-                  <img src={attachment.thumbnails.large.url} />
-                </a>
-              ))}
+    {
+      facility.attachments && (
+        <section class="text">
+          {facility.attachments.map((group) => (
+            <div class="text">
+              <header>
+                <h3>{group.heading}</h3>
+              </header>
+
+              <div class="grid columns-three gap-tight">
+                {group.attachments.map((attachment, i) => (
+                  <a
+                    class="facility-card__attachment"
+                    href={attachment.url}
+                    data-viewer-link
+                    data-url={attachment.url}
+                    data-filename={attachment.filename}
+                  >
+                    <img src={attachment.thumbnails.large.url} />
+                  </a>
+                ))}
+              </div>
             </div>
-          </div>
-        ))
-      }
-    </section>
+          ))}
+        </section>
+      )
+    }
   </article>
 </div>
 
-<style>
+<style is:global>
   .facility-detail__holder {
     background: var(--color-white);
   }
@@ -122,5 +152,39 @@ const { facility = {} } = Astro.props;
 
   .facility-detail__hero {
     object-fit: cover;
+  }
+
+  .facility-detail__facts {
+    padding: 1.5rem;
+  }
+
+  .facility-detail__fact {
+    list-style: none;
+  }
+
+  .facility-card__attachment {
+    cursor: pointer;
+  }
+
+
+  .facility-card__attachment {
+    border-radius: 0.5rem;
+    border: 2px solid var(--color-gray-dark);
+    transition:
+      translate 0.2s ease-in-out,
+      border-color 0.2s ease-in-out !important;
+    overflow: hidden;
+    aspect-ratio: 1;
+  }
+
+  .facility-card__attachment:hover {
+    border-color: var(--color-accent);
+    translate: 0% -0.25rem;
+  }
+
+  @media screen and (min-width: 900px) {
+    .facility-detail__hero {
+      margin-block: -2rem 1rem;
+    }
   }
 </style>

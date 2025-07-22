@@ -1,0 +1,76 @@
+:root {
+  --color-accent: rgb(43, 101, 180);
+  --color-highlight: rgb(77, 142, 234);
+  --color-black: rgb(20, 29, 41);
+  
+  --color-white: rgb(252, 253, 255);
+
+  --color-yellow-light: #FFFDC4;
+  --color-yellow-dark: #8A8227;
+
+  --color-blue-light: #C6E8FD;
+  --color-blue-dark: #357A8A;
+
+  --color-purple-light: #E9BFFB;
+  --color-purple-dark: #6E1287;
+
+  --color-orange-light: #fbdcbf;
+  --color-orange-dark: #874312;
+
+  --color-green-light: #effbbf;
+  --color-green-dark: #6c8712;
+
+  --color-pink-light: #fbbfe4;
+  --color-pink-dark: #87124c;
+
+  --color-gray-light: #DEDEDE;
+  --color-gray-dark: #ACACAC;
+
+  --color-danger: #B31C09;
+}
+
+.color-gray-dark {
+  color: var(--color-gray-dark);
+}
+
+
+
+.swatch-yellow {
+  background: var(--color-yellow-light);
+  color: var(--color-yellow-dark);
+}
+
+.swatch-blue {
+  background: var(--color-blue-light);
+  color: var(--color-blue-dark);
+}
+
+.swatch-purple {
+  background: var(--color-purple-light);
+  color: var(--color-purple-dark);
+}
+
+.swatch-orange {
+  background: var(--color-orange-light);
+  color: var(--color-orange-dark);
+}
+
+.swatch-green {
+  background: var(--color-green-light);
+  color: var(--color-green-dark);
+}
+
+.swatch-pink {
+  background: var(--color-pink-light);
+  color: var(--color-pink-dark);
+}
+
+.swatch-gray {
+  background: var(--color-gray-light);
+  color: var(--color-gray-dark);
+}
+
+.swatch-danger {
+  background: var(--color-danger);
+  color: var(--color-white);
+}

@@ -1,50 +1,32 @@
 ---
-import FacilityCard from "./facility-card.astro";
 import Nav from "./nav.astro";
-import Search from "./search.astro";
 import Map from "./map.astro";
 import Viewer from "./viewer.astro";
 import Header from "./header.astro";
-import FacilityDetail from "./facility-detail.astro";
-
-import data from "../data/data.json";
+import FacilityList from "./facility-list.astro";
 ---
 
 <main id="app" class="app" data-app>
-  <Header />
-  <Nav />
+  <div class="in-header">
+    <Header />
+  </div>
 
-  <aside id="results-holder">
-    <div id="results">
-      <div id="list" class="layout-controls-content">
-        <Search hooks="app-search" />
+  <div class="in-nav">
+    <Nav />
+  </div>
 
-        <div id="facilities">
-          {
-            data.facilities.map((facility) => (
-              <FacilityCard facility={facility} />
-            ))
-          }
-        </div>
-      </div>
+  <div class="in-list overlap-top overflow-hidden">
+    <FacilityList />
+  </div>
 
-      <div id="detail" class="layout-controls-content">
-        <div class="form-controls">
-          <a class="button" href="#">
-            <i class="fa fa-chevron-left"></i> Back To Results
-          </a>
-        </div>
+  <div class="in-main">
+    <Map />
+  </div>
 
-        <FacilityDetail facility={data.facilities.at(1)}/>
-      </div>
-    </div>
-  </aside>
-
-  <Map />
   <Viewer />
 </main>
 
-<style is:global>
+<style>
   .app {
     position: absolute;
     inset: 0px;
@@ -61,8 +43,9 @@ import data from "../data/data.json";
     .app {
       grid-template-rows: min-content 1fr min-content;
       grid-template-areas:
-        "search"
+        "header"
         "main"
+        "list"
         "nav";
     }
   }
@@ -70,9 +53,44 @@ import data from "../data/data.json";
   @media screen and (min-width: 900px) {
     .app {
       grid-template-columns: min(40vw, 450px) 1fr;
+      grid-template-rows: min-content 1fr;
       grid-template-areas:
-        "search nav"
-        "results main";
+        "header nav"
+        "list main";
     }
   }
+
+  .in-list {
+    grid-area: list;
+  }
+
+  .in-main {
+    grid-area: main;
+  }
+
+  .in-header {
+    grid-area: header;
+  }
+
+  .in-nav {
+    grid-area: nav;
+  }
+
+  .overlap-top {
+    margin-top: -1.5rem;
+    height: calc(100% + 1.5rem);
+  }
 </style>
+
+<script>
+  import { listen } from "../helpers/events";
+  import { currentFacilitySlug } from "../helpers/store";
+
+  function setCurrentFacility() {
+    const slug = window.location.hash?.substring(1) || "";
+    currentFacilitySlug.set(slug);
+  }
+
+  listen("hashchange", setCurrentFacility);
+  setCurrentFacility();
+</script>

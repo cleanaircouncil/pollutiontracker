@@ -6,7 +6,6 @@
 
 <style is:global>
   .map {
-    grid-area: main;
     width: 100%;
     height: 100%;
     pointer-events: all;
@@ -118,7 +117,11 @@
 
 <script>
   const maplibregl = window["maplibregl"];
-  import data from "../data/data.json";
+  import {
+    currentFacilitySlug,
+    data,
+    getFacilityBySlug,
+  } from "../helpers/store";
   import { dispatch, listen } from "../helpers/events";
 
   async function initMap() {
@@ -159,7 +162,8 @@
       el.append(label);
 
       el.addEventListener("click", () => {
-        dispatch("facilityfocus", { facility });
+        // dispatch("selectfacility", { facility });
+        window.location.hash = `#${facility.slug}`;
       });
 
       // add marker to map
@@ -188,12 +192,13 @@
         marker.matches(`[data-facility-slug="${facility.slug}"]`)
       );
     });
-
-    window.location.hash = `#${facility.slug}`;
   }
 
   const map = await initMap();
   await initMarkers(map, data);
 
-  listen("facilityfocus", (e) => focusOnFacility(map, e.detail.facility));
+  currentFacilitySlug.subscribe((slug) => {
+    const facility = getFacilityBySlug(slug);
+    focusOnFacility(map, facility);
+  });
 </script>

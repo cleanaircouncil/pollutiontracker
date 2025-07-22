@@ -10,8 +10,8 @@
     "build": "astro build",
     "preview": "astro preview",
     "fetch": "node ./scripts/fetch.js",
-    "dep": "node ./scripts/dep.js",
-    "echo": "node ./scripts/echo.js"
+    "dep": "node ./scripts/run-dep.js",
+    "echo": "node ./scripts/run-echo.js"
   },
   "author": "",
   "license": "ISC",

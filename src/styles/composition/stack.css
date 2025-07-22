@@ -1,12 +1,16 @@
-:where(.stack, .stack-tight, .stack-loose) > :not(h1, h2, h3, h4) + * {
+:is(.stack, .stack-tight, .stack-loose) > * + * {
   margin-block-start: var(--stack-margin, 1rem);
 }
 
-.stack-tight {
+.stack > * + * {
+  --stack-margin: 1rem;
+}
+
+.stack-tight > * + * {
   --stack-margin: .5rem;
 }
 
-.stack-loose {
+.stack-loose > * + * {
   --stack-margin: 2rem;
 }
 

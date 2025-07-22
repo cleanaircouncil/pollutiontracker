@@ -37,7 +37,7 @@ const { facility = {} } = Astro.props;
 
   {
     facility.permits?.length > 0 && (
-      <footer class="grid-three">
+      <footer class="grid columns-three gap-tight">
         {facility.permits.map((permit) => (
           <Permit permit={permit} style="pill" />
         ))}
@@ -115,28 +115,4 @@ const { facility = {} } = Astro.props;
     text-align: right;
   }
 
-  .facility-card__attachment {
-    cursor: pointer;
-  }
-
-  .facility-card__attachments {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 0.5rem;
-  }
-
-  .facility-card__attachment {
-    border-radius: 0.5rem;
-    border: 2px solid var(--color-gray-dark);
-    transition:
-      translate 0.2s ease-in-out,
-      border-color 0.2s ease-in-out !important;
-    overflow: hidden;
-    aspect-ratio: 1;
-  }
-
-  .facility-card__attachment:hover {
-    border-color: var(--color-accent);
-    translate: 0% -0.25rem;
-  }
 </style>

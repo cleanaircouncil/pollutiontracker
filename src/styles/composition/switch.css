@@ -1,11 +1,10 @@
-:where(.switch, .switch-small, .switch-huge) {
-  --gap: 1rem;
+:is(.switch, .switch-small, .switch-huge) {
   --switch-threshold: 30rem;
 
   display: flex;
   flex-wrap: wrap;
   justify-content: stretch;
-  gap: var(--gap);
+  gap: var(--gap, 1rem);
 }
 
 :is(.switch, .switch-small, .switch-huge) > * {

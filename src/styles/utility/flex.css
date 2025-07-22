@@ -1,0 +1,9 @@
+.flex {
+  display: flex;
+  align-items: center;
+  gap: var(--gap, 0);
+}
+
+.space-between {
+  justify-content: space-between;
+}

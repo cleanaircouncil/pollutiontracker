@@ -85,7 +85,9 @@ async function updateEchoTable(record) {
   await new Promise((res) => setTimeout(res, (Math.random() * 4000 + 1000)));
 }
 
-(async() => {
+
+
+export async function runScrape() {
   const result = await airtableAPI.get( Bases.FACILITIES );
   for( const record of result.records ) {
     try {
@@ -94,4 +96,4 @@ async function updateEchoTable(record) {
       console.log( e );
     }
   }
-})()
+}

@@ -1,0 +1,18 @@
+name: Update DEP data
+
+on:
+  schedule:
+    - cron: "0 0 * * MON"
+    
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    env:
+      AIRTABLE_BASE_ID: ${{ secrets.AIRTABLE_BASE_ID }}
+      AIRTABLE_TOKEN: ${{ secrets.AIRTABLE_TOKEN }}
+
+    steps:
+      - name: Run DEP Scrape
+        run: |
+          npm install
+          npm run dep

@@ -3,7 +3,7 @@ import apify from "./apify.js";
 
 export function jsonify(record) {
   const kvp = Object.entries( record.fields )
-  kvp.forEach( pair => pair[0] = pair[0].toLowerCase().trim().replace(/\s+/g, "_") );
+  kvp.forEach( pair => pair[0] = pair[0].toLowerCase().trim().replace(/\s+/g, "_").replace(/[^a-z0-9-_]*/g, "") );
   const fields = Object.fromEntries(kvp);
   return fields;
 }

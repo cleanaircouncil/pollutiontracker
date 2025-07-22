@@ -6,8 +6,8 @@ const { permit = {}, style = "card" } = Astro.props;
 <figure
   class="permit"
   data-permit
-  data-type={permitInfo.short(permit).toLowerCase()}
-  data-status={permit.status.toLowerCase()}
+  data-type={permitInfo.short(permit)?.toLowerCase()}
+  data-status={permit.status?.toLowerCase()}
   data-style={style}
 >
   <header>
@@ -24,7 +24,7 @@ const { permit = {}, style = "card" } = Astro.props;
     style == "card" && (
       <footer>
         <strong>{permit.status_text}</strong>
-        <br/>
+        <br />
         {permit.last_inspection && (
           <em>
             as of <span>{permit.last_inspection}</span>
@@ -38,17 +38,15 @@ const { permit = {}, style = "card" } = Astro.props;
 <style>
   .permit {
     font-size: 0.75rem;
-    background: var(--color-blue-light);
-    color: var(--color-blue-dark);
-    padding: 0.5rem;
-    margin: 0px;
   }
 
   .permit[data-style="pill"] {
+    padding: 0.25rem 0.5rem;
     border-radius: 1.5rem;
   }
 
   .permit[data-style="card"] {
+    padding: 0.5rem;
     border-radius: 0.5rem;
   }
 
