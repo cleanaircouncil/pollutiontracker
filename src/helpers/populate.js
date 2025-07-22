@@ -1,5 +1,29 @@
+// Properly clone a <template> element and return it's first child node, if it exists.
+export const cloneTemplate = ( templateId, cloneId = "" ) => {
+  const templateEl = document.querySelector(`template#${templateId}`);
+  if (!templateEl || !(templateEl instanceof HTMLTemplateElement)) {
+    console.log(`Couldn't find <template id="templateId"/>.`)
+    return null;
+  }
+
+  const clonedNodes = templateEl.content.cloneNode(true).childNodes;
+  if (clonedNodes.length == 0) {
+    console.log(`Template ${templateEl} has no children, returning null.`)
+    return null;
+  }
+
+  if (clonedNodes.length > 1) {
+    console.log(`Template ${templateEl} has multiple children, only returning the first.`)
+  }
+
+  const result = clonedNodes[0];
+  if( cloneId )
+    result.setAttribute("data-id", cloneId);
+  
+  return result;
+}
+
 // Populate a DOM element with data, using [data-populate]
-// See a full list of options at https://github.com/phillymedia/interactive-template/wiki/Populate
 export const populateWithData = (el, data) => {
   const populateableNodes = [...el.querySelectorAll("[data-populate]")]
 

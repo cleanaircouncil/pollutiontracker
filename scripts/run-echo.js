@@ -1,4 +1,4 @@
-import { runScrape } from "./echo"
+import { runScrape } from "./echo.js"
 
 (async() => {
   await runScrape();

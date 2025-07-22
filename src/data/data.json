@@ -8,10 +8,7 @@
       "address": "1646 S 51st St., Philadelphia, PA 19143\n",
       "description": "Proposed warehouse at site of former fossil fuel tank farm, site of chemical spill\n",
       "clean_air_notes": "<p>Comments\n<a href=\"https://cleanaircouncil.salsalabs.org/bartramsgarden\">https://cleanaircouncil.salsalabs.org/bartramsgarden</a> \n<a href=\"https://cleanaircouncil.salsalabs.org/bartramsspill\">https://cleanaircouncil.salsalabs.org/bartramsspill</a> \n<a href=\"http://cleanaircouncil.salsalabs.org/bartramscleanup\">http://cleanaircouncil.salsalabs.org/bartramscleanup</a> </p>\n",
-      "id": "recmDX5q1NqCE3Acw",
-      "slug": "1646-s-51st-st.",
-      "zip": "19143",
-      "alert": false
+      "slug": "1646-s-51st-st."
     },
     {
       "company_name": "3060 S 61st St.",
@@ -31,18 +28,18 @@
           "attachments": [
             {
               "id": "attMzqP72qHcisOSJ",
-              "url": "https://v5.airtableusercontent.com/v3/u/43/43/1753171200000/b9oREr5E5zfnEAbjZdpGNA/PyE1Wu7NhGXFtYKUDutOVB-F3C16zmZAqFbDS2iJof8d-n_YTUOjmRMFPx81nBCeVETnaH1YQz_GG6HUnka5r8oA3VjMmr85g_tPll4YkoeBimc3q_T3E5KeNf7TdXydZrgTUqUubQPloSjI1iZu9BibCG6G8UCcfBHEIpFWJyc/v8f-aSbEXdXByJU5vx3Cagxm6HmSLxRSgXZOJRPWAus",
+              "url": "https://v5.airtableusercontent.com/v3/u/43/43/1753207200000/eHVPLazHVvlebxFbM_YqzA/3f7zOXJArte5dK2fvWi4fwfEW2hvOM4YUhNRlKNMW48iYmdm4Y--JOrmvggLwPwkVe85QemQxeTUDp8eUNf3TJrxqrf0AVbq_3Rtf39a_kyWAzPmR7k1o2RoDbXu6hyY39xl8wQIRCksmfxl4amIlqxDtZ9yR-OK519HtS_jiaQ/InGBbnKJQAEPtHq1_9OaWMffgpGYuo3rXFo7KrOmarA",
               "filename": "img07312023_00011.pdf",
               "size": 1168643,
               "type": "application/pdf",
               "thumbnails": {
                 "small": {
-                  "url": "https://v5.airtableusercontent.com/v3/u/43/43/1753171200000/yJjfOcytoJAUDbG-j7RK-w/zUtupNfBt6JBl6NYmgwxo50ShABrZG9iakit29QREO7lOFyjEFtObVpes9vz2SfElt2ze_mdD3vrbEPO9sqWJwMwfKRYxgw-iGjlyCcSKwpmM3PdC9rH2X88V-DK9iHWFPWhRXOFmtplwNyWzpdUNw/pzYBClwVvG2bu_OEjanXUJqFpuMqSU-JPoHvs64aZ60",
+                  "url": "https://v5.airtableusercontent.com/v3/u/43/43/1753207200000/boXINGIoF4_Joks3qaKnKQ/zURrpGk_YFra08767HhU1TLEbCqRRPW_JlOfbXTgBP3j1DTmGnuegFIwOA615yPGExA3NQ5PhM69i9JEF9xGKA_j_744iTcSrlr5KgFj4NYIqnYKPmE1VnoRn1j4XVTTBxhmsMeteT3k3gqr8EL22g/39qgADcytKXTXa1OomO4K_f6kdpCYem081Cx9XQpYCI",
                   "width": 27,
                   "height": 36
                 },
                 "large": {
-                  "url": "https://v5.airtableusercontent.com/v3/u/43/43/1753171200000/MxgJ9JHeE7nZV_9-HI1ByQ/bFG5uiYKB1mvV60VrKdM4ZspJlWU224YI5uL8Sv6FODUIcuCrhuHI79NLIvBbWUwCaBbmgpkT4k4mG15EhUNo1eFXoi0Cf764V8DUxeCi0a0ZyGqvOiUXpzsERZ-p4Kkwwh8VMDS658G5Mjnc3FrOg/0k4OkoAq11vB3rY6VVCDTLlVNkHaPZheCyPAXbbIW5M",
+                  "url": "https://v5.airtableusercontent.com/v3/u/43/43/1753207200000/Ww0tGgIHq3RaCAdEVfOmUw/TNxgxEhDvN8ujN_SnPiwmsUedAr-N9Sny8p9huV5MyiNUo8D7ePFoZQSr2HGVbV-St9g5WYNMESEDuOKLyvgk6NpdyxTEiXCs2FA40UhL2rnGzepBGCbcNFdqwV5giqW2kWoOSvVQtNVC4hP5B1dgg/yaj9zMrjMJO5DaWiYH9PQTxvPOLanS_RYTFq1W-J3eY",
                   "width": 512,
                   "height": 678
                 }
@@ -51,10 +48,7 @@
           ]
         }
       ],
-      "id": "recvmdfxyMfIy3NZO",
-      "slug": "3060-s-61st-st.",
-      "zip": "19153",
-      "alert": false
+      "slug": "3060-s-61st-st."
     },
     {
       "company_name": "Adelphia Compressor Station\n",
@@ -71,23 +65,23 @@
           "id": "attGip66aUxgBgYFZ",
           "width": 1308,
           "height": 811,
-          "url": "https://v5.airtableusercontent.com/v3/u/43/43/1753171200000/ntxPpyMusAsW9xwgnfUvog/Vv44jpBAtPk_nPHtej14xyIE_SNSVvK2hcURUgdhl3L3iBuUvFtKsfNaptypvljcMjiBDkXw-ST-SZTrs8gepSH7zX_fCG6X9PfT_BQCq9tX3YitRGPHhRpNOLqnx017i7PGHmZeiemN-DLlkSzvU7KotJwm0pB_hKfKP8ZDrKuihngcY3ulY-n-msllP0CD/tueegyEQZ0_kYhvJt2dlvA3OaTfnz4cdJrfTGPQr0To",
+          "url": "https://v5.airtableusercontent.com/v3/u/43/43/1753207200000/fXYrNyGRnKeBaL9HbNpX8Q/hBtvlC-4W3u4rGwBO7KFbl5m9hQbJufgijUV8mvFgJJcEKht29wyhgkh3KpMDKEjtnyj6vPFlB1JIBBr_Gy2JRc8qu_D8iWmdrpiE4vndiFAGs04ED_Hy2Rjri1Uam3oICo6fLZBfrq5aM64OWpvUVS_favJLw3K76EifQCjPa05AdpP4EbVke6Q-7bxUWi1/YO3zki_9B0rWbo5xcXmmnRN5a3lJ3hzS4OQo9bwFxto",
           "filename": "Screenshot 2025-07-07 at 16.59.58.png",
           "size": 1620929,
           "type": "image/png",
           "thumbnails": {
             "small": {
-              "url": "https://v5.airtableusercontent.com/v3/u/43/43/1753171200000/HOarqE3OKk9iU7nGAUXDsA/YuhVr079w-B8Q7dPzgB8YuQv9F57UTmMDdEaH5vV0SLkyDsCI7eUdIf1o_VYJ5M0XQE4wuD5Cs5KdAjz1103c8746Cd4yUA2P30Pz7uH8ZuEN8k-HQySs5U_Nsf05MHFRsD6ejsNJ3hNTHr3RSaQXw/oz0qXGb06d-cfV-6OlEPpzqNILxG44LGOm_SJ7ec1fo",
+              "url": "https://v5.airtableusercontent.com/v3/u/43/43/1753207200000/U2Uslw8q6MCEjke1_U1MMQ/0Mg3FYJON9Blrk7rUKowrx4AqicdeILHK1ap1EH7zF4q9aqlAdHIZojYivJR-TKKsnIBpZyWf-6u6RPDQqVLAvV3Q9X5jnnpE0UE3ViIhJ7984dkq329RD8cr0N5tT50Pkwc8_vT76fBH7RLkfMl1Q/7tvVx9Bodbz0JsknpVa7mTlSxXhXI8TXPbbhFih1Ps4",
               "width": 58,
               "height": 36
             },
             "large": {
-              "url": "https://v5.airtableusercontent.com/v3/u/43/43/1753171200000/7qrBqRa8GpN3x9xkRTtx5A/_bxNx3-41ibZtNraOApoxEPpg5UgCyTKl3BXi-eP-t3MfgyiXMBd3jKmvLXHqUApSkAjQXYRfiPGESS4eXBEQarr0lj_bqkVMLJJTxkfUQCXwxl7xY756OuErF2cli4bp9LQ-jMNfUD8MKAhpbRtvQ/-WTJwNKqHPB4M0O13fV42afYgez4zs3MAuHD5LVHy-w",
+              "url": "https://v5.airtableusercontent.com/v3/u/43/43/1753207200000/a2j2HSVof_Af-mAhQtL2Eg/q5ts8OPB8W_GOYTcxqVRyqYh-9wAWV4uFS5_zfOiCTTIJdS4wqwkh_9esvcNHZ4_QuZ1uMERlHMOK_5mlbOOqeRujNz1VPvsa7yvEeI2nl9zonL_teTft61Kf-2WsceR_GGHWpMG0lV4IkLwjFn2gA/mPTjmV8cVh9cVokuC9INfDaE8bAfkR2sZru4s90uiio",
               "width": 826,
               "height": 512
             },
             "full": {
-              "url": "https://v5.airtableusercontent.com/v3/u/43/43/1753171200000/oUYeZ1vci1N0g6PMRz_27w/vZQhWFeHY3kyDXFJMzXMtjSs31JKX-ajE5316aCN7EgVyngpfAy1BK0RRCErZQDOetJ7UaKn-sRHMEampmWyEJjumWJLxloCOk4QJOna9AIeOEAY03SIQe1V7PiL6gnIY86r6uhYcvvTst7yRkyQKw/iAqUavcvyUUwdPt0R3_USUlM9AnJzgZBvixn_amxMRY",
+              "url": "https://v5.airtableusercontent.com/v3/u/43/43/1753207200000/pSgkF0064pyaXWgWs0K6cQ/AqQx5_BcurQDaRJ8IppYZoLFji7dQ4Trh6zjfPD0ADDbSIbYwww3NEzw43okCpls4M4OEbRWc_A3sUuZoU4AahdNyLVcJIB9TrWr1SWee6tnDj264prqV3JoM62h9l8DRKlikB77jKGGpuoauDBGvQ/lyltfm-mN5Rb4-zoNaF6YpyUFNSa8gLETBdkwEoky70",
               "width": 1308,
               "height": 811
             }
@@ -95,11 +89,6 @@
         }
       ],
       "echo_compliance": [
-        "rec2FLKMuYoL9IVDb"
-      ],
-      "id": "recxd060mekCUiz36",
-      "slug": "adelphia-compressor-station",
-      "permits": [
         {
           "statute": "CAA",
           "status": "Valid",
@@ -109,8 +98,7 @@
           "status_text": "No Violation Identified"
         }
       ],
-      "zip": "19061",
-      "alert": false,
+      "slug": "adelphia-compressor-station",
       "totalPenalties": "$0"
     },
     {
@@ -123,11 +111,6 @@
       "clean_air_notes": "<p>Comments\n<a href=\"https://cleanaircouncil.salsalabs.org/hilcolifesciences\">https://cleanaircouncil.salsalabs.org/hilcolifesciences</a>\n<a href=\"https://cleanaircouncil.salsalabs.org/hilcodontfloodschuylkill\">https://cleanaircouncil.salsalabs.org/hilcodontfloodschuylkill</a>\n<a href=\"https://cleanaircouncil.salsalabs.org/hilco2ndwarehouse\">https://cleanaircouncil.salsalabs.org/hilco2ndwarehouse</a> \n<a href=\"https://cleanaircouncil.salsalabs.org/hilcostormwater\">https://cleanaircouncil.salsalabs.org/hilcostormwater</a> \n<a href=\"https://cleanaircouncil.salsalabs.org/hrp\">https://cleanaircouncil.salsalabs.org/hrp</a> </p>\n<p><a href=\"https://cleanaircouncil.salsalabs.org/refinerynaphthalenespill\">https://cleanaircouncil.salsalabs.org/refinerynaphthalenespill</a>\n<a href=\"https://cleanaircouncil.salsalabs.org/hilcorefinerysrtfndemo/index.html\">https://cleanaircouncil.salsalabs.org/hilcorefinerysrtfndemo/index.html</a> \n<a href=\"https://cleanaircouncil.salsalabs.org/hilcocleanup\">https://cleanaircouncil.salsalabs.org/hilcocleanup</a> </p>\n",
       "epa_link": "https://echo.epa.gov/detailed-facility-report?fid=110071643742",
       "echo_compliance": [
-        "recKCvR7BR7JQpugn"
-      ],
-      "id": "recKj9OXYHdqL8hcZ",
-      "slug": "bellwether-district",
-      "permits": [
         {
           "statute": "CWA",
           "status": "Valid",
@@ -136,8 +119,7 @@
           "status_text": "No Violation Identified"
         }
       ],
-      "zip": "19145",
-      "alert": false,
+      "slug": "bellwether-district",
       "totalPenalties": "$0"
     },
     {
@@ -148,10 +130,7 @@
       "address": "6310 Passyunk Ave, Philadelphia, PA 19153\n",
       "description": "Warehouse, former fossil fuel tank farm\n",
       "clean_air_notes": "<p>Comments\nChapter 105 <a href=\"https://cleanaircouncil.salsalabs.org/swphilly\">https://cleanaircouncil.salsalabs.org/swphilly</a> \nChapter 105 (2022) <a href=\"https://cleanaircouncil.salsalabs.org/warehouse/index.html\">https://cleanaircouncil.salsalabs.org/warehouse/index.html</a> \nChapter 102 (2023) <a href=\"https://cleanaircouncil.salsalabs.org/bppointbreezechapter102/index.html\">https://cleanaircouncil.salsalabs.org/bppointbreezechapter102/index.html</a> </p>\n",
-      "id": "recVZs71KR4qGuI4P",
-      "slug": "bp-point-breeze",
-      "zip": "19153",
-      "alert": false
+      "slug": "bp-point-breeze"
     },
     {
       "company_name": "Brigaloon Inc.",
@@ -160,10 +139,7 @@
       "address": "1000 Calcon Hook Rd., Sharon Hill, PA 19079",
       "description": "Proposed warehouse on contaminated land",
       "clean_air_notes": "<p>Comment\n<a href=\"https://cleanaircouncil.salsalabs.org/darbyredevelopment\">https://cleanaircouncil.salsalabs.org/darbyredevelopment</a></p>\n",
-      "id": "rec6x4rnGczar9kxN",
-      "slug": "brigaloon-inc.",
-      "zip": "19079",
-      "alert": false
+      "slug": "brigaloon-inc."
     },
     {
       "company_name": "Chelsea Tank Farm",
@@ -175,13 +151,6 @@
       "clean_air_notes": "<p><a href=\"https://cleanaircouncil.salsalabs.org/chelseatankfarm\">https://cleanaircouncil.salsalabs.org/chelseatankfarm</a></p>\n",
       "epa_link": "https://echo.epa.gov/detailed-facility-report?fid=110000817484&ej_type=sup&ej_compare=US",
       "echo_compliance": [
-        "recbaxScLQqqOO6Dz",
-        "recWGGauecz6rtDcT",
-        "rece40wvlSOTvgeUQ"
-      ],
-      "id": "recqpRfaYcBuKYNxh",
-      "slug": "chelsea-tank-farm",
-      "permits": [
         {
           "statute": "CAA",
           "status": "Valid",
@@ -207,7 +176,7 @@
           "status_text": "No Violation Identified"
         }
       ],
-      "zip": "19014",
+      "slug": "chelsea-tank-farm",
       "alert": true,
       "totalPenalties": "$0"
     },
@@ -220,10 +189,7 @@
       "description": "Hazardous waste cleanup",
       "clean_air_notes": "<p>Comment\n<a href=\"https://cleanaircouncil.salsalabs.org/claymontcleanup\">https://cleanaircouncil.salsalabs.org/claymontcleanup</a></p>\n",
       "epa_link": "https://www.epa.gov/hwcorrectiveactioncleanups/documents-reports-and-photographs-chemtrade-solutions-llc-formerly ",
-      "id": "recAQy3dOMXuXhuIQ",
-      "slug": "chemtrade-solutions-llc",
-      "zip": "19703",
-      "alert": false
+      "slug": "chemtrade-solutions-llc"
     },
     {
       "company_name": "Clean Earth of Philadelphia\n",
@@ -236,13 +202,6 @@
       "epa_link": "https://echo.epa.gov/detailed-facility-report?fid=110000919784  ",
       "dep_link": "https://www.ahs.dep.pa.gov/eFACTSWeb/searchResults_singleSite.aspx?SiteID=448636",
       "echo_compliance": [
-        "recqMfi2aanvG1soM",
-        "recPdcQKdbVLYD2Yg",
-        "rec88V0xX6AzP9vgP"
-      ],
-      "id": "recJ4fd05NPB66vMi",
-      "slug": "clean-earth-of-philadelphia",
-      "permits": [
         {
           "statute": "CAA",
           "status": "Valid",
@@ -268,8 +227,11 @@
           "status_text": "No Violation Identified"
         }
       ],
-      "zip": "19153",
-      "alert": false,
+      "dep_violations": {
+        "violation_count": 7,
+        "since": "2015-09-10"
+      },
+      "slug": "clean-earth-of-philadelphia",
       "totalPenalties": "$1,000"
     },
     {
@@ -292,18 +254,18 @@
           "attachments": [
             {
               "id": "attbkqxAjYaO47mJ5",
-              "url": "https://v5.airtableusercontent.com/v3/u/43/43/1753171200000/QILJHWAbTpSIYadbYzqpgg/ziMnLxo9kHWPbwb07P2mSgktTnBDcfth9dJQv_WzWzr5dPLiKAsrojAvyDSZ0GHkJuMom7VL8cnaddZNv0CKfmVYgd43e74cxu7xQaQ8gM-Bv37R_GmO0o04skag2akNy4pdRc-pxh6oZr3VXz2cFQqY1dcJSlFE3oq4vztQfNblnv4Rtpozfp8omL1P9v8NedyFDeL8Xx11YEM5M6uoo-BZ9nFta35J7kUiU_lHB0jBGkPYMQCsuV4WnalFLYpGymbOGpO-YBxS02I3NhVKEEbWz6AYeuchG_q0MzZjIq8/QWLm1g6zJlgEJJ_FEigNPi_cR_Z_NiJNpBV16wkusR4",
+              "url": "https://v5.airtableusercontent.com/v3/u/43/43/1753207200000/-C_xf6vW5DsEIrGxLBUbmQ/ugr_kw23QJepxxmKOeDA2se1ehk_cZ7NWg4y6UUJqhj6woQDX0p7H44O-fxYQSGFg6O7fEH8YyRzOknv9urwODrQJD9j5yY5m2PVeziO5wsAlGr1ceBXm-jsZkAkVQ1exY1ngnBHb_CHKwa_3xCfsf1Yyp4GuzdMNrWegECLGCxtgkS50zwg9yggZi19I-wfQT-xZj1BSDYmF-xvMHhk5BV3sfYDC83kNuQtPnv-NWgbGNEZ3eMi0HPFhCsKWTnjXg9hfwbYpoVzCV77QY7FPzWkd_y1y4E8RvW4G3_uZqM/bR8lASJHNN2lObPzl_ibDhaa9VdDdGcLZx6rwHsqi5M",
               "filename": "DEP - ERMS (Clean Water CW) -  DT  PERMITS-REGISTRATION-APPROVALS FB  PAG-03 GENERAL PERMIT (NSA3) Year  2024 Permit-Project   PAG030310....pdf",
               "size": 230022,
               "type": "application/pdf",
               "thumbnails": {
                 "small": {
-                  "url": "https://v5.airtableusercontent.com/v3/u/43/43/1753171200000/Rj1T7Wfa3YmHJjPAB8D-Yg/bx_97xYt-dHjjWy2-WHCPv5dSW176K6WACkcODlaYQB5C4-9HVPxAxfLfpAKsTzdtCPM4Im08YPIs3xunagUMbQ5KmNKqhQNnYiS_fIaFo8_wLLdHXidMp7y8jRCnAxdNzm3bCuV-fnWgN-04MSTnQ/CyazYiyYLbHgbxOXLORQBtPh_BGTkB2ZBCiGLDHZF3c",
+                  "url": "https://v5.airtableusercontent.com/v3/u/43/43/1753207200000/irW2hCtfonJY22HrzzyO8w/gVMbU0SEF2TdRO2YTyXhpzveNzbPd-7J74H1-fAf0wR09EHEYtqkRB8EI83AtcZgXL0Hi99LNfHOpDdVKfW0AjcDxPmD2MxJllqSeHA7oCpyQcTo7Sc-9qxy4VcDr0CG_mXJ1UM7vChkxB5lQAPqKg/XF92VHKqeGCJIQ3sgW-Y7LZUsDLHf2LhmOSvtHCZA-4",
                   "width": 23,
                   "height": 36
                 },
                 "large": {
-                  "url": "https://v5.airtableusercontent.com/v3/u/43/43/1753171200000/vradhzRI-uXaN6nkP1o_-w/9bh06r4OXhjzs3E5L1wpknmcCIm5jMt3H1i_JDh1NGUk9Ws3ke_vrb4N61b7Od_gosXWiPThhwUK7aQxr5OHC2KR_FwHrhx68aRciAMnbVKfYnyIwziJQCnocODrslXOBa4-_r7L-NXfhJzD1_3RdQ/EGTOCdjjh7ChST6CxxJF14u2dr7sIva1fRD3DC28hn0",
+                  "url": "https://v5.airtableusercontent.com/v3/u/43/43/1753207200000/kmKBGQPwcbai7t2tLUSQuQ/I2iStByMP92eR3SYsdr-Or75G1r79gzMcu7oeWTAf8tNU2RiqLEOrJ9tc4PYBu4Q3QItdgyMBQsFJvwvXfDnyX9RgM2xj2GZbGDmG57OT-EAC8OBHCJee1BgPfFzW6HjYW6zZPHhU7VSxbGDdOcc4A/Nq9zouhDIAZuAW7iZQyGd1p2h5Mo7KODnPOD6fU61zA",
                   "width": 512,
                   "height": 791
                 }
@@ -311,18 +273,18 @@
             },
             {
               "id": "attMFJmVmcsWgmiAx",
-              "url": "https://v5.airtableusercontent.com/v3/u/43/43/1753171200000/QkYvU9OpAwpBAw0IJrf7KA/MLaBn3xn6UOLAZoXt2vDm8Jjvl_yuuQcBLCjaOLPYO3nF9iGTlP5GwDngzK7Is0r9nwTTiMFooc1xzJzDHJUxQ1wLDFFwCMvy9CiehAffgjHAt1f2VDLNHEvh_WZeqqJd_j2nDkx9WIS0M5dxtDcwW6BGPPTwdu8BtuU9JiJ5CucKEiZP96U-omZoZD0ZVESGsIFkaXafxaUjCFrjELqQlO9aEqSeTVKLfAwwMuYbdjFqMn6eNL8JezT40Z1EL7ALEI93tPC_yqq3NlPIahvkBEy3s8kJ92BSPzwCLimIu8/VZbx49qI0w6hdU6NnWa7oKs22_FwLpIk_KrizDha7Jk",
+              "url": "https://v5.airtableusercontent.com/v3/u/43/43/1753207200000/4dMT-lYNa9f35W_xmPLFAg/lfDNlEI6dHUM3PF_Usj2NgcUKDDY-oKc3z3Uqoo1PHl2fJOOOw6X3Q3WWl5kZPZQHCC4yVgNxHn1yIgFU4RbOmpt6aJ2Hpnv5r4Sja1jRvC3Bq-lX2uZLbtsm73znt5eBEV0pV1ZIpPxAr0izlpsotK0HIMIln8qb_xW1vnqOuRzd38M5r7YQV4WsS9frE66CRsxVKNwJhgmjzs4gBas2HR_43bAbjfrLTH3fYuHjkaE5dpAPaojIrSCh8tYYPdu2nvrBeJFoHgC55cd20rlAXoK8ebPy0RLiEKLM1R4Iqk/69ycDshZyeG7-4IHaeiqH3eV5isIHXrWVOdO9fuDm0A",
               "filename": "DEP - ERMS (Clean Water CW) -  DT  PERMITS-REGISTRATION-APPROVALS FB  PAG-03 GENERAL PERMIT (NSA3) Year  2024 Permit-Project   PAG030310(9).pdf",
               "size": 105393,
               "type": "application/pdf",
               "thumbnails": {
                 "small": {
-                  "url": "https://v5.airtableusercontent.com/v3/u/43/43/1753171200000/Py4QLt0iz6AqPfPIEdU_kQ/FEVurZDmShQt88Oju4yQF0UAxd-XiDN85j5zfuna60yyeMHusuqbrhw_UzoNofRbHVlc4AbwYNGwMjQT0F8kKJoAmlucCfB8oUhquvl4m9gwLEInCPC8pd7B7-LbRuSUrm9a5gVciWujEVI1nj4TmA/uLlkD59SCZVEzsNmWFJfGGAC48_oAXxxHLWitXk78Q0",
+                  "url": "https://v5.airtableusercontent.com/v3/u/43/43/1753207200000/Z03rzxncs2k0MT7D8ygG_A/OQ0hUXzWHlud_ZizEakCAxXgJhH5MKW5NKPqd1xVYqzXqD4ZXpD_8gX0HNUEWQpX3hRVh2O3wWjR5abfCiTNQcpvjYjDyQABQVhAuV3TsPTUuIgWVLXKHRPd_FAogYQNE7IfXWWWX83h-K5ETOvtvA/mjrh4cmMZC_dcfa1XpKG2PYEl0d9itsCuGfJWB0FXVc",
                   "width": 28,
                   "height": 36
                 },
                 "large": {
-                  "url": "https://v5.airtableusercontent.com/v3/u/43/43/1753171200000/sgdII4sg3aXHnHbxo5Y6nQ/aHiYhUGNdG5hBWhKQUBE83WZmAMmqY8w3yvYK62027CILK6Zch9WE6QCdoNAQad7Fx6lR2XwSPU7tyiQRrYwbrngsgPXv09TTzsA-QExDCqxFDDkml-maMle5K3SkZmV8cfVtgBblaA1l-e_Y2CQuw/gZjNzspixdy5OsvZYyv6P1rnhD9CtMKIky3QB8XWi5c",
+                  "url": "https://v5.airtableusercontent.com/v3/u/43/43/1753207200000/flrOY3sP5yA5kTQRRezFPQ/TfE4vTUxjBot0e_xANvp9mrs_EjZkXMR1MjYdA8XMdgAU3r4K8WSUY0-uTRH6YdSq1JJ2KdYMIBmDgyeygvdef_kIJSodPGz3xFzgPObSVFyzHUW3y9E6VD41OxhljEUYsu251L-4uSP-ulejEsX6w/j5Lp9VlLL_rH34EKlonb648iDg7dDAroge-Nom6GvFk",
                   "width": 512,
                   "height": 663
                 }
@@ -332,13 +294,6 @@
         }
       ],
       "echo_compliance": [
-        "rec7rZ6BVE1ePRK9m",
-        "recBJkSY4H8XOVqj0",
-        "recy6Mujln85PHdVb"
-      ],
-      "id": "recZoKwYeXSORFFIj",
-      "slug": "congoleum",
-      "permits": [
         {
           "statute": "CAA",
           "status": "Valid",
@@ -364,8 +319,11 @@
           "status_text": "No Violation Identified"
         }
       ],
-      "zip": "19061",
-      "alert": false,
+      "dep_violations": {
+        "violation_count": 17,
+        "since": "2015-02-20"
+      },
+      "slug": "congoleum",
       "totalPenalties": "$0"
     },
     {
@@ -378,13 +336,6 @@
       "clean_air_notes": "<p>Comments\n<a href=\"https://cleanaircouncil.salsalabs.org/DarbyCreekTankFarmNPDES\">https://cleanaircouncil.salsalabs.org/DarbyCreekTankFarmNPDES</a></p>\n",
       "epa_link": "https://echo.epa.gov/detailed-facility-report?fid=110007772785",
       "echo_compliance": [
-        "recUgPURMG64Shon1",
-        "reciAz7PWf0RYsKDi",
-        "recCG7t4l4NLUlmTH"
-      ],
-      "id": "reco8wZBFXeOnNF1n",
-      "slug": "darby-creek-tank-farm",
-      "permits": [
         {
           "statute": "CAA",
           "status": "Valid",
@@ -410,8 +361,7 @@
           "status_text": "No Violation Identified"
         }
       ],
-      "zip": "19023",
-      "alert": false,
+      "slug": "darby-creek-tank-farm",
       "totalPenalties": "$0"
     },
     {
@@ -424,13 +374,6 @@
       "clean_air_notes": "<p>Comments\nAir <a href=\"https://cleanaircouncil.salsalabs.org/delcora\">https://cleanaircouncil.salsalabs.org/delcora</a>\nNPDES (2021) <a href=\"https://cleanaircouncil.salsalabs.org/chesterwater\">https://cleanaircouncil.salsalabs.org/chesterwater</a>\nSolid Waste Transfer (2021) <a href=\"https://cleanaircouncil.salsalabs.org/delcoraaquasolidwastetransfer\">https://cleanaircouncil.salsalabs.org/delcoraaquasolidwastetransfer</a>\nWaste Tunnel <a href=\"https://cleanaircouncil.salsalabs.org/delcorawastewatertunnel\">https://cleanaircouncil.salsalabs.org/delcorawastewatertunnel</a> </p>\n",
       "epa_link": "https://echo.epa.gov/detailed-facility-report?fid=110000547098 ",
       "echo_compliance": [
-        "recT0S2V7rFsN1UbZ",
-        "recKF61XNrjLpcSnl",
-        "rec7LnhJuR8ptFLSB"
-      ],
-      "id": "recuNhrsGMxRMBZc3",
-      "slug": "delcora",
-      "permits": [
         {
           "statute": "CAA",
           "status": "Violation",
@@ -456,7 +399,7 @@
           "status_text": "No Violation Identified"
         }
       ],
-      "zip": "19013",
+      "slug": "delcora",
       "alert": true,
       "totalPenalties": "$62,075"
     },
@@ -469,10 +412,7 @@
       "description": "Contaminated Industrial Site",
       "clean_air_notes": "<p><a href=\"https://cleanaircouncil.salsalabs.org/nationalprioritieslist\">https://cleanaircouncil.salsalabs.org/nationalprioritieslist</a></p>\n",
       "epa_link": "https://cumulis.epa.gov/supercpad/cursites/csitinfo.cfm?id=0304250",
-      "id": "recWWbEFuJfmhcVCn",
-      "slug": "east-10th-st.-site",
-      "zip": "19061",
-      "alert": false
+      "slug": "east-10th-st.-site"
     },
     {
       "company_name": "Ecolab Inc.\n",
@@ -483,10 +423,7 @@
       "description": "Fumigator",
       "clean_air_notes": "<p>Comment\n<a href=\"https://cleanaircouncil.salsalabs.org/amsmethylbromide\">https://cleanaircouncil.salsalabs.org/amsmethylbromide</a></p>\n",
       "epa_link": "https://www.epa.gov/ods-phaseout/methyl-bromide",
-      "id": "recAjqXCKwNM4n8Bq",
-      "slug": "ecolab-inc.",
-      "zip": "19148",
-      "alert": false
+      "slug": "ecolab-inc."
     },
     {
       "company_name": "Ecomaterials \n",
@@ -498,11 +435,6 @@
       "clean_air_notes": "<p>Comment\n<a href=\"https://cleanaircouncil.salsalabs.org/ecomaterials\">https://cleanaircouncil.salsalabs.org/ecomaterials</a> </p>\n",
       "epa_link": "https://echo.epa.gov/detailed-facility-report?fid=110071825345 ",
       "echo_compliance": [
-        "recZupz5K4da6euhO"
-      ],
-      "id": "recHO68othnGZb4c2",
-      "slug": "ecomaterials",
-      "permits": [
         {
           "statute": "CWA",
           "status": "Valid",
@@ -511,8 +443,7 @@
           "status_text": "Unknown"
         }
       ],
-      "zip": "19153",
-      "alert": false,
+      "slug": "ecomaterials",
       "totalPenalties": "$0"
     },
     {
@@ -525,14 +456,6 @@
       "clean_air_notes": "<p>Comment\nAir <a href=\"https://cleanaircouncil.salsalabs.org/eddystone\">https://cleanaircouncil.salsalabs.org/eddystone</a></p>\n",
       "epa_link": " https://echo.epa.gov/detailed-facility-report?fid=110000817493",
       "echo_compliance": [
-        "recaDzMjMFnWr8VUL",
-        "reciTsvCo3Q6iAPJT",
-        "recX3pN3mhjos7ZqN",
-        "recVyDX9X1lg7cWg2"
-      ],
-      "id": "recdf2SDWpfnm7o3s",
-      "slug": "eddystone-generation-station",
-      "permits": [
         {
           "statute": "CAA",
           "status": "Violation",
@@ -566,7 +489,7 @@
           "status_text": "In Compliance"
         }
       ],
-      "zip": "19022",
+      "slug": "eddystone-generation-station",
       "alert": true,
       "totalPenalties": "$8,028"
     },
@@ -578,10 +501,7 @@
       "address": "6930 Elmwood Ave, Philadelphia, PA 19142",
       "description": "Parking lot where unpermitted auto work is often conducted",
       "clean_air_notes": "<p>Comment\n<a href=\"https://cleanaircouncil.salsalabs.org/70thandElmwoodSouthwestPhilly\">https://cleanaircouncil.salsalabs.org/70thandElmwoodSouthwestPhilly</a></p>\n",
-      "id": "recZE643Y0GIjp1au",
-      "slug": "elmwood-park-plaza",
-      "zip": "19142",
-      "alert": false
+      "slug": "elmwood-park-plaza"
     },
     {
       "company_name": "Entegris",
@@ -593,15 +513,6 @@
       "clean_air_notes": "<p>Comments\nAir <a href=\"https://cleanaircouncil.salsalabs.org/entegris\">https://cleanaircouncil.salsalabs.org/entegris</a></p>\n",
       "epa_link": "https://echo.epa.gov/detailed-facility-report?fid=110000336093&ej_type=sup&ej_compare=US",
       "echo_compliance": [
-        "reckyXCE64gZLqAkU",
-        "recDpYPPzbCPlPywI",
-        "recVGdYxrT8JMbedc",
-        "recmt4frE890rQvwP",
-        "recMSlmEwFoGsZ8nJ"
-      ],
-      "id": "rec8xvk11hA48kW0s",
-      "slug": "entegris",
-      "permits": [
         {
           "statute": "CAA",
           "status": "Valid",
@@ -642,8 +553,7 @@
           "status_text": "In Compliance"
         }
       ],
-      "zip": "19013",
-      "alert": false,
+      "slug": "entegris",
       "totalPenalties": "$101,409"
     },
     {
@@ -656,11 +566,6 @@
       "clean_air_notes": "<p>Comments\n<a href=\"https://cleanaircouncil.salsalabs.org/philadelphiarefineryaoi10\">https://cleanaircouncil.salsalabs.org/philadelphiarefineryaoi10</a>\n<a href=\"https://cleanaircouncil.salsalabs.org/belmont\">https://cleanaircouncil.salsalabs.org/belmont</a> \n<a href=\"http://cleanaircouncil.salsalabs.org/phillyrefinery\">cleanaircouncil.salsalabs.org/phillyrefinery</a>\n<a href=\"https://cleanaircouncil.salsalabs.org/threatenedturtle\">https://cleanaircouncil.salsalabs.org/threatenedturtle</a> \nFate and Transport (2022) <a href=\"https://cleanaircouncil.salsalabs.org/fateandtransport\">https://cleanaircouncil.salsalabs.org/fateandtransport</a> </p>\n<p><a href=\"https://cleanaircouncil.salsalabs.org/refineryremediation/index.html\">https://cleanaircouncil.salsalabs.org/refineryremediation/index.html</a>\n<a href=\"https://cleanaircouncil.salsalabs.org/AMSRefineryRemediationSystemsComment/index.html\">https://cleanaircouncil.salsalabs.org/AMSRefineryRemediationSystemsComment/index.html</a> </p>\n",
       "epa_link": "https://echo.epa.gov/detailed-facility-report?fid=110071861920",
       "echo_compliance": [
-        "recLZRAkJyuBuWxCr"
-      ],
-      "id": "recxp6DSG5wf7ZskX",
-      "slug": "evergreen-resources-group,-llc",
-      "permits": [
         {
           "statute": "CAA",
           "status": "Valid",
@@ -670,8 +575,7 @@
           "status_text": "No Violation Identified"
         }
       ],
-      "zip": "19145",
-      "alert": false,
+      "slug": "evergreen-resources-group,-llc",
       "totalPenalties": "$0"
     },
     {
@@ -684,13 +588,6 @@
       "clean_air_notes": "<p>Comments\nAir <a href=\"https://cleanaircouncil.salsalabs.org/evonikair\">https://cleanaircouncil.salsalabs.org/evonikair</a>\nWater <a href=\"https://cleanaircouncil.salsalabs.org/evonik\">https://cleanaircouncil.salsalabs.org/evonik</a> </p>\n",
       "epa_link": "https://echo.epa.gov/detailed-facility-report?fid=110000336100",
       "echo_compliance": [
-        "rec9a93k0aDjdAYOz",
-        "rec9w9uYAScJVk6fp",
-        "reclTdrGLJC5kZiJl"
-      ],
-      "id": "recDIvp8nMVqDQNu9",
-      "slug": "evonik",
-      "permits": [
         {
           "statute": "CAA",
           "status": "Valid",
@@ -716,7 +613,7 @@
           "status_text": "No Violation Identified"
         }
       ],
-      "zip": "19013",
+      "slug": "evonik",
       "alert": true,
       "totalPenalties": "$1,875"
     },
@@ -728,10 +625,7 @@
       "address": "1500 Pattison Avenue &, S Broad St, Philadelphia, PA 19145",
       "description": "City of Philadelphia’s current and proposed redevelopment of FDR Park",
       "clean_air_notes": "<p>Comments\nNPDES <a href=\"https://cleanaircouncil.salsalabs.org/300trees\">https://cleanaircouncil.salsalabs.org/300trees</a>\nArmy Corp <a href=\"https://cleanaircouncil.salsalabs.org/fdrparkarmycorp\">https://cleanaircouncil.salsalabs.org/fdrparkarmycorp</a>\nPattison Fields <a href=\"https://cleanaircouncil.salsalabs.org/fdr\">https://cleanaircouncil.salsalabs.org/fdr</a> </p>\n",
-      "id": "recloHYyql5CxcsJq",
-      "slug": "fdr-park-redevelopment",
-      "zip": "19145",
-      "alert": false
+      "slug": "fdr-park-redevelopment"
     },
     {
       "company_name": "Fort Mifflin Terminal",
@@ -743,13 +637,6 @@
       "clean_air_notes": "<p>Comments\nNPDES <a href=\"https://cleanaircouncil.salsalabs.org/fortmifflin\">https://cleanaircouncil.salsalabs.org/fortmifflin</a></p>\n",
       "epa_link": "https://echo.epa.gov/detailed-facility-report?fid=110012692407",
       "echo_compliance": [
-        "recwp7V8CIDTPkW9X",
-        "recpriQZWZus13UXx",
-        "rec5XOK8I8J8L9lQm"
-      ],
-      "id": "rec1GWJ5SdN6ionEW",
-      "slug": "fort-mifflin-terminal",
-      "permits": [
         {
           "statute": "CAA",
           "status": "Valid",
@@ -775,8 +662,7 @@
           "status_text": "No Violation Identified"
         }
       ],
-      "zip": "19153",
-      "alert": false,
+      "slug": "fort-mifflin-terminal",
       "totalPenalties": "$0"
     },
     {
@@ -787,10 +673,7 @@
       "address": "6300 Philadelphia Pike, Marcus Hook, PA 19601",
       "description": "Closed chemical manufacturing facility\n",
       "clean_air_notes": "<p>Comment <a href=\"https://cleanaircouncil.salsalabs.org/honeywell\">https://cleanaircouncil.salsalabs.org/honeywell</a> </p>\n",
-      "id": "rece90tP4ufelWKaS",
-      "slug": "honeywell",
-      "zip": "19601",
-      "alert": false
+      "slug": "honeywell"
     },
     {
       "company_name": "Kimberly Clark Paper Mill",
@@ -802,14 +685,6 @@
       "clean_air_notes": "<p>Comments\nNPDES <a href=\"https://cleanaircouncil.salsalabs.org/kimberlyclarkchester\">https://cleanaircouncil.salsalabs.org/kimberlyclarkchester</a></p>\n",
       "epa_link": "https://echo.epa.gov/detailed-facility-report?fid=110000603847",
       "echo_compliance": [
-        "rec6HGk9D9crpzxcB",
-        "recqjGUkN92ouE2hS",
-        "rec4x5PWbKf6q7u4R",
-        "recmerWUvhImX4NGi"
-      ],
-      "id": "reclXi9n3HfxYtgiv",
-      "slug": "kimberly-clark-paper-mill",
-      "permits": [
         {
           "statute": "CAA",
           "status": "Valid",
@@ -843,8 +718,7 @@
           "status_text": "No Violation Identified"
         }
       ],
-      "zip": "19013",
-      "alert": false,
+      "slug": "kimberly-clark-paper-mill",
       "totalPenalties": "$13,200"
     },
     {
@@ -854,10 +728,7 @@
       "longitude": -75.3628128,
       "address": "2316 Providence Ave, Chester, PA 19013",
       "description": "Human crematory",
-      "id": "reczurqG8YAfLuQkO",
-      "slug": "lewis-m-hunt-irving-funeral-home",
-      "zip": "19013",
-      "alert": false
+      "slug": "lewis-m-hunt-irving-funeral-home"
     },
     {
       "company_name": "Marcus Hook Terminal ",
@@ -870,13 +741,6 @@
       "epa_link": "https://echo.epa.gov/detailed-facility-report?fid=110032885723",
       "dep_link": "https://www.ahs.dep.pa.gov/eFACTSWeb/searchResults_singleSite.aspx?SiteID=270459 ",
       "echo_compliance": [
-        "recXoHmm6Aim9SoWk",
-        "recZj4MtYR7zEukpd",
-        "recGoiQw5RaJ0NPCO"
-      ],
-      "id": "recTixcVvaA5yh9he",
-      "slug": "marcus-hook-terminal",
-      "permits": [
         {
           "statute": "CAA",
           "status": "Valid",
@@ -902,8 +766,11 @@
           "status_text": "No Violation Identified"
         }
       ],
-      "zip": "19061",
-      "alert": false,
+      "dep_violations": {
+        "violation_count": 134,
+        "since": "2015-02-09"
+      },
+      "slug": "marcus-hook-terminal",
       "totalPenalties": "$764,496"
     },
     {
@@ -916,14 +783,6 @@
       "clean_air_notes": "<p>Comments\nRACT III <a href=\"http://cleanaircouncil.salsalabs.org/trainer\">cleanaircouncil.salsalabs.org/trainer</a>\nNPDES <a href=\"https://cleanaircouncil.salsalabs.org/trainerrefinery\">https://cleanaircouncil.salsalabs.org/trainerrefinery</a> \nNPDES (part 2) <a href=\"https://cleanaircouncil.salsalabs.org/trainerwater\">https://cleanaircouncil.salsalabs.org/trainerwater</a> \nNPDES (2021) <a href=\"https://cleanaircouncil.salsalabs.org/trainernpdes\">https://cleanaircouncil.salsalabs.org/trainernpdes</a> \nAir (2022) <a href=\"https://cleanaircouncil.salsalabs.org/monroerefinery/index.html\">https://cleanaircouncil.salsalabs.org/monroerefinery/index.html</a> \nAir (2022, part 2) <a href=\"https://cleanaircouncil.salsalabs.org/monroecomment/index.html\">https://cleanaircouncil.salsalabs.org/monroecomment/index.html</a></p>\n",
       "epa_link": " https://echo.epa.gov/detailed-facility-report?fid=110000336440",
       "echo_compliance": [
-        "recu8Y8nVMPbpCKlu",
-        "rec3Z1BxmimnMVb4V",
-        "recuUJneSEaGeGm8I",
-        "recsyVMHE7Ee8Mzs9"
-      ],
-      "id": "rec3Fm1H46gbQHeOp",
-      "slug": "monroe-refinery",
-      "permits": [
         {
           "statute": "CAA",
           "status": "Violation",
@@ -957,7 +816,7 @@
           "status_text": "No Violation Identified"
         }
       ],
-      "zip": "19061",
+      "slug": "monroe-refinery",
       "alert": true,
       "totalPenalties": "$98,761"
     },
@@ -972,13 +831,6 @@
       "epa_link": " https://echo.epa.gov/detailed-facility-report?fid=110000337065&ej_type=sup&ej_compare=US ",
       "dep_link": " https://www.ahs.dep.pa.gov/eFACTSWeb/searchResults_singleSite.aspx?SiteID=452928 ",
       "echo_compliance": [
-        "reciwZ64mkOnJ3tEb",
-        "recutjTqgPzosM98u",
-        "recVoPxcUeARbwcwv"
-      ],
-      "id": "recEDRzGrm5G9vrKf",
-      "slug": "pbf-logistics",
-      "permits": [
         {
           "statute": "CAA",
           "status": "Valid",
@@ -1003,8 +855,11 @@
           "status_text": "No Violation Identified"
         }
       ],
-      "zip": "19153",
-      "alert": false,
+      "dep_violations": {
+        "violation_count": 48,
+        "since": "2015-03-12"
+      },
+      "slug": "pbf-logistics",
       "totalPenalties": "$250,000"
     },
     {
@@ -1017,13 +872,6 @@
       "clean_air_notes": "<p>Comment\n<a href=\"https://cleanaircouncil.salsalabs.org/pgwpassyunkplant/index.html\">https://cleanaircouncil.salsalabs.org/pgwpassyunkplant/index.html</a> </p>\n",
       "epa_link": "https://echo.epa.gov/detailed-facility-report?fid=110007746341 ",
       "echo_compliance": [
-        "recfHSSGyc3i0g9MP",
-        "rec3VoUxSKaaTPCGB",
-        "recrd8tKqYu2Pl0ai"
-      ],
-      "id": "recu7LdXaSt69tPdS",
-      "slug": "philadelphia-gas-works-(pgw)-passyunk-plant",
-      "permits": [
         {
           "statute": "CAA",
           "status": "Valid",
@@ -1049,8 +897,7 @@
           "status_text": "No Violation Identified"
         }
       ],
-      "zip": "19145",
-      "alert": false,
+      "slug": "philadelphia-gas-works-(pgw)-passyunk-plant",
       "totalPenalties": "$1,260"
     },
     {
@@ -1063,15 +910,6 @@
       "clean_air_notes": "<p>Comment\n<a href=\"https://cleanaircouncil.salsalabs.org/pgwlng\">https://cleanaircouncil.salsalabs.org/pgwlng</a></p>\n",
       "epa_link": "https://echo.epa.gov/detailed-facility-report?fid=110000878756 ",
       "echo_compliance": [
-        "recC1vqhXX3ctCgWX",
-        "rec9g5JqY2vPGqUfN",
-        "recpEJYf5ODJsGNDY",
-        "recmb9NcTrQu3twLa",
-        "rec3Y2YdME7dn2WZU"
-      ],
-      "id": "recTtFhBtysH98cbT",
-      "slug": "philadelphia-gas-works-(pgw)-richmond-plant",
-      "permits": [
         {
           "statute": "CAA",
           "status": "Valid",
@@ -1111,8 +949,7 @@
           "status_text": "No Violation Identified"
         }
       ],
-      "zip": "19134",
-      "alert": false,
+      "slug": "philadelphia-gas-works-(pgw)-richmond-plant",
       "totalPenalties": "$220"
     },
     {
@@ -1125,11 +962,6 @@
       "clean_air_notes": "<p>Comments\n<a href=\"https://cleanaircouncil.salsalabs.org/airport\">https://cleanaircouncil.salsalabs.org/airport</a>\n<a href=\"https://cleanaircouncil.salsalabs.org/airportexpansion\">https://cleanaircouncil.salsalabs.org/airportexpansion</a> \n<a href=\"https://cleanaircouncil.salsalabs.org/airportlandcontamination\">https://cleanaircouncil.salsalabs.org/airportlandcontamination</a> \n<a href=\"https://cleanaircouncil.salsalabs.org/taxiways\">https://cleanaircouncil.salsalabs.org/taxiways</a> \n<a href=\"https://cleanaircouncil.salsalabs.org/airportoxygendemand\">https://cleanaircouncil.salsalabs.org/airportoxygendemand</a>\n<a href=\"https://cleanaircouncil.salsalabs.org/airportexpansiona23\">https://cleanaircouncil.salsalabs.org/airportexpansiona23</a> \n<a href=\"http://cleanaircouncil.salsalabs.org/airportwarehouse\">cleanaircouncil.salsalabs.org/airportwarehouse</a> </p>\n",
       "epa_link": "https://echo.epa.gov/detailed-facility-report?fid=110007027289 ",
       "echo_compliance": [
-        "rec3KNX32MwTNXqRI"
-      ],
-      "id": "recxjNwMyU0iXAihX",
-      "slug": "philadelphia-international-airport",
-      "permits": [
         {
           "statute": "CAA",
           "status": "Valid",
@@ -1139,8 +971,7 @@
           "status_text": "No Violation Identified"
         }
       ],
-      "zip": "19153",
-      "alert": false,
+      "slug": "philadelphia-international-airport",
       "totalPenalties": "$910"
     },
     {
@@ -1153,15 +984,6 @@
       "clean_air_notes": "<p>Comment\nNPDES <a href=\"https://cleanaircouncil.salsalabs.org/pqchester\">https://cleanaircouncil.salsalabs.org/pqchester</a></p>\n",
       "epa_link": "https://echo.epa.gov/detailed-facility-report?fid=110000878881 ",
       "echo_compliance": [
-        "recc3YL9xbE9HevXs",
-        "recLKTQQwKBzy1aTf",
-        "recKv6h4Ohuf2ruC0",
-        "recf0BC80OlaTRw3D",
-        "recdTBJyLa88DOooV"
-      ],
-      "id": "recNUflJJIvyA5HUO",
-      "slug": "pq-corp.",
-      "permits": [
         {
           "statute": "CAA",
           "status": "Valid",
@@ -1201,8 +1023,7 @@
           "status_text": "In Compliance"
         }
       ],
-      "zip": "19013",
-      "alert": false,
+      "slug": "pq-corp.",
       "totalPenalties": "$4,639"
     },
     {
@@ -1213,10 +1034,7 @@
       "address": "S 80th St, Philadelphia, PA 19153",
       "description": "Federal Flood Mitigation Proposal",
       "clean_air_notes": "<p>Comment\n<a href=\"https://cleanaircouncil.salsalabs.org/levee\">https://cleanaircouncil.salsalabs.org/levee</a></p>\n",
-      "id": "recyiI70yKLxAqn5O",
-      "slug": "proposed-eastwick-levee",
-      "zip": "19153",
-      "alert": false
+      "slug": "proposed-eastwick-levee"
     },
     {
       "company_name": "Resting Rainbow",
@@ -1226,10 +1044,7 @@
       "address": "7000 Holstein Avenue Philadelphia, PA 19153",
       "description": "Proposed Pet Crematorium",
       "clean_air_notes": "<p>Testing out the <strong>Rich Text Editing</strong>.</p>\n<p>A header</p>\n",
-      "id": "rech20U3eScwJSZK9",
-      "slug": "resting-rainbow",
-      "zip": "19153",
-      "alert": false
+      "slug": "resting-rainbow"
     },
     {
       "company_name": "Reworld (formerly Covanta)",
@@ -1241,13 +1056,6 @@
       "clean_air_notes": "<p>Comments\nNPDES <a href=\"https://cleanaircouncil.salsalabs.org/chestercovantawater\">https://cleanaircouncil.salsalabs.org/chestercovantawater</a> \nAir (2021) <a href=\"https://cleanaircouncil.salsalabs.org/covantachester\">https://cleanaircouncil.salsalabs.org/covantachester</a> </p>\n",
       "epa_link": "https://echo.epa.gov/detailed-facility-report?fid=110001065016",
       "echo_compliance": [
-        "recRAqCssrwjWEFJB",
-        "recrTgIgKu2LapJSJ",
-        "recopf0KZOjGmJNu4"
-      ],
-      "id": "recYKPYT0eoLlBGlD",
-      "slug": "reworld-(formerly-covanta)",
-      "permits": [
         {
           "statute": "CAA",
           "status": "Violation",
@@ -1273,7 +1081,7 @@
           "status_text": "No Violation Identified"
         }
       ],
-      "zip": "19013",
+      "slug": "reworld-(formerly-covanta)",
       "alert": true,
       "totalPenalties": "$165,865"
     },
@@ -1287,13 +1095,6 @@
       "clean_air_notes": "<p>Comments\nNPDES <a href=\"https://cleanaircouncil.salsalabs.org/reworldplymouth\">https://cleanaircouncil.salsalabs.org/reworldplymouth</a></p>\n",
       "epa_link": "https://echo.epa.gov/detailed-facility-report?fid=110002478765 ",
       "echo_compliance": [
-        "rec8CXbkVDdPVHV0B",
-        "recYrXKud77PaBPbK",
-        "recgNvSJxw8k85IdL"
-      ],
-      "id": "recuZwJ5KazqRb2Lv",
-      "slug": "reworld-plymouth",
-      "permits": [
         {
           "statute": "CAA",
           "status": "Violation",
@@ -1319,7 +1120,7 @@
           "status_text": "No Violation Identified"
         }
       ],
-      "zip": "19248",
+      "slug": "reworld-plymouth",
       "alert": true,
       "totalPenalties": "$702,626"
     },
@@ -1331,10 +1132,7 @@
       "address": "4401 Ridge Road, Trainer, PA 19061\n",
       "description": "Proposed warehouse",
       "clean_air_notes": "<p>Comments\n<a href=\"https://cleanaircouncil.salsalabs.org/ridgerdwarehouse\">https://cleanaircouncil.salsalabs.org/ridgerdwarehouse</a> </p>\n",
-      "id": "recg5aiqfVhzs5PIu",
-      "slug": "ridge-road-warehouse",
-      "zip": "19061",
-      "alert": false
+      "slug": "ridge-road-warehouse"
     },
     {
       "company_name": "Southeastern Pennsylvania Transportation Authority (SEPTA) Gas Plant",
@@ -1346,12 +1144,6 @@
       "clean_air_notes": "<p>Comment\n<a href=\"https://cleanaircouncil.salsalabs.org/septagasplant\">https://cleanaircouncil.salsalabs.org/septagasplant</a></p>\n",
       "epa_link": "https://echo.epa.gov/detailed-facility-report?fid=110010984088",
       "echo_compliance": [
-        "recsWPo2WpKsqLAm3",
-        "rec8FEnxOOQutK49t"
-      ],
-      "id": "recJ8ELyKKQeUoBuK",
-      "slug": "southeastern-pennsylvania-transportation-authority-(septa)-gas-plant",
-      "permits": [
         {
           "statute": "CAA",
           "status": "Valid",
@@ -1368,8 +1160,7 @@
           "status_text": "Terminated Permit"
         }
       ],
-      "zip": "19129",
-      "alert": false,
+      "slug": "southeastern-pennsylvania-transportation-authority-(septa)-gas-plant",
       "totalPenalties": "$0"
     },
     {
@@ -1382,12 +1173,6 @@
       "epa_link": "https://echo.epa.gov/detailed-facility-report?fid=110001069254",
       "dep_link": "https://www.ahs.dep.pa.gov/eFACTSWeb/searchResults_singleSite.aspx?SiteID=517316",
       "echo_compliance": [
-        "recPb5q7wcACLEObJ",
-        "recJJRGX0VTfrHLmO"
-      ],
-      "id": "reclqEoN7qRwAjggg",
-      "slug": "southwark-generation-station",
-      "permits": [
         {
           "statute": "CAA",
           "status": "Valid",
@@ -1404,8 +1189,11 @@
           "status_text": "No Violation Identified"
         }
       ],
-      "zip": "19148",
-      "alert": false,
+      "dep_violations": {
+        "violation_count": 1,
+        "since": "2018-10-11"
+      },
+      "slug": "southwark-generation-station",
       "totalPenalties": "$0"
     },
     {
@@ -1418,11 +1206,6 @@
       "clean_air_notes": "<p><a href=\"https://www.inquirer.com/business/philadelphia-steam-plant-vicinity-veolia-dicroce-20200204.html\">https://www.inquirer.com/business/philadelphia-steam-plant-vicinity-veolia-dicroce-20200204.html</a></p>\n",
       "epa_link": "https://echo.epa.gov/detailed-facility-report?fid=110071723052",
       "echo_compliance": [
-        "recZKM1pIJGHVTghr"
-      ],
-      "id": "recVEzEknbEwJTklP",
-      "slug": "vicinity-energy-schuylkill-gen-station",
-      "permits": [
         {
           "statute": "CAA",
           "status": "Violation",
@@ -1432,7 +1215,7 @@
           "status_text": "Violation w/in 1 Year"
         }
       ],
-      "zip": "19146",
+      "slug": "vicinity-energy-schuylkill-gen-station",
       "alert": true,
       "totalPenalties": "$66,749"
     },
@@ -1444,10 +1227,7 @@
       "address": "6318 Passyunk Ave, Philadelphia, PA 19153\n",
       "description": "Construction materials distribution facility\n",
       "clean_air_notes": "<p>Comment\n<a href=\"https://cleanaircouncil.salsalabs.org/yankeepoint\">https://cleanaircouncil.salsalabs.org/yankeepoint</a></p>\n",
-      "id": "recXX4OvmwW1fOMCK",
-      "slug": "yankee-point",
-      "zip": "19153",
-      "alert": false
+      "slug": "yankee-point"
     }
   ]
 }

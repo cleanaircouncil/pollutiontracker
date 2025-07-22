@@ -36,9 +36,9 @@ const { facility = {} } = Astro.props;
       <h3>Current Permits and Compliance</h3>
 
       {
-        facility.permits && (
+        facility.echo_compliance && (
           <div class="grid columns-three gap-tight">
-            {facility.permits.map((permit) => (
+            {facility.echo_compliance.map((permit) => (
               <Permit permit={permit} style="card" />
             ))}
           </div>
@@ -46,7 +46,7 @@ const { facility = {} } = Astro.props;
       }
 
       {
-        (facility.totalPenalties || facility.violations) && (
+        (facility.totalPenalties || facility.dep_violations) && (
           <ul class="fa-ul" style="--fa-li-margin: 1.75em">
             {facility.totalPenalties && (
               <li>
@@ -57,13 +57,14 @@ const { facility = {} } = Astro.props;
                 in the last 5 years
               </li>
             )}
-            {facility.violations && (
+            {facility.dep_violations && (
               <li>
                 <span class="fa-li">
                   <i class="fa fa-ban" />
                 </span>
-                <strong>{facility.violations?.count}</strong> violations since
-                <strong>{facility.violations?.since}</strong>
+                <strong>{facility.dep_violations?.violation_count}</strong>{" "}
+                violations since
+                <strong>{facility.dep_violations?.since}</strong>
               </li>
             )}
           </ul>
@@ -165,7 +166,6 @@ const { facility = {} } = Astro.props;
   .facility-card__attachment {
     cursor: pointer;
   }
-
 
   .facility-card__attachment {
     border-radius: 0.5rem;

@@ -1,4 +1,4 @@
-import { runScrape } from "./dep"
+import { runScrape } from "./dep.js"
 
 (async() => {
   await runScrape();

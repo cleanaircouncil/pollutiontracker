@@ -120,26 +120,29 @@ async function recordToFacility(record) {
 
   console.log( `🏭 ${facility.company_name.trim()}`);
 
-  facility.id = record.id;
   facility.slug = slugify(facility.company_name);
 
   
   if( facility.attachments ) {
-    console.log(`  📎 Linking attachments from Airtable...`);
+    console.log(`  📎 Hydrating attachments from Airtable...`);
     const attachments = await getAttachments(facility.attachments || []);
     facility.attachments = attachments;
   }
 
   if( facility.echo_compliance ) {
-    console.log(`  📋 Linking compliance data from EPA...`);
-    const permits = await getECHOData( facility.echo_compliance );
-    facility.permits = permits; 
+    console.log(`  📋 Hydrating compliance data from EPA...`);
+    const echo_compliance = await getECHOData( facility.echo_compliance );
+    facility.echo_compliance = echo_compliance; 
   }
 
   if( facility.dep_violations ) {
-    console.log(`   ☢️  Collating violation info...`);
-    const violations = await getDEPData( facility.dep_violations );
-    facility.violations = violations;
+    console.log(`  🚨 Hydrating violation info from DEP...`);
+    const data = await getDEPData( facility.dep_violations );
+    const dep_violations = {
+      violation_count: data.at(0).violation_count,
+      since: data.at(0).since
+    }
+    facility.dep_violations = dep_violations;
   }
 
   if( facility.clean_air_notes ) {
@@ -152,19 +155,17 @@ async function recordToFacility(record) {
     console.log(`  ✏️  Rendering Facility Notes to HTML...`);
   }
   
+  if( facility.echo_compliance?.length > 0 && facility.echo_compliance.some( permit => permit.status == EchoStatus.VIOLATION ) )
+    facility.alert = true;
   
-
-  facility.zip = facility.address.split(' ').at(-1).trim();
-  facility.alert = facility.permits?.length > 0 && facility.permits.some( permit => permit.status == EchoStatus.VIOLATION );
-  
-  if( facility.permits?.length > 0 ) {
+  if( facility.echo_compliance?.length > 0 ) {
     const formatter = new Intl.NumberFormat("en-US", {
       style: "currency",
       currency: "USD",
       maximumFractionDigits: 0
     });
 
-    const totalPenalties = facility.permits.reduce( (sum, permit) => sum + permit.penalties, 0 );
+    const totalPenalties = facility.echo_compliance.reduce( (sum, permit) => sum + permit.penalties, 0 );
     facility.totalPenalties = formatter.format( totalPenalties );
   }
 

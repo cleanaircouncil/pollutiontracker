@@ -9,7 +9,7 @@
         <i class="fa fa-download"></i> Download PDF
       </a>
 
-      <button data-close>
+      <button data-close-button>
         <i class="fa fa-close"></i>
       </button>
     </div>
@@ -19,7 +19,7 @@
     <i class="fa fa-circle-notch fa-spin" style="--fa-animation-duration: .75s"
     ></i>
   </div>
-  <iframe data-populate="url: @src"></iframe>
+  <iframe data-populate="url: @src" data-iframe></iframe>
 </section>
 
 <style>
@@ -83,11 +83,15 @@
   import { attachment } from "../helpers/store";
 
   const viewerEl = document.querySelector("[data-viewer]");
-  const buttonEl = document.querySelector("[data-viewer] [data-close]");
+
+  const buttonEl = viewerEl.querySelector("[data-close-button]");
+  const iframeEl = viewerEl.querySelector("[data-iframe]")
 
   attachment.subscribe((value) => {
     if (value != null) {
       populateWithData(viewerEl, value);
+    } else {
+      iframeEl.setAttribute("src", "");
     }
 
     viewerEl.toggleAttribute("hidden", value == null);

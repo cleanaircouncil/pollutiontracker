@@ -2,7 +2,29 @@
 
 ---
 
-<figure id="map" class="map" data-map></figure>
+<>
+  <head>
+    <script
+      src="https://unpkg.com/maplibre-gl@latest/dist/maplibre-gl.js"
+      slot="head"></script>
+    <link
+      href="https://unpkg.com/maplibre-gl@latest/dist/maplibre-gl.css"
+      rel="stylesheet"
+      slot="head"
+    />
+  </head>
+
+  <figure id="map" class="map" data-map></figure>
+  <template id="map-marker-stub">
+    <div
+      class="map-marker"
+      data-facility-marker
+      data-populate="alert: @data-alert, slug: @data-facility-slug"
+    >
+      <span class="map-marker__label" data-populate="company_name"></span>
+    </div>
+  </template>
+</>
 
 <style is:global>
   .map {
@@ -108,13 +130,6 @@
   }
 </style>
 
-<script is:inline src="https://unpkg.com/maplibre-gl@latest/dist/maplibre-gl.js"
-></script>
-<link
-  href="https://unpkg.com/maplibre-gl@latest/dist/maplibre-gl.css"
-  rel="stylesheet"
-/>
-
 <script>
   const maplibregl = window["maplibregl"];
   import {
@@ -122,7 +137,8 @@
     data,
     getFacilityBySlug,
   } from "../helpers/store";
-  import { dispatch, listen } from "../helpers/events";
+
+  import { cloneTemplate, populateWithData } from "../helpers/populate";
 
   async function initMap() {
     const map = new maplibregl.Map({
@@ -149,25 +165,15 @@
 
   async function initMarkers(map, data) {
     data.facilities.forEach((facility) => {
-      const el = document.createElement("div");
-      el.classList.add("map-marker");
-      el.toggleAttribute("data-alert", facility.alert);
-      el.toggleAttribute("data-facility-marker");
-      el.setAttribute("data-facility-slug", facility.slug);
+      const markerEl = cloneTemplate("map-marker-stub");
+      populateWithData(markerEl, facility);
 
-      const label = document.createElement("span");
-      label.classList.add("map-marker__label");
-      label.innerText = facility.company_name;
-
-      el.append(label);
-
-      el.addEventListener("click", () => {
-        // dispatch("selectfacility", { facility });
+      markerEl.addEventListener("click", () => {
         window.location.hash = `#${facility.slug}`;
       });
 
       // add marker to map
-      new maplibregl.Marker({ element: el })
+      new maplibregl.Marker({ element: markerEl })
         .setLngLat([facility.longitude, facility.latitude])
         .addTo(map);
     });
@@ -185,7 +191,7 @@
   }
 
   function setCurrentMarker(facility) {
-    const markers = document.querySelectorAll("[data-facility-marker");
+    const markers = document.querySelectorAll("[data-facility-marker]");
     markers.forEach((marker) => {
       marker.toggleAttribute(
         "data-current",

@@ -1,5 +1,5 @@
 import parse from "node-html-parser";
-import airtableAPI, { jsonify } from "./airtable";
+import airtableAPI, { Bases, jsonify } from "./airtable.js";
 
 export default async function fetchDEPDataForURL(dep_link) {
   try {
@@ -15,7 +15,20 @@ export default async function fetchDEPDataForURL(dep_link) {
       Results: row.childNodes[4].innerText.trim()
     }) )
 
-    const violations = inspections.filter( inspection => inspection.results.indexOf("View") >= 0 );
+    const violations = inspections.filter( inspection => inspection.Results.indexOf("View") >= 0 );
+
+    const numYears = 10;
+    const cutoffDate = `${ new Date().getFullYear() - numYears }-01-01`;
+    const recentViolations = violations.filter( violation => violation.Date >= cutoffDate );
+    
+    if( !recentViolations.length > 0 )
+      return undefined;
+
+    return [{
+      Name: dep_link.split("=").at(-1).trim(),
+      "Violation Count": recentViolations.length,
+      Since: recentViolations.at(-1).Date
+    }]
 
     return violations;
   } catch(e) {
@@ -34,7 +47,8 @@ async function updateTable(record) {
     return;
 
   console.log(`  🔗 Getting facility data from DEP...`);
-  const depData = await fetchDEPDataForURL(facility.epa_link);
+  const depData = await fetchDEPDataForURL(facility.dep_link);
+
   if( !depData?.length )
     return;
 
@@ -44,7 +58,7 @@ async function updateTable(record) {
 
   console.log(`  ⬆️  Pushing ${records.length} record(s) to airtable...`);
 
-  await airtableAPI.patch( Bases.ECHO, {
+  await airtableAPI.patch( Bases.DEP, {
     performUpsert: {
       fieldsToMergeOn: [ "Name" ]
     },

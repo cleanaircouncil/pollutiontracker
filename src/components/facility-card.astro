@@ -36,9 +36,9 @@ const { facility = {} } = Astro.props;
   </header>
 
   {
-    facility.permits?.length > 0 && (
+    facility.echo_compliance?.length > 0 && (
       <footer class="grid columns-three gap-tight">
-        {facility.permits.map((permit) => (
+        {facility.echo_compliance.map((permit) => (
           <Permit permit={permit} style="pill" />
         ))}
       </footer>
@@ -114,5 +114,4 @@ const { facility = {} } = Astro.props;
   .facility-card__echo-link {
     text-align: right;
   }
-
 </style>
