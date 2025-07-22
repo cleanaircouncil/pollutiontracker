@@ -4,7 +4,6 @@ import "dotenv/config";
 import { slugify } from "./html.js";
 import { marked } from "marked";
 
-// import dep from "../src/data/dep-data.json" with { type: 'json' };
 import airtableAPI, { Bases, jsonify } from "./airtable.js";
 
 const base = new Airtable({
@@ -18,56 +17,11 @@ const data = {
   ]
 }
 
-
 export const EchoStatus = {
   VALID: "Valid",
   VIOLATION: "Violation",
   TERMINATED: "Terminated"
 }
-
-
-
-// async function resolveAttachments(facility) {
-//   const resolvers = ( facility.attachments || [] ).map( recordId => new Promise((res, rej) => {
-//     base("Attachments").find(recordId, async (error, record) => {
-//       if( error ){
-//         console.error(error);
-//         rej(error);
-//         return;
-//       }
-
-//       const group = {
-//         heading: record.fields.Heading,
-//         attachments: record.fields.Attachments
-//       }
-
-//       console.log(` 📎 Resolved attachments ${group.heading} (${group.attachments.length})`);
-
-//       res(group);
-//     })
-//   }))
-
-//   return await Promise.all(resolvers);
-// }
-
-
-// function getDEPViolations( facility ) {
-//   const info = dep.violations.find( violation => violation.id == facility.id );
-//   if( !info || !info.violations)
-//     return undefined;
-
-//   const numYears = 10
-//   const cutoffDate = `${ new Date().getFullYear() - numYears }-01-01`;
-//   const recentViolations = info.violations.filter( violation => violation.date >= cutoffDate );
-  
-//   if( !recentViolations.length > 0 )
-//     return undefined;
-
-//   return {
-//     count: recentViolations.length,
-//     since: recentViolations.at(-1).date
-//   }
-// }
 
 async function getAll( base, ids ) {
   const results = [];
@@ -197,6 +151,3 @@ base('Facilities')
     fs.writeFileSync("./src/data/data.json", JSON.stringify( data, null, 2 ));
     console.log("✅ Done!")
   })
-
-
-  
