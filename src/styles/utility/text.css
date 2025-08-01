@@ -1,0 +1,49 @@
+.text-detail {
+  font-size: .8rem;
+  font-weight: 500;
+}
+
+.text-delicate {
+  font-weight: 100;
+}
+
+strong.text-detail,
+.text-detail strong {
+  font-weight: 700;
+}
+
+
+.text > * + * {
+  margin-top: .5rem;
+}
+
+.text p {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  word-break: break-word;
+}
+
+
+.text a {
+  color: var(--color-accent);
+  text-decoration: underline;
+  transition: color .2s ease-in-out;
+  cursor: pointer;
+}
+
+.text a:hover {
+  color: var(--color-highlight);
+}
+
+.text ul {
+  padding: 0rem 1.5rem;
+}
+
+.text ul li {
+  margin-bottom: .5rem;
+}
+
+h3 a {
+  color: var(--color-black);
+  text-decoration: none;
+}

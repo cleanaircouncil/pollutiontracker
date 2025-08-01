@@ -1,0 +1,30 @@
+<div id="search" class="search form-controls" data-search>
+  <input
+    id="query"
+    name="query"
+    class="input"
+    autocorrect="off"
+    spellcheck="false"
+    placeholder="Filter by name, permit status, or zip code"
+    data-search-input
+  />
+</div>
+
+<script>
+  import { dispatch } from "../helpers/events";
+  import { updateSearchParam } from "../helpers/location";
+  import { search } from "../helpers/store";
+
+  const inputEl = document.querySelector("[data-search] [data-search-input]");
+
+  if (inputEl instanceof HTMLInputElement) {
+    search.subscribe((query) => {
+      inputEl.value = query;
+    });
+
+    inputEl.addEventListener("input", () => {
+      updateSearchParam("query", inputEl.value);
+      dispatch("search", { value: inputEl.value });
+    });
+  }
+</script>

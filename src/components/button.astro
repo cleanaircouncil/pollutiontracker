@@ -1,0 +1,15 @@
+---
+const { href = undefined, ...rest } = Astro.props;
+---
+
+{
+  href ? (
+    <a class="button" href={ href } data-button {...rest}>
+      <slot/>
+    </a>
+  ) : (
+    <button class="button" data-button {...rest}>
+      <slot/>
+    </button>
+  )
+}

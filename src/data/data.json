@@ -1,0 +1,1223 @@
+{
+  "facilities": [
+    {
+      "company_name": "1646 S 51st St. ",
+      "notes": "<p>DEP <a href=\"https://www.ahs.dep.pa.gov/eFACTSWeb/searchResults_singleFacility.aspx?FacilityID=861991\">https://www.ahs.dep.pa.gov/eFACTSWeb/searchResults_singleFacility.aspx?FacilityID=861991</a> </p>\n",
+      "latitude": 39.9359882,
+      "longitude": -75.2082938,
+      "address": "1646 S 51st St., Philadelphia, PA 19143\n",
+      "description": "Proposed warehouse at site of former fossil fuel tank farm, site of chemical spill\n",
+      "clean_air_notes": "<p>Comments\n<a href=\"https://cleanaircouncil.salsalabs.org/bartramsgarden\">https://cleanaircouncil.salsalabs.org/bartramsgarden</a> \n<a href=\"https://cleanaircouncil.salsalabs.org/bartramsspill\">https://cleanaircouncil.salsalabs.org/bartramsspill</a> \n<a href=\"http://cleanaircouncil.salsalabs.org/bartramscleanup\">http://cleanaircouncil.salsalabs.org/bartramscleanup</a> </p>\n",
+      "slug": "1646-s-51st-st."
+    },
+    {
+      "company_name": "3060 S 61st St.",
+      "notes": "<p>DEP <a href=\"https://www.ahs.dep.pa.gov/eFACTSWeb/searchResults_singleClient.aspx?ClientID=375241\">https://www.ahs.dep.pa.gov/eFACTSWeb/searchResults_singleClient.aspx?ClientID=375241</a></p>\n<p>DEP (former parking lot) <a href=\"https://www.ahs.dep.pa.gov/eFACTSWeb/searchResults_singleSite.aspx?SiteID=711190\">https://www.ahs.dep.pa.gov/eFACTSWeb/searchResults_singleSite.aspx?SiteID=711190</a> </p>\n",
+      "latitude": 39.9209489,
+      "longitude": -75.2180365,
+      "address": "3060 S 61st St. 19153",
+      "description": "Warehouse on contaminated land\n",
+      "clean_air_notes": "<p>Comment\n<a href=\"https://cleanaircouncil.salsalabs.org/3060s61st\">https://cleanaircouncil.salsalabs.org/3060s61st</a></p>\n",
+      "dep_link": "https://www.ahs.dep.pa.gov/eFACTSWeb/searchResults_singleClient.aspx?ClientID=375241",
+      "attachments": [
+        {
+          "heading": "Official Documents",
+          "facility": [
+            "recvmdfxyMfIy3NZO"
+          ],
+          "attachments": [
+            {
+              "id": "attMzqP72qHcisOSJ",
+              "url": "https://v5.airtableusercontent.com/v3/u/43/43/1753977600000/6IQgB1A1qxvolrIMwLIsLQ/3Ln_xyV7glFAjrc8i_u7Sn7vS9G6cSrmlu-HL9KHKa5TVQTEfsJmXvp1IIyaIU-bu9OKQPt0VHs5ixAVnGVzVf6NV057O6lW-nM65P1iqBgYf4eBn8_AHtfE3oO0g58zL2A9eaIIryamlkcysDtuG4idm3LtRll5mUJZRJjuGok/SrgxtwAfb44GxrXRtIeMzINcemN2Y7m5jC4ox_ZTObg",
+              "filename": "img07312023_00011.pdf",
+              "size": 1168643,
+              "type": "application/pdf",
+              "thumbnails": {
+                "small": {
+                  "url": "https://v5.airtableusercontent.com/v3/u/43/43/1753977600000/iDJZXYZWJzd9BFSK8luooQ/9FlskUDVgrTTTUeiy_To9AZwOl9_b9uGtmFt-3l0sS-JpwVFBx6zLt0wg86Q5VciA4_lQ7is6Di1k0Zyxu7s9_matLAZdDB6nuBJnD3dUXud6GiMTBxnYhgJ77EhGOAmnQg6S_wmASw4jPy3ZIzOlg/60_N1p_dFkzq8ifJW06bi8kaOY5jGznP5ZOSpl0mbfs",
+                  "width": 27,
+                  "height": 36
+                },
+                "large": {
+                  "url": "https://v5.airtableusercontent.com/v3/u/43/43/1753977600000/d1w0jh4R_jAtZtwQMYQyiA/WrzJXldf5YwR6uPULMi1_Lczh-T6q3LG3h8XfU54LUcnzL0ZjVWvyfJD7bjYrwEUx51foJB9ei_e7L6N2rTKi8PZUsltBkMXOOFYaxhr--jAEBwAAtohLsMQj9SWU7wL2dHgABW3Zob6Vf-v43fV8w/ObJW784wgwPTlAhZCkrlfsY_STztt6H-eHxr2Gb8tRE",
+                  "width": 512,
+                  "height": 678
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "slug": "3060-s-61st-st."
+    },
+    {
+      "company_name": "Adelphia Compressor Station\n",
+      "notes": "<p>EPA <a href=\"https://echo.epa.gov/detailed-facility-report?fid=110071515654\">https://echo.epa.gov/detailed-facility-report?fid=110071515654</a> </p>\n<p>DEP <a href=\"https://www.ahs.dep.pa.gov/eFACTSWeb/searchResults_singleSite.aspx?SiteID=829836\">https://www.ahs.dep.pa.gov/eFACTSWeb/searchResults_singleSite.aspx?SiteID=829836</a> </p>\n",
+      "latitude": 39.8156776,
+      "longitude": -75.4398559,
+      "address": "1111 W Ridge Rd, Linwood, PA 19061\n",
+      "description": "Compresses pipeline gas for distribution\n",
+      "clean_air_notes": "<p>Comments\nPlan Approval <a href=\"https://cleanaircouncil.salsalabs.org/adelphiamarcushook\">https://cleanaircouncil.salsalabs.org/adelphiamarcushook</a>\nAir <a href=\"https://cleanaircouncil.salsalabs.org/adelphiacompressor\">https://cleanaircouncil.salsalabs.org/adelphiacompressor</a></p>\n",
+      "epa_link": "https://echo.epa.gov/detailed-facility-report?fid=110071515654 ",
+      "dep_link": "https://www.ahs.dep.pa.gov/eFACTSWeb/searchResults_singleSite.aspx?SiteID=829836 ",
+      "image": [
+        {
+          "id": "attGip66aUxgBgYFZ",
+          "width": 1308,
+          "height": 811,
+          "url": "https://v5.airtableusercontent.com/v3/u/43/43/1753977600000/8L6Lx8AwOa0nZqVlEEnzEw/-vTP4sL7CPRxcZz6tHZcSs452Q0MEmaLyI5FFlOeiGUW3nKEO3pKs9umOhY8lRGDIsS-wF-MBd-WPRs-q2FXd6y1xQl9hHQj1pB2jjKO8GrO3FMZcSegPskAX6AHwdtyIPQgBvFeMCrdmmhwUBnwf_qV2JxhSAvaNk55LOBAYIRfLJDb_LGmndoNQ8vRdo1W/-D5kGk_EWN1dZQmz4jTxrkQvfLqMuQO4XRGFU2L-1uw",
+          "filename": "Screenshot 2025-07-07 at 16.59.58.png",
+          "size": 1620929,
+          "type": "image/png",
+          "thumbnails": {
+            "small": {
+              "url": "https://v5.airtableusercontent.com/v3/u/43/43/1753977600000/CiP2DyS8Q_JVTT0haRpQMg/zI_ql0Gui_MSxypLWcvSPh0CXZ6qmZp0WIRnuarS8VeujCN1FNbIyKWsGFiIeAl3-D6diQymRVPT7Edl9PBhPoFRVpvl_GdG3fntuo4pe6ZZRkmyVYj4HI0NdTa-THwaI3R2sQNbOSuAifk-H_6GdQ/lXGjg5rrh_-njVVY9h4bxvVtvNlwHAyU4zZ5roE94IY",
+              "width": 58,
+              "height": 36
+            },
+            "large": {
+              "url": "https://v5.airtableusercontent.com/v3/u/43/43/1753977600000/QkhoKWIAvMpyePyJ6VPJDg/K2lBAyLPiBRuMkWjLu0Pxy-CPpfoECrr5nWUQDQfjSkMM0FHj1MPau4Uqf-dp5y7Kl-YQF5W2iimd48G9AV795M_guJos6k3GHtnSUWtD75A0FOVcyKnxha94ZmQ_haEyrw7cVaM7L7SsulMhzm9vg/vErVQ53MnJhReVtH-0BGnOR4TBjRTyr77Xj4q0aGoE0",
+              "width": 826,
+              "height": 512
+            },
+            "full": {
+              "url": "https://v5.airtableusercontent.com/v3/u/43/43/1753977600000/Yswlo4CeWcauzxGNwhScMg/3V7AsJi3cRWFJIMd1njBRHXSi0BaUGFcmwPyLNcwI-8_wC8DOlwId-i4rqYxZSZ73jt73asuhj_c9S74W4Kz3yY2kfniEO1rNsXDEA4By8bXSxTlY2FbqmH6Uv37amMuB9YhiSAtW85mxOYGDADeXw/bl66Qtk0wbdDCyhjPR8U15YnIKNONNODgutNuAeIjTs",
+              "width": 1308,
+              "height": 811
+            }
+          }
+        }
+      ],
+      "echo_compliance": [
+        {
+          "statute": "CAA",
+          "status": "Valid",
+          "last_inspection": "2022-11-10",
+          "last_scraped": "2025-07-21",
+          "penalties": 0,
+          "status_text": "No Violation Identified"
+        }
+      ],
+      "slug": "adelphia-compressor-station"
+    },
+    {
+      "company_name": "Bellwether District",
+      "notes": "<p>DEP <a href=\"https://www.ahs.dep.pa.gov/eFACTSWeb/searchResults_singleSite.aspx?SiteID=864353\">https://www.ahs.dep.pa.gov/eFACTSWeb/searchResults_singleSite.aspx?SiteID=864353</a>\n<a href=\"https://www.ahs.dep.pa.gov/eFACTSWeb/searchResults_singleSite.aspx?SiteID=856656\">https://www.ahs.dep.pa.gov/eFACTSWeb/searchResults_singleSite.aspx?SiteID=856656</a> \n<a href=\"https://www.ahs.dep.pa.gov/eFACTSWeb/searchResults_singleSite.aspx?SiteID=879427\">https://www.ahs.dep.pa.gov/eFACTSWeb/searchResults_singleSite.aspx?SiteID=879427</a></p>\n<p>EPA <a href=\"https://echo.epa.gov/detailed-facility-report?fid=110071643742\">https://echo.epa.gov/detailed-facility-report?fid=110071643742</a></p>\n<p><a href=\"https://echo.epa.gov/detailed-facility-report?fid=110071363389\">https://echo.epa.gov/detailed-facility-report?fid=110071363389</a></p>\n<p><a href=\"https://echo.epa.gov/detailed-facility-report?fid=110044831322\">https://echo.epa.gov/detailed-facility-report?fid=110044831322</a> (Schuylkill River Tank Farm)</p>\n",
+      "latitude": 39.9199111,
+      "longitude": -75.1986242,
+      "address": "3144 W Passyunk Ave, Philadelphia, PA 19145",
+      "description": "Proposed warehouse redevelopment on former Philly refinery\n",
+      "clean_air_notes": "<p>Comments\n<a href=\"https://cleanaircouncil.salsalabs.org/hilcolifesciences\">https://cleanaircouncil.salsalabs.org/hilcolifesciences</a>\n<a href=\"https://cleanaircouncil.salsalabs.org/hilcodontfloodschuylkill\">https://cleanaircouncil.salsalabs.org/hilcodontfloodschuylkill</a>\n<a href=\"https://cleanaircouncil.salsalabs.org/hilco2ndwarehouse\">https://cleanaircouncil.salsalabs.org/hilco2ndwarehouse</a> \n<a href=\"https://cleanaircouncil.salsalabs.org/hilcostormwater\">https://cleanaircouncil.salsalabs.org/hilcostormwater</a> \n<a href=\"https://cleanaircouncil.salsalabs.org/hrp\">https://cleanaircouncil.salsalabs.org/hrp</a> </p>\n<p><a href=\"https://cleanaircouncil.salsalabs.org/refinerynaphthalenespill\">https://cleanaircouncil.salsalabs.org/refinerynaphthalenespill</a>\n<a href=\"https://cleanaircouncil.salsalabs.org/hilcorefinerysrtfndemo/index.html\">https://cleanaircouncil.salsalabs.org/hilcorefinerysrtfndemo/index.html</a> \n<a href=\"https://cleanaircouncil.salsalabs.org/hilcocleanup\">https://cleanaircouncil.salsalabs.org/hilcocleanup</a> </p>\n",
+      "epa_link": "https://echo.epa.gov/detailed-facility-report?fid=110071643742",
+      "echo_compliance": [
+        {
+          "statute": "CWA",
+          "status": "Valid",
+          "last_scraped": "2025-07-21",
+          "penalties": 0,
+          "status_text": "No Violation Identified"
+        }
+      ],
+      "slug": "bellwether-district"
+    },
+    {
+      "company_name": "BP Point Breeze",
+      "notes": "<p>DEP (warehouse) <a href=\"https://www.ahs.dep.pa.gov/eFACTSWeb/searchResults_singleSite.aspx?SiteID=864517\">https://www.ahs.dep.pa.gov/eFACTSWeb/searchResults_singleSite.aspx?SiteID=864517</a>\n<a href=\"https://www.ahs.dep.pa.gov/eFACTSWeb/searchResults_singleSite.aspx?SiteID=859132\">https://www.ahs.dep.pa.gov/eFACTSWeb/searchResults_singleSite.aspx?SiteID=859132</a>\n<a href=\"https://www.ahs.dep.pa.gov/eFACTSWeb/searchResults_singleSite.aspx?SiteID=859106\">https://www.ahs.dep.pa.gov/eFACTSWeb/searchResults_singleSite.aspx?SiteID=859106</a></p>\n<p>DEP (former tank farm) <a href=\"https://www.ahs.dep.pa.gov/eFACTSWeb/searchResults_singleSite.aspx?SiteID=586424\">https://www.ahs.dep.pa.gov/eFACTSWeb/searchResults_singleSite.aspx?SiteID=586424</a></p>\n",
+      "latitude": 39.913679,
+      "longitude": -75.214482,
+      "address": "6310 Passyunk Ave, Philadelphia, PA 19153\n",
+      "description": "Warehouse, former fossil fuel tank farm\n",
+      "clean_air_notes": "<p>Comments\nChapter 105 <a href=\"https://cleanaircouncil.salsalabs.org/swphilly\">https://cleanaircouncil.salsalabs.org/swphilly</a> \nChapter 105 (2022) <a href=\"https://cleanaircouncil.salsalabs.org/warehouse/index.html\">https://cleanaircouncil.salsalabs.org/warehouse/index.html</a> \nChapter 102 (2023) <a href=\"https://cleanaircouncil.salsalabs.org/bppointbreezechapter102/index.html\">https://cleanaircouncil.salsalabs.org/bppointbreezechapter102/index.html</a> </p>\n",
+      "slug": "bp-point-breeze"
+    },
+    {
+      "company_name": "Brigaloon Inc.",
+      "latitude": 39.9000989,
+      "longitude": -75.2629964,
+      "address": "1000 Calcon Hook Rd., Sharon Hill, PA 19079",
+      "description": "Proposed warehouse on contaminated land",
+      "clean_air_notes": "<p>Comment\n<a href=\"https://cleanaircouncil.salsalabs.org/darbyredevelopment\">https://cleanaircouncil.salsalabs.org/darbyredevelopment</a></p>\n",
+      "slug": "brigaloon-inc."
+    },
+    {
+      "company_name": "Chelsea Tank Farm",
+      "notes": "<p>EPA <a href=\"https://echo.epa.gov/detailed-facility-report?fid=110000817484&ej_type=sup&ej_compare=US\">https://echo.epa.gov/detailed-facility-report?fid=110000817484&amp;ej_type=sup&amp;ej_compare=US</a></p>\n<p>DEP <a href=\"https://www.ahs.dep.pa.gov/eFACTSWeb/searchResults_singleSite.aspx?SiteID=502590\">https://www.ahs.dep.pa.gov/eFACTSWeb/searchResults_singleSite.aspx?SiteID=502590</a></p>\n",
+      "latitude": 41.408345,
+      "longitude": -78.538242,
+      "address": "920 Cherry Tree Rd, Aston, PA 19014",
+      "description": "Fossil Fuel Tank Farm",
+      "clean_air_notes": "<p><a href=\"https://cleanaircouncil.salsalabs.org/chelseatankfarm\">https://cleanaircouncil.salsalabs.org/chelseatankfarm</a></p>\n",
+      "epa_link": "https://echo.epa.gov/detailed-facility-report?fid=110000817484&ej_type=sup&ej_compare=US",
+      "echo_compliance": [
+        {
+          "statute": "CAA",
+          "status": "Valid",
+          "last_inspection": "2024-06-11",
+          "last_scraped": "2025-07-21",
+          "penalties": 0,
+          "status_text": "No Violation Identified"
+        },
+        {
+          "statute": "CWA",
+          "status": "Violation",
+          "last_inspection": "2024-10-23",
+          "last_scraped": "2025-07-21",
+          "penalties": 0,
+          "status_text": "Violation Identified"
+        },
+        {
+          "statute": "RCRA",
+          "status": "Valid",
+          "last_inspection": "1996-12-06",
+          "last_scraped": "2025-07-21",
+          "penalties": 0,
+          "status_text": "No Violation Identified"
+        }
+      ],
+      "slug": "chelsea-tank-farm",
+      "alert": true
+    },
+    {
+      "company_name": "Chemtrade Solutions LLC\n",
+      "notes": "<p>EPA <a href=\"https://www.epa.gov/hwcorrectiveactioncleanups/documents-reports-and-photographs-chemtrade-solutions-llc-formerly\">https://www.epa.gov/hwcorrectiveactioncleanups/documents-reports-and-photographs-chemtrade-solutions-llc-formerly</a> </p>\n",
+      "latitude": 39.8091658,
+      "longitude": -75.4335328,
+      "address": "6300 Philadelphia Pike Claymont, DE 19703",
+      "description": "Hazardous waste cleanup",
+      "clean_air_notes": "<p>Comment\n<a href=\"https://cleanaircouncil.salsalabs.org/claymontcleanup\">https://cleanaircouncil.salsalabs.org/claymontcleanup</a></p>\n",
+      "epa_link": "https://www.epa.gov/hwcorrectiveactioncleanups/documents-reports-and-photographs-chemtrade-solutions-llc-formerly ",
+      "slug": "chemtrade-solutions-llc"
+    },
+    {
+      "company_name": "Clean Earth of Philadelphia\n",
+      "notes": "<p>DEP <a href=\"https://www.ahs.dep.pa.gov/eFACTSWeb/searchResults_singleSite.aspx?SiteID=448636\">https://www.ahs.dep.pa.gov/eFACTSWeb/searchResults_singleSite.aspx?SiteID=448636</a></p>\n<p>EPA <a href=\"https://echo.epa.gov/detailed-facility-report?fid=110000919784\">https://echo.epa.gov/detailed-facility-report?fid=110000919784</a>  </p>\n",
+      "latitude": 39.9215322,
+      "longitude": -75.2135168,
+      "address": "3201 S 61st St. Philadelphia, PA 19153",
+      "description": "Contaminated Soil Incinerator\n",
+      "clean_air_notes": "<p>Comments\nNPDES <a href=\"https://cleanaircouncil.salsalabs.org/soilincinerator\">https://cleanaircouncil.salsalabs.org/soilincinerator</a> </p>\n",
+      "epa_link": "https://echo.epa.gov/detailed-facility-report?fid=110000919784  ",
+      "dep_link": "https://www.ahs.dep.pa.gov/eFACTSWeb/searchResults_singleSite.aspx?SiteID=448636",
+      "echo_compliance": [
+        {
+          "statute": "CAA",
+          "status": "Valid",
+          "last_inspection": "2021-02-26",
+          "last_scraped": "2025-07-21",
+          "penalties": 1000,
+          "status_text": "No Violation Identified"
+        },
+        {
+          "statute": "CWA",
+          "status": "Valid",
+          "last_inspection": "2022-03-24",
+          "last_scraped": "2025-07-21",
+          "penalties": 0,
+          "status_text": "No Violation Identified"
+        },
+        {
+          "statute": "RCRA",
+          "status": "Valid",
+          "last_inspection": "2012-01-20",
+          "last_scraped": "2025-07-21",
+          "penalties": 0,
+          "status_text": "No Violation Identified"
+        }
+      ],
+      "dep_violations": {
+        "violation_count": 7,
+        "since": "2015-09-10"
+      },
+      "slug": "clean-earth-of-philadelphia",
+      "totalPenalties": "$1,000"
+    },
+    {
+      "company_name": "Congoleum",
+      "notes": "<p>EPA <a href=\"https://echo.epa.gov/detailed-facility-report?fid=110000584699&ej_type=sup&ej_compare=US\">https://echo.epa.gov/detailed-facility-report?fid=110000584699&amp;ej_type=sup&amp;ej_compare=US</a></p>\n<p>DEP <a href=\"https://www.ahs.dep.pa.gov/eFACTSWeb/searchResults_singleSite.aspx?SiteID=238211\">https://www.ahs.dep.pa.gov/eFACTSWeb/searchResults_singleSite.aspx?SiteID=238211</a> </p>\n",
+      "permit_status": "Open for Comment",
+      "latitude": 39.827374,
+      "longitude": -75.414101,
+      "address": "4401 Ridge Rd. Trainer, PA 19061",
+      "description": "Flooring Manufacturer",
+      "clean_air_notes": "<p>Comments\nAir <a href=\"https://cleanaircouncil.salsalabs.org/congoleumcarcinogens\">https://cleanaircouncil.salsalabs.org/congoleumcarcinogens</a></p>\n",
+      "epa_link": "https://echo.epa.gov/detailed-facility-report?fid=110000584699&ej_type=sup&ej_compare=US",
+      "dep_link": "https://www.ahs.dep.pa.gov/eFACTSWeb/searchResults_singleSite.aspx?SiteID=238211 ",
+      "attachments": [
+        {
+          "heading": "Application Documents",
+          "facility": [
+            "recZoKwYeXSORFFIj"
+          ],
+          "attachments": [
+            {
+              "id": "attbkqxAjYaO47mJ5",
+              "url": "https://v5.airtableusercontent.com/v3/u/43/43/1753977600000/8KBSHOz3bQnAULIu_JyDwg/uqFFRGbhHqhf2HrfJG4HcY011CDvfrDX0b7MSfi5b0_2bKtimcYs2fTYPSGzbI8VBMNqI38jFG7ges-7GjRbtOiqBF5smt6TcD4pLqenjZ5C13evFDsF9O-nU8WFFMGosf5BZBzuOfVhtsekio4V9FFjO8_pC-A7Rk8F7i0jYR546ajFquUW4st8mZIYcmRcia3OK5mAuAHVYy5_ZT5L5PoYwcv0PAY9R1DFiPEvb2Mfx_jvpHduaooa67aC1XZpUPCzt-xl1-IsRmQ3MSWzkdo-Cjx67TZQ6bGT7x1VERs/wPujYcsoeoJtHa-FsK-jof4F9EHcroU4yDAt-HmIudw",
+              "filename": "DEP - ERMS (Clean Water CW) -  DT  PERMITS-REGISTRATION-APPROVALS FB  PAG-03 GENERAL PERMIT (NSA3) Year  2024 Permit-Project   PAG030310....pdf",
+              "size": 230022,
+              "type": "application/pdf",
+              "thumbnails": {
+                "small": {
+                  "url": "https://v5.airtableusercontent.com/v3/u/43/43/1753977600000/GpzLZXzQZCf3BMJjd3owvQ/2lPgDwCfdMq6TYin2B2jfLypX0XKgdNKt6CIEPG6tMecjMmbJAnoKgpeUqxJCqmMII3n3SbSYzxnV_YpjrDStcCKfe7rUOTuScrJwNghpe_s7VP6SXUeNBqh2pm-Nlt5723dyw0AA6s_oBa9OcGd7g/lrJMz07F9Vwe01gK3pMbCM9riexO3ArU909clDdOpv8",
+                  "width": 23,
+                  "height": 36
+                },
+                "large": {
+                  "url": "https://v5.airtableusercontent.com/v3/u/43/43/1753977600000/d_k9X-miZ43LhH6znFGZ1w/fCRmD5FZ1MuLfK0TYkTM_nm-c7nLTh8RD8VqlHS2DRtBXgJb9o0SDYVJUaFxZprGKj50E1vWBdss8WRIP4lmKoVOXM5mb5w4_WZ-sd6W7RcQkpXMcFi2xHQ3Z8Uj9dX0cJBzaX2jhqLq2ecP_b0nww/O_gHAQVDGcmn7ddl_ZCR94zPCfIUZPudWMFuDksxvwM",
+                  "width": 512,
+                  "height": 791
+                }
+              }
+            },
+            {
+              "id": "attMFJmVmcsWgmiAx",
+              "url": "https://v5.airtableusercontent.com/v3/u/43/43/1753977600000/w6sLnBXGSykPBcaQCjxgPQ/LgL-BnpOrDJHcPM9yTOtZCqpYO-ewm4fb8DPOJTVtGb118x0Uf486etwpojlRaRj_DrCafQNMl6GTvgSPCS3c3LFc6Ic4XCtLs-KJuZb7CDu15OS0cCLzMrNI34VxBgzLETs0G63P8xx3jTkq4aTmuwXFaJaS-qfA3Mg2mzcckYrxPzd3UFP4vrlnumSVSFPmGHsB4ZGuzs-o0FC4GPq1_7kqs_rO_d-pE4Hr9rPCJXnM7Y1attIe7HoP649oTyhMouy7Mo8AmyD79vKuQ3ZYWftRC7JNZLuuOCp3Gv-Ln8/7o-EKpS4nvACCJuoFL4PTuMQZIJiNYWXprVm_DlOMCU",
+              "filename": "DEP - ERMS (Clean Water CW) -  DT  PERMITS-REGISTRATION-APPROVALS FB  PAG-03 GENERAL PERMIT (NSA3) Year  2024 Permit-Project   PAG030310(9).pdf",
+              "size": 105393,
+              "type": "application/pdf",
+              "thumbnails": {
+                "small": {
+                  "url": "https://v5.airtableusercontent.com/v3/u/43/43/1753977600000/HHsbyAvClUZRYu72D7g9vA/c9mwlmnRekg1ET1JBXKkpjYZ_2esEJPrgKzK7dHAKo5B2hrniMFC2OCWrF6aZVb9XZ9RKmFe9RwwuYlkm7VCV3A0Bxa5QjUJ5Q_oi84JLRfwADuCga-djuQAszN9FG9YWwH_wKvg3frrkm1ikHBh9w/00_usN4dEBtVmbT_ZihXUWrZMygf2y-tvqMPPEVTJ4M",
+                  "width": 28,
+                  "height": 36
+                },
+                "large": {
+                  "url": "https://v5.airtableusercontent.com/v3/u/43/43/1753977600000/w-DLBXLVHM0ve9K3N3PK9Q/ZDzWxbJrvy-Xw6xi7OU9Ed23DkXKzSUQri7gSlzjxhGT0PIOE2r4qiTN-nRfa3OGxoRjaA1FIZet9kiB0wC2cQdaIkYUEoL8RtJu9llbE3vzbO6DcWknNdFkRWi13DQsE4GtoblzKTNkf_rkhGlEkg/OyL8rDITtY7B_sKDk-bL1sumjysjnyULF9oQnFA-4_g",
+                  "width": 512,
+                  "height": 663
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "echo_compliance": [
+        {
+          "statute": "CAA",
+          "status": "Valid",
+          "last_inspection": "2023-11-17",
+          "last_scraped": "2025-07-21",
+          "penalties": 0,
+          "status_text": "No Violation Identified"
+        },
+        {
+          "statute": "CWA",
+          "status": "Terminated",
+          "last_inspection": "2012-09-27",
+          "last_scraped": "2025-07-21",
+          "penalties": 0,
+          "status_text": "Terminated Permit"
+        },
+        {
+          "statute": "RCRA",
+          "status": "Valid",
+          "last_inspection": "2025-03-26",
+          "last_scraped": "2025-07-21",
+          "penalties": 0,
+          "status_text": "No Violation Identified"
+        }
+      ],
+      "dep_violations": {
+        "violation_count": 17,
+        "since": "2015-02-20"
+      },
+      "slug": "congoleum"
+    },
+    {
+      "company_name": "Darby Creek Tank Farm",
+      "notes": "<p>EPA <a href=\"https://echo.epa.gov/detailed-facility-report?fid=110007772785\">https://echo.epa.gov/detailed-facility-report?fid=110007772785</a></p>\n<p>DEP <a href=\"https://www.ahs.dep.pa.gov/eFACTSWeb/searchResults_singleSite.aspx?SiteID=270538\">https://www.ahs.dep.pa.gov/eFACTSWeb/searchResults_singleSite.aspx?SiteID=270538</a></p>\n",
+      "latitude": 39.9000454,
+      "longitude": -75.2625463,
+      "address": "Calcon and Hook Rds, Darby, PA 19023",
+      "description": "Inactive fossil fuel tank farm\n",
+      "clean_air_notes": "<p>Comments\n<a href=\"https://cleanaircouncil.salsalabs.org/DarbyCreekTankFarmNPDES\">https://cleanaircouncil.salsalabs.org/DarbyCreekTankFarmNPDES</a></p>\n",
+      "epa_link": "https://echo.epa.gov/detailed-facility-report?fid=110007772785",
+      "echo_compliance": [
+        {
+          "statute": "CAA",
+          "status": "Valid",
+          "last_inspection": "2022-08-02",
+          "last_scraped": "2025-07-21",
+          "penalties": 0,
+          "status_text": "No Violation Identified"
+        },
+        {
+          "statute": "CWA",
+          "status": "Terminated",
+          "last_inspection": "2023-05-16",
+          "last_scraped": "2025-07-21",
+          "penalties": 0,
+          "status_text": "Terminated Permit"
+        },
+        {
+          "statute": "RCRA",
+          "status": "Valid",
+          "last_inspection": "2023-08-08",
+          "last_scraped": "2025-07-21",
+          "penalties": 0,
+          "status_text": "No Violation Identified"
+        }
+      ],
+      "slug": "darby-creek-tank-farm"
+    },
+    {
+      "company_name": "DELCORA",
+      "notes": "<p>DEP <a href=\"https://www.ahs.dep.pa.gov/eFACTSWeb/searchResults_singleSite.aspx?SiteID=454804\">https://www.ahs.dep.pa.gov/eFACTSWeb/searchResults_singleSite.aspx?SiteID=454804</a>\n<a href=\"https://www.ahs.dep.pa.gov/eFACTSWeb/searchResults_singleSite.aspx?SiteID=858179\">https://www.ahs.dep.pa.gov/eFACTSWeb/searchResults_singleSite.aspx?SiteID=858179</a></p>\n<p>EPA <a href=\"https://echo.epa.gov/detailed-facility-report?fid=110000547098\">https://echo.epa.gov/detailed-facility-report?fid=110000547098</a> </p>\n",
+      "latitude": 39.8261529,
+      "longitude": -75.3929531,
+      "address": "3201 W Front St., Chester, PA 19013",
+      "description": "Sewage and Industrial Waste Incinerator",
+      "clean_air_notes": "<p>Comments\nAir <a href=\"https://cleanaircouncil.salsalabs.org/delcora\">https://cleanaircouncil.salsalabs.org/delcora</a>\nNPDES (2021) <a href=\"https://cleanaircouncil.salsalabs.org/chesterwater\">https://cleanaircouncil.salsalabs.org/chesterwater</a>\nSolid Waste Transfer (2021) <a href=\"https://cleanaircouncil.salsalabs.org/delcoraaquasolidwastetransfer\">https://cleanaircouncil.salsalabs.org/delcoraaquasolidwastetransfer</a>\nWaste Tunnel <a href=\"https://cleanaircouncil.salsalabs.org/delcorawastewatertunnel\">https://cleanaircouncil.salsalabs.org/delcorawastewatertunnel</a> </p>\n",
+      "epa_link": "https://echo.epa.gov/detailed-facility-report?fid=110000547098 ",
+      "echo_compliance": [
+        {
+          "statute": "CAA",
+          "status": "Violation",
+          "last_inspection": "2025-02-04",
+          "last_scraped": "2025-07-21",
+          "penalties": 62075,
+          "status_text": "Violation w/in 1 Year"
+        },
+        {
+          "statute": "CWA",
+          "status": "Violation",
+          "last_inspection": "2024-10-25",
+          "last_scraped": "2025-07-21",
+          "penalties": 0,
+          "status_text": "Violation Identified"
+        },
+        {
+          "statute": "RCRA",
+          "status": "Valid",
+          "last_inspection": "1996-06-26",
+          "last_scraped": "2025-07-21",
+          "penalties": 0,
+          "status_text": "No Violation Identified"
+        }
+      ],
+      "slug": "delcora",
+      "alert": true,
+      "totalPenalties": "$62,075"
+    },
+    {
+      "company_name": "East 10th St. Site",
+      "notes": "<p>EPA <a href=\"https://cumulis.epa.gov/supercpad/cursites/csitinfo.cfm?id=0304250\">https://cumulis.epa.gov/supercpad/cursites/csitinfo.cfm?id=0304250</a></p>\n<p>DEP <a href=\"https://www.ahs.dep.pa.gov/eFACTSWeb/searchResults_singleSite.aspx?SiteID=873616\">https://www.ahs.dep.pa.gov/eFACTSWeb/searchResults_singleSite.aspx?SiteID=873616</a></p>\n",
+      "latitude": 39.820701,
+      "longitude": -75.414556,
+      "address": "201 East Tenth St, Marcus Hook, PA 19061",
+      "description": "Contaminated Industrial Site",
+      "clean_air_notes": "<p><a href=\"https://cleanaircouncil.salsalabs.org/nationalprioritieslist\">https://cleanaircouncil.salsalabs.org/nationalprioritieslist</a></p>\n",
+      "epa_link": "https://cumulis.epa.gov/supercpad/cursites/csitinfo.cfm?id=0304250",
+      "slug": "east-10th-st.-site"
+    },
+    {
+      "company_name": "Ecolab Inc.\n",
+      "notes": "<p>EPA <a href=\"https://www.epa.gov/ods-phaseout/methyl-bromide\">https://www.epa.gov/ods-phaseout/methyl-bromide</a></p>\n<p>DEP <a href=\"https://www.ahs.dep.pa.gov/eFACTSWeb/searchResults_singleSite.aspx?SiteID=505501\">https://www.ahs.dep.pa.gov/eFACTSWeb/searchResults_singleSite.aspx?SiteID=505501</a></p>\n",
+      "latitude": 39.952583,
+      "longitude": -75.165222,
+      "address": "3501 S. Columbus Boulevard, Philadelphia, PA 19148\n",
+      "description": "Fumigator",
+      "clean_air_notes": "<p>Comment\n<a href=\"https://cleanaircouncil.salsalabs.org/amsmethylbromide\">https://cleanaircouncil.salsalabs.org/amsmethylbromide</a></p>\n",
+      "epa_link": "https://www.epa.gov/ods-phaseout/methyl-bromide",
+      "slug": "ecolab-inc."
+    },
+    {
+      "company_name": "Ecomaterials \n",
+      "notes": "<p>EPA <a href=\"https://echo.epa.gov/detailed-facility-report?fid=110071825345\">https://echo.epa.gov/detailed-facility-report?fid=110071825345</a> </p>\n<p>DEP <a href=\"https://www.ahs.dep.pa.gov/eFACTSWeb/searchResults_singleSite.aspx?SiteID=864332\">https://www.ahs.dep.pa.gov/eFACTSWeb/searchResults_singleSite.aspx?SiteID=864332</a>\n<a href=\"https://www.ahs.dep.pa.gov/eFACTSWeb/searchResults_singleSite.aspx?SiteID=863306\">https://www.ahs.dep.pa.gov/eFACTSWeb/searchResults_singleSite.aspx?SiteID=863306</a> </p>\n",
+      "latitude": 39.9171486,
+      "longitude": -75.2098776,
+      "address": "6110 Passyunk Ave, Philadelphia, PA 19153",
+      "description": "Contaminated soil treatment facility",
+      "clean_air_notes": "<p>Comment\n<a href=\"https://cleanaircouncil.salsalabs.org/ecomaterials\">https://cleanaircouncil.salsalabs.org/ecomaterials</a> </p>\n",
+      "epa_link": "https://echo.epa.gov/detailed-facility-report?fid=110071825345 ",
+      "echo_compliance": [
+        {
+          "statute": "CWA",
+          "status": "Valid",
+          "last_scraped": "2025-07-21",
+          "penalties": 0,
+          "status_text": "Unknown"
+        }
+      ],
+      "slug": "ecomaterials"
+    },
+    {
+      "company_name": "Eddystone Generation Station\n",
+      "notes": "<p>EPA <a href=\"https://echo.epa.gov/detailed-facility-report?fid=110000817493\">https://echo.epa.gov/detailed-facility-report?fid=110000817493</a></p>\n<p>DEP <a href=\"https://www.ahs.dep.pa.gov/eFACTSWeb/searchResults_singleSite.aspx?SiteID=517435\">https://www.ahs.dep.pa.gov/eFACTSWeb/searchResults_singleSite.aspx?SiteID=517435</a></p>\n",
+      "latitude": 39.8601215,
+      "longitude": -75.3262046,
+      "address": "1 Industrial Highway, Eddystone Borough, PA 19022\n",
+      "description": "Oil-burning peaker plant",
+      "clean_air_notes": "<p>Comment\nAir <a href=\"https://cleanaircouncil.salsalabs.org/eddystone\">https://cleanaircouncil.salsalabs.org/eddystone</a></p>\n",
+      "epa_link": " https://echo.epa.gov/detailed-facility-report?fid=110000817493",
+      "echo_compliance": [
+        {
+          "statute": "CAA",
+          "status": "Violation",
+          "last_inspection": "2025-01-31",
+          "last_scraped": "2025-07-21",
+          "penalties": 8028,
+          "status_text": "Violation w/in 1 Year"
+        },
+        {
+          "statute": "CWA",
+          "status": "Valid",
+          "last_inspection": "2024-12-12",
+          "last_scraped": "2025-07-21",
+          "penalties": 0,
+          "status_text": "No Violation Identified"
+        },
+        {
+          "statute": "RCRA",
+          "status": "Valid",
+          "last_inspection": "2024-05-30",
+          "last_scraped": "2025-07-21",
+          "penalties": 0,
+          "status_text": "No Violation Identified"
+        },
+        {
+          "statute": "TSCA",
+          "status": "Valid",
+          "last_inspection": "2023-05-31",
+          "last_scraped": "2025-07-21",
+          "penalties": 0,
+          "status_text": "In Compliance"
+        }
+      ],
+      "slug": "eddystone-generation-station",
+      "alert": true,
+      "totalPenalties": "$8,028"
+    },
+    {
+      "company_name": "Elmwood Park Plaza",
+      "notes": "<p>City of Philadelphia <a href=\"https://atlas.phila.gov/6930%20ELMWOOD%20AVE/li\">https://atlas.phila.gov/6930%20ELMWOOD%20AVE/li</a></p>\n",
+      "latitude": 39.9170835,
+      "longitude": -75.2364723,
+      "address": "6930 Elmwood Ave, Philadelphia, PA 19142",
+      "description": "Parking lot where unpermitted auto work is often conducted",
+      "clean_air_notes": "<p>Comment\n<a href=\"https://cleanaircouncil.salsalabs.org/70thandElmwoodSouthwestPhilly\">https://cleanaircouncil.salsalabs.org/70thandElmwoodSouthwestPhilly</a></p>\n",
+      "slug": "elmwood-park-plaza"
+    },
+    {
+      "company_name": "Entegris",
+      "notes": "<p>EPA <a href=\"https://echo.epa.gov/detailed-facility-report?fid=110000336093&ej_type=sup&ej_compare=US\">https://echo.epa.gov/detailed-facility-report?fid=110000336093&amp;ej_type=sup&amp;ej_compare=US</a></p>\n<p>DEP <a href=\"https://www.ahs.dep.pa.gov/eFACTSWeb/searchResults_singleSite.aspx?SiteID=442702\">https://www.ahs.dep.pa.gov/eFACTSWeb/searchResults_singleSite.aspx?SiteID=442702</a> </p>\n",
+      "latitude": 39.838946,
+      "longitude": -75.370833,
+      "address": "800 W Front St., Chester, PA 19013",
+      "description": "Chemical manufacturer\n",
+      "clean_air_notes": "<p>Comments\nAir <a href=\"https://cleanaircouncil.salsalabs.org/entegris\">https://cleanaircouncil.salsalabs.org/entegris</a></p>\n",
+      "epa_link": "https://echo.epa.gov/detailed-facility-report?fid=110000336093&ej_type=sup&ej_compare=US",
+      "echo_compliance": [
+        {
+          "statute": "CAA",
+          "status": "Valid",
+          "last_inspection": "2023-05-04",
+          "last_scraped": "2025-07-21",
+          "penalties": 55421,
+          "status_text": "No Violation Identified"
+        },
+        {
+          "statute": "CWA",
+          "status": "Valid",
+          "last_scraped": "2025-07-21",
+          "penalties": 0,
+          "status_text": "No Violation Identified"
+        },
+        {
+          "statute": "EPCRA",
+          "status": "Valid",
+          "last_inspection": "2024-08-14",
+          "last_scraped": "2025-07-21",
+          "penalties": 0,
+          "status_text": "In Compliance"
+        },
+        {
+          "statute": "RCRA",
+          "status": "Valid",
+          "last_inspection": "2025-01-21",
+          "last_scraped": "2025-07-21",
+          "penalties": 45988,
+          "status_text": "No Violation Identified"
+        },
+        {
+          "statute": "TSCA",
+          "status": "Valid",
+          "last_inspection": "2024-08-14",
+          "last_scraped": "2025-07-21",
+          "penalties": 0,
+          "status_text": "In Compliance"
+        }
+      ],
+      "slug": "entegris",
+      "totalPenalties": "$101,409"
+    },
+    {
+      "company_name": "Evergreen Resources Group, LLC",
+      "notes": "<p><a href=\"https://phillyrefinerycleanup.info/\">https://phillyrefinerycleanup.info/</a> </p>\n<p>DEP <a href=\"https://www.ahs.dep.pa.gov/eFACTSWeb/searchResults_singleClient.aspx?ClientID=309976\">https://www.ahs.dep.pa.gov/eFACTSWeb/searchResults_singleClient.aspx?ClientID=309976</a> </p>\n<p>EPA <a href=\"https://echo.epa.gov/detailed-facility-report?fid=110071861920\">https://echo.epa.gov/detailed-facility-report?fid=110071861920</a></p>\n<p><a href=\"https://echo.epa.gov/detailed-facility-report?fid=110000744366\">https://echo.epa.gov/detailed-facility-report?fid=110000744366</a></p>\n",
+      "latitude": 39.919911,
+      "longitude": -75.198624,
+      "address": "3144 W Passyunk Ave, Philadelphia, PA 19145",
+      "description": "Contamination at Former Philadelphia Refinery\n",
+      "clean_air_notes": "<p>Comments\n<a href=\"https://cleanaircouncil.salsalabs.org/philadelphiarefineryaoi10\">https://cleanaircouncil.salsalabs.org/philadelphiarefineryaoi10</a>\n<a href=\"https://cleanaircouncil.salsalabs.org/belmont\">https://cleanaircouncil.salsalabs.org/belmont</a> \n<a href=\"http://cleanaircouncil.salsalabs.org/phillyrefinery\">cleanaircouncil.salsalabs.org/phillyrefinery</a>\n<a href=\"https://cleanaircouncil.salsalabs.org/threatenedturtle\">https://cleanaircouncil.salsalabs.org/threatenedturtle</a> \nFate and Transport (2022) <a href=\"https://cleanaircouncil.salsalabs.org/fateandtransport\">https://cleanaircouncil.salsalabs.org/fateandtransport</a> </p>\n<p><a href=\"https://cleanaircouncil.salsalabs.org/refineryremediation/index.html\">https://cleanaircouncil.salsalabs.org/refineryremediation/index.html</a>\n<a href=\"https://cleanaircouncil.salsalabs.org/AMSRefineryRemediationSystemsComment/index.html\">https://cleanaircouncil.salsalabs.org/AMSRefineryRemediationSystemsComment/index.html</a> </p>\n",
+      "epa_link": "https://echo.epa.gov/detailed-facility-report?fid=110071861920",
+      "echo_compliance": [
+        {
+          "statute": "CAA",
+          "status": "Valid",
+          "last_inspection": "2024-09-16",
+          "last_scraped": "2025-07-21",
+          "penalties": 0,
+          "status_text": "No Violation Identified"
+        }
+      ],
+      "slug": "evergreen-resources-group,-llc"
+    },
+    {
+      "company_name": "Evonik ",
+      "notes": "<p>EPA <a href=\"https://echo.epa.gov/detailed-facility-report?fid=110000336100\">https://echo.epa.gov/detailed-facility-report?fid=110000336100</a></p>\n<p>DEP <a href=\"https://www.ahs.dep.pa.gov/eFACTSWeb/searchResults_singleSite.aspx?SiteID=2377\">https://www.ahs.dep.pa.gov/eFACTSWeb/searchResults_singleSite.aspx?SiteID=2377</a> </p>\n",
+      "latitude": 39.8371234,
+      "longitude": -75.3713461,
+      "address": "1200 W Front St, Chester, PA 19013\n",
+      "description": "Chemical Manufacturer\n",
+      "clean_air_notes": "<p>Comments\nAir <a href=\"https://cleanaircouncil.salsalabs.org/evonikair\">https://cleanaircouncil.salsalabs.org/evonikair</a>\nWater <a href=\"https://cleanaircouncil.salsalabs.org/evonik\">https://cleanaircouncil.salsalabs.org/evonik</a> </p>\n",
+      "epa_link": "https://echo.epa.gov/detailed-facility-report?fid=110000336100",
+      "echo_compliance": [
+        {
+          "statute": "CAA",
+          "status": "Valid",
+          "last_inspection": "2022-05-20",
+          "last_scraped": "2025-07-21",
+          "penalties": 1875,
+          "status_text": "No Violation Identified"
+        },
+        {
+          "statute": "CWA",
+          "status": "Violation",
+          "last_inspection": "2023-09-26",
+          "last_scraped": "2025-07-21",
+          "penalties": 0,
+          "status_text": "Violation Identified"
+        },
+        {
+          "statute": "RCRA",
+          "status": "Valid",
+          "last_inspection": "2024-09-30",
+          "last_scraped": "2025-07-21",
+          "penalties": 0,
+          "status_text": "No Violation Identified"
+        }
+      ],
+      "slug": "evonik",
+      "alert": true,
+      "totalPenalties": "$1,875"
+    },
+    {
+      "company_name": "FDR Park Redevelopment",
+      "notes": "<p>DEP <a href=\"https://www.ahs.dep.pa.gov/eFACTSWeb/searchResults_singleSite.aspx?SiteID=868942\">https://www.ahs.dep.pa.gov/eFACTSWeb/searchResults_singleSite.aspx?SiteID=868942</a>\n<a href=\"https://www.ahs.dep.pa.gov/eFACTSWeb/searchResults_singleSite.aspx?SiteID=875348\">https://www.ahs.dep.pa.gov/eFACTSWeb/searchResults_singleSite.aspx?SiteID=875348</a> </p>\n",
+      "latitude": 39.9052651,
+      "longitude": -75.175889,
+      "address": "1500 Pattison Avenue &, S Broad St, Philadelphia, PA 19145",
+      "description": "City of Philadelphia’s current and proposed redevelopment of FDR Park",
+      "clean_air_notes": "<p>Comments\nNPDES <a href=\"https://cleanaircouncil.salsalabs.org/300trees\">https://cleanaircouncil.salsalabs.org/300trees</a>\nArmy Corp <a href=\"https://cleanaircouncil.salsalabs.org/fdrparkarmycorp\">https://cleanaircouncil.salsalabs.org/fdrparkarmycorp</a>\nPattison Fields <a href=\"https://cleanaircouncil.salsalabs.org/fdr\">https://cleanaircouncil.salsalabs.org/fdr</a> </p>\n",
+      "slug": "fdr-park-redevelopment"
+    },
+    {
+      "company_name": "Fort Mifflin Terminal",
+      "notes": "<p>EPA <a href=\"https://echo.epa.gov/detailed-facility-report?fid=110012692407\">https://echo.epa.gov/detailed-facility-report?fid=110012692407</a></p>\n<p>DEP <a href=\"https://www.ahs.dep.pa.gov/eFACTSWeb/searchResults_singleSite.aspx?SiteID=444985\">https://www.ahs.dep.pa.gov/eFACTSWeb/searchResults_singleSite.aspx?SiteID=444985</a></p>\n",
+      "latitude": 39.8598971,
+      "longitude": -75.245374,
+      "address": "4 Hog Island Rd, Tinicum, PA 19153",
+      "description": "Inactive fossil fuel terminal",
+      "clean_air_notes": "<p>Comments\nNPDES <a href=\"https://cleanaircouncil.salsalabs.org/fortmifflin\">https://cleanaircouncil.salsalabs.org/fortmifflin</a></p>\n",
+      "epa_link": "https://echo.epa.gov/detailed-facility-report?fid=110012692407",
+      "echo_compliance": [
+        {
+          "statute": "CAA",
+          "status": "Valid",
+          "last_inspection": "2024-05-20",
+          "last_scraped": "2025-07-21",
+          "penalties": 0,
+          "status_text": "No Violation Identified"
+        },
+        {
+          "statute": "CWA",
+          "status": "Valid",
+          "last_inspection": "2024-03-18",
+          "last_scraped": "2025-07-21",
+          "penalties": 0,
+          "status_text": "No Violation Identified"
+        },
+        {
+          "statute": "RCRA",
+          "status": "Valid",
+          "last_inspection": "2014-02-27",
+          "last_scraped": "2025-07-21",
+          "penalties": 0,
+          "status_text": "No Violation Identified"
+        }
+      ],
+      "slug": "fort-mifflin-terminal"
+    },
+    {
+      "company_name": "Honeywell\n",
+      "notes": "<p>EPA <a href=\"https://19january2017snapshot.epa.gov/hwcorrectiveactionsites/hazardous-waste-cleanup-honeywell-international-incorporated-marcus-hook_.html#Reuse\">https://19january2017snapshot.epa.gov/hwcorrectiveactionsites/hazardous-waste-cleanup-honeywell-international-incorporated-marcus-hook_.html#Reuse</a> </p>\n<p>DEP <a href=\"https://www.ahs.dep.pa.gov/eFACTSWeb/searchResults_singleSite.aspx?SiteID=264418\">https://www.ahs.dep.pa.gov/eFACTSWeb/searchResults_singleSite.aspx?SiteID=264418</a>\n<a href=\"https://www.ahs.dep.pa.gov/eFACTSWeb/searchResults_singleSite.aspx?SiteID=526220\">https://www.ahs.dep.pa.gov/eFACTSWeb/searchResults_singleSite.aspx?SiteID=526220</a>\n<a href=\"https://www.ahs.dep.pa.gov/eFACTSWeb/searchResults_singleSite.aspx?SiteID=865341\">https://www.ahs.dep.pa.gov/eFACTSWeb/searchResults_singleSite.aspx?SiteID=865341</a> </p>\n",
+      "latitude": 39.8091658,
+      "longitude": -75.4335328,
+      "address": "6300 Philadelphia Pike, Marcus Hook, PA 19601",
+      "description": "Closed chemical manufacturing facility\n",
+      "clean_air_notes": "<p>Comment <a href=\"https://cleanaircouncil.salsalabs.org/honeywell\">https://cleanaircouncil.salsalabs.org/honeywell</a> </p>\n",
+      "slug": "honeywell"
+    },
+    {
+      "company_name": "Kimberly Clark Paper Mill",
+      "notes": "<p>EPA <a href=\"https://echo.epa.gov/detailed-facility-report?fid=110000603847\">https://echo.epa.gov/detailed-facility-report?fid=110000603847</a></p>\n<p>DEP <a href=\"https://www.ahs.dep.pa.gov/eFACTSWeb/searchResults_singleSite.aspx?SiteID=237860\">https://www.ahs.dep.pa.gov/eFACTSWeb/searchResults_singleSite.aspx?SiteID=237860</a> </p>\n",
+      "latitude": 39.8447726,
+      "longitude": -75.3549261,
+      "address": "1 Avenue of the States, Chester, PA 19013",
+      "description": "Natural gas-fired paper mill (formerly powered by coal waste)",
+      "clean_air_notes": "<p>Comments\nNPDES <a href=\"https://cleanaircouncil.salsalabs.org/kimberlyclarkchester\">https://cleanaircouncil.salsalabs.org/kimberlyclarkchester</a></p>\n",
+      "epa_link": "https://echo.epa.gov/detailed-facility-report?fid=110000603847",
+      "echo_compliance": [
+        {
+          "statute": "CAA",
+          "status": "Valid",
+          "last_inspection": "2024-12-19",
+          "last_scraped": "2025-07-21",
+          "penalties": 13200,
+          "status_text": "No Violation Identified"
+        },
+        {
+          "statute": "CWA",
+          "status": "Valid",
+          "last_inspection": "2023-09-28",
+          "last_scraped": "2025-07-21",
+          "penalties": 0,
+          "status_text": "No Violation Identified"
+        },
+        {
+          "statute": "EPCRA",
+          "status": "Valid",
+          "last_inspection": "2023-03-21",
+          "last_scraped": "2025-07-21",
+          "penalties": 0,
+          "status_text": "In Compliance"
+        },
+        {
+          "statute": "RCRA",
+          "status": "Valid",
+          "last_inspection": "2024-11-22",
+          "last_scraped": "2025-07-21",
+          "penalties": 0,
+          "status_text": "No Violation Identified"
+        }
+      ],
+      "slug": "kimberly-clark-paper-mill",
+      "totalPenalties": "$13,200"
+    },
+    {
+      "company_name": "Lewis M Hunt Irving Funeral Home\n",
+      "notes": "<p>DEP <a href=\"https://www.ahs.dep.pa.gov/eFACTSWeb/searchResults_singleSite.aspx?SiteID=842694\">https://www.ahs.dep.pa.gov/eFACTSWeb/searchResults_singleSite.aspx?SiteID=842694</a></p>\n",
+      "latitude": 39.868451,
+      "longitude": -75.3628128,
+      "address": "2316 Providence Ave, Chester, PA 19013",
+      "description": "Human crematory",
+      "slug": "lewis-m-hunt-irving-funeral-home"
+    },
+    {
+      "company_name": "Marcus Hook Terminal ",
+      "notes": "<p>EPA <a href=\"https://echo.epa.gov/detailed-facility-report?fid=110032885723\">https://echo.epa.gov/detailed-facility-report?fid=110032885723</a></p>\n<p>DEP <a href=\"https://www.ahs.dep.pa.gov/eFACTSWeb/searchResults_singleSite.aspx?SiteID=270459\">https://www.ahs.dep.pa.gov/eFACTSWeb/searchResults_singleSite.aspx?SiteID=270459</a> </p>\n",
+      "latitude": 39.812442,
+      "longitude": -75.413694,
+      "address": "100 Green St. Marcus Hook, PA 19061",
+      "description": "Natural Gas Liquids (NGL) Export Terminal, Former Oil Refinery                                                                              \n         ",
+      "clean_air_notes": "<p>Comments\nEthane <a href=\"https://cleanaircouncil.salsalabs.org/marcushookexpansion\">https://cleanaircouncil.salsalabs.org/marcushookexpansion</a>\nTitle V renewal <a href=\"https://cleanaircouncil.salsalabs.org/marcushookmeeting\">https://cleanaircouncil.salsalabs.org/marcushookmeeting</a> \n<a href=\"https://cleanaircouncil.salsalabs.org/marcushookhearing\">https://cleanaircouncil.salsalabs.org/marcushookhearing</a> \nRCRA <a href=\"https://cleanaircouncil.salsalabs.org/marcushookwaste\">https://cleanaircouncil.salsalabs.org/marcushookwaste</a> \n<a href=\"https://cleanaircouncil.salsalabs.org/marcushookhazwaste\">https://cleanaircouncil.salsalabs.org/marcushookhazwaste</a> \nNPDES <a href=\"https://cleanaircouncil.salsalabs.org/marcushookterminal\">https://cleanaircouncil.salsalabs.org/marcushookterminal</a> \nDemolition <a href=\"https://cleanaircouncil.salsalabs.org/mhdemo\">https://cleanaircouncil.salsalabs.org/mhdemo</a> \nNPDES for Ethane tanks <a href=\"https://cleanaircouncil.salsalabs.org/terminalcontamination\">https://cleanaircouncil.salsalabs.org/terminalcontamination</a> \nSludge Pit <a href=\"http://cleanaircouncil.salsalabs.org/marcushookacidsludge\">http://cleanaircouncil.salsalabs.org/marcushookacidsludge</a> \nNPDES (2021) <a href=\"https://cleanaircouncil.salsalabs.org/marcushooknpdes\">https://cleanaircouncil.salsalabs.org/marcushooknpdes</a> \nNPDES (2023) <a href=\"https://cleanaircouncil.salsalabs.org/marcushookterminalnpdes/index.html\">https://cleanaircouncil.salsalabs.org/marcushookterminalnpdes/index.html</a> </p>\n",
+      "epa_link": "https://echo.epa.gov/detailed-facility-report?fid=110032885723",
+      "dep_link": "https://www.ahs.dep.pa.gov/eFACTSWeb/searchResults_singleSite.aspx?SiteID=270459 ",
+      "echo_compliance": [
+        {
+          "statute": "CAA",
+          "status": "Valid",
+          "last_inspection": "2024-09-10",
+          "last_scraped": "2025-07-21",
+          "penalties": 764496,
+          "status_text": "No Violation Identified"
+        },
+        {
+          "statute": "CWA",
+          "status": "Valid",
+          "last_inspection": "2024-07-19",
+          "last_scraped": "2025-07-21",
+          "penalties": 0,
+          "status_text": "No Violation Identified"
+        },
+        {
+          "statute": "RCRA",
+          "status": "Valid",
+          "last_inspection": "2024-04-25",
+          "last_scraped": "2025-07-21",
+          "penalties": 0,
+          "status_text": "No Violation Identified"
+        }
+      ],
+      "dep_violations": {
+        "violation_count": 134,
+        "since": "2015-02-09"
+      },
+      "slug": "marcus-hook-terminal",
+      "totalPenalties": "$764,496"
+    },
+    {
+      "company_name": "Monroe Refinery",
+      "notes": "<p>EPA <a href=\"https://echo.epa.gov/detailed-facility-report?fid=110000336440\">https://echo.epa.gov/detailed-facility-report?fid=110000336440</a></p>\n<p>DEP <a href=\"https://www.ahs.dep.pa.gov/eFACTSWeb/searchResults_singleSite.aspx?SiteID=270501\">https://www.ahs.dep.pa.gov/eFACTSWeb/searchResults_singleSite.aspx?SiteID=270501</a></p>\n",
+      "latitude": 39.826046,
+      "longitude": -75.4053366,
+      "address": "4101 Post Rd, Trainer, PA 19061",
+      "description": "Oil Refinery",
+      "clean_air_notes": "<p>Comments\nRACT III <a href=\"http://cleanaircouncil.salsalabs.org/trainer\">cleanaircouncil.salsalabs.org/trainer</a>\nNPDES <a href=\"https://cleanaircouncil.salsalabs.org/trainerrefinery\">https://cleanaircouncil.salsalabs.org/trainerrefinery</a> \nNPDES (part 2) <a href=\"https://cleanaircouncil.salsalabs.org/trainerwater\">https://cleanaircouncil.salsalabs.org/trainerwater</a> \nNPDES (2021) <a href=\"https://cleanaircouncil.salsalabs.org/trainernpdes\">https://cleanaircouncil.salsalabs.org/trainernpdes</a> \nAir (2022) <a href=\"https://cleanaircouncil.salsalabs.org/monroerefinery/index.html\">https://cleanaircouncil.salsalabs.org/monroerefinery/index.html</a> \nAir (2022, part 2) <a href=\"https://cleanaircouncil.salsalabs.org/monroecomment/index.html\">https://cleanaircouncil.salsalabs.org/monroecomment/index.html</a></p>\n",
+      "epa_link": " https://echo.epa.gov/detailed-facility-report?fid=110000336440",
+      "echo_compliance": [
+        {
+          "statute": "CAA",
+          "status": "Violation",
+          "last_inspection": "2023-08-24",
+          "last_scraped": "2025-07-21",
+          "penalties": 98761,
+          "status_text": "High Priority Violation"
+        },
+        {
+          "statute": "CWA",
+          "status": "Violation",
+          "last_inspection": "2023-12-19",
+          "last_scraped": "2025-07-21",
+          "penalties": 0,
+          "status_text": "Violation Identified"
+        },
+        {
+          "statute": "EPCRA",
+          "status": "Valid",
+          "last_inspection": "2024-12-05",
+          "last_scraped": "2025-07-21",
+          "penalties": 0,
+          "status_text": "In Compliance"
+        },
+        {
+          "statute": "RCRA",
+          "status": "Valid",
+          "last_inspection": "2025-05-20",
+          "last_scraped": "2025-07-21",
+          "penalties": 0,
+          "status_text": "No Violation Identified"
+        }
+      ],
+      "slug": "monroe-refinery",
+      "alert": true,
+      "totalPenalties": "$98,761"
+    },
+    {
+      "company_name": "PBF Logistics ",
+      "notes": "<p>EPA <a href=\"https://echo.epa.gov/detailed-facility-report?fid=110000337065&ej_type=sup&ej_compare=US\">https://echo.epa.gov/detailed-facility-report?fid=110000337065&amp;ej_type=sup&amp;ej_compare=US</a> </p>\n<p>DEP <a href=\"https://www.ahs.dep.pa.gov/eFACTSWeb/searchResults_singleSite.aspx?SiteID=452928\">https://www.ahs.dep.pa.gov/eFACTSWeb/searchResults_singleSite.aspx?SiteID=452928</a> </p>\n",
+      "latitude": 39.910168,
+      "longitude": -75.216721,
+      "address": "6850 Essington Avenue, Philadelphia, PA 19153\n",
+      "description": "Gasoline, diesel and residual fuel contained in 19 storage tanks, some built as early as 1938.\n",
+      "clean_air_notes": "<p>Comments\nAir <a href=\"https://cleanaircouncil.salsalabs.org/swphillyair\">https://cleanaircouncil.salsalabs.org/swphillyair</a>\nWater <a href=\"https://cleanaircouncil.salsalabs.org/pbfwater\">https://cleanaircouncil.salsalabs.org/pbfwater</a> </p>\n",
+      "epa_link": " https://echo.epa.gov/detailed-facility-report?fid=110000337065&ej_type=sup&ej_compare=US ",
+      "dep_link": " https://www.ahs.dep.pa.gov/eFACTSWeb/searchResults_singleSite.aspx?SiteID=452928 ",
+      "echo_compliance": [
+        {
+          "statute": "CAA",
+          "status": "Valid",
+          "last_scraped": "2025-07-21",
+          "penalties": 0,
+          "status_text": "In Compliance"
+        },
+        {
+          "statute": "CWA",
+          "status": "Valid",
+          "last_inspection": "2024-08-06",
+          "last_scraped": "2025-07-21",
+          "penalties": 250000,
+          "status_text": "No Violation Identified"
+        },
+        {
+          "statute": "RCRA",
+          "status": "Valid",
+          "last_inspection": "2022-12-20",
+          "last_scraped": "2025-07-21",
+          "penalties": 0,
+          "status_text": "No Violation Identified"
+        }
+      ],
+      "dep_violations": {
+        "violation_count": 48,
+        "since": "2015-03-12"
+      },
+      "slug": "pbf-logistics",
+      "totalPenalties": "$250,000"
+    },
+    {
+      "company_name": "Philadelphia Gas Works (PGW) Passyunk Plant\n",
+      "notes": "<p>DEP <a href=\"https://www.ahs.dep.pa.gov/eFACTSWeb/searchResults_singleSite.aspx?SiteID=456902\">https://www.ahs.dep.pa.gov/eFACTSWeb/searchResults_singleSite.aspx?SiteID=456902</a> </p>\n<p>EPA <a href=\"https://echo.epa.gov/detailed-facility-report?fid=110007746341\">https://echo.epa.gov/detailed-facility-report?fid=110007746341</a> </p>\n",
+      "latitude": 39.919442,
+      "longitude": -75.1975835,
+      "address": "3100 West Passyunk Avenue, Philadelphia, PA 19145",
+      "description": "Liquified Natural Gas (LNG) Storage Facility",
+      "clean_air_notes": "<p>Comment\n<a href=\"https://cleanaircouncil.salsalabs.org/pgwpassyunkplant/index.html\">https://cleanaircouncil.salsalabs.org/pgwpassyunkplant/index.html</a> </p>\n",
+      "epa_link": "https://echo.epa.gov/detailed-facility-report?fid=110007746341 ",
+      "echo_compliance": [
+        {
+          "statute": "CAA",
+          "status": "Valid",
+          "last_inspection": "2025-03-19",
+          "last_scraped": "2025-07-21",
+          "penalties": 1260,
+          "status_text": "No Violation Identified"
+        },
+        {
+          "statute": "CWA",
+          "status": "Terminated",
+          "last_inspection": "2022-04-12",
+          "last_scraped": "2025-07-21",
+          "penalties": 0,
+          "status_text": "Terminated Permit"
+        },
+        {
+          "statute": "RCRA",
+          "status": "Valid",
+          "last_inspection": "2003-07-01",
+          "last_scraped": "2025-07-21",
+          "penalties": 0,
+          "status_text": "No Violation Identified"
+        }
+      ],
+      "slug": "philadelphia-gas-works-(pgw)-passyunk-plant",
+      "totalPenalties": "$1,260"
+    },
+    {
+      "company_name": "Philadelphia Gas Works (PGW) Richmond Plant\n",
+      "notes": "<p>EPA <a href=\"https://echo.epa.gov/detailed-facility-report?fid=110000878756\">https://echo.epa.gov/detailed-facility-report?fid=110000878756</a> </p>\n<p>DEP <a href=\"https://www.ahs.dep.pa.gov/eFACTSWeb/searchResults_singleSite.aspx?SiteID=456903\">https://www.ahs.dep.pa.gov/eFACTSWeb/searchResults_singleSite.aspx?SiteID=456903</a> </p>\n",
+      "latitude": 39.9834627,
+      "longitude": -75.0912357,
+      "address": "3100 E Venango Street, Philadelphia, PA 19134",
+      "description": "Liquified Natural Gas (LNG) Storage Facility",
+      "clean_air_notes": "<p>Comment\n<a href=\"https://cleanaircouncil.salsalabs.org/pgwlng\">https://cleanaircouncil.salsalabs.org/pgwlng</a></p>\n",
+      "epa_link": "https://echo.epa.gov/detailed-facility-report?fid=110000878756 ",
+      "echo_compliance": [
+        {
+          "statute": "CAA",
+          "status": "Valid",
+          "last_inspection": "2025-04-15",
+          "last_scraped": "2025-07-21",
+          "penalties": 220,
+          "status_text": "No Violation Identified"
+        },
+        {
+          "statute": "CERCLA",
+          "status": "Valid",
+          "last_scraped": "2025-07-21",
+          "penalties": 0,
+          "status_text": "In Compliance"
+        },
+        {
+          "statute": "CWA",
+          "status": "Valid",
+          "last_inspection": "2023-09-08",
+          "last_scraped": "2025-07-21",
+          "penalties": 0,
+          "status_text": "No Violation Identified"
+        },
+        {
+          "statute": "EPCRA",
+          "status": "Valid",
+          "last_scraped": "2025-07-21",
+          "penalties": 0,
+          "status_text": "In Compliance"
+        },
+        {
+          "statute": "RCRA",
+          "status": "Valid",
+          "last_inspection": "2003-11-20",
+          "last_scraped": "2025-07-21",
+          "penalties": 0,
+          "status_text": "No Violation Identified"
+        }
+      ],
+      "slug": "philadelphia-gas-works-(pgw)-richmond-plant",
+      "totalPenalties": "$220"
+    },
+    {
+      "company_name": "Philadelphia International Airport\n",
+      "notes": "<p>EPA <a href=\"https://echo.epa.gov/detailed-facility-report?fid=110007027289\">https://echo.epa.gov/detailed-facility-report?fid=110007027289</a> \n<a href=\"https://echo.epa.gov/detailed-facility-report?fid=110001124195\">https://echo.epa.gov/detailed-facility-report?fid=110001124195</a>\n<a href=\"https://echo.epa.gov/detailed-facility-report?fid=110010971458\">https://echo.epa.gov/detailed-facility-report?fid=110010971458</a></p>\n<p>DEP <a href=\"https://www.ahs.dep.pa.gov/eFACTSWeb/searchResults_singleSite.aspx?SiteID=800599\">https://www.ahs.dep.pa.gov/eFACTSWeb/searchResults_singleSite.aspx?SiteID=800599</a>\n<a href=\"https://www.ahs.dep.pa.gov/eFACTSWeb/searchResults_singleSite.aspx?SiteID=832759\">https://www.ahs.dep.pa.gov/eFACTSWeb/searchResults_singleSite.aspx?SiteID=832759</a>\n<a href=\"https://www.ahs.dep.pa.gov/eFACTSWeb/searchResults_singleSite.aspx?SiteID=847119\">https://www.ahs.dep.pa.gov/eFACTSWeb/searchResults_singleSite.aspx?SiteID=847119</a>\n<a href=\"https://www.ahs.dep.pa.gov/eFACTSWeb/searchResults_singleSite.aspx?SiteID=271474\">https://www.ahs.dep.pa.gov/eFACTSWeb/searchResults_singleSite.aspx?SiteID=271474</a>\n<a href=\"https://www.ahs.dep.pa.gov/eFACTSWeb/searchResults_singleClient.aspx?ClientID=309623\">https://www.ahs.dep.pa.gov/eFACTSWeb/searchResults_singleClient.aspx?ClientID=309623</a> </p>\n",
+      "latitude": 39.8755464,
+      "longitude": -75.2459401,
+      "address": "8500 Essington Avenue, Philadelphia, PA 19153\n",
+      "description": "International Airport",
+      "clean_air_notes": "<p>Comments\n<a href=\"https://cleanaircouncil.salsalabs.org/airport\">https://cleanaircouncil.salsalabs.org/airport</a>\n<a href=\"https://cleanaircouncil.salsalabs.org/airportexpansion\">https://cleanaircouncil.salsalabs.org/airportexpansion</a> \n<a href=\"https://cleanaircouncil.salsalabs.org/airportlandcontamination\">https://cleanaircouncil.salsalabs.org/airportlandcontamination</a> \n<a href=\"https://cleanaircouncil.salsalabs.org/taxiways\">https://cleanaircouncil.salsalabs.org/taxiways</a> \n<a href=\"https://cleanaircouncil.salsalabs.org/airportoxygendemand\">https://cleanaircouncil.salsalabs.org/airportoxygendemand</a>\n<a href=\"https://cleanaircouncil.salsalabs.org/airportexpansiona23\">https://cleanaircouncil.salsalabs.org/airportexpansiona23</a> \n<a href=\"http://cleanaircouncil.salsalabs.org/airportwarehouse\">cleanaircouncil.salsalabs.org/airportwarehouse</a> </p>\n",
+      "epa_link": "https://echo.epa.gov/detailed-facility-report?fid=110007027289 ",
+      "echo_compliance": [
+        {
+          "statute": "CAA",
+          "status": "Valid",
+          "last_inspection": "2025-03-05",
+          "last_scraped": "2025-07-21",
+          "penalties": 910,
+          "status_text": "No Violation Identified"
+        }
+      ],
+      "slug": "philadelphia-international-airport",
+      "totalPenalties": "$910"
+    },
+    {
+      "company_name": "PQ Corp.",
+      "notes": "<p>DEP <a href=\"https://www.ahs.dep.pa.gov/eFACTSWeb/searchResults_singleSite.aspx?SiteID=236490\">https://www.ahs.dep.pa.gov/eFACTSWeb/searchResults_singleSite.aspx?SiteID=236490</a></p>\n<p>EPA <a href=\"https://echo.epa.gov/detailed-facility-report?fid=110000878881\">https://echo.epa.gov/detailed-facility-report?fid=110000878881</a> </p>\n",
+      "latitude": 39.8376149,
+      "longitude": -75.3711771,
+      "address": "1201 W. Front Street, Chester, PA 19013",
+      "description": "Chemical Manufacturer",
+      "clean_air_notes": "<p>Comment\nNPDES <a href=\"https://cleanaircouncil.salsalabs.org/pqchester\">https://cleanaircouncil.salsalabs.org/pqchester</a></p>\n",
+      "epa_link": "https://echo.epa.gov/detailed-facility-report?fid=110000878881 ",
+      "echo_compliance": [
+        {
+          "statute": "CAA",
+          "status": "Valid",
+          "last_inspection": "2024-10-23",
+          "last_scraped": "2025-07-21",
+          "penalties": 4639,
+          "status_text": "No Violation Identified"
+        },
+        {
+          "statute": "CWA",
+          "status": "Valid",
+          "last_inspection": "2023-09-29",
+          "last_scraped": "2025-07-21",
+          "penalties": 0,
+          "status_text": "No Violation Identified"
+        },
+        {
+          "statute": "EPCRA",
+          "status": "Valid",
+          "last_scraped": "2025-07-21",
+          "penalties": 0,
+          "status_text": "In Compliance"
+        },
+        {
+          "statute": "RCRA",
+          "status": "Valid",
+          "last_inspection": "2024-07-17",
+          "last_scraped": "2025-07-21",
+          "penalties": 0,
+          "status_text": "No Violation Identified"
+        },
+        {
+          "statute": "TSCA",
+          "status": "Valid",
+          "last_scraped": "2025-07-21",
+          "penalties": 0,
+          "status_text": "In Compliance"
+        }
+      ],
+      "slug": "pq-corp.",
+      "totalPenalties": "$4,639"
+    },
+    {
+      "company_name": "Proposed Eastwick Levee\n",
+      "notes": "<p><a href=\"https://www.nap.usace.army.mil/Missions/Civil-Works/Eastwick-Flood-Risk-Management-Study/\">https://www.nap.usace.army.mil/Missions/Civil-Works/Eastwick-Flood-Risk-Management-Study/</a> </p>\n",
+      "latitude": 39.906555,
+      "longitude": -75.253377,
+      "address": "S 80th St, Philadelphia, PA 19153",
+      "description": "Federal Flood Mitigation Proposal",
+      "clean_air_notes": "<p>Comment\n<a href=\"https://cleanaircouncil.salsalabs.org/levee\">https://cleanaircouncil.salsalabs.org/levee</a></p>\n",
+      "slug": "proposed-eastwick-levee"
+    },
+    {
+      "company_name": "Resting Rainbow",
+      "notes": "<p>City <a href=\"https://atlas.phila.gov/7000%20HOLSTEIN%20AVE%20STE%202/li\">https://atlas.phila.gov/7000%20HOLSTEIN%20AVE%20STE%202/li</a></p>\n",
+      "latitude": 39.903163,
+      "longitude": -75.226741,
+      "address": "7000 Holstein Avenue Philadelphia, PA 19153",
+      "description": "Proposed Pet Crematorium",
+      "clean_air_notes": "<p>Testing out the <strong>Rich Text Editing</strong>.</p>\n<p>A header</p>\n",
+      "slug": "resting-rainbow"
+    },
+    {
+      "company_name": "Reworld (formerly Covanta)",
+      "notes": "<p>EPA <a href=\"https://echo.epa.gov/detailed-facility-report?fid=110001065016\">https://echo.epa.gov/detailed-facility-report?fid=110001065016</a></p>\n<p>DEP <a href=\"https://www.ahs.dep.pa.gov/eFACTSWeb/searchResults_singleSite.aspx?SiteID=456217\">https://www.ahs.dep.pa.gov/eFACTSWeb/searchResults_singleSite.aspx?SiteID=456217</a> </p>\n",
+      "latitude": 39.8262298,
+      "longitude": -75.3885584,
+      "address": "10 Highland Ave, Chester, PA 19013",
+      "description": "Waste Incinerator",
+      "clean_air_notes": "<p>Comments\nNPDES <a href=\"https://cleanaircouncil.salsalabs.org/chestercovantawater\">https://cleanaircouncil.salsalabs.org/chestercovantawater</a> \nAir (2021) <a href=\"https://cleanaircouncil.salsalabs.org/covantachester\">https://cleanaircouncil.salsalabs.org/covantachester</a> </p>\n",
+      "epa_link": "https://echo.epa.gov/detailed-facility-report?fid=110001065016",
+      "echo_compliance": [
+        {
+          "statute": "CAA",
+          "status": "Violation",
+          "last_inspection": "2024-01-12",
+          "last_scraped": "2025-07-21",
+          "penalties": 165865,
+          "status_text": "High Priority Violation"
+        },
+        {
+          "statute": "CWA",
+          "status": "Valid",
+          "last_inspection": "2022-05-06",
+          "last_scraped": "2025-07-21",
+          "penalties": 0,
+          "status_text": "No Violation Identified"
+        },
+        {
+          "statute": "RCRA",
+          "status": "Valid",
+          "last_inspection": "2008-06-17",
+          "last_scraped": "2025-07-21",
+          "penalties": 0,
+          "status_text": "No Violation Identified"
+        }
+      ],
+      "slug": "reworld-(formerly-covanta)",
+      "alert": true,
+      "totalPenalties": "$165,865"
+    },
+    {
+      "company_name": "Reworld Plymouth",
+      "notes": "<p>EPA <a href=\"https://echo.epa.gov/detailed-facility-report?fid=110002478765\">https://echo.epa.gov/detailed-facility-report?fid=110002478765</a> </p>\n<p>DEP <a href=\"https://www.ahs.dep.pa.gov/eFACTSWeb/searchResults_singleSite.aspx?SiteID=454543\">https://www.ahs.dep.pa.gov/eFACTSWeb/searchResults_singleSite.aspx?SiteID=454543</a></p>\n",
+      "latitude": 40.0926298,
+      "longitude": -75.3167014,
+      "address": "1115 Conshohocken Rd., Conshohocken, PA 19248",
+      "description": "Waste Incinerator",
+      "clean_air_notes": "<p>Comments\nNPDES <a href=\"https://cleanaircouncil.salsalabs.org/reworldplymouth\">https://cleanaircouncil.salsalabs.org/reworldplymouth</a></p>\n",
+      "epa_link": "https://echo.epa.gov/detailed-facility-report?fid=110002478765 ",
+      "echo_compliance": [
+        {
+          "statute": "CAA",
+          "status": "Violation",
+          "last_inspection": "2025-05-29",
+          "last_scraped": "2025-07-21",
+          "penalties": 702626,
+          "status_text": "High Priority Violation"
+        },
+        {
+          "statute": "CWA",
+          "status": "Violation",
+          "last_inspection": "2024-08-22",
+          "last_scraped": "2025-07-21",
+          "penalties": 0,
+          "status_text": "Violation Identified"
+        },
+        {
+          "statute": "RCRA",
+          "status": "Valid",
+          "last_inspection": "1996-03-05",
+          "last_scraped": "2025-07-21",
+          "penalties": 0,
+          "status_text": "No Violation Identified"
+        }
+      ],
+      "slug": "reworld-plymouth",
+      "alert": true,
+      "totalPenalties": "$702,626"
+    },
+    {
+      "company_name": "Ridge Road Warehouse",
+      "notes": "<p>DEP <a href=\"https://www.ahs.dep.pa.gov/eFACTSWeb/searchResults_singleSite.aspx?SiteID=874077\">https://www.ahs.dep.pa.gov/eFACTSWeb/searchResults_singleSite.aspx?SiteID=874077</a>\n<a href=\"https://www.ahs.dep.pa.gov/eFACTSWeb/searchResults_singleSite.aspx?SiteID=861948\">https://www.ahs.dep.pa.gov/eFACTSWeb/searchResults_singleSite.aspx?SiteID=861948</a> </p>\n",
+      "latitude": 39.8269684,
+      "longitude": -75.4117795,
+      "address": "4401 Ridge Road, Trainer, PA 19061\n",
+      "description": "Proposed warehouse",
+      "clean_air_notes": "<p>Comments\n<a href=\"https://cleanaircouncil.salsalabs.org/ridgerdwarehouse\">https://cleanaircouncil.salsalabs.org/ridgerdwarehouse</a> </p>\n",
+      "slug": "ridge-road-warehouse"
+    },
+    {
+      "company_name": "Southeastern Pennsylvania Transportation Authority (SEPTA) Gas Plant",
+      "notes": "<p>EPA <a href=\"https://echo.epa.gov/detailed-facility-report?fid=110010984088\">https://echo.epa.gov/detailed-facility-report?fid=110010984088</a></p>\n",
+      "latitude": 40.0142354,
+      "longitude": -75.1721689,
+      "address": "2705 Roberts Rd., Philadelphia, PA 19129",
+      "description": "Gas-fired combined heat and power plant",
+      "clean_air_notes": "<p>Comment\n<a href=\"https://cleanaircouncil.salsalabs.org/septagasplant\">https://cleanaircouncil.salsalabs.org/septagasplant</a></p>\n",
+      "epa_link": "https://echo.epa.gov/detailed-facility-report?fid=110010984088",
+      "echo_compliance": [
+        {
+          "statute": "CAA",
+          "status": "Valid",
+          "last_scraped": "2025-07-21",
+          "penalties": 0,
+          "status_text": "In Compliance"
+        },
+        {
+          "statute": "CWA",
+          "status": "Terminated",
+          "last_inspection": "2019-04-29",
+          "last_scraped": "2025-07-21",
+          "penalties": 0,
+          "status_text": "Terminated Permit"
+        }
+      ],
+      "slug": "southeastern-pennsylvania-transportation-authority-(septa)-gas-plant"
+    },
+    {
+      "company_name": "Southwark Generation Station ",
+      "latitude": 39.914168,
+      "longitude": -75.135604,
+      "address": "2501 S Delaware Ave, Philadelphia, PA 19148",
+      "description": "Oil-fired electricity peaker plant",
+      "clean_air_notes": "<p><a href=\"https://cleanaircouncil.salsalabs.org/southwark\">https://cleanaircouncil.salsalabs.org/southwark</a></p>\n",
+      "epa_link": "https://echo.epa.gov/detailed-facility-report?fid=110001069254",
+      "dep_link": "https://www.ahs.dep.pa.gov/eFACTSWeb/searchResults_singleSite.aspx?SiteID=517316",
+      "echo_compliance": [
+        {
+          "statute": "CAA",
+          "status": "Valid",
+          "last_inspection": "2025-02-18",
+          "last_scraped": "2025-07-21",
+          "penalties": 0,
+          "status_text": "No Violation Identified"
+        },
+        {
+          "statute": "RCRA",
+          "status": "Valid",
+          "last_scraped": "2025-07-21",
+          "penalties": 0,
+          "status_text": "No Violation Identified"
+        }
+      ],
+      "dep_violations": {
+        "violation_count": 1,
+        "since": "2018-10-11"
+      },
+      "slug": "southwark-generation-station"
+    },
+    {
+      "company_name": "Vicinity Energy Schuylkill Gen Station",
+      "notes": "<p>EPA <a href=\"https://echo.epa.gov/detailed-facility-report?fid=110071723052\">https://echo.epa.gov/detailed-facility-report?fid=110071723052</a></p>\n<p><a href=\"https://echo.epa.gov/detailed-facility-report?fid=110000744990\">https://echo.epa.gov/detailed-facility-report?fid=110000744990</a></p>\n<p><a href=\"https://echo.epa.gov/detailed-facility-report?fid=110000337029\">https://echo.epa.gov/detailed-facility-report?fid=110000337029</a></p>\n<p>DEP <a href=\"https://www.ahs.dep.pa.gov/eFACTSWeb/searchResults_singleSite.aspx?SiteID=491656\">https://www.ahs.dep.pa.gov/eFACTSWeb/searchResults_singleSite.aspx?SiteID=491656</a></p>\n<p><a href=\"https://www.ahs.dep.pa.gov/eFACTSWeb/searchResults_singleSite.aspx?SiteID=540044\">https://www.ahs.dep.pa.gov/eFACTSWeb/searchResults_singleSite.aspx?SiteID=540044</a></p>\n",
+      "latitude": 39.942243,
+      "longitude": -75.188675,
+      "address": "2600 Christian Street, Philadelphia, PA 19146",
+      "description": "Oil/gas fired Power Plant, Steam Generator",
+      "clean_air_notes": "<p><a href=\"https://www.inquirer.com/business/philadelphia-steam-plant-vicinity-veolia-dicroce-20200204.html\">https://www.inquirer.com/business/philadelphia-steam-plant-vicinity-veolia-dicroce-20200204.html</a></p>\n",
+      "epa_link": "https://echo.epa.gov/detailed-facility-report?fid=110071723052",
+      "echo_compliance": [
+        {
+          "statute": "CAA",
+          "status": "Violation",
+          "last_inspection": "2023-12-22",
+          "last_scraped": "2025-07-21",
+          "penalties": 66749,
+          "status_text": "Violation w/in 1 Year"
+        }
+      ],
+      "slug": "vicinity-energy-schuylkill-gen-station",
+      "alert": true,
+      "totalPenalties": "$66,749"
+    },
+    {
+      "company_name": "Yankee Point\n",
+      "notes": "<p>DEP <a href=\"https://www.ahs.dep.pa.gov/eFACTSWeb/searchResults_singleSite.aspx?SiteID=861542\">https://www.ahs.dep.pa.gov/eFACTSWeb/searchResults_singleSite.aspx?SiteID=861542</a> </p>\n",
+      "latitude": 39.9178902,
+      "longitude": -75.2082432,
+      "address": "6318 Passyunk Ave, Philadelphia, PA 19153\n",
+      "description": "Construction materials distribution facility\n",
+      "clean_air_notes": "<p>Comment\n<a href=\"https://cleanaircouncil.salsalabs.org/yankeepoint\">https://cleanaircouncil.salsalabs.org/yankeepoint</a></p>\n",
+      "slug": "yankee-point"
+    }
+  ]
+}

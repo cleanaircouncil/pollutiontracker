@@ -1,0 +1,108 @@
+---
+import Nav from "./nav.astro";
+import Map from "./map.astro";
+import Viewer from "./viewer.astro";
+import Header from "./header.astro";
+import FacilityList from "./facility-list.astro";
+---
+
+<main id="app" class="app layout-app" data-app>
+  <div class="in-header">
+    <Header />
+  </div>
+
+  <div class="in-nav">
+    <Nav />
+  </div>
+
+  <div class="in-main">
+    <Map />
+  </div>
+
+  <div class="in-list overlap-top overflow-hidden">
+    <FacilityList />
+  </div>
+
+  <Viewer />
+</main>
+
+<style>
+  .app {
+    position: absolute;
+    inset: 0px;
+    padding: 0px;
+
+    font-family: var(--font-default);
+    background: var(--color-white);
+    color: var(--color-black);
+  }
+
+  .layout-app {
+    display: grid;
+  }
+
+  @media screen and (max-width: 900px) {
+    .layout-app {
+      grid-template-rows: min-content 1fr 20vh min-content;
+      grid-template-areas:
+        "header"
+        "main"
+        "list"
+        "nav";
+    }
+
+    .in-list {
+      grid-column: 1;
+      grid-row: 2 / span 2;
+      pointer-events: none;
+    }
+  }
+
+  @media screen and (min-width: 900px) {
+    .layout-app {
+      grid-template-columns: min(40vw, 450px) 1fr;
+      grid-template-rows: min-content 1fr;
+      grid-template-areas:
+        "header nav"
+        "list main";
+    }
+
+    .in-list {
+      grid-area: list;
+    }
+  }
+
+  .in-list {
+    z-index: 20;
+  }
+
+  .in-main {
+    grid-area: main;
+  }
+
+  .in-header {
+    grid-area: header;
+  }
+
+  .in-nav {
+    grid-area: nav;
+  }
+
+  .overlap-top {
+    margin-top: -1.5rem;
+    height: calc(100% + 1.5rem);
+  }
+</style>
+
+<script>
+  import { listen } from "../helpers/events";
+  import { currentFacilitySlug } from "../helpers/store";
+
+  function setCurrentFacilitySlug() {
+    const slug = window.location.hash?.substring(1) || "";
+    currentFacilitySlug.set(slug);
+  }
+
+  listen("hashchange", setCurrentFacilitySlug);
+  setCurrentFacilitySlug();
+</script>

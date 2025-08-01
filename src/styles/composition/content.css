@@ -1,0 +1,25 @@
+/* CONSTRAIN */
+
+:where(.content), :where(.content) > * {
+  --content-width: 800px;
+  max-inline-size: min(100% - 2 * var(--content-measure), var(--content-width));
+  margin-inline: max(calc(50% - 600px), var(--content-measure));
+}
+
+.constrain-default > *, .content-default {
+  --content-width: 800px;
+}
+
+.constrain-wide > *, .content-wide {
+  --content-width: 1200px;
+}
+
+.constrain-full > *, .content-full {
+  --content-width: 100%;
+}
+
+
+.content-flush {
+  --content-measure: 0rem;
+}
+

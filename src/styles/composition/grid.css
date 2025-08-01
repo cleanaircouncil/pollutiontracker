@@ -1,0 +1,71 @@
+.grid {
+  display: grid;
+  gap: var(--gap, 1rem);
+  grid-template-columns: repeat(var(--columns, 1), 1fr);
+  grid-auto-flow: dense;
+}
+
+.grid-smart {
+  --grid-gap-count: calc(var(--columns, 100) - 1);
+  --grid-total-gap-width: calc(var(--grid-gap-count) * var(--gap));
+  --grid-max-width: calc((100% - var(--grid-total-gap-width)) / var(--columns, 100));
+  --grid-min-width: 0px;
+  --grid-basis: clamp(min(var(--grid-min-width), 100%), 100%, var(--grid-max-width));
+
+  display: grid;
+  gap: var(--gap, 1rem);
+  grid-template-columns: repeat(auto-fit, minmax(var(--grid-basis), 1fr));
+  grid-auto-flow: dense;
+}
+
+.grid > * {
+  --span-columns: 1;
+  --span-rows: 1;
+  grid-column: span var(--span-columns);
+  grid-row: span var(--span-rows);
+}
+
+
+/* GRIDS BY NUMBER OF COLUMNS */
+
+.columns-two {
+  --columns: 2;
+}
+
+.columns-three {
+  --columns: 3;
+}
+
+.columns-four {
+  --columns: 4;
+}
+
+.columns-five {
+  --columns: 5;
+}
+
+.columns-six {
+  --columns: 6;
+}
+
+/* GRIDS BY SIZE OF CELL */
+
+.grid-width-tiny {
+  --grid-min-width: 5rem;
+}
+
+.grid-width-small {
+  --grid-min-width: 10rem;
+}
+
+.grid-width-medium {
+  --grid-min-width: 15rem;
+}
+
+.grid-width-large {
+  --grid-min-width: 30rem;
+}
+
+.grid-width-huge {
+  --grid-min-width: 40rem;
+}

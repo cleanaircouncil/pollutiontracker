@@ -1,0 +1,21 @@
+:is(.switch, .switch-small, .switch-huge) {
+  --switch-threshold: 30rem;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: stretch;
+  gap: var(--gap, 1rem);
+}
+
+:is(.switch, .switch-small, .switch-huge) > * {
+  flex-grow: 1;
+  flex-basis: calc((var(--switch-threshold) - 100%) * 999);
+}
+
+.switch-small {
+  --switch-threshold: 10rem;
+}
+
+.switch-huge {
+  --switch-threshold: 40rem;
+}
