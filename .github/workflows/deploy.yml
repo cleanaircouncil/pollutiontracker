@@ -31,6 +31,7 @@ jobs:
       - name: Install dependencies and build
         run: |
           npm install
+          npm run fetch
           npm run build
 
       - name: Upload artifact
