@@ -78,3 +78,8 @@
   background: var(--color-danger);
   color: var(--color-white);
 }
+
+.swatch-black {
+  background: var(--color-black);
+  color: var(--color-white);
+}

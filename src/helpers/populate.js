@@ -60,7 +60,13 @@ export const populateWithData = (el, data) => {
           node.setAttribute(target.substring(1), value);
         } else if (target.startsWith("--")) {
           node.style.setProperty(target, value);
-        }
+        } else if (target.startsWith("#")) {
+          const template = target.substring(1);
+          const values = Array.isArray(value) ? value : [value];
+          const children = value.map( _ => cloneTemplate(template) )
+          node.replaceChildren( ...children );
+          node.childNodes.forEach( (child, i) => populateWithData(child, values[i]))
+        } 
       }
     }
   }

@@ -98,11 +98,11 @@ import FacilityList from "./facility-list.astro";
   import { listen } from "../helpers/events";
   import { currentFacilitySlug } from "../helpers/store";
 
-  function setCurrentFacility() {
+  function setCurrentFacilitySlug() {
     const slug = window.location.hash?.substring(1) || "";
     currentFacilitySlug.set(slug);
   }
 
-  listen("hashchange", setCurrentFacility);
-  setCurrentFacility();
+  listen("hashchange", setCurrentFacilitySlug);
+  setCurrentFacilitySlug();
 </script>

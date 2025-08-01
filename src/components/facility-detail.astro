@@ -63,7 +63,7 @@ const { facility = {} } = Astro.props;
               </header>
 
               <div class="grid columns-three gap-tight">
-                {group.attachments.map((attachment, i) => (
+                {group.attachments.map((attachment) => (
                   <a
                     class="facility-card__attachment"
                     href={attachment.url}

@@ -1,0 +1,4 @@
+.box {
+  padding: .5rem;
+  border-radius: var(--box-radius, .5rem);
+}

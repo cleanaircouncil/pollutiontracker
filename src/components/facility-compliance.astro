@@ -25,41 +25,31 @@ const sources = [
     <section class="facility-card__permits stack">
       <h3>Current Permits and Compliance</h3>
 
-      {facility.echo_compliance && (
-        <div class="grid columns-three gap-tight">
-          {facility.echo_compliance.map((permit) => (
-            <Permit permit={permit} style="card" />
-          ))}
-        </div>
-      )}
+      <div class="grid columns-three gap-tight">
+        {facility.totalPenalties && (
+          <div class="box swatch-black" style="--span-columns: 3">
+            <i class="fa fa-landmark-flag" />{" "}
+            <strong>{facility.totalPenalties}</strong> in federal penalties in
+            the last 5 years
+          </div>
+        )}
 
-      {(facility.totalPenalties || facility.dep_violations) && (
-        <ul class="fa-ul" style="--fa-li-margin: 1.75em">
-          {facility.totalPenalties && (
-            <li>
-              <span class="fa-li">
-                <i class="fa fa-landmark-flag" />
-              </span>
-              <strong>{facility.totalPenalties}</strong> in federal penalties in
-              the last 5 years
-            </li>
-          )}
-          {facility.dep_violations && (
-            <li>
-              <span class="fa-li">
-                <i class="fa fa-ban" />
-              </span>
-              <strong>{facility.dep_violations?.violation_count}</strong>{" "}
-              violations since
-              <strong>{facility.dep_violations?.since}</strong>
-            </li>
-          )}
-        </ul>
-      )}
+        {facility.dep_violations && (
+          <div class="box swatch-black" style="--span-columns: 3">
+            <i class="fa fa-triangle-exclamation" />{" "}
+            <strong>{facility.dep_violations.violation_count}</strong>{" "}
+            environmental violations since
+            <strong>{facility.dep_violations.since}</strong>
+          </div>
+        )}
+        {facility.echo_compliance.map((permit) => (
+          <Permit permit={permit} style="card" />
+        ))}
+      </div>
 
       {sources.length && (
         <div class="text text-detail">
-          Sources:
+          { sources.length == 1 ? "Source: " : "Sources: "}
           {sources
             .map(({ link, href }) => (
               <a target="_blank" href={href}>
@@ -69,9 +59,8 @@ const sources = [
             ))
             .reduce((stems, current, index, array) => {
               const shouldInsert = array.length > 1 && index == 1;
-              
-              if( shouldInsert )
-                stems.push(" and ");
+
+              if (shouldInsert) stems.push(" and ");
 
               stems.push(current);
               return stems;
