@@ -3,8 +3,8 @@ import Nav from "./nav.astro";
 import Map from "./map.astro";
 import Viewer from "./viewer.astro";
 import Header from "./header.astro";
-import ResponsivePanel from "./responsive-panel.astro";
 import FacilityBrowser from "./facility-browser.astro";
+import ResponsiveSheet from "./responsive-sheet.astro";
 ---
 
 <main id="app" class="app layout-app" data-app>
@@ -20,9 +20,9 @@ import FacilityBrowser from "./facility-browser.astro";
     <Map />
   </section>
 
-  <ResponsivePanel class="in-list">
+  <ResponsiveSheet class="in-list">
     <FacilityBrowser/>
-  </ResponsivePanel>
+  </ResponsiveSheet>
 
   <Viewer />
 </main>
@@ -53,10 +53,8 @@ import FacilityBrowser from "./facility-browser.astro";
     }
 
     .in-list {
-      grid-column: 1;
-      grid-row: 2 / span 2;
       pointer-events: none;
-      grid-area: "main";
+      grid-area: main;
     }
   }
 
@@ -76,7 +74,7 @@ import FacilityBrowser from "./facility-browser.astro";
 
   .in-list {
     position: relative;
-    z-index: 1;
+    z-index: 5;
   }
 
   .in-main {
@@ -85,7 +83,7 @@ import FacilityBrowser from "./facility-browser.astro";
 
   .in-header {
     grid-area: header;
-    z-index: 5;
+    z-index: 10;
   }
 
   .in-nav {

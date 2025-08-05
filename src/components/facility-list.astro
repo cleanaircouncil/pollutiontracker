@@ -3,7 +3,7 @@ import FacilityCard from "./facility-card.astro";
 import { data } from "../helpers/store";
 ---
 
-<div class="stack-tight" data-facility-list>
+<div class="stack-tight padding-tight" data-facility-list>
   {data.facilities.map((facility) => <FacilityCard facility={facility} />)}
   <div class="padding-tight align-center">
     <span data-result-count></span>

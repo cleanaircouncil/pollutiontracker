@@ -1,12 +1,11 @@
 ---
 import Eyebrow from "./eyebrow.astro";
 import FacilityCompliance from "./facility-compliance.astro";
-import Permit from "./permit.astro";
 
 const { facility = {} } = Astro.props;
 ---
 
-<div class="padding-tight" data-facility-detail>
+<div data-facility-detail>
   {
     facility.image && (
       <img
@@ -17,7 +16,7 @@ const { facility = {} } = Astro.props;
     )
   }
 
-  <article class="facility-detail stack-loose">
+  <article class="facility-detail stack-loose padding">
     <header class="stack-tight">
       <Eyebrow facility={facility} />
 
@@ -92,11 +91,11 @@ const { facility = {} } = Astro.props;
     overflow: scroll;
     max-height: 100%;
     pointer-events: all;
-    margin-top: 1rem;
   }
 
   .facility-detail__hero {
     object-fit: cover;
+    margin-top: -1rem;
   }
 
   .facility-detail__facts {

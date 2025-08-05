@@ -3,8 +3,8 @@ const { class:classes, ...rest } = Astro.props;
 ---
 
 <div
-  class:list={["sliding-panels height-full overflow-hidden", classes]}
-  data-sliding-panels
+  class:list={["panel-stack", classes]}
+  data-panel-stack
   {...rest}
   data-view="left"
 >
@@ -14,24 +14,24 @@ const { class:classes, ...rest } = Astro.props;
 </div>
 
 <style is:global>
-  .sliding-panels {
-    border: 5px dotted green;
+  .panel-stack {
+    /* border: 5px dotted green; */
     width: 100%;
   }
 
-  .sliding-panels .panel {
+  .panel-stack .panel {
     width: 100%;
     display: flex;
-    border: 2px solid purple;
+    /* border: 2px solid purple; */
     translate: 0% 0%;
     transition: translate 0.2s ease-in-out;
   }
 
-  .sliding-panels .panel > * {
+  .panel-stack .panel > * {
     flex: 0 0 100%;
   }
 
-  .sliding-panels[data-view="right"] .panel {
+  .panel-stack[data-view="right"] .panel {
     translate: -100% 0%;
   }
 </style>

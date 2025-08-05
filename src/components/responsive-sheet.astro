@@ -1,0 +1,147 @@
+---
+const { class: classes, ...rest } = Astro.props;
+---
+
+<aside
+  class:list={["height-full overflow-hidden align-end", classes]}
+  {...rest}
+  data-sheet-container
+  data-position="low"
+>
+  <section class="sheet overflow-hidden animate-sheet" data-sheet>
+    <header class="sheet__handle" data-sheet-handle></header>
+
+    <main class="sheet__content overflow-hidden height-full" data-sheet-content>
+      <slot />
+    </main>
+  </section>
+</aside>
+
+<style>
+  .align-end {
+    width: 100%;
+    display: flex;
+    align-items: end;
+  }
+
+  .sheet {
+    width: 100%;
+    background: var(--color-white);
+    pointer-events: all;
+    /* border: 3px solid orange; */
+  }
+
+  .animate-sheet {
+    transition: height 0.2s ease-in-out;
+  }
+
+  @media screen and (max-width: 900px) {
+    .sheet {
+      border-start-start-radius: 1rem;
+      border-start-end-radius: 1rem;
+      box-shadow: var(--box-shadow);
+      height: 50%;
+      display: grid;
+      grid-template-rows: min-content 1fr;
+    }
+
+    .sheet__handle {
+      padding: 0.5rem;
+      cursor: grab;
+      user-select: none;
+      flex: 0 0 auto;
+    }
+
+    .sheet__handle::after {
+      content: "";
+      display: block;
+      height: 5px;
+      width: 80px;
+      border-radius: 5px;
+      margin: 0px auto;
+      background-color: var(--color-gray-light);
+    }
+  }
+
+  @media screen and (min-width: 900px) {
+    .sheet {
+      height: 100% !important;
+    }
+
+    .sheet__content {
+      /* padding-top: 1rem; */
+    }
+  }
+</style>
+
+<script>
+  import { atom } from "nanostores";
+  const position = atom("low");
+
+  const sheetEl = document.querySelector("[data-sheet]");
+  const handleEl = sheetEl.querySelector("[data-sheet-handle]");
+
+  // const positions = {
+  //   low: "20vh",
+  //   middle: "50vh",
+  //   height: "100%",
+  // };
+
+  let height;
+  let parentHeight;
+  let startY;
+  let isDragging = false;
+
+  const positions = ["20%", "50%", "98%"];
+
+  function getHeightForPosition(el, string) {
+    const previousValue = el.style.height;
+    el.style.height = string;
+    const result = el.getBoundingClientRect().height;
+    el.style.height = previousValue;
+    return result;
+  }
+
+  handleEl.addEventListener("mousedown", (ev: MouseEvent) => {
+    ev.preventDefault();
+
+    height = sheetEl.getBoundingClientRect().height;
+    parentHeight = sheetEl.parentElement.getBoundingClientRect().height;
+    startY = ev.screenY;
+    isDragging = true;
+    sheetEl.classList.remove("animate-sheet");
+  });
+
+  window.addEventListener("mousemove", (ev: MouseEvent) => {
+    if (!isDragging) return;
+    ev.preventDefault();
+
+    sheetEl.style.height = `${(Math.min(parentHeight, height + (startY - ev.screenY)) / parentHeight) * 100}%`;
+  });
+
+  window.addEventListener("mouseup", (ev: MouseEvent) => {
+    if (!isDragging) return;
+    ev.preventDefault();
+
+    isDragging = false;
+    height = sheetEl.getBoundingClientRect().height;
+    const releasePosition = getHeightForPosition(sheetEl, `${height}px`);
+
+    const calculatedPositions = positions.map((position) =>
+      getHeightForPosition(sheetEl, position)
+    );
+    const finalIndex = calculatedPositions.reduce(
+      (index, position, i) =>
+        Math.abs(releasePosition - position) <
+        Math.abs(releasePosition - calculatedPositions[index])
+          ? i
+          : index,
+      0
+    );
+
+    requestAnimationFrame(() => {
+      sheetEl.classList.add("animate-sheet");
+      sheetEl.style.height = positions[finalIndex];
+    });
+  });
+</script>

@@ -1,26 +1,28 @@
 ---
 import FacilityDetail from "./facility-detail.astro";
 import FacilityList from "./facility-list.astro";
-import SlidingPanels from "./sliding-panels.astro";
+import PanelStack from "./panel-stack.astro";
 ---
 
-<SlidingPanels class="height-full overflow-hidden" data-facility-browser>
-  <section class="padding-tight height-full overflow-scroll pad-end">
+<PanelStack class="height-full overflow-hidden" data-facility-browser>
+  <section class="overflow-scroll padding-responsive">
     <FacilityList />
   </section>
 
-  <section class="height-full overflow-scroll pad-end" data-facility-view>
+  <section class="overflow-scroll padding-responsive" data-facility-view>
     <FacilityDetail />
   </section>
-</SlidingPanels>
+</PanelStack>
 
 <style>
-  .pad-end {
+  .padding-responsive {
     padding-block-end: 200px;
   }
 
-  section {
-    border: 2px dashed magenta;
+  @media screen and (min-width: 900px) {
+    .padding-responsive {
+      padding-top: .5rem;
+    }
   }
 </style>
 
