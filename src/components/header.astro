@@ -1,3 +1,9 @@
+---
+import Button from "./button.astro";
+import Search from "./search.astro";
+import SlidingPanels from "./sliding-panels.astro";
+---
+
 <header id="header">
   <hgroup>
     <a href="https://cleanair.org"
@@ -9,6 +15,15 @@
     >
     <h1>Pollution Tracker</h1>
   </hgroup>
+
+  <SlidingPanels class="search-panel" data-search-panel>
+    <Search />
+    <section class="form-controls">
+      <Button href="#">
+        <i class="fa fa-chevron-left"></i> Back To Results
+      </Button>
+    </section>
+  </SlidingPanels>
 </header>
 
 <style>
@@ -17,7 +32,6 @@
     color: var(--color-white);
 
     padding: 0.5rem;
-    padding-bottom: 1.5rem;
     position: relative;
     overflow: visible;
     line-height: 1.2;
@@ -36,4 +50,22 @@
   #header .logo {
     width: 10rem;
   }
+
+  .search-panel {
+    margin-bottom: -2rem;
+    margin-inline: -.5rem; 
+    width: calc(100% + 1rem);
+  }
 </style>
+
+<script>
+  import { currentFacilitySlug } from "../helpers/store";
+
+  const searchPanelEl = document.querySelector("[data-search-panel]");
+
+  currentFacilitySlug.subscribe(async (slug) => {
+    const view = slug ? "right" : "left";
+    searchPanelEl.setAttribute("data-view", view);
+    console.log(view, slug);
+  });
+</script>

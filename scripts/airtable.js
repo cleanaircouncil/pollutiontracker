@@ -1,11 +1,20 @@
 import "dotenv/config";
 import apify from "./apify.js";
 
+
+function toSnakeCase(str) {
+  return str
+    .toLowerCase()
+    .trim()
+    .replace(/\s+/g, "_")
+    .replace(/[^a-z0-9_-]/g, "")
+}
+
 export function jsonify(record) {
-  const kvp = Object.entries( record.fields )
-  kvp.forEach( pair => pair[0] = pair[0].toLowerCase().trim().replace(/\s+/g, "_").replace(/[^a-z0-9-_]*/g, "") );
-  const fields = Object.fromEntries(kvp);
-  return fields;
+  const entries = Object.entries( record.fields )
+  const fields = entries.map( ([key, value]) => [ toSnakeCase(key), value ] );
+  const json = Object.fromEntries(fields);
+  return json;
 }
 
 export const Bases = {

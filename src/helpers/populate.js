@@ -43,7 +43,7 @@ export const populateWithData = (el, data) => {
     for (const [key, target] of pairs) {
       const keys = key.split(".");
       const value = keys.reduce((value, key) => value?.[key], data);
-      const isUnset = value == null || value == undefined;
+      const isUnset = value == null;
       const targets = target?.split(/\s+/) || ["innerHTML"];
 
       for (const target of targets) {
@@ -51,7 +51,7 @@ export const populateWithData = (el, data) => {
           node.classList.toggle(target.substring(1), isUnset ? false : value);
         }
         
-        if( isUnset )
+        if( isUnset ) 
           continue;
 
         if (target == "innerHTML") {
@@ -63,7 +63,7 @@ export const populateWithData = (el, data) => {
         } else if (target.startsWith("#")) {
           const template = target.substring(1);
           const values = Array.isArray(value) ? value : [value];
-          const children = value.map( _ => cloneTemplate(template) )
+          const children = values.map( _ => cloneTemplate(template) )
           node.replaceChildren( ...children );
           node.childNodes.forEach( (child, i) => populateWithData(child, values[i]))
         } 

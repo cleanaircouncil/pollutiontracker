@@ -1,0 +1,47 @@
+---
+import FacilityDetail from "./facility-detail.astro";
+import FacilityList from "./facility-list.astro";
+import SlidingPanels from "./sliding-panels.astro";
+---
+
+<SlidingPanels class="height-full overflow-hidden" data-facility-browser>
+  <section class="padding-tight height-full overflow-scroll pad-end">
+    <FacilityList />
+  </section>
+
+  <section class="height-full overflow-scroll pad-end" data-facility-view>
+    <FacilityDetail />
+  </section>
+</SlidingPanels>
+
+<style>
+  .pad-end {
+    padding-block-end: 200px;
+  }
+
+  section {
+    border: 2px dashed magenta;
+  }
+</style>
+
+<script>
+  import { currentFacilitySlug } from "../helpers/store";
+
+  const browserEl = document.querySelector("[data-facility-browser]");
+  const viewEl = document.querySelector("[data-facility-view]");
+
+  currentFacilitySlug.subscribe(async (slug) => {
+    const view = slug ? "right" : "left";
+    browserEl.setAttribute("data-view", view);
+    console.log(view, slug);
+
+    if (!slug) return;
+
+    const response = await fetch(`./facilities/${slug}`);
+    const html = await response.text();
+
+    console.log(html);
+
+    viewEl.innerHTML = html;
+  });
+</script>
