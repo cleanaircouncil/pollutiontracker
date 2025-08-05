@@ -8,10 +8,10 @@ const { class: classes, ...rest } = Astro.props;
   data-sheet-container
   data-position="low"
 >
-  <section class="sheet overflow-hidden animate-sheet" data-sheet>
+  <section class="sheet | overflow-hidden animate-sheet" data-sheet>
     <header class="sheet__handle" data-sheet-handle></header>
 
-    <main class="sheet__content overflow-hidden height-full" data-sheet-content>
+    <main class="sheet__content | overflow-hidden height-full" data-sheet-content>
       <slot />
     </main>
   </section>

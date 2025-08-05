@@ -16,7 +16,7 @@ const { facility = {} } = Astro.props;
     )
   }
 
-  <article class="facility-detail stack-loose padding">
+  <article class="facility-detail | overflow-hidden height-full stack-loose padding">
     <header class="stack-tight">
       <Eyebrow facility={facility} />
 
@@ -83,13 +83,7 @@ const { facility = {} } = Astro.props;
 </div>
 
 <style is:global>
-  .facility-detail__holder {
-    background: var(--color-white);
-  }
-
   .facility-detail {
-    overflow: scroll;
-    max-height: 100%;
     pointer-events: all;
   }
 
@@ -98,19 +92,9 @@ const { facility = {} } = Astro.props;
     margin-top: -1rem;
   }
 
-  .facility-detail__facts {
-    padding: 1.5rem;
-  }
-
-  .facility-detail__fact {
-    list-style: none;
-  }
-
   .facility-card__attachment {
     cursor: pointer;
-  }
-
-  .facility-card__attachment {
+    
     border-radius: 0.5rem;
     border: 2px solid var(--color-gray-dark);
     transition:
