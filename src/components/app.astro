@@ -3,25 +3,26 @@ import Nav from "./nav.astro";
 import Map from "./map.astro";
 import Viewer from "./viewer.astro";
 import Header from "./header.astro";
-import FacilityList from "./facility-list.astro";
+import FacilityBrowser from "./facility-browser.astro";
+import ResponsiveSheet from "./responsive-sheet.astro";
 ---
 
 <main id="app" class="app layout-app" data-app>
-  <div class="in-header">
+  <section class="in-header">
     <Header />
-  </div>
+  </section>
 
-  <div class="in-nav">
+  <section class="in-nav">
     <Nav />
-  </div>
+  </section>
 
-  <div class="in-main">
+  <section class="in-main">
     <Map />
-  </div>
+  </section>
 
-  <div class="in-list overlap-top overflow-hidden">
-    <FacilityList />
-  </div>
+  <ResponsiveSheet class="in-list">
+    <FacilityBrowser/>
+  </ResponsiveSheet>
 
   <Viewer />
 </main>
@@ -43,7 +44,7 @@ import FacilityList from "./facility-list.astro";
 
   @media screen and (max-width: 900px) {
     .layout-app {
-      grid-template-rows: min-content 1fr 20vh min-content;
+      grid-template-rows: min-content 1fr 0fr min-content;
       grid-template-areas:
         "header"
         "main"
@@ -52,9 +53,8 @@ import FacilityList from "./facility-list.astro";
     }
 
     .in-list {
-      grid-column: 1;
-      grid-row: 2 / span 2;
       pointer-events: none;
+      grid-area: main;
     }
   }
 
@@ -73,7 +73,8 @@ import FacilityList from "./facility-list.astro";
   }
 
   .in-list {
-    z-index: 20;
+    position: relative;
+    z-index: 5;
   }
 
   .in-main {
@@ -82,6 +83,7 @@ import FacilityList from "./facility-list.astro";
 
   .in-header {
     grid-area: header;
+    z-index: 10;
   }
 
   .in-nav {

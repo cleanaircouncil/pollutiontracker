@@ -1,10 +1,11 @@
 export default function apify(baseUrl, headers = { "Content-Type": "application/json" }) {
   const doFetch = async (method, url, body) => {
-    const strippedUrl = url.replace(/^\//, "");
-    const response = await fetch(baseUrl + "/" + strippedUrl, {
+    const isBodyValid = body !== undefined && method !== "GET" && method !== "DELETE";
+    const strippedUrl = url.replace(/^\/+/, "");
+    const response = await fetch(`${baseUrl}/${strippedUrl}`, {
       method,
       headers,
-      body: JSON.stringify(body),
+      ...( isBodyValid ? {body: JSON.stringify(body)} : {} )
     });
 
     if (response.ok) {

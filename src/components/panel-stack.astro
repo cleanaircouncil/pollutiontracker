@@ -1,0 +1,37 @@
+---
+const { class:classes, ...rest } = Astro.props;
+---
+
+<div
+  class:list={["panel-stack", classes]}
+  data-panel-stack
+  {...rest}
+  data-view="left"
+>
+  <div class="panel height-full">
+    <slot />
+  </div>
+</div>
+
+<style is:global>
+  .panel-stack {
+    /* border: 5px dotted green; */
+    width: 100%;
+  }
+
+  .panel-stack .panel {
+    width: 100%;
+    display: flex;
+    /* border: 2px solid purple; */
+    translate: 0% 0%;
+    transition: translate 0.2s ease-in-out;
+  }
+
+  .panel-stack .panel > * {
+    flex: 0 0 100%;
+  }
+
+  .panel-stack[data-view="right"] .panel {
+    translate: -100% 0%;
+  }
+</style>

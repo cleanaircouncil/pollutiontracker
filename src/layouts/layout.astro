@@ -1,0 +1,38 @@
+---
+import "../styles/styles.css";
+
+const { title } = Astro.props;
+---
+
+<html data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no"
+    />
+    <title>{title} - Clean Air Council</title>
+
+    <slot name="head" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="/assets/css/fonts/fontawesome/css/fontawesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="/assets/css/fonts/fontawesome/css/solid.min.css"
+    />
+  </head>
+
+  <body>
+    <slot />
+  </body>
+</html>

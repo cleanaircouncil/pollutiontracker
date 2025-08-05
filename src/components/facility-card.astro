@@ -19,7 +19,7 @@ const { facility = {} } = Astro.props;
 
     <hgroup>
       <h3>
-        <a href={`#${facility.slug}`} class="facility-card__link">
+        <a href={`#${facility.slug}`} class="link-block">
           <Highlight text={facility.company_name} />
         </a>
       </h3>
@@ -48,6 +48,7 @@ const { facility = {} } = Astro.props;
 
 <script>
   import { listen } from "../helpers/events";
+  import { resultCount } from "../helpers/store";
 
   function toggleFacilityCard(searchTerm) {
     const query = searchTerm.trim().toLowerCase().split(/\s+/);
@@ -69,6 +70,10 @@ const { facility = {} } = Astro.props;
     highlights.forEach((highlight) => {
       highlight.setAttribute("data-highlight", searchTerm || "");
     });
+
+    resultCount.set(
+      document.querySelectorAll("[data-facility-card]:not([hidden])").length
+    );
   }
 
   listen("search", (e) => toggleFacilityCard(e.detail.value));
@@ -100,7 +105,7 @@ const { facility = {} } = Astro.props;
     border: 2px solid var(--color-danger);
   }
 
-  .facility-card__link::after {
+  .link-block::after {
     content: "";
     display: block;
     position: absolute;

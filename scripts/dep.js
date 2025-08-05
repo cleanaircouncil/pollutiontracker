@@ -30,7 +30,6 @@ export default async function fetchDEPDataForURL(dep_link) {
       Since: recentViolations.at(-1).Date
     }]
 
-    return violations;
   } catch(e) {
     console.log(e);
     return undefined;
