@@ -1,6 +1,6 @@
 # Pollution Tracker
 
-**Pollution Tracker** is a project by the **Clean Air Council** that brings together environmental compliance data for industrial facilities along the **Delaware River**.
+[**Pollution Tracker**](https://pollutiontracker.cleanair.org) is a project by the **Clean Air Council** that brings together environmental compliance data for industrial facilities along the **Delaware River**.
 
 It pulls data from:
 - [EPA’s ECHO system](https://echo.epa.gov/)
