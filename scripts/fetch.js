@@ -3,6 +3,7 @@ import fs from "fs";
 import "dotenv/config";
 import { slugify } from "./html.js";
 import { marked } from "marked";
+import * as turf from "@turf/turf";
 
 import airtableAPI, { Bases, jsonify } from "./airtable.js";
 
@@ -130,7 +131,14 @@ async function recordToFacility(record) {
 
 function produceMapData( data ) {
   console.log("🗺️  Producing map data...")
+
+  const points = turf.featureCollection( data.facilities.map( facility => turf.point([ facility.longitude, facility.latitude ])));
+  const bounds = turf.bbox(points);
+  
   const result = {
+    map: {
+      bounds
+    },
     facilities: data.facilities.map( ({company_name, latitude, longitude, alert, slug})=> ({company_name, latitude, longitude, alert, slug }))
   }
 

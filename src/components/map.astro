@@ -1,20 +1,14 @@
 ---
-
+import Button from "./button.astro";
 ---
 
-<>
-  <head>
-    <script
-      src="https://unpkg.com/maplibre-gl@latest/dist/maplibre-gl.js"
-      slot="head"></script>
-    <link
-      href="https://unpkg.com/maplibre-gl@latest/dist/maplibre-gl.css"
-      rel="stylesheet"
-      slot="head"
-    />
-  </head>
-
+<Fragment>
   <figure id="map" class="map" data-map></figure>
+
+  <Button class="map-view-all-button box-shadow" data-map-view-all>
+    <i class="fa fa-expand"></i><span class="map-view-all-text">&nbsp;View All</span>
+  </Button>
+
   <template id="map-marker-stub">
     <div
       class="map-marker"
@@ -24,7 +18,7 @@
       <span class="map-marker__label" data-populate="company_name"></span>
     </div>
   </template>
-</>
+</Fragment>
 
 <style is:global>
   .map {
@@ -32,6 +26,21 @@
     height: 100%;
     pointer-events: all;
     background-color: #f2f2f2;
+  }
+
+  .map-view-all-button {
+    z-index: 100;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+  }
+
+  .map-view-all-text {
+    display: none;
+  }
+
+  .map-view-all-button:hover .map-view-all-text {
+    display: block;
   }
 
   .map-marker {
@@ -132,7 +141,6 @@
 </style>
 
 <script>
-  const maplibregl = window["maplibregl"];
   import {
     currentFacilitySlug,
     data,
@@ -141,6 +149,10 @@
 
   import { cloneTemplate, populateWithData } from "../helpers/populate";
 
+  const maplibregl = window["maplibregl"];
+
+  console.log(data.map.bounds);
+
   async function initMap() {
     const map = new maplibregl.Map({
       container: "map", // container id
@@ -148,7 +160,6 @@
         "https://api.maptiler.com/maps/0197e64b-47f4-71b6-9770-751526b1f31b/style.json?key=v64Bpd9Og2E4Zm916XUB", // style URL
       center: [-75.165222, 39.952583],
       attributionControl: false,
-      zoom: 10, // starting zoom
     });
 
     map.setMaxPitch(0);
@@ -156,6 +167,7 @@
     map.touchPitch.disable();
     map.dragRotate.disable();
     map.touchZoomRotate.disableRotation();
+    map.fitBounds(data.map.bounds, { padding: 80, duration: 0 });
 
     return new Promise((res) => {
       map.on("load", async () => {
@@ -188,7 +200,12 @@
     map.flyTo({
       center: [facility.longitude, facility.latitude],
       zoom: 14,
+      duration: 2000,
     });
+  }
+
+  function viewAll(map) {
+    map.fitBounds(data.map.bounds, { padding: 80, duration: 1000 });
   }
 
   function setCurrentMarker(facility) {
@@ -202,10 +219,14 @@
   }
 
   const map = await initMap();
+  const viewAllButton = document.querySelector("[data-map-view-all]");
+
   await initMarkers(map, data);
 
   currentFacilitySlug.subscribe((slug) => {
     const facility = getFacilityBySlug(slug);
     focusOnFacility(map, facility);
   });
+
+  viewAllButton.addEventListener("click", () => viewAll(map));
 </script>
