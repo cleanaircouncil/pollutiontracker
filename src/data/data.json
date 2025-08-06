@@ -8,7 +8,7 @@
       "address": "1646 S 51st St., Philadelphia, PA 19143\n",
       "description": "Proposed warehouse at site of former fossil fuel tank farm, site of chemical spill\n",
       "clean_air_notes": "<p>Comments\n<a href=\"https://cleanaircouncil.salsalabs.org/bartramsgarden\">https://cleanaircouncil.salsalabs.org/bartramsgarden</a> \n<a href=\"https://cleanaircouncil.salsalabs.org/bartramsspill\">https://cleanaircouncil.salsalabs.org/bartramsspill</a> \n<a href=\"http://cleanaircouncil.salsalabs.org/bartramscleanup\">http://cleanaircouncil.salsalabs.org/bartramscleanup</a> </p>\n",
-      "slug": "1646-s-51st-st-"
+      "slug": "1646-s-51st-st"
     },
     {
       "company_name": "3060 S 61st St.",
@@ -28,18 +28,18 @@
           "attachments": [
             {
               "id": "attMzqP72qHcisOSJ",
-              "url": "https://v5.airtableusercontent.com/v3/u/43/43/1754445600000/n3TrfhUQkSU8m49z-7VtkA/gS75BhQk5TIsXmXO7GyBLjq3NCaCMWisRCuSe_Lhsz5FUyZrWGK2FPbPqwZFFswGRcHN1gtHWGmbxj8OOvqOJBIKCdmKnyqryDSU2fFVUcv0up5mA8TC1gjlabm7H1KzkA15kp60RsXwiD2Avi99Xbe7qUtNvL7K6TLaPhqwsL8/VitBA2LX69HynQt_s3OPPx3q5cmfHAD5UPab8AYjIHA",
+              "url": "https://v5.airtableusercontent.com/v3/u/43/43/1754503200000/wFijKe4qQYUBpZnbFi5BIA/B8Jwzx1jDDIR0DGYD03YVY7glQyPusis4MVwWRFzPnvsrTyYsUo3uuZcjQDtIghyizJCpviP08clNOv0spekJe9A5_TfvEaKxlY98PZ5IAifXMfcxR4zKCX5uyP9yBpjbW0qQBdk62Kylx2O9Yd8SeF3-Ld55_wSh2brasPtIVc/t8bDATKIQyvAScD5hOoFJQx6bK-BWR4hStSafWo-lzw",
               "filename": "img07312023_00011.pdf",
               "size": 1168643,
               "type": "application/pdf",
               "thumbnails": {
                 "small": {
-                  "url": "https://v5.airtableusercontent.com/v3/u/43/43/1754445600000/TMglz2TcsdUUiQ0C_FurJg/P-44ojD2b-yNUbLX4wJXHEMXyvAZfRpl4QZQz3PfRTQJdtTK7swcecomgkk48lJTcYawSgm0f-FHsGJDWvS5vOHBtpqaekKE13WztG4vmgOLJmsO12Taj3k7iRN-qZdQax5H8Ujs8RS2WihVbeDevQ/67sVDdAeJWmTC0G5GTgFLP4mtaWM5HxZMry3Al-MPHU",
+                  "url": "https://v5.airtableusercontent.com/v3/u/43/43/1754503200000/8p8C15OravLo47-cOdbg2Q/ddlPIlA2nncJcmeCzNji0K7hIdTDMVeeAta_XM8P6W-keBdDGgiKKYyiu52Y8nf2Uyp4tY0aRNfVEFmakea5VtEoCuziljMgmaLB57jt4R_GKeiJBN5LoerbA9u1hw_1umqoKW0vfqTAN2tzY_oaCA/b2vimurQ_HJS6G56J99hD2Jfd2bt8dBircMSY0GT2_Q",
                   "width": 27,
                   "height": 36
                 },
                 "large": {
-                  "url": "https://v5.airtableusercontent.com/v3/u/43/43/1754445600000/XyBDeOmYDOF-v15PKs3Etg/hs7Hlg1H_ZJv8d46uRUfsFGheIrZNXMOAh8ObHVVnwTKUnjgWXf6g5-dnDq6zrqU8TQs67NMHGW3fLkDN2wszvLblfe3eCu7jzc3iDcinfrbx6A1MUrDj_EDL1DlUg3IlEo5UoQc58w2ITnv_FRjIg/Bjw_48iLovq1WzDnUP71blrlZ0wYH_Y-8shoUHiyTC4",
+                  "url": "https://v5.airtableusercontent.com/v3/u/43/43/1754503200000/lxpFUw0_aLPHFcoZBR7MnA/U-LK7UlH_IfZeSRfmh8q-3GhhrCGGI9NQDwoaBa5VnacrPQ1SlIcfLerGgMQGJe0pAVxXYA1eBRwflWIP3Y22-Ui7LZIHJt049xU-1LazK5hFiF-k5LKRDAOBZZ5wIG_KxfBEVjNfRWQtuen5ea-jQ/cEE4Ect7iWlYLb54HGgrKI6khwEqnajjKEYW2OEThz4",
                   "width": 512,
                   "height": 678
                 }
@@ -48,7 +48,7 @@
           ]
         }
       ],
-      "slug": "3060-s-61st-st-"
+      "slug": "3060-s-61st-st"
     },
     {
       "company_name": "Adelphia Compressor Station\n",
@@ -65,23 +65,23 @@
           "id": "attGip66aUxgBgYFZ",
           "width": 1308,
           "height": 811,
-          "url": "https://v5.airtableusercontent.com/v3/u/43/43/1754445600000/E5Dy7k5kjtWaHgSWsDaBoA/TUwrCplvKviYZmtw6Y7kiQk0agMWySAuQqwGMJdNu6remFAqAUBdvEfwdTzSRiYSDOFNF5O2yQ2jcWtG2Im5Tyq3qo7D3k-gu-lXY8nvO3ajFlgsA5hHXO70dzYVl4pM2ngIyiz-aJvj-QVNjOgvU9R2Pc7mLpWKEUncVb0W6a2Xekah0iWqnsnTJDjgyEGk/RPrMEQprBCHgdXkfzpcBYk5dAdO3dPlY1yDGd867D08",
+          "url": "https://v5.airtableusercontent.com/v3/u/43/43/1754503200000/PfLDPaqmBgYsVYKDqULKPA/SROUrnYw__SMMgb9b_JpjCOK2u_utHHmMvI_RPmtLXQkuP89QJzTu3HmxIyIT9ykb3SdUCoMvxRCp5ZUYzAxndTYb0YJP2d8JVyDN3VTR6nQzNK3fIrvE19dDmuR_aZb6HIVmzalWo3X7mrHHMZIN46LkAEmflPMEvdxOtBAWb3bLQuww7oayfkJnrN0wjQp/CmId1O1YIzGIu_ZdG3XWwVFlsvH2EOT94au-pxF_xMw",
           "filename": "Screenshot 2025-07-07 at 16.59.58.png",
           "size": 1620929,
           "type": "image/png",
           "thumbnails": {
             "small": {
-              "url": "https://v5.airtableusercontent.com/v3/u/43/43/1754445600000/5duEh7oQZDws1aWqqyQMxA/bwQlFv9WYdQhb1Nn8AyQwdv04voTWCUVtMkgx--DaglUVk7gT61hV1b685kpgpga-IgJitfKoIaPp_P6oDuLnbdGiJH77zcf5HkxElPcwDt5FuoIHqq21hpaNoIRqwj6UjXXzDHvpM3x7oRZkpaHgA/HhW4mbuuMeQzaJfqUvD2Z0lvk5P3iKFQfcDaCHjn6RI",
+              "url": "https://v5.airtableusercontent.com/v3/u/43/43/1754503200000/4FGHTC6OSFikoS1jprIiGw/oJV39xoADIOAXqMtI4LvN7JD0ZCU_w8YvwNbREWWu4ta9p1ywxSK9IGOVgS2aedW8r6nWPFvtxjFBnnYkDB_REnMHDruY2sLUlWDiBe6i6eNJ3aGIUNPdei9i2dKFP3GPdGquO2PpMKWMlir92otMw/SjrJM9WVwFEzQtp0dRUWTZYHjbEj_p9PlhH3-mpRHHc",
               "width": 58,
               "height": 36
             },
             "large": {
-              "url": "https://v5.airtableusercontent.com/v3/u/43/43/1754445600000/8Eqt2SbFHJHsTyJk6myO7w/XWCq88VoqJQ8_eZehv7WLiLCAj8iH4Jv3APNVWPmSaMreS0Ubimx9Mqn9Gsi-LXi5twr_kRW51C_JigGu_6j6laK2fKJ5b3xflXtO86H2AOnZ2i_bfvKx5LP_QEZj0v5Hwo-Xmer6l_1H36LxznUhg/mTmnzLYVb4Ka0dKWC6sL3J-oWcQ_yJzsfEsvSBxKjC8",
+              "url": "https://v5.airtableusercontent.com/v3/u/43/43/1754503200000/xR8ry1AEGIG-Ufn7NywwOg/2LeX4XYEjXyJY4-45TdnFcNfKmfPbdvAamnqqJduSvbaTHlvjdczghTFgrDDeC06IxEP8v-I9PsCHRiRARc7TjQ04dLWfcL8OFGMak-rDUAw7-CBjwS8nGfCXXrqDXxQnrY7Tt7zDp71URu3TGJzag/jSgCRe6U_mXfLL0omg_jlw4OBA20kFpHrXYLojPMVW8",
               "width": 826,
               "height": 512
             },
             "full": {
-              "url": "https://v5.airtableusercontent.com/v3/u/43/43/1754445600000/FrtRTM9m1mGT6CSJ-aAuTQ/0oFQxff2_oXuLdrRw3DrXECLzEGvd6QYDsXbOcLdfRluoPLoIGeqAfsj4P1xwYZfLmJk8N7JVPYLQZtkmhSpF7T-pXrcRML36k5ek7RFEr7O4v-btk7fWnRC5lFt8O8WeKhmedx3SQujAvfhcgU8ZA/W6OnxETJHFv7zeefTRDzj4KhYHYvN6Z6pBJS-uoJI3Q",
+              "url": "https://v5.airtableusercontent.com/v3/u/43/43/1754503200000/y9rr-ACAfAO-lOsnb5IZtw/XjFwllRra0pJtpX9r8cA_Qolu_cIWCQ00KR9VGABQHNilBO9CB0s5KADstftfoy08p4J24sxx7WHbhFzKKlE97n_nmybyd4aGXWXjE_tV5E9kwx6mh-MRyXrdB33fxNPygMQpkvLnaNyKh_dflYhTA/RvimLj4SowxR5OaJ0hKBwtsQJcxu71qfBdVK8bgkGps",
               "width": 1308,
               "height": 811
             }
@@ -93,7 +93,7 @@
           "statute": "CAA",
           "status": "Valid",
           "last_inspection": "2025-07-10",
-          "last_scraped": "2025-08-05",
+          "last_scraped": "2025-08-06",
           "penalties": 0,
           "status_text": "No Violation Identified"
         }
@@ -113,7 +113,7 @@
         {
           "statute": "CWA",
           "status": "Valid",
-          "last_scraped": "2025-08-05",
+          "last_scraped": "2025-08-06",
           "penalties": 0,
           "status_text": "No Violation Identified"
         }
@@ -137,7 +137,7 @@
       "address": "1000 Calcon Hook Rd., Sharon Hill, PA 19079",
       "description": "Proposed warehouse on contaminated land",
       "clean_air_notes": "<p>Comment\n<a href=\"https://cleanaircouncil.salsalabs.org/darbyredevelopment\">https://cleanaircouncil.salsalabs.org/darbyredevelopment</a></p>\n",
-      "slug": "brigaloon-inc-"
+      "slug": "brigaloon-inc"
     },
     {
       "company_name": "Chelsea Tank Farm",
@@ -153,7 +153,7 @@
           "statute": "CAA",
           "status": "Valid",
           "last_inspection": "2024-06-11",
-          "last_scraped": "2025-08-05",
+          "last_scraped": "2025-08-06",
           "penalties": 0,
           "status_text": "No Violation Identified"
         },
@@ -161,7 +161,7 @@
           "statute": "CWA",
           "status": "Violation",
           "last_inspection": "2024-10-23",
-          "last_scraped": "2025-08-05",
+          "last_scraped": "2025-08-06",
           "penalties": 0,
           "status_text": "Violation Identified"
         },
@@ -169,7 +169,7 @@
           "statute": "RCRA",
           "status": "Valid",
           "last_inspection": "1996-12-06",
-          "last_scraped": "2025-08-05",
+          "last_scraped": "2025-08-06",
           "penalties": 0,
           "status_text": "No Violation Identified"
         }
@@ -203,7 +203,7 @@
           "statute": "CAA",
           "status": "Valid",
           "last_inspection": "2021-02-26",
-          "last_scraped": "2025-08-05",
+          "last_scraped": "2025-08-06",
           "penalties": 1000,
           "status_text": "No Violation Identified"
         },
@@ -211,7 +211,7 @@
           "statute": "CWA",
           "status": "Valid",
           "last_inspection": "2022-03-24",
-          "last_scraped": "2025-08-05",
+          "last_scraped": "2025-08-06",
           "penalties": 0,
           "status_text": "No Violation Identified"
         },
@@ -219,7 +219,7 @@
           "statute": "RCRA",
           "status": "Valid",
           "last_inspection": "2012-01-20",
-          "last_scraped": "2025-08-05",
+          "last_scraped": "2025-08-06",
           "penalties": 0,
           "status_text": "No Violation Identified"
         }
@@ -251,18 +251,18 @@
           "attachments": [
             {
               "id": "attbkqxAjYaO47mJ5",
-              "url": "https://v5.airtableusercontent.com/v3/u/43/43/1754445600000/EmcaltChbAX691rhobXYDA/gjp9oUksZy_U85nxWqowMtSHB5PYqajMcK-M-u8KkKU5pkIlSoQtbDHkP2McRt2zZtRN0zWLu6EIwCzH_RqXJ13CxChQypEgoExTU23JhWqIsHb3YDrbraz1M7RYIwKOqn_xbRFGBINyMsFk-JUqMawBYTPJiZfh3wVuLfoV9rq2rtg_rM1JSMpxLKQ-AoQi4ULI7j4riWSfcA2xGBU0n3w7uQhVDfJh1QRD9z3g3ry7gikT2KbHonxzpzP8_ETHIclG0D54hvT5-l9eUkRGgTII2psNPXn9ptHeadkQvGM/uqbCOoVWo_YJvIH-nKJ2vJo5lmLv8D2NH-U6U6csTGU",
+              "url": "https://v5.airtableusercontent.com/v3/u/43/43/1754503200000/1CMCiVbKRuj8BJmo5MbJ4g/Gh_lVzbk_Ip-zOqjztcdYc7stpns-oLlnCngYEfn23d_cYKQEHbFO2IETum_cYMLK91oIpuKmdj8JyIDTNu1z_0yu5LJgy6V5bTR7eqeS775FY2pSVz1qII2RPVGqXHWBVMoFgEerrxpAQY8bmkUicJ643TMnuHMWfo8fr-S7nWWp6dCZcHP6iB2Mj-3f04YPZf7EdhTz2HrJUzSiyWnzD6IRBw5MSIfrwFy1uxWhosUBFp4_qDihq0PeO8VJ2kqTRye_r0Kb-SmJHJIAXaDHBYExHwq1MJZVVKXNBM3a6I/gXNwDC_86i4j-PlCXQNVzZ7LqUIsmqtrZfrj38kByiY",
               "filename": "DEP - ERMS (Clean Water CW) -  DT  PERMITS-REGISTRATION-APPROVALS FB  PAG-03 GENERAL PERMIT (NSA3) Year  2024 Permit-Project   PAG030310....pdf",
               "size": 230022,
               "type": "application/pdf",
               "thumbnails": {
                 "small": {
-                  "url": "https://v5.airtableusercontent.com/v3/u/43/43/1754445600000/izMr0qf-LlVkDF4nrVssdg/8zp5R0YqCD580ps0GewGQsHURXDzjdIMHuD6CHCtzuMJRqwqmT65xeDQBnXpeXfWXI2Ga0R7E731szCC17UN1B7GBeYfeLnpOa6oNEQwlneERXeqE54qvcqT_BDpLaVMWaeqbGTpaKeNs8LuJCSWPA/wXRiQX6SM_1iwwzw3wcDYNeSsRUlgJrlQelEXrws2f0",
+                  "url": "https://v5.airtableusercontent.com/v3/u/43/43/1754503200000/FdfBdTfsyCrAzvze0ABMvw/09hsWL782P5kbO_aUsX7PdJLJgK7poJHsmL_wjNB2kcL_yrYWtNhSm0xnqoTTWU6vlo9mqL_ad8Ex3BeVXG6EacnIOWVa9uGX8jGT9Vy7f1YOVmmzll8SnJWlA3PoixqCf1SRzLgCAXMHyWNnsM7UA/vktBoMSUVPgcqTExO05JWJa6l3u6Zi1SQejl88xNwjw",
                   "width": 23,
                   "height": 36
                 },
                 "large": {
-                  "url": "https://v5.airtableusercontent.com/v3/u/43/43/1754445600000/jFc5Bgl3PWqmI0a7C7-u9Q/5qDnTD1wEzAmR5_Tp2PPHtVFJo5tTHZJFf1i7eRlZ6ONMxceYlivrhJgzukYwrhl0MdueYXxsA0deiEN9dSLSyCpH7TKSdfJFuumm5cpbTITbzdrhNenN2xvB7ud9rci788mYTEpImkkJE7NErePyw/Ji-eUlbNvgpcTXmxNy7tl9n16zlwsxXDrV6PrmIdcJs",
+                  "url": "https://v5.airtableusercontent.com/v3/u/43/43/1754503200000/gktM4Zlo0ZN47HwRRymigw/hv4YQIxJTVrLUS_e_ZszTCIbBosW720McK2wbC7gFiWcPhe62IiBPFEP227w2oehtGz1AqRoHKjTDdiW-5CObtPwDJhnb9Dspc_r8nj6mn-kfQClyFcDhuo9jPp-kz_HAPnDb7LlR2bwgi-tROGlOQ/u7KmSGjJ3aba3v34wUMUyZZPIeYdMz_esLItB3K6exI",
                   "width": 512,
                   "height": 791
                 }
@@ -270,18 +270,18 @@
             },
             {
               "id": "attMFJmVmcsWgmiAx",
-              "url": "https://v5.airtableusercontent.com/v3/u/43/43/1754445600000/eDqdF_E8olxB_aiMjmvVLA/8T1FO8mrw1Rv-LegHZ4QICgBm6JE1J_WRkXxTGsBwQxhlfewaCQzxyXys3Pz1FpWz6Ynqq2dWsP5MP51RhJBDukOJadNPtUe0p9ix8bYXcroeSQsZvkHQ-uXOUS9pKdwGXHuCOatoMZ4N5aIdV7eOxPlSV3H-5DdyYpvRIPWEM6yDplbl5YcMYrmOFoL3YU8_zwSWdJE5kHgkeUlbaPhfTBTvS6cH_qAKLKc1TximVNP87Gyj8LrxRwDp9zKJSSffu7i6CLwYJtmNlDzFrZIzjSIUamfjyn_Zl3rq9A-sEc/pDcMuHLr7KWVxR7qssYG4AEtZhLQXbi7ACF1EcrH8SE",
+              "url": "https://v5.airtableusercontent.com/v3/u/43/43/1754503200000/toKJSdXoKZE-ZSPqcEY3jQ/kCH-E8msYRsKxfiX5mOupnGNx5-h37gSlv1F6lE-g5lGDswR1tEz0C0Gt29iM6Yo2-SuB0Wa5vm3ms-HGDxgaxOlOCM9_UqCvHDbJPnFBy8lQ0Q5gey6BLuQ5ti4UXsGyn7smRuIPIY_G_rCtZq-020o5tQe6ezDNzSd_Np68keap1I98VsKgMI0Wlvqiy0NU3hMqZdS-sFOuxu2wzGy81UjztNmQ2PbnnBHzRWuNa-_vFHGuevIlRi2qSVSoVki9wmggxREgBIT-ymLTEq0DIcE0UpoIr9V1N_39EsriD8/Il6YrpwBdsZ-fy0GqyI5QiBK3-IjwqPRgp3SyIb966Q",
               "filename": "DEP - ERMS (Clean Water CW) -  DT  PERMITS-REGISTRATION-APPROVALS FB  PAG-03 GENERAL PERMIT (NSA3) Year  2024 Permit-Project   PAG030310(9).pdf",
               "size": 105393,
               "type": "application/pdf",
               "thumbnails": {
                 "small": {
-                  "url": "https://v5.airtableusercontent.com/v3/u/43/43/1754445600000/err0NSOXy4LsOAJp7sp-MA/Wq5QydhRUG81V6AprmD0L2Sr-axmRmDlUUrpwDy-7jonELK3nZLPBqoi1wHprYENtyMka-_bw4mYvq4SUE0Wo_GQSHyyJyQcsPi8jzc4Y80mCsXP-p9oSXpBDewUK7r9D0Ej7lMlFHFtStt-U0PT1A/AFO-nGquAgwav6LeJI97670gwV0qI-oopIFNsXAYvOM",
+                  "url": "https://v5.airtableusercontent.com/v3/u/43/43/1754503200000/PhWhIC3HMx8sHgSFMbQd8Q/xpY4V9KVBbBPrz6VHyjJ-75dNIZ8uY2kKdHMXmZ1JlzOnQuw7headaZQUJvC5MRq_5bwF8ea9FBm2qZGcZLFkkGdisGINdLsQZFeZ-GwJGe5DNvvigWS4uxXwWdeCHZ_eIaUUGUN20_JYAZNZ_3Q9Q/95nfDgzixJBrpE7uJhXneJmC_GvpKrOC35u1WIx2HV0",
                   "width": 28,
                   "height": 36
                 },
                 "large": {
-                  "url": "https://v5.airtableusercontent.com/v3/u/43/43/1754445600000/ZRx6E4wgdsH3T8Gtb4jiIw/fdb5aFwvej11eVCGdfdlO8y_aKgRmzbJavUO1m37oLTVlbg3rLL33Tc2MXnG_ZyMtvQnUFKyauiopZiYWFgkYf1FJNagg7UwFk22wJQAcnHn7bCED6m0LN8CgzbDeK2fTkNEwmzBcZnNk2Ydyuwybg/VFvnh6jlVb_EUSXG_xsQD0fAOI9TWerHCOAkDbeG1LY",
+                  "url": "https://v5.airtableusercontent.com/v3/u/43/43/1754503200000/cPNKRboGb-I7nATvQ0vn6Q/8ZcVKa00TB2zSxHbPOsmH5g76ebkcnw7TaffK99XerijFCj64Wf2rVD7tKc_7DSu1UyfarO7HfI5xjRH4midIQpSbdwiA0wN9QlCJcUam-Xug9wMGxRx7YxZqLKY7CiKq2Svf9I9JcUjuhrDspJ9vw/wDdEmJAlZuVa21fjPyW9AMdpQ4a51A_onTmg45sMyLg",
                   "width": 512,
                   "height": 663
                 }
@@ -295,7 +295,7 @@
           "statute": "CAA",
           "status": "Valid",
           "last_inspection": "2023-11-17",
-          "last_scraped": "2025-08-05",
+          "last_scraped": "2025-08-06",
           "penalties": 0,
           "status_text": "No Violation Identified"
         },
@@ -303,7 +303,7 @@
           "statute": "CWA",
           "status": "Terminated",
           "last_inspection": "2012-09-27",
-          "last_scraped": "2025-08-05",
+          "last_scraped": "2025-08-06",
           "penalties": 0,
           "status_text": "Terminated Permit"
         },
@@ -311,7 +311,7 @@
           "statute": "RCRA",
           "status": "Valid",
           "last_inspection": "2025-03-26",
-          "last_scraped": "2025-08-05",
+          "last_scraped": "2025-08-06",
           "penalties": 0,
           "status_text": "No Violation Identified"
         }
@@ -336,7 +336,7 @@
           "statute": "CAA",
           "status": "Valid",
           "last_inspection": "2022-08-02",
-          "last_scraped": "2025-08-05",
+          "last_scraped": "2025-08-06",
           "penalties": 0,
           "status_text": "No Violation Identified"
         },
@@ -344,7 +344,7 @@
           "statute": "CWA",
           "status": "Terminated",
           "last_inspection": "2023-05-16",
-          "last_scraped": "2025-08-05",
+          "last_scraped": "2025-08-06",
           "penalties": 0,
           "status_text": "Terminated Permit"
         },
@@ -352,7 +352,7 @@
           "statute": "RCRA",
           "status": "Valid",
           "last_inspection": "2023-08-08",
-          "last_scraped": "2025-08-05",
+          "last_scraped": "2025-08-06",
           "penalties": 0,
           "status_text": "No Violation Identified"
         }
@@ -373,7 +373,7 @@
           "statute": "CAA",
           "status": "Violation",
           "last_inspection": "2025-02-04",
-          "last_scraped": "2025-08-05",
+          "last_scraped": "2025-08-06",
           "penalties": 62075,
           "status_text": "Violation w/in 1 Year"
         },
@@ -381,7 +381,7 @@
           "statute": "CWA",
           "status": "Violation",
           "last_inspection": "2024-10-25",
-          "last_scraped": "2025-08-05",
+          "last_scraped": "2025-08-06",
           "penalties": 0,
           "status_text": "Violation Identified"
         },
@@ -389,7 +389,7 @@
           "statute": "RCRA",
           "status": "Valid",
           "last_inspection": "1996-06-26",
-          "last_scraped": "2025-08-05",
+          "last_scraped": "2025-08-06",
           "penalties": 0,
           "status_text": "No Violation Identified"
         }
@@ -418,7 +418,7 @@
       "description": "Fumigator",
       "clean_air_notes": "<p>Comment\n<a href=\"https://cleanaircouncil.salsalabs.org/amsmethylbromide\">https://cleanaircouncil.salsalabs.org/amsmethylbromide</a></p>\n",
       "epa_link": "https://www.epa.gov/ods-phaseout/methyl-bromide",
-      "slug": "ecolab-inc-"
+      "slug": "ecolab-inc"
     },
     {
       "company_name": "Ecomaterials \n",
@@ -433,7 +433,7 @@
         {
           "statute": "CWA",
           "status": "Valid",
-          "last_scraped": "2025-08-05",
+          "last_scraped": "2025-08-06",
           "penalties": 0,
           "status_text": "Unknown"
         }
@@ -454,7 +454,7 @@
           "statute": "CAA",
           "status": "Violation",
           "last_inspection": "2025-01-31",
-          "last_scraped": "2025-08-04",
+          "last_scraped": "2025-08-06",
           "penalties": 8028,
           "status_text": "Violation w/in 1 Year"
         },
@@ -462,7 +462,7 @@
           "statute": "CWA",
           "status": "Valid",
           "last_inspection": "2024-12-12",
-          "last_scraped": "2025-08-04",
+          "last_scraped": "2025-08-06",
           "penalties": 0,
           "status_text": "No Violation Identified"
         },
@@ -470,7 +470,7 @@
           "statute": "RCRA",
           "status": "Valid",
           "last_inspection": "2024-05-30",
-          "last_scraped": "2025-08-04",
+          "last_scraped": "2025-08-06",
           "penalties": 0,
           "status_text": "No Violation Identified"
         },
@@ -478,7 +478,7 @@
           "statute": "TSCA",
           "status": "Valid",
           "last_inspection": "2023-05-31",
-          "last_scraped": "2025-08-04",
+          "last_scraped": "2025-08-06",
           "penalties": 0,
           "status_text": "In Compliance"
         }
@@ -511,14 +511,14 @@
           "statute": "CAA",
           "status": "Valid",
           "last_inspection": "2023-05-04",
-          "last_scraped": "2025-08-05",
+          "last_scraped": "2025-08-06",
           "penalties": 55421,
           "status_text": "No Violation Identified"
         },
         {
           "statute": "CWA",
           "status": "Valid",
-          "last_scraped": "2025-08-05",
+          "last_scraped": "2025-08-06",
           "penalties": 0,
           "status_text": "No Violation Identified"
         },
@@ -526,7 +526,7 @@
           "statute": "EPCRA",
           "status": "Valid",
           "last_inspection": "2024-08-14",
-          "last_scraped": "2025-08-05",
+          "last_scraped": "2025-08-06",
           "penalties": 0,
           "status_text": "In Compliance"
         },
@@ -534,7 +534,7 @@
           "statute": "RCRA",
           "status": "Valid",
           "last_inspection": "2025-01-21",
-          "last_scraped": "2025-08-05",
+          "last_scraped": "2025-08-06",
           "penalties": 45988,
           "status_text": "No Violation Identified"
         },
@@ -542,7 +542,7 @@
           "statute": "TSCA",
           "status": "Valid",
           "last_inspection": "2024-08-14",
-          "last_scraped": "2025-08-05",
+          "last_scraped": "2025-08-06",
           "penalties": 0,
           "status_text": "In Compliance"
         }
@@ -564,7 +564,7 @@
           "statute": "CAA",
           "status": "Valid",
           "last_inspection": "2024-09-16",
-          "last_scraped": "2025-08-05",
+          "last_scraped": "2025-08-06",
           "penalties": 0,
           "status_text": "No Violation Identified"
         }
@@ -585,7 +585,7 @@
           "statute": "CAA",
           "status": "Valid",
           "last_inspection": "2022-05-20",
-          "last_scraped": "2025-08-05",
+          "last_scraped": "2025-08-06",
           "penalties": 1875,
           "status_text": "No Violation Identified"
         },
@@ -593,7 +593,7 @@
           "statute": "CWA",
           "status": "Violation",
           "last_inspection": "2023-09-26",
-          "last_scraped": "2025-08-05",
+          "last_scraped": "2025-08-06",
           "penalties": 0,
           "status_text": "Violation Identified"
         },
@@ -601,7 +601,7 @@
           "statute": "RCRA",
           "status": "Valid",
           "last_inspection": "2024-09-30",
-          "last_scraped": "2025-08-05",
+          "last_scraped": "2025-08-06",
           "penalties": 0,
           "status_text": "No Violation Identified"
         }
@@ -634,7 +634,7 @@
           "statute": "CAA",
           "status": "Valid",
           "last_inspection": "2024-05-20",
-          "last_scraped": "2025-08-05",
+          "last_scraped": "2025-08-06",
           "penalties": 0,
           "status_text": "No Violation Identified"
         },
@@ -642,7 +642,7 @@
           "statute": "CWA",
           "status": "Valid",
           "last_inspection": "2024-03-18",
-          "last_scraped": "2025-08-05",
+          "last_scraped": "2025-08-06",
           "penalties": 0,
           "status_text": "No Violation Identified"
         },
@@ -650,7 +650,7 @@
           "statute": "RCRA",
           "status": "Valid",
           "last_inspection": "2014-02-27",
-          "last_scraped": "2025-08-05",
+          "last_scraped": "2025-08-06",
           "penalties": 0,
           "status_text": "No Violation Identified"
         }
@@ -681,7 +681,7 @@
           "statute": "CAA",
           "status": "Valid",
           "last_inspection": "2024-12-19",
-          "last_scraped": "2025-08-05",
+          "last_scraped": "2025-08-06",
           "penalties": 13200,
           "status_text": "No Violation Identified"
         },
@@ -689,7 +689,7 @@
           "statute": "CWA",
           "status": "Valid",
           "last_inspection": "2023-09-28",
-          "last_scraped": "2025-08-05",
+          "last_scraped": "2025-08-06",
           "penalties": 0,
           "status_text": "No Violation Identified"
         },
@@ -697,7 +697,7 @@
           "statute": "EPCRA",
           "status": "Valid",
           "last_inspection": "2023-03-21",
-          "last_scraped": "2025-08-05",
+          "last_scraped": "2025-08-06",
           "penalties": 0,
           "status_text": "In Compliance"
         },
@@ -705,7 +705,7 @@
           "statute": "RCRA",
           "status": "Valid",
           "last_inspection": "2024-11-22",
-          "last_scraped": "2025-08-05",
+          "last_scraped": "2025-08-06",
           "penalties": 0,
           "status_text": "No Violation Identified"
         }
@@ -737,7 +737,7 @@
           "statute": "CAA",
           "status": "Valid",
           "last_inspection": "2024-09-10",
-          "last_scraped": "2025-08-05",
+          "last_scraped": "2025-08-06",
           "penalties": 764496,
           "status_text": "No Violation Identified"
         },
@@ -745,7 +745,7 @@
           "statute": "CWA",
           "status": "Valid",
           "last_inspection": "2024-07-19",
-          "last_scraped": "2025-08-05",
+          "last_scraped": "2025-08-06",
           "penalties": 0,
           "status_text": "No Violation Identified"
         },
@@ -753,7 +753,7 @@
           "statute": "RCRA",
           "status": "Valid",
           "last_inspection": "2024-04-25",
-          "last_scraped": "2025-08-05",
+          "last_scraped": "2025-08-06",
           "penalties": 0,
           "status_text": "No Violation Identified"
         }
@@ -779,7 +779,7 @@
           "statute": "CAA",
           "status": "Violation",
           "last_inspection": "2023-08-24",
-          "last_scraped": "2025-08-05",
+          "last_scraped": "2025-08-06",
           "penalties": 98761,
           "status_text": "High Priority Violation"
         },
@@ -787,7 +787,7 @@
           "statute": "CWA",
           "status": "Violation",
           "last_inspection": "2023-12-19",
-          "last_scraped": "2025-08-05",
+          "last_scraped": "2025-08-06",
           "penalties": 0,
           "status_text": "Violation Identified"
         },
@@ -795,7 +795,7 @@
           "statute": "EPCRA",
           "status": "Valid",
           "last_inspection": "2024-12-05",
-          "last_scraped": "2025-08-05",
+          "last_scraped": "2025-08-06",
           "penalties": 0,
           "status_text": "In Compliance"
         },
@@ -803,7 +803,7 @@
           "statute": "RCRA",
           "status": "Valid",
           "last_inspection": "2025-05-20",
-          "last_scraped": "2025-08-05",
+          "last_scraped": "2025-08-06",
           "penalties": 0,
           "status_text": "No Violation Identified"
         }
@@ -826,7 +826,7 @@
         {
           "statute": "CAA",
           "status": "Valid",
-          "last_scraped": "2025-08-05",
+          "last_scraped": "2025-08-06",
           "penalties": 0,
           "status_text": "In Compliance"
         },
@@ -834,7 +834,7 @@
           "statute": "CWA",
           "status": "Valid",
           "last_inspection": "2025-07-23",
-          "last_scraped": "2025-08-05",
+          "last_scraped": "2025-08-06",
           "penalties": 250000,
           "status_text": "No Violation Identified"
         },
@@ -842,7 +842,7 @@
           "statute": "RCRA",
           "status": "Valid",
           "last_inspection": "2022-12-20",
-          "last_scraped": "2025-08-05",
+          "last_scraped": "2025-08-06",
           "penalties": 0,
           "status_text": "No Violation Identified"
         }
@@ -868,7 +868,7 @@
           "statute": "CAA",
           "status": "Valid",
           "last_inspection": "2025-03-19",
-          "last_scraped": "2025-08-05",
+          "last_scraped": "2025-08-06",
           "penalties": 1260,
           "status_text": "No Violation Identified"
         },
@@ -876,7 +876,7 @@
           "statute": "CWA",
           "status": "Terminated",
           "last_inspection": "2022-04-12",
-          "last_scraped": "2025-08-05",
+          "last_scraped": "2025-08-06",
           "penalties": 0,
           "status_text": "Terminated Permit"
         },
@@ -884,7 +884,7 @@
           "statute": "RCRA",
           "status": "Valid",
           "last_inspection": "2003-07-01",
-          "last_scraped": "2025-08-05",
+          "last_scraped": "2025-08-06",
           "penalties": 0,
           "status_text": "No Violation Identified"
         }
@@ -906,14 +906,14 @@
           "statute": "CAA",
           "status": "Valid",
           "last_inspection": "2025-04-15",
-          "last_scraped": "2025-08-05",
+          "last_scraped": "2025-08-06",
           "penalties": 220,
           "status_text": "No Violation Identified"
         },
         {
           "statute": "CERCLA",
           "status": "Valid",
-          "last_scraped": "2025-08-05",
+          "last_scraped": "2025-08-06",
           "penalties": 0,
           "status_text": "In Compliance"
         },
@@ -921,14 +921,14 @@
           "statute": "CWA",
           "status": "Valid",
           "last_inspection": "2023-09-08",
-          "last_scraped": "2025-08-05",
+          "last_scraped": "2025-08-06",
           "penalties": 0,
           "status_text": "No Violation Identified"
         },
         {
           "statute": "EPCRA",
           "status": "Valid",
-          "last_scraped": "2025-08-05",
+          "last_scraped": "2025-08-06",
           "penalties": 0,
           "status_text": "In Compliance"
         },
@@ -936,7 +936,7 @@
           "statute": "RCRA",
           "status": "Valid",
           "last_inspection": "2003-11-20",
-          "last_scraped": "2025-08-05",
+          "last_scraped": "2025-08-06",
           "penalties": 0,
           "status_text": "No Violation Identified"
         }
@@ -958,7 +958,7 @@
           "statute": "CAA",
           "status": "Valid",
           "last_inspection": "2025-03-05",
-          "last_scraped": "2025-08-05",
+          "last_scraped": "2025-08-06",
           "penalties": 7010,
           "status_text": "No Violation Identified"
         }
@@ -980,7 +980,7 @@
           "statute": "CAA",
           "status": "Valid",
           "last_inspection": "2024-10-23",
-          "last_scraped": "2025-08-05",
+          "last_scraped": "2025-08-06",
           "penalties": 4639,
           "status_text": "No Violation Identified"
         },
@@ -988,14 +988,14 @@
           "statute": "CWA",
           "status": "Valid",
           "last_inspection": "2023-09-29",
-          "last_scraped": "2025-08-05",
+          "last_scraped": "2025-08-06",
           "penalties": 0,
           "status_text": "No Violation Identified"
         },
         {
           "statute": "EPCRA",
           "status": "Valid",
-          "last_scraped": "2025-08-05",
+          "last_scraped": "2025-08-06",
           "penalties": 0,
           "status_text": "In Compliance"
         },
@@ -1003,19 +1003,19 @@
           "statute": "RCRA",
           "status": "Valid",
           "last_inspection": "2024-07-17",
-          "last_scraped": "2025-08-05",
+          "last_scraped": "2025-08-06",
           "penalties": 0,
           "status_text": "No Violation Identified"
         },
         {
           "statute": "TSCA",
           "status": "Valid",
-          "last_scraped": "2025-08-05",
+          "last_scraped": "2025-08-06",
           "penalties": 0,
           "status_text": "In Compliance"
         }
       ],
-      "slug": "pq-corp-",
+      "slug": "pq-corp",
       "totalPenalties": "$4,639"
     },
     {
@@ -1052,7 +1052,7 @@
           "statute": "CAA",
           "status": "Violation",
           "last_inspection": "2024-01-12",
-          "last_scraped": "2025-08-05",
+          "last_scraped": "2025-08-06",
           "penalties": 165865,
           "status_text": "High Priority Violation"
         },
@@ -1060,7 +1060,7 @@
           "statute": "CWA",
           "status": "Valid",
           "last_inspection": "2022-05-06",
-          "last_scraped": "2025-08-05",
+          "last_scraped": "2025-08-06",
           "penalties": 0,
           "status_text": "No Violation Identified"
         },
@@ -1068,12 +1068,12 @@
           "statute": "RCRA",
           "status": "Valid",
           "last_inspection": "2008-06-17",
-          "last_scraped": "2025-08-05",
+          "last_scraped": "2025-08-06",
           "penalties": 0,
           "status_text": "No Violation Identified"
         }
       ],
-      "slug": "reworld-formerly-covanta-",
+      "slug": "reworld-formerly-covanta",
       "alert": true,
       "totalPenalties": "$165,865"
     },
@@ -1091,7 +1091,7 @@
           "statute": "CAA",
           "status": "Violation",
           "last_inspection": "2025-05-29",
-          "last_scraped": "2025-08-05",
+          "last_scraped": "2025-08-06",
           "penalties": 702626,
           "status_text": "High Priority Violation"
         },
@@ -1099,7 +1099,7 @@
           "statute": "CWA",
           "status": "Violation",
           "last_inspection": "2024-08-22",
-          "last_scraped": "2025-08-05",
+          "last_scraped": "2025-08-06",
           "penalties": 0,
           "status_text": "Violation Identified"
         },
@@ -1107,7 +1107,7 @@
           "statute": "RCRA",
           "status": "Valid",
           "last_inspection": "1996-03-05",
-          "last_scraped": "2025-08-05",
+          "last_scraped": "2025-08-06",
           "penalties": 0,
           "status_text": "No Violation Identified"
         }
@@ -1139,7 +1139,7 @@
         {
           "statute": "CAA",
           "status": "Valid",
-          "last_scraped": "2025-08-05",
+          "last_scraped": "2025-08-06",
           "penalties": 0,
           "status_text": "In Compliance"
         },
@@ -1147,7 +1147,7 @@
           "statute": "CWA",
           "status": "Terminated",
           "last_inspection": "2019-04-29",
-          "last_scraped": "2025-08-05",
+          "last_scraped": "2025-08-06",
           "penalties": 0,
           "status_text": "Terminated Permit"
         }
@@ -1168,14 +1168,14 @@
           "statute": "CAA",
           "status": "Valid",
           "last_inspection": "2025-02-18",
-          "last_scraped": "2025-08-05",
+          "last_scraped": "2025-08-06",
           "penalties": 0,
           "status_text": "No Violation Identified"
         },
         {
           "statute": "RCRA",
           "status": "Valid",
-          "last_scraped": "2025-08-05",
+          "last_scraped": "2025-08-06",
           "penalties": 0,
           "status_text": "No Violation Identified"
         }
@@ -1200,7 +1200,7 @@
           "statute": "CAA",
           "status": "Violation",
           "last_inspection": "2023-12-22",
-          "last_scraped": "2025-08-05",
+          "last_scraped": "2025-08-06",
           "penalties": 66749,
           "status_text": "Violation w/in 1 Year"
         }

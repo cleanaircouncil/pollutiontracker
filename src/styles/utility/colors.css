@@ -23,6 +23,7 @@
   --color-pink-light: #fbbfe4;
   --color-pink-dark: #87124c;
 
+  --color-gray-bright: #EEEEEE;
   --color-gray-light: #DEDEDE;
   --color-gray-dark: #ACACAC;
 
@@ -71,6 +72,11 @@
 
 .swatch-gray {
   background: var(--color-gray-light);
+  color: var(--color-gray-dark);
+}
+
+.swatch-gray-bright {
+  background: var(--color-gray-bright);
   color: var(--color-gray-dark);
 }
 

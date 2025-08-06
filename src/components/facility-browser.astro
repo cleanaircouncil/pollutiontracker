@@ -16,7 +16,7 @@ import PanelStack from "./panel-stack.astro";
 
 <style>
   .padding-responsive {
-    padding-block-end: 200px;
+    padding-block-end: 10vh;
   }
 
   @media screen and (min-width: 900px) {
@@ -35,15 +35,13 @@ import PanelStack from "./panel-stack.astro";
   currentFacilitySlug.subscribe(async (slug) => {
     const view = slug ? "right" : "left";
     browserEl.setAttribute("data-view", view);
-    console.log(view, slug);
 
     if (!slug) return;
 
     const response = await fetch(`./facilities/${slug}`);
     const html = await response.text();
-
-    console.log(html);
-
+    
     viewEl.innerHTML = html;
+    viewEl.scrollTop = 0;
   });
 </script>

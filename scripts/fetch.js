@@ -128,8 +128,18 @@ async function recordToFacility(record) {
   return facility;
 }
 
+function produceMapData( data ) {
+  console.log("🗺️  Producing map data...")
+  const result = {
+    facilities: data.facilities.map( ({company_name, latitude, longitude, alert, slug})=> ({company_name, latitude, longitude, alert, slug }))
+  }
+
+  return result;
+}
 
 console.log( "✈️  Querying Airtable...")
+
+
 
 base('Facilities')
   .select()
@@ -146,8 +156,15 @@ base('Facilities')
     }  
 
     data.facilities.sort((a, b) => a.company_name.toLowerCase() < b.company_name.toLowerCase() ? -1 : 1 )
+    
 
     console.log( "💾 Writing data.json...")
     fs.writeFileSync("./src/data/data.json", JSON.stringify( data, null, 2 ));
+
+
+    const mapData = produceMapData(data);
+    console.log( "💾 Writing map-data.json...")
+    fs.writeFileSync("./src/data/map-data.json", JSON.stringify( mapData ));
+
     console.log("✅ Done!")
   })

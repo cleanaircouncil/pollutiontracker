@@ -19,7 +19,7 @@ import Search from "./search.astro";
   <PanelStack class="header__search | overflow-hidden" data-search-panel>
     <Search />
     <section class="form-controls">
-      <Button href="#">
+      <Button class="box-shadow" href="#">
         <i class="fa fa-chevron-left"></i> Back To Results
       </Button>
     </section>
@@ -68,6 +68,5 @@ import Search from "./search.astro";
   currentFacilitySlug.subscribe(async (slug) => {
     const view = slug ? "right" : "left";
     searchPanelEl.setAttribute("data-view", view);
-    console.log(view, slug);
   });
 </script>
