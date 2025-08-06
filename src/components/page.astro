@@ -16,12 +16,16 @@ const { current } = Astro.props
     </section>
   </header>
 
-  <section class="constrain-default padding text">
+  <section class="constrain-default padding-top text">
     <slot />
   </section>
 </main>
 
 <style>
+  .padding-top {
+    padding-top: 1rem;
+  }
+
   @media screen and (min-width: 900px) {
     .layout-header {
       display: grid;
