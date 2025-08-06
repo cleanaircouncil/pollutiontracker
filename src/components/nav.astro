@@ -1,20 +1,42 @@
-<nav class="nav" data-nav>
-  <a class="nav-button" data-active>
-    <i class="fa fa-location-dot"></i> Explore Permits
-  </a>
-  <a class="nav-button"><i class="fa fa-certificate"></i> About The Tracker</a>
-  <a href="https://cleanair.org/take-action/" class="nav-button" target="_blank"
-    ><i class="fa fa-hand"></i> Get Involved</a
-  >
+<nav class="nav" data-nav="closed">
+  <div class="nav-links" data-nav-links>
+    <button class="show-mobile nav-button" data-nav-close>
+      <i class="fa fa-xmark"></i>
+    </button>
+    <a class="nav-button" data-active>
+      <i class="fa fa-location-dot"></i> Explore Permits
+    </a>
+    <a class="nav-button"><i class="fa fa-certificate"></i> About The Tracker</a
+    >
+    <a
+      href="https://cleanair.org/take-action/"
+      class="nav-button"
+      target="_blank"><i class="fa fa-hand"></i> Get Involved</a
+    >
+  </div>
+
+  <div class="show-mobile nav-menu">
+    <button class="nav-button" data-nav-open>
+      <i class="fa fa-bars"></i>
+    </button>
+  </div>
+
+  <div class="nav-lightbox" data-nav-lightbox></div>
 </nav>
 
 <style>
   .nav {
-    display: flex;
-    background: var(--color-black);
     color: var(--color-white);
     height: 100%;
-    padding: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 0.5rem;
+    gap: min(2vw, 2rem);
+    padding-inline-start: 1rem;
   }
 
   .nav-button {
@@ -25,7 +47,17 @@
       background-color 0.2s ease-in-out;
     z-index: 0;
     color: inherit;
+    background: inherit;
+    border: none;
     text-decoration: none;
+    position: relative;
+    padding: 0.25rem 1rem;
+    display: flex;
+    gap: 0.5rem;
+    line-height: 1.5rem;
+    white-space: nowrap;
+    border-radius: 2rem;
+    pointer-events: all;
   }
 
   .nav-button i {
@@ -52,35 +84,95 @@
   }
 
   @media screen and (max-width: 900px) {
-    .nav {
-      justify-content: space-around;
+    .show-mobile {
+      display: initial;
     }
 
-    .nav-button i {
-      position: relative;
+    .nav-lightbox {
+      content: "";
       display: block;
-      padding: 0.25rem;
-      margin: 0.25rem;
-      max-width: 8rem;
-      margin: 0.25rem auto;
+      position: absolute;
+      inset: 0px;
+      background: var(--color-black);
+      opacity: 0;
+      transiton: opacity 0.2s ease-in-out;
+    }
+
+    .nav-menu {
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      padding: 0.5rem;
+    }
+
+    .nav-links {
+      position: absolute;
+      right: 0px;
+      bottom: 0px;
+      top: 0px;
+      width: min(100%, 350px);
+      padding: 0.5rem;
+      background: var(--color-black);
+      flex-direction: column;
+      gap: 1rem;
+      align-items: end;
+      box-shadow: var(--box-shadow);
+      z-index: 5;
+      pointer-events: all;
+      translate: 100% 0%;
+      transition: translate 0.2s ease-in-out;
+    }
+
+    .nav[data-nav="open"] .nav-lightbox {
+      opacity: 0.9;
+      pointer-events: all;
+    }
+
+    .nav[data-nav="open"] .nav-links {
+      translate: 0% 0%;
     }
   }
 
   @media screen and (min-width: 900px) {
+    .show-mobile {
+      display: none;
+    }
+
     .nav {
+      background: var(--color-black);
       align-items: center;
       gap: min(2vw, 3rem);
       padding-inline-start: 1rem;
+      padding: 0.5rem;
     }
 
-    .nav-button {
-      position: relative;
-      padding: 0.25rem 1rem;
-      display: flex;
-      gap: 0.5rem;
-      line-height: 1.5rem;
-      white-space: nowrap;
-      border-radius: 2rem;
+    .nav-lightbox {
+      display: none;
     }
   }
 </style>
+
+<script>
+  const navEl = document.querySelector("[data-nav]");
+  const openEl = document.querySelector("[data-nav-open]");
+  const closeEl = document.querySelector("[data-nav-close]");
+  const lightboxEl = document.querySelector("[data-nav-lightbox]");
+
+  function open() {
+    navEl.setAttribute("data-nav", "open");
+  }
+
+  function close() {
+    navEl.setAttribute("data-nav", "closed");
+  }
+
+  openEl.addEventListener("click", open);
+  closeEl.addEventListener("click", close);
+  lightboxEl.addEventListener("click", close);
+
+  window.addEventListener("keydown", (e) => {
+    if (navEl.getAttribute("data-nav") == "open" && e.key == "Escape") {
+      close();
+    }
+  });
+</script>
