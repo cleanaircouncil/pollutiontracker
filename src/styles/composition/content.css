@@ -1,9 +1,10 @@
 /* CONSTRAIN */
 
-:where(.content), :where(.content) > * {
+:is(.content, .content-default, .content-wide, .constrain-full), :is(.constrain, .constrain-default, .constrain-full, .constrain-wide) > * {
   --content-width: 800px;
-  max-inline-size: min(100% - 2 * var(--content-measure), var(--content-width));
-  margin-inline: max(calc(50% - 600px), var(--content-measure));
+  --content-margin: 1rem;
+  max-inline-size: min(100% - 2 * var(--content-margin), var(--content-width));
+  margin-inline: auto;
 }
 
 .constrain-default > *, .content-default {
@@ -20,6 +21,6 @@
 
 
 .content-flush {
-  --content-measure: 0rem;
+  --content-margin: 0rem;
 }
 

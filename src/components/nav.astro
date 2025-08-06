@@ -1,12 +1,21 @@
+---
+const { current = "explore" } = Astro.props;
+
+function isCurrent(path) {
+  return path == current ? "page" : false;
+}
+---
+
 <nav class="nav" data-nav="closed">
   <div class="nav-links" data-nav-links>
     <button class="show-mobile nav-button" data-nav-close>
       <i class="fa fa-xmark"></i>
     </button>
-    <a class="nav-button" data-active>
+    <a href="/" class="nav-button" aria-current={isCurrent("explore")}>
       <i class="fa fa-location-dot"></i> Explore Permits
     </a>
-    <a class="nav-button"><i class="fa fa-certificate"></i> About The Tracker</a
+    <a href="/about" class="nav-button" aria-current={isCurrent("about")}
+      ><i class="fa fa-certificate"></i> About The Tracker</a
     >
     <a
       href="https://cleanair.org/take-action/"
@@ -75,7 +84,7 @@
     z-index: -1;
   }
 
-  .nav-button[data-active] i::after {
+  .nav-button[aria-current="page"] i::after {
     background: var(--color-accent);
   }
 
@@ -86,6 +95,13 @@
   @media screen and (max-width: 900px) {
     .show-mobile {
       display: initial;
+    }
+
+    .nav {
+      position: absolute;
+      inset: 0px;
+      z-index: 50;
+      pointer-events: none;
     }
 
     .nav-lightbox {

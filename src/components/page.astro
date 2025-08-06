@@ -1,0 +1,31 @@
+---
+import Nav from "../components/nav.astro";
+import Header from "../components/header.astro";
+
+const { current } = Astro.props
+---
+
+<main class="page layout-page" data-app>
+  <header class="layout-header">
+    <section class="in-header">
+      <Header />
+    </section>
+
+    <section class="in-nav">
+      <Nav current={current}/>
+    </section>
+  </header>
+
+  <section class="constrain-default padding text">
+    <slot />
+  </section>
+</main>
+
+<style>
+  @media screen and (min-width: 900px) {
+    .layout-header {
+      display: grid;
+      grid-template-columns: min(40vw, 450px) 1fr;
+    }
+  }
+</style>
