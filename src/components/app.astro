@@ -21,7 +21,7 @@ import ResponsiveSheet from "./responsive-sheet.astro";
   </section>
 
   <ResponsiveSheet class="in-list">
-    <FacilityBrowser/>
+    <FacilityBrowser />
   </ResponsiveSheet>
 
   <Viewer />
@@ -55,6 +55,11 @@ import ResponsiveSheet from "./responsive-sheet.astro";
     .in-list {
       pointer-events: none;
       grid-area: main;
+      z-index: 15;
+    }
+
+    .in-header {
+      z-index: 5;
     }
   }
 

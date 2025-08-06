@@ -11,7 +11,10 @@ const { class: classes, ...rest } = Astro.props;
   <section class="sheet | overflow-hidden animate-sheet" data-sheet>
     <header class="sheet__handle" data-sheet-handle></header>
 
-    <main class="sheet__content | overflow-hidden height-full" data-sheet-content>
+    <main
+      class="sheet__content | overflow-hidden height-full"
+      data-sheet-content
+    >
       <slot />
     </main>
   </section>
@@ -75,24 +78,17 @@ const { class: classes, ...rest } = Astro.props;
 </style>
 
 <script>
-  import { atom } from "nanostores";
-  const position = atom("low");
-
   const sheetEl = document.querySelector("[data-sheet]");
   const handleEl = sheetEl.querySelector("[data-sheet-handle]");
-
-  // const positions = {
-  //   low: "20vh",
-  //   middle: "50vh",
-  //   height: "100%",
-  // };
 
   let height;
   let parentHeight;
   let startY;
   let isDragging = false;
+  let lastScreenY;
+  let deltaScreenY;
 
-  const positions = ["20%", "50%", "98%"];
+  const positions = ["20%", "50%", "95%"];
 
   function getHeightForPosition(el, string) {
     const previousValue = el.style.height;
@@ -102,24 +98,26 @@ const { class: classes, ...rest } = Astro.props;
     return result;
   }
 
-  handleEl.addEventListener("mousedown", (ev: MouseEvent) => {
+  function handleStart(ev, screenY) {
     ev.preventDefault();
 
     height = sheetEl.getBoundingClientRect().height;
     parentHeight = sheetEl.parentElement.getBoundingClientRect().height;
-    startY = ev.screenY;
+    startY = screenY;
     isDragging = true;
     sheetEl.classList.remove("animate-sheet");
-  });
+  }
 
-  window.addEventListener("mousemove", (ev: MouseEvent) => {
+  function handleMove(ev, screenY) {
     if (!isDragging) return;
     ev.preventDefault();
 
-    sheetEl.style.height = `${(Math.min(parentHeight, height + (startY - ev.screenY)) / parentHeight) * 100}%`;
-  });
+    sheetEl.style.height = `${(Math.min(parentHeight, height + (startY - screenY)) / parentHeight) * 100}%`;
+    deltaScreenY = screenY - lastScreenY;
+    lastScreenY = screenY
+  }
 
-  window.addEventListener("mouseup", (ev: MouseEvent) => {
+  function handleEnd(ev, screenY) {
     if (!isDragging) return;
     ev.preventDefault();
 
@@ -139,9 +137,30 @@ const { class: classes, ...rest } = Astro.props;
       0
     );
 
+    const flingAdjustment = (Math.abs( deltaScreenY ) > 3) ? Math.sign(deltaScreenY) : 0;
+    console.log( deltaScreenY, flingAdjustment );
+    const index = Math.min( Math.max( finalIndex - flingAdjustment, 0 ), positions.length - 1)
+
     requestAnimationFrame(() => {
       sheetEl.classList.add("animate-sheet");
-      sheetEl.style.height = positions[finalIndex];
+      sheetEl.style.height = positions[index];
     });
-  });
+  }
+
+  function handleTouch(callback) {
+    return (ev) => callback(ev, ev.touches[0]?.screenY);
+  }
+
+  function handleMouse(callback) {
+    return (ev) => callback(ev, ev.screenY);
+  }
+
+  handleEl.addEventListener("mousedown", handleMouse(handleStart));
+  handleEl.addEventListener("touchstart", handleTouch(handleStart));
+
+  window.addEventListener("mousemove", handleMouse(handleMove));
+  window.addEventListener("touchmove", handleTouch(handleMove));
+
+  window.addEventListener("mouseup", handleMouse(handleEnd));
+  window.addEventListener("touchend", handleTouch(handleEnd));
 </script>
