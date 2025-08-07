@@ -8,7 +8,7 @@
     placeholder="Filter by facility name or address"
     data-search-input
   />
-  <button class="search-button" data-search-clear-button hidden>
+  <button class="search-button" aria-label="Clear search" data-search-clear-button hidden>
     <i class="fa fa-close"></i>
   </button>
 </div>
@@ -54,7 +54,7 @@
       updateSearchParam("query", inputEl.value);
       dispatch("search", { value: inputEl.value });
       clearButtonEl.toggleAttribute("hidden", !inputEl.value);
-    }
+    };
 
     inputEl.addEventListener("input", updateSearch);
 
