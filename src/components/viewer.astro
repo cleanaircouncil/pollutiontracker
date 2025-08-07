@@ -1,22 +1,21 @@
 <section id="viewer" class="viewer | lightbox" data-viewer hidden>
-  <header class="flex space-between">
-    <h2 class="viewer__title truncate-text" data-populate="filename"></h2>
-
-    <div class="flex gap">
+  <header class="flex stretch">
+    <hgroup class="flex space-between wrap">
+      <h2 class="viewer__title truncate-text" data-populate="filename"></h2>
       <a class="viewer__button" data-populate="url: @href, filename: @download">
         <i class="fa fa-download"></i> Download PDF
       </a>
+    </hgroup>
 
-      <button class="viewer__button viewer__button--close" data-close-button>
-        <i class="fa fa-close"></i>
-      </button>
-    </div>
+    <button class="viewer__button viewer__button--close" data-close-button>
+      <i class="fa fa-close"></i>
+    </button>
   </header>
 
   <div class="viewer__loading">
-    <i class="fa fa-circle-notch fa-spin" style="--fa-animation-duration: .75s"
-    ></i>
+    <i class="fa fa-circle-notch fa-spin" style="--fa-animation-duration: .75s"></i>
   </div>
+
   <iframe data-populate="url: @src" data-iframe></iframe>
 </section>
 
@@ -27,8 +26,12 @@
     width: 100%;
     height: 100%;
     position: absolute;
-    z-index: 100;
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(0, 0, 0, 0.9);
+  }
+
+  .wrap {
+    flex: 1 1 auto;
+    flex-wrap: wrap;
   }
 
   .truncate-text {
@@ -62,7 +65,7 @@
   }
 
   .viewer__title {
-    max-width: 50vw;
+    max-width: 80vw;
     font-size: 1rem;
     font-weight: 500;
   }
@@ -86,7 +89,7 @@
     cursor: pointer;
     border-radius: 1.5rem;
     padding: 0.5rem;
-    transition: background-color .2s ease-in-out;
+    transition: background-color 0.2s ease-in-out;
   }
 
   .viewer__button:hover {
@@ -94,8 +97,8 @@
   }
 
   .viewer__button--close {
-    padding: .5rem 1rem;
-  } 
+    padding: 0.5rem 1rem;
+  }
 
   .viewer__button--close:hover {
     background-color: var(--color-danger);
@@ -113,6 +116,7 @@
 
   attachment.subscribe((value) => {
     if (value != null) {
+      // value.url += "#view=FitH"
       populateWithData(viewerEl, value);
     } else {
       iframeEl.setAttribute("src", "");

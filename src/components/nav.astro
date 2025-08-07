@@ -7,22 +7,7 @@ function isCurrent(path) {
 ---
 
 <nav class="nav" data-nav="closed">
-  <div class="nav-links" data-nav-links>
-    <button class="show-mobile nav-button" data-nav-close>
-      <i class="fa fa-xmark"></i>
-    </button>
-    <a href="/" class="nav-button" aria-current={isCurrent("explore")}>
-      <i class="fa fa-location-dot"></i> Explore Permits
-    </a>
-    <a href="/about" class="nav-button" aria-current={isCurrent("about")}
-      ><i class="fa fa-certificate"></i> About The Tracker</a
-    >
-    <a
-      href="https://cleanair.org/take-action/"
-      class="nav-button"
-      target="_blank"><i class="fa fa-hand"></i> Get Involved</a
-    >
-  </div>
+  <div class="nav-lightbox" data-nav-lightbox></div>
 
   <div class="show-mobile nav-menu">
     <button class="nav-button" data-nav-open>
@@ -30,7 +15,21 @@ function isCurrent(path) {
     </button>
   </div>
 
-  <div class="nav-lightbox" data-nav-lightbox></div>
+  <div class="nav-links" data-nav-links role="navigation">
+    <button class="show-mobile nav-button" data-nav-close>
+      <i class="fa fa-xmark"></i>
+    </button>
+
+    <a href="/" class="nav-button" aria-current={isCurrent("explore")}>
+      <i class="fa fa-location-dot"></i> Explore Permits
+    </a>
+    <a href="/about" class="nav-button" aria-current={isCurrent("about")}>
+      <i class="fa fa-certificate"></i> About The Tracker
+    </a>
+    <a href="https://cleanair.org/take-action/" class="nav-button" target="_blank">
+      <i class="fa fa-hand"></i> Get Involved
+    </a>
+  </div>
 </nav>
 
 <style>
@@ -54,42 +53,35 @@ function isCurrent(path) {
     transition:
       color 0.2s ease-in-out,
       background-color 0.2s ease-in-out;
-    z-index: 0;
+
     color: inherit;
     background: inherit;
     border: none;
     text-decoration: none;
+
     position: relative;
     padding: 0.25rem 1rem;
     display: flex;
     gap: 0.5rem;
+
     line-height: 1.5rem;
     white-space: nowrap;
     border-radius: 2rem;
     pointer-events: all;
+
+    border-radius: var(--radius);
+  }
+
+  .nav-button[aria-current="page"] {
+    background: var(--color-accent);
+  }
+
+  .nav-button:hover {
+    background: var(--color-highlight);
   }
 
   .nav-button i {
     font-size: 1.5rem;
-    transition: inherit;
-  }
-
-  .nav-button i::after {
-    content: "";
-    display: block;
-    position: absolute;
-    inset: 0px;
-    border-radius: var(--radius);
-    transition: inherit;
-    z-index: -1;
-  }
-
-  .nav-button[aria-current="page"] i::after {
-    background: var(--color-accent);
-  }
-
-  .nav-button:hover i::after {
-    background: var(--color-highlight);
   }
 
   @media screen and (max-width: 900px) {
@@ -100,13 +92,10 @@ function isCurrent(path) {
     .nav {
       position: absolute;
       inset: 0px;
-      z-index: 50;
       pointer-events: none;
     }
 
     .nav-lightbox {
-      content: "";
-      display: block;
       position: absolute;
       inset: 0px;
       background: var(--color-black);
@@ -133,7 +122,6 @@ function isCurrent(path) {
       gap: 1rem;
       align-items: end;
       box-shadow: var(--box-shadow);
-      z-index: 5;
       pointer-events: all;
       translate: 100% 0%;
       transition: translate 0.2s ease-in-out;

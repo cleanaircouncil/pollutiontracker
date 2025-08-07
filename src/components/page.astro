@@ -2,28 +2,30 @@
 import Nav from "../components/nav.astro";
 import Header from "../components/header.astro";
 
-const { current } = Astro.props
+const { current } = Astro.props;
 ---
 
-<main class="page layout-page" data-app>
+<main class="layout-page height-full overflow-hidden" data-app>
   <header class="layout-header">
-    <section class="in-header">
-      <Header />
-    </section>
-
-    <section class="in-nav">
-      <Nav current={current}/>
-    </section>
+    <Header />
+    <Nav current={current} />
   </header>
 
-  <section class="constrain-default padding-top text">
+  <section class="text constrain-default padding-text overflow-scroll">
     <slot />
   </section>
 </main>
 
 <style>
-  .padding-top {
+  .layout-page {
+    display: grid;
+    grid-template-rows: min-content 1fr;
+    position: relative;
+  }
+
+  .padding-text {
     padding-top: 1rem;
+    padding-bottom: 10vh;
   }
 
   @media screen and (min-width: 900px) {

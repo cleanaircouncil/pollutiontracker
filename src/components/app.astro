@@ -9,16 +9,6 @@ import HeaderSearch from "./header-search.astro";
 ---
 
 <main id="app" class="app layout-app" data-app>
-  <section class="in-header">
-    <Header>
-      <HeaderSearch/>
-    </Header>
-  </section>
-
-  <section class="in-nav">
-    <Nav />
-  </section>
-
   <section class="in-main">
     <Map />
   </section>
@@ -26,6 +16,16 @@ import HeaderSearch from "./header-search.astro";
   <ResponsiveSheet class="in-list">
     <FacilityBrowser />
   </ResponsiveSheet>
+
+  <section class="in-header">
+    <Header>
+      <HeaderSearch />
+    </Header>
+  </section>
+
+  <section class="in-nav">
+    <Nav />
+  </section>
 
   <Viewer />
 </main>
@@ -39,30 +39,38 @@ import HeaderSearch from "./header-search.astro";
     font-family: var(--font-default);
     background: var(--color-white);
     color: var(--color-black);
+    overflow: hidden;
   }
 
   .layout-app {
     display: grid;
   }
 
+  .in-list {
+    position: relative;
+  }
+
+  .in-main {
+    grid-area: main;
+    position: relative;
+  }
+
+  .in-header {
+    grid-area: header;
+  }
+
   @media screen and (max-width: 900px) {
     .layout-app {
-      grid-template-rows: min-content 1fr 0fr min-content;
+      grid-template-rows: min-content 1fr min-content;
       grid-template-areas:
         "header"
         "main"
-        "list"
         "nav";
     }
 
     .in-list {
       pointer-events: none;
       grid-area: main;
-      z-index: 15;
-    }
-
-    .in-header {
-      z-index: 5;
     }
 
     .in-nav {
@@ -86,26 +94,6 @@ import HeaderSearch from "./header-search.astro";
     .in-nav {
       grid-area: nav;
     }
-  }
-
-  .in-list {
-    position: relative;
-    z-index: 5;
-  }
-
-  .in-main {
-    grid-area: main;
-    position: relative;
-  }
-
-  .in-header {
-    grid-area: header;
-    z-index: 10;
-  }
-
-  .overlap-top {
-    margin-top: -1.5rem;
-    height: calc(100% + 1.5rem);
   }
 </style>
 

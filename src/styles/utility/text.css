@@ -59,3 +59,7 @@ h3 a {
 .align-center {
   text-align: center;
 }
+
+.size-large {
+  font-size: 3rem;
+}

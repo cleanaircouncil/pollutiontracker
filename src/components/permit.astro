@@ -1,22 +1,18 @@
 ---
+import AbbrTooltip from "./abbr-tooltip.astro";
 import permitInfo from "../helpers/permits";
+
 const { permit = {}, style = "card" } = Astro.props;
 ---
 
-<figure
-  class="permit"
-  data-permit
-  data-type={permitInfo.short(permit)?.toLowerCase()}
-  data-status={permit.status?.toLowerCase()}
-  data-style={style}
->
+<figure class="permit" data-permit data-type={permitInfo.short(permit)?.toLowerCase()} data-status={permit.status?.toLowerCase()} data-style={style}>
   <header>
     <small>
       <strong>
         <i class:list={["fa", permitInfo.icon(permit)]}></i>
         <span>{permitInfo.short(permit)}</span>
       </strong>
-      (<abbr title={permitInfo.long(permit)}>{permit.statute}</abbr>)
+      <AbbrTooltip title={permitInfo.long(permit)}>({permit.statute})</AbbrTooltip>
     </small>
   </header>
 
