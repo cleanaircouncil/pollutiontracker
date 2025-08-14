@@ -70,7 +70,7 @@ const { facility = {} } = Astro.props;
                     data-url={attachment.url}
                     data-filename={attachment.filename}
                   >
-                    <img src={attachment.thumbnails.large.url} />
+                    <img src={attachment.thumbnails?.large?.url} />
                   </a>
                 ))}
               </div>
