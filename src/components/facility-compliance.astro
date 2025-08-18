@@ -42,7 +42,7 @@ const sources = [
             <strong>{facility.dep_violations.since}</strong>
           </div>
         )}
-        {facility.echo_compliance.map((permit) => (
+        {facility.echo_compliance?.map((permit) => (
           <Permit permit={permit} style="card" />
         ))}
       </div>
