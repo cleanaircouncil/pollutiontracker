@@ -55,14 +55,14 @@ const { facility = {} } = Astro.props;
     {
       facility.attachments && (
         <section class="text">
-          {facility.attachments.map((group) => (
+          {facility.attachments?.map((group) => (
             <div class="text">
               <header>
                 <h3>{group.heading}</h3>
               </header>
 
               <div class="grid columns-three gap-tight">
-                {group.attachments.map((attachment) => (
+                {group.attachments?.map((attachment) => (
                   <a
                     class="facility-card__attachment"
                     href={attachment.url}
