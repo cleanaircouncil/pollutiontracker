@@ -5,10 +5,10 @@ const hasAlert = facility.alert || facility.permit_status;
 
 {
   hasAlert && (
-    <div>
+    <div class="flex gap-tight">
       {facility.alert && (
         <span class="eyebrow" data-type="alert">
-          <i class="fa fa-triangle-exclamation" /> Clean Air Action Alert
+          <i class="fa fa-triangle-exclamation" /> Action Alert
         </span>
       )}
 
