@@ -14,7 +14,11 @@ strong.text-detail,
 
 
 .text > * + * {
-  margin-top: .5rem;
+  margin-top: .75rem;
+}
+
+.text > p + :is(h1, h2, h3, h4, h5) {
+  margin-top: 2rem;
 }
 
 .text p {
