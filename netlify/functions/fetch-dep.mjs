@@ -1,15 +1,9 @@
-async function fetchDep(triggerTitle) {
-  const url = new URL(process.env.NETLIFY_REBUILD_HOOK);
-
-  url.searchParams.append("trigger_title", triggerTitle);
-
-  return await fetch(url.toString(), { method: "POST" });
-}
+import { runScrape } from "../../scripts/dep.js";
 
 export default async (req) => {
   const { next_run } = await req.json();
 
-  await fetchDep("Echo fetch");
+  await runScrape();
   console.log("Received event! Next invocation at:", next_run);
 };
 
